@@ -1,0 +1,225 @@
+{
+  "main": {
+    "id": "dc179960dfff313b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6063a9e137ed6257",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4714bb71ddd025be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Sistemas Operacionais.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6fbb9d2e1e56ea03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Edital Tecnologia.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a4fbd268a07aaab",
+    "type": "split",
+    "children": [
+      {
+        "id": "743c378159682ca5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2aab6586082883e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a64e880cb5c50e81",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#TODO",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ee6b07fd039158b9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "43aa3e6599a9083c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "25f200e052f54753",
+    "type": "split",
+    "children": [
+      {
+        "id": "6edf83d8b14236b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e1fbe1cf9ed660e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "caixa concurso/Sistemas Operacionais.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1974ca6418820cab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "caixa concurso/Sistemas Operacionais.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e449a66d27abce99",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "ecf67b5f4ef0b131",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "caixa concurso/Sistemas Operacionais.md"
+              }
+            }
+          },
+          {
+            "id": "7616f3e888a4b7bf",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 246.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "random-note:Abrir nota aleatória": false,
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
+    }
+  },
+  "active": "2aab6586082883e9",
+  "lastOpenFiles": [
+    "Novo Documento de Texto.txt",
+    "caixa concurso/Sistemas Operacionais.md",
+    "caixa concurso/Edital Tecnologia.md",
+    "cnu concurso/Edital Tecnologia.md",
+    "imgs/sistemas operacionais/so-alg-relogio.png",
+    "imgs/sistemas operacionais/so-segmentacao.png",
+    "caixa concurso/Programação.md",
+    "Sem título.md",
+    "imgs/sistemas operacionais/so-index-alocation.png",
+    "caixa concurso/Data Warehouse.md",
+    "caixa concurso/Desenvolvimento Web.md",
+    "Pasted image 20240222131352.png",
+    "imgs/sistemas operacionais/so-estados.png",
+    "imgs/sistemas operacionais/so-camadas.png",
+    "caixa concurso/Organização e Arquitetura de Computadores.md",
+    "cnu concurso/Rede de Computadores.md",
+    "imgs/sistemas operacionais/so-contigua.png",
+    "imgs/sistemas operacionais/so-dr-arvore.png",
+    "imgs/sistemas operacionais/so-estrutura-sa.png",
+    "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Estrutura de Dados e Algoritmos.md",
+    "imgs/sistemas operacionais/so-mmu.png",
+    "caixa concurso/Big Data.md",
+    "imgs/sistemas operacionais",
+    "cnu concurso/Estrutura de Dados e Algoritmos.md",
+    "cnu concurso/Big Data.md",
+    "imgs/big data",
+    "caixa concurso/Banco de Dados.md",
+    "imgs/data warehouse",
+    "Fluentia.md",
+    "imgs",
+    "cnu concurso/Organização e Arquitetura de Computadores.md",
+    "principais.md",
+    "Sem título.canvas",
+    "Estrutura de Dados e Algoritmos (Acesse).md",
+    "cnu concurso",
+    "caixa concurso/wadaw.md",
+    "2024-01-21.md",
+    "caixa concurso/programação/Java.md",
+    "caixa concurso/programação",
+    "caixa concurso/organização e arq",
+    "caixa concurso",
+    "Untitled.md"
+  ]
+}

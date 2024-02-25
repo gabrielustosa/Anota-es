@@ -1,0 +1,129 @@
+
+- [ ] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
+	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
+	- [ ] UX; 
+	- [ ] Análise e projeto orientados a objetos; 
+	- [ ] A Linguagem UML: modelos e diagramas; 
+	- [ ] Engenharia de requisitos. 
+- [x] Estrutura de dados e algoritmos [[caixa concurso/Estrutura de Dados e Algoritmos|estudar]]
+	- [x] Busca sequencial 
+	- [x] busca binária 
+	- [x] Ordenação 
+		- [x] bolha;
+		- [x] seleção;
+		- [x] inserção;
+	- [x] Lista encadeada;
+	- [x] Pilha; 
+	- [x] Fila; 
+	- [x] Noções de árvore binária. 
+- [ ] Linguagens de programação [[caixa concurso/Programação|estudar]]
+	- [x] linguagens orientadas a objeto e procedurais;
+	- [ ] Padrões de Projeto;
+	- [ ] Linguagens Java SE; JEE;
+	- [ ] Microprofile, 
+	- [ ] C#; .NET; 
+	- [ ] AngularJS; Angular; 
+	- [ ] TypeScript 4.X; Javascript;
+	- [ ] Python 3.9.X 
+		- [x] Pandas
+		- [x] NumPy
+		- [ ] SciPy
+		- [ ] Matplotlib
+		- [ ] Tensorflow,
+		- [ ] PyTorch 
+		- [ ] Scikit-learn
+	- [ ] Scala; 
+	- [ ] R;
+	- [ ] Kotlin; 
+	- [ ] Objective-C; Flutter; Swift
+	- [ ] Cobol;
+- [ ] Desenvolvimento de software para a Web: 
+	- [ ] sistemas distribuídos e microsserviços;
+	- [ ] Arquitetura e padrões de projeto Java EE8; 
+	- [ ] Servlets; 
+	- [ ] JSF;
+	- [ ] JSP; 
+	- [ ] Ajax;
+	- [ ] Interoperabilidade de sistemas; 
+	- [ ] SOA e Web Services (Quarkus); 
+	- [ ] Padrões REST, 
+	- [ ] Padrões HTML 4.01,
+	- [ ] HTTP response Status Code
+	- [ ] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
+- [ ] Teste de software 
+	- [ ] Controle da qualidade estático: revisão, inspeção, medição estática, análise estática; 
+	- [ ] Princípios e técnicas de teste de software: teste de unidade, teste de integração, teste de regressão, teste alfa, teste beta, teste de segurança, teste de aceitação e de aprovação; 
+	- [x] Desenvolvimento dirigido por testes. 
+- [ ] Bancos de dados [[caixa concurso/Banco de Dados|estudar]]
+	- [x] Modelagem conceitual de dados: a abordagem entidade-relacionamento;
+	- [x] Modelo relacional de dados (conceitos básicos e normalização); 
+	- [x] Conceitos de banco de dados e sistemas gerenciadores de bancos de dados (SGBD);
+	- [x] Linguagem SQL; 
+- [ ] Data Warehouse [[caixa concurso/Data Warehouse|estudar]]
+	- [ ] modelagem física de dados: tabelas, índices, particionamento, desempenho; 
+	- [x] modelagem conceitual para data warehouses, dados multidimensionais; 
+- [ ] Big data [[caixa concurso/Big Data|estudar]]
+	- [x] Fundamentos, técnicas de preparação e apresentação de dados; 
+	- [x] soluções de big data. 
+- [ ] Agilidade
+	- [ ] Lean; Lean IT; 
+	- [ ] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
+	- [ ] ágil em escala e ágil escalado; 
+	- [ ] ferramentas; artefatos, métricas e indicadores ágeis; 
+	- [ ] management 3.0; 
+	- [ ] Lean UX; 
+	- [ ] Design Thinking;
+	- [ ] História de Usuário; 
+	- [ ] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 
+	- [ ] técnica para estimativa de escopo (planning poker, Story points, enquete, T-shirt sizing);
+	- [ ] Kanban e o fluxo de valor; 
+	- [ ] técnicas/cerimônias para colaboração e integração do time ágil (SoS, PoSinc, planning, review, retrospectiva, daily, PI Plannig); 
+	- [ ] Integração contínua;
+	- [ ] Deploy contínuo; Entrega contínua;
+	- [ ] tratamento de débito técnicos e incidentes; 
+	- [ ] Arquitetura e Qualidade ágeis;
+	- [ ] DevSecOps.
+- [ ] Organização e arquitetura de computadores [[caixa concurso/Organização e Arquitetura de Computadores|estudar]]
+	- [x] Arquitetura básica de um computador
+	- [x] CPU e hierarquia de memória
+	- [ ] Armazenamento e representação de dados: base binária e complemento a dois, ponto flutuante e caracteres
+	- [x] Armazenamento e representação de instruções; 
+	- [x] Modos de endereçamento;
+	- [x] Conjunto típico de instruções de uma CPU; 
+	- [x] Subsistema de entrada/saída e dispositivos de armazenamento secundário. 
+- [ ] Sistemas Operacionais: [[caixa concurso/Sistemas Operacionais|estudar]]
+	- [x] Funções e estrutura de um sistema operacional;
+	- [x] Processos: conceitos básicos, comunicação, sincronização e escalonamento;
+	- [x] Gerência de memória: partições fixas e variáveis, realocação, memória virtual, swapping, sistemas de arquivos; 
+	- [ ] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
+- [ ] Arquiteturas de software
+	- [ ] arquitetura em camadas;
+	- [ ] arquitetura MVC;
+	- [ ] arquitetura orientada a serviços; 
+	- [ ] arquitetura monolítica;
+	- [ ] arquitetura microsserviços;
+	- [ ] micro front end.
+	- [ ] Nuvem pública e privada;
+	- [ ] métricas e estimativas de software;
+	- [ ] Análise por pontos de função: conceitos básicos e aplicações;
+	- [ ] Estratégias de Migração de Aplicações para o ambiente de nuvem;
+	- [ ] Governança;
+	- [ ] Computação Serverless;
+	- [ ] Segurança Compartilhada; 
+- [ ] Gerência de configuração
+	- [ ] Conceitos e práticas;
+	- [ ] Uso de ferramentas de gerência de configuração; 
+	- [ ] Controle de defeitos: conceitos e práticas.
+- [ ] Portais corporativos:
+	- [ ] Arquitetura da informação, portlets e RSS; 
+	- [ ] Ferramentas de Gestão de Conteúdos; 
+	- [ ] Modelo de Acessibilidade do Governo Eletrônico.
+- [ ] Qualidade de software: 
+	- [ ] CMMI/MPS-BR: Conceitos básicos e objetivos;
+	- [ ] Disciplinas e formas de representação; 
+	- [ ] Níveis de capacidade e maturidade.
+- [ ] Conceitos de Arquitetura de Referência:
+	- [ ] arquitetura de solução para o desenvolvedor básico. 
+- [ ] Gestão e governança de TI
+	- [ ] ITIL v.4; 
+	- [ ] COBIT

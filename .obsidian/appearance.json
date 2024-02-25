@@ -1,0 +1,16 @@
+{
+  "accentColor": "#7e42f5",
+  "cssTheme": "Dark Moss",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "checkbox",
+    "center-images",
+    "clutter-free-formatting",
+    "inline-block-embeds",
+    "notation-colour-blocks",
+    "omega-hr",
+    "realistic-highlight",
+    "obsidianite-fonts",
+    "checkbox-line"
+  ]
+}

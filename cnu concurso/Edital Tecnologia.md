@@ -1,0 +1,95 @@
+
+- [ ] Segurança da informação
+	- [ ] Princípios em segurança da informação.
+	- [ ] Políticas de segurança. 
+	- [ ] Classificação de informações. 
+	- [ ] Autenticação e controle de acesso.
+	- [ ] Análise de vulnerabilidade. 
+	- [ ] Plano de continuidade de negócio.
+	- [ ] Normas ISO 17799 e ISO 27001.
+	- [ ] Auditoria e conformidade.
+- [ ] Governança e Gestão de TI
+	- [ ] ITIL: fundamentos, suporte a serviços, entrega de serviços.
+	- [ ] Fundamentos de COBIT. 
+	- [ ] Governança Digital. 
+	- [ ] Gestão de Relacionamento.
+- [ ] Sistemas operacionais
+	- [ ] Conceitos básicos: funções e estruturas de sistemas operacionais. 
+	- [ ] Gerenciamento de processos: escalonamento do processador, programação concorrente, deadlock, comunicação e sincronização. 
+	- [ ] Gerenciamento de memória: partições, realocação, memória virtual, swapping.
+	- [ ] Sistemas de arquivos.
+- [ ] Redes de Computadores
+	- [ ] Conceitos básicos de redes de computadores e Internet.
+	- [ ] Camadas de protocolos e serviços:
+		- [ ] Camada Física: características do meio de transmissão, técnicas de transmissão. 
+		- [ ] Camada de aplicação: principais protocolos. 
+		- [ ] Camada de Transporte: serviços, protocolos TCP e UDP, princípios do controle de congestionamento. 
+		- [ ] Camada de Rede: protocolos IPv4 e IPv6, algoritmos de roteamento. 
+		- [ ] Camada de enlace e redes locais: serviços oferecidos, protocolos de acesso múltiplo, endereçamento na camada de enlace.
+	- [ ] Redes Ethernet.
+	- [ ] Redes sem fio.
+	- [ ] Redes móveis. 
+	- [ ] Princípios da Gerência de Redes.
+- [ ] Programação
+	- [ ] Linguagens de programação Python e Java.
+	- [ ] Orientação a objetos: conceitos básicos, padrões de projeto.
+- [ ]  Estruturas de dados - [[cnu concurso/Estrutura de Dados e Algoritmos|estudar]]
+	- [ ] Estruturas lineares: lista encadeada, pilha, fila. 
+	- [ ] Árvores: formas de representação, recursão em árvores, árvores binárias, árvores binárias de busca, filas de prioridades, árvores balanceadas
+	- [ ] Algoritmos de busca e ordenação.
+- [ ] Programação Web
+	- [ ] Conceitos fundamentais de programação para a Web. 
+	- [ ] Linguagens: HTML, XML, CSS, JavaScript. 
+	- [ ] Navegadores. 
+	- [ ] Frameworks de desenvolvimento para a Web. 
+	- [ ] Servidores Web
+- [ ] Desenvolvimento para plataformas móveis
+	- [ ] Plataformas de programação.
+	- [ ] Emuladores e padrões de programação para smartphones e tablets.
+	- [ ] Principais componentes de interface com o usuário. 
+	- [ ] Tecnologias de persistência de dados em dispositivos móveis.
+- [ ] Engenharia de software
+	- [ ] Processos ágeis.
+	- [ ] Engenharia de requisitos. 
+	- [ ] Ideação e especificação ágil. 
+	- [ ] Arquitetura MVC e princípios de projeto. 
+	- [ ] Testes unitários. 
+	- [ ] Revisões de software modernas. 
+	- [ ] DevOps (controle de versões, integração contínua e deployment contínuo). 
+	- [ ] Testes de aceitação.
+- [ ] Banco de dados
+	- [ ] Projeto de banco de dados: projeto conceitual, lógico e físico.
+	- [ ] A abordagem Entidade-Relacionamento (E-R).
+	- [ ] Modelo relacional: conceitos, restrições de integridade, mapeamento de modelos E-R para esquemas relacionais
+	- [ ] Dependências funcionais e normalização. 
+	- [ ] Linguagem SQL: DDL, DML, restrições de integridade, visões, autorização de acesso. 
+	- [ ] Sistemas de gerência de bancos de dados.
+	- [ ] Bancos de dados NoSQL: definição de NoSQL, orientação à agregados, tipos de SGBD NoSQL: chave valor, chave valor orientado à documentos, família de colunas, grafos
+- [ ] Arquitetura e tecnologias de sistemas de informação
+	- [ ] Conceitos básicos.
+	- [ ] Workflow e gerenciamento eletrônico de documentos
+- [ ] Big Data
+	- [ ] Definição de Big Data.
+	- [ ] Bancos de dados na nuvem. 
+		- [ ] O paradigma de computação na nuvem. 
+		- [ ] Requisitos de gerência de dados na nuvem. 
+		- [ ] Categorias de bancos de dados na nuvem.
+	- [ ] Infraestruturas para processamento distribuído de Big Data: Hadoop, Spark, Kafka.
+- [ ] Data Warehouse
+	- [ ] Definição e características de um Data Warehouse.
+	- [ ] Data Mart.
+	- [ ] Processamento de Transações em tempo real: OLTP e OLAP.
+	- [ ] Modelagem Multidimensional. 
+	- [ ] Bancos de Dados Multidimensionais. 
+	- [ ] Projeto de Data Warehouse.
+	- [ ] Conceitos de extração, transformação e carga (ETL).
+- [ ] Descoberta de Conhecimento e Mineração de Dados
+	- [ ] Conceitos básicos do processo de descoberta de conhecimento em bancos de dados (KDD).
+	- [ ] Metodologia de KDD. 
+	- [ ] Métodos de Data Mining.
+	- [ ] Pré processamento de dados. 
+	- [ ] Mineração de dados: classificação, regressão, detecção de agrupamentos, descoberta de regras de associação, sumarização, modelagem de dependências, detecção de tendências e exceções.
+	- [ ] Visualização de Dados.
+- [ ] Aprendizado de máquina
+	- [ ] Tipos de aprendizado de máquina: aprendizado supervisionado, aprendizado não supervisionado e aprendizado por reforço. 
+	- [ ] Algoritmos de aprendizado de máquina: regressão, árvores de decisão, redes neurais, máquinas de vetor de suporte e algoritmos de agrupamento
