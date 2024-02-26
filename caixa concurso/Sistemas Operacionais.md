@@ -278,58 +278,132 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
   Variante aprimorada do algoritmo do relógio, que combina informações do conjunto de trabalho com a lógica do algoritmo de relógio para melhorar o desempenho na substituição de páginas em sistemas operacionais. O WSClock prioriza a substituição de páginas que não estão no conjunto de trabalho, garantindo que as páginas menos relevantes para a execução do processo sejam substituídas primeiro.
   - Algoritmo bom e eficiente
 # Sistemas de Arquivos
-Arquivos são unidades lógicas de informações criadas por processos. Um disco contém uma sequência linear de blocos de tamanho fixo e que apoiam a leitura e registro dos blocos. O sistema de arquivos reside permanentemente em memória secundária, que é projetada para manter uma grande quantidade de dados de maneira não volátil.
+ Um disco contém uma sequência linear de blocos de tamanho fixo e que apoiam a leitura e registro dos blocos. O sistema de arquivos reside permanentemente em memória secundária, que é projetada para manter uma grande quantidade de dados de maneira não volátil.
+#### Arquivos
+Arquivos são unidades lógicas de informações criadas por processos. Embora tecnicamente o arquivo seja apenas uma sequência de bytes, ele só pode ser executado pelo **S.O.** se ele possuir a seguinte tiver o formato apropriado.
+##### Estrutura de arquivos
 
 ![[so-estrutura-sa.png]]
-##### Sequência de Bytes 
-Na sequencia desestruturada de bytes o SO não sabe o que o arquivo contém. Tudo o que ele vê são bytes. Qualquer significado deve ser imposto pelos programas em nível de usuário. 
+ 
+ ## Sequência de Bytes 
+ Na sequencia desestruturada de bytes o SO não sabe o que o arquivo contém. Tudo o que ele vê são bytes. Qualquer significado deve ser imposto pelos programas em nível de usuário. 
 - UNIX, MS-DOS e Windows utilizam essa estratégia.
 - Oferece máxima flexibilidade.
-##### Implementação de Caches
-O acesso a disco é bastante lento ao comparado a memória principal. Desse modo, a maioria dos sistemas operacionais implementa a técnica de buffer cache onde o sistema reserva uma área na memória para que se tornem disponíveis caches utilizados em operações de acesso a disco.
-
-1. Operação realizada é buscada no cache.
-2. Caso não encontre, ela é buscada no disco.
-3. Atualiza o buffer cache com a operação.
+ ## Sequência de registros
+ Nesse modelo, um arquivo é uma sequência de registros de tamanho fixo, cada um com alguma estrutura interna.
+- A operação de leitura retorna um registro e a operação de escrita sobrepõe ou anexa um registro.
+- Sistema anterior, usado em máquinas antigas.
+ ## Árvore
+ Nessa organização, um arquivo consiste em uma árvore de registros, não necessariamente todos do mesmo tamanho, cada um contendo um campo chave em uma posição fixa no registro. A árvore é ordenada no campo chave, a fim de permitir uma busca rápida por uma chave específica.
+##### Composição de um arquivo
+1. Cabeçalho - Número mágico (para evitar a execução acidental de um arquivo que não esteja em seu formato),  tamanhos  das várias partes do arquivo, o endereço no qual a execução começa e alguns bits de sinalização.
+3. Texto, Dados -  Texto e os dados do próprio programa
+4. Bits de realocação - são utilizados para realocar texto e dados do programa.
+5. Tabela de símbolos - usada para correção de erros.
+6. Metadados - Bits de proteção, tamanho do arquivo, data de modificação, flags. 
+##### Operações com arquivos
+1. **Create** - O arquivo é criado sem dados. A finalidade dessa chamada é anunciar que o arquivo está vindo e estabelecer alguns dos atributos.
+2. **Delete** - Quando o arquivo não é mais necessário, ele tem de ser removido para liberar espaço para o disco.
+3. **Open** - Antes de usar um arquivo, um processo precisa abri-lo. A finalidade da chamada open é permitir que o sistema busque os atributos e lista de endereços do disco para a memória principal a fim de tornar mais rápido o acesso em chama- das posteriores.
+4. **Close** - Quando todos os acessos são concluídos, então o arquivo deve ser fechado para liberar espaço da tabela interna.  Um disco é escrito em blocos, e o fechamento de um arquivo força a escrita do último bloco dele, mesmo que não esteja inteiramente cheio ainda.
+5. **Read** - Dados são lidos do arquivo. Em geral, os bytes vêm da posição atual. Quem fez a chamada deve especificar a quantidade de dados necessária e também fornecer um buffer para colocá-los.
+6. **Write** - Dados são escritos para o arquivo de novo, normalmente na posição atual.
+7. **Append** - Essa chamada é uma forma restrita de write. Ela pode acrescentar dados somente para o final do arquivo.
+8. **Seek** - Para arquivos de acesso aleatório, é necessário um método para especificar de onde tirar os dados. Uma abordagem comum é uma chamada de sistema, seek, que reposiciona o ponteiro de arquivo para um local específico dele. Após essa chamada ter sido completa, os dados podem ser lidos da, ou escritos para, aquela posição.
+9. **Get** **attributes** - Processos muitas vezes precisam ler atributos de arquivos para realizar seu trabalho. 
+10. **Set** **attributes** - Alguns dos atributos podem ser alterados pelo usuário e modificados após o arquivo ter sido criado.
+11. **Rename** - Acontece com frequência de um usuário precisar mudar o nome de um arquivo.
+##### Lista de Controle de Acesso (ACL)
+Consiste em uma lista associada a cada arquivo onde são especificados quais os usuários e os tipos de acesso permitidos.
+- É possível encontrar tanto a proteção por grupos de usuários quanto pela lista de acesso oferecendo uma maior flexibilidade ao mecanismo de proteção.  
 #### Diretórios
 Modo como o sistema organiza os diferentes arquivos contidos num disco.
 ##### Nível Único (single-level directory)
 É a implementação mais simples, existe apenas um único diretório contendo todos os arquivos do disco.
 - É bastante limitado já que não permite que usuários criem arquivos com o mesmo nome o que ocasionaria um conflito no acesso aos arquivos.
-##### User File Directory (UFD)
-Para cada usuário existe um diretório particular e assim poderia criar arquivos com qualquer nome.
-- Deve haver um nível de diretório adicional para controle chamado de Master File Directory (MFD) que é indexado pelo nome do usuário e cada entrada aponta para o diretório pessoal.
-- É análoga a uma estrutura de dados em árvore onde o MFD é a raiz, os galhos são a UFD e os arquivos são as folhas.
-- Quando se referencia a um arquivo é necessário especificar seu nome e seu diretório isto é chamado de path (caminho).
 ##### Estrutura de diretórios em Árvore
 Adotado pela maioria dos sistemas operacionais e é logicamente melhor organizado.
 - Cada arquivo possui um path único que descreve todos os diretórios da raiz (MFD) até o diretório onde o arquivo esta ligado e na maioria dos sistemas os diretórios são tratados como arquivos tendo atributos e identificação.
 
+ ## User File Directory (UFD)
+ Para cada usuário existe um diretório particular e assim poderia criar arquivos com qualquer nome.
+- Deve haver um nível de diretório adicional para controle chamado de Master File Directory (MFD) que é indexado pelo nome do usuário e cada entrada aponta para o diretório pessoal.
+- É análoga a uma estrutura de dados em árvore onde o MFD é a raiz, os galhos são a UFD e os arquivos são as folhas.
+- Quando se referencia a um arquivo é necessário especificar seu nome e seu diretório isto é chamado de path (caminho).
+
 ![[so-dr-arvore.png]]
-##### Monitoramento de espaço no disco
-A criação de arquivos exige que o sistema operacional tenha controle de quais áreas ou blocos no disco estão livres.
- #### Bit Map
- Tabela chamada mapa de bits (bit map) onde cada entrada da tabela é associada a um bloco e representado por um bit, que pode assumir valor igual a 0 (bloco livre) ou 1 (bloco alocado).
- - Esta estrutura gera um gasto excessivo de memória já que para cada bloco deve existir uma entrada na tabela.
- #### Fragmentação Interna
-Arquivos são alocados em blocos, de tamanho físico.
-- blocos pequenos: menor perda de fragmentação, maior custo de gerência.
-- blocos grandes: maior perda de fragmentação, menor custo de gerência.
-##### Lista de Controle de Acesso (ACL)
-Consiste em uma lista associada a cada arquivo onde são especificados quais os usuários e os tipos de acesso permitidos.
-- É possível encontrar tanto a proteção por grupos de usuários quanto pela lista de acesso oferecendo uma maior flexibilidade ao mecanismo de proteção.  
-#### Alocação Contígua
-Consiste em armazenar um arquivo em blocos sequencialmente dispostos. Neste tipo, o sistema localiza um arquivo através do endereço do primeiro bloco e da sua extensão em blocos. Deve ser feito a desfragmentação periodicamente (visando que este problema seja resolvido) para reorganizar os arquivos no disco a fim de que exista um único segmento de blocos livres. O principal problema é a alocação de novos arquivos nos espaços livres, pois para colocar n blocos é necessário que se tenha uma cadeia com n blocos dispostos sequencialmente no disco. 
+##### Operações com diretórios
+1. Create. Um diretório é criado.
+2. Delete. Um diretório é removido.
+3. Opendir. Diretórios podem ser lidos.
+4. Closedir. Quando um diretório tiver sido lido, ele será fechado para liberar espaço de tabela interno.
+5. Readdir. Essa chamada retorna a próxima entrada em um diretório aberto.
+6. Rename. Em muitos aspectos, diretórios são como arquivos e podem ser renomeados da mesma maneira que eles
+7. Link. A ligação (linking) é uma técnica que permite que um arquivo apareça em mais de um diretório. Essa chamada de sistema especifica um arquivo existente e um nome de caminho, e cria uma ligação do arquivo existente para o nome especificado pelo caminho, às vezes é chamada de ligação estrita (hard link).
+8. Unlink. Uma entrada de diretório é removida.
+#### Esquema de sistemas de arquivos
+Sistemas de arquivos são armazenados em discos. A maioria dos discos pode ser dividida em uma ou mais partições, com sistemas de arquivos independentes em cada partição 
+##### MBR (Master Boot Record )
+É o setor 0 do disco, usado para inicializar o computador.
+- No fim, possui uma tabela de partição (Ela dá os endereços de início e fim de cada partição).
+- A primeira coisa que o programa MBR faz é localizar a partição ativa, ler seu primeiro bloco, que é chamado de bloco de inicialização, e executá-lo.
+
+![[so-esquema-particao.png]]
+#### Implementação de arquivos
+##### Alocação Contígua
+Consiste em armazenar um arquivo em blocos sequencialmente dispostos. Assim, em um disco com blocos de 1 KB, um
+arquivo de 50 KB seria alocado em 50 blocos consecutivos. Neste tipo, o sistema localiza um arquivo através do endereço do primeiro bloco e da sua extensão em blocos. 
 
 - Realiza acesso sequencial ou direto.
 - Geração de fragmentação externa.
 
 ![[so-contigua.png]]
-#### Alocação Encadeada
+##### Alocação Encadeada
 O arquivo é organizado como um conjunto de blocos ligados no disco, independente de sua localização física e cada um deve possuir um ponteiro para o bloco seguinte. O que ocorre neste método é a fragmentação de arquivos (quebra do arquivo em diversos pedaços denominados extents) o que aumenta o tempo de acesso ao arquivo, pois o disco deve deslocar-se diversas vezes para acessar todas as extents.
 
-- Necessário a desfragmentação periódica.
-- Eliminação a fragmentação externa
+- Necessário a desfragmentação periódica, devido a fragmentação interna.
+- Eliminação a fragmentação externa 
+
+ ## Alocação encadeada usando uma tabela na memória
+ Ambas as desvantagens da alocação por lista encadeada podem ser eliminadas colocando-se as palavras do ponteiro de cada bloco de disco em uma tabela na memória. Essa tabela na memória principal é chamada de FAT (File Allocation Table — tabela de alocação de arquivos).
+##### Alocação Indexada (I-nodes)
+O princípio desta técnica é manter os ponteiros de todos os blocos de arquivos em uma única estrutura denominada bloco de índice. Além de permitir o acesso direto aos blocos do arquivo, o i-node precisa estar na memória apenas quando o arquivo correspondente estiver aberto e não utiliza informações de controle nos blocos de dados como existe na alocação encadeada.
+
+![[so-index-alocation.png]]
+##### Sistemas de arquivos estruturados em diário (log)
+A ideia que impeliu o design do LFS é de que à medida que as CPUs ficam mais rápidas e as memórias RAM maiores, caches em disco também estão aumentando rapidamente. Embora todas as leituras sejam impossíveis de serem realizadas sequencialmente (uma vez que qualquer arquivo pode ser acessado a qualquer momento), podemos explorar a eficiência das gravações sequenciais. O LFS mantém um pequeno buffer de todas as gravações em um segmento de memória.
+
+- Um log é simplesmente uma estrutura de dados que é escrita apenas na cabeça (pode-se pensar em todo o disco como um log). 
+- Cada gravação faz com que novos blocos sejam adicionados ao buffer de segmento atual na memória.
+- Quando o segmento está cheio, ele é gravado no disco.
+##### Sistemas de arquivos journaling 
+A ideia básica aqui é manter um diário do que o sistema de arquivos vai fazer antes que ele o faça; então, se o sistema falhar antes que ele possa fazer seu trabalho planejado, ao ser reinicializado, ele pode procurar no diário para ver o que acontecia no momento da falha e concluir o trabalho. Após as operações terem sido concluídas de maneira bem-sucedida, a entrada no diário é apagada. 
+
+1. Operação de arquivo/diretório
+2. Liberar o i-node para o conjunto de i-nodes livres.
+3. Retornar todos os blocos de disco para o conjunto de blocos de disco livres.
+##### VFS (Virtual File System — sistema de arquivos virtuais)
+Integra múltiplos sistemas de arquivos em uma estrutura ordeira. A ideia fundamental é abstrair a parte do sistema de arquivos que é comum a todos os sistemas de arquivos e colocar aquele código em uma camada separada que chama os sistemas de arquivos subjacentes para realmente gerenciar os dados.
+
+- Todas as chamadas de sistemas relativas a arquivos são direcionadas ao sistema de arquivos virtual para processamento inicial.
+- possui estruturas internas de dados como a tabela de montagem e um conjunto de descritores de arquivos.
+- superbloco - descreve um sistema de arquivos.
+- v-node - que descreve um arquivo.
+
+![[so-vfs.png]]
+#### Monitoramento dos blocos livres
+A criação de arquivos exige que o sistema operacional tenha controle de quais áreas ou blocos no disco estão livres.
+##### Bit Map
+Onde cada entrada da tabela é associada a um bloco e representado por um bit, que pode assumir valor igual a 0 (bloco livre) ou 1 (bloco alocado).
+ - Esta estrutura gera um gasto excessivo de memória já que para cada bloco deve existir uma entrada na tabela.
+#### Desempenho do sistema de arquivos
+##### Cache de blocos (cache de buffer)
+A técnica mais comum usada para reduzir os acessos ao disco. Nesse contexto, uma cache é uma coleção de blocos que logicamente pertencem ao disco, mas estão sendo mantidas na memória por razões de segurança.
+1. Confere para ver se o bloco requerido está na cache.
+2. Se estiver, o pedido de leitura pode ser satisfeito sem acesso ao disco.
+3. Se o bloco não estiver, primeiro ele é lido na cache e então copiado para onde quer que seja necessário
+A maneira usual é mapear o dispositivo e endereço de disco e olhar o resultado em uma tabela de espalhamento. Todos os blocos com o mesmo valor de espalhamento são encadeados em uma lista de maneira que a cadeia de colisão possa ser seguida.
+
 
 ```ad-important
 ##### Fragmentação Externa
@@ -338,7 +412,7 @@ Em um sistema operacional trabalhando com alocação contígua de memória, quan
 
 ```ad-important
 ##### Fragmentação Interna
-Em um sistema operacional trabalhando com alocação contígua de memória, quando a memória alocada por um processo não é completamente utilizada.
+É definida quando em um sistema operacional trabalhando com alocação contígua de memória, a memória alocada por um processo não é completamente utilizada.
 ```
 
 ```ad-important
@@ -349,30 +423,17 @@ Reorganiza os dados, movendo os arquivos fragmentados para locais contíguos no 
 ```ad-important
 ##### Compactação
 Um processo demorado realizado pelo **S.O**. que combina todos os buracos formados na memória em um mesmo bloco contíguo.
-- É raramente utilizada devido a grande utilização de UCP requerida.
+- É raramente utilizada devido a grande utilização de **CPU** requerida.
 ```
-#### Alocação Indexada
-O princípio desta técnica é manter os ponteiros de todos os blocos de arquivos em uma única estrutura denominada bloco de índice. Além de permitir o acesso direto aos blocos do arquivo, não utiliza informações de controle nos blocos de dados como existe na alocação encadeada.
-
-![[so-index-alocation.png]]
 #### NTFS 
 Sistema de arquivos padrão do Windows, oferece recursos como criptografia, permissões e suporte a arquivos grandes.
 
 - Estruturação hierárquica no formato de árvore (nodes). 
+- Permite nomes de arquivos com até 255 caracteres (não permitidos: **\ / | < > * : ?**, CON, LPT1, AUX)
 - O NTFS usa abordagem de alocação indexada com ponteiros de 64 bits.
 - sistema de arquivo otimizado para suportar arquivos e volumes muito grandes (8 Exabytes).
 - Opera em um ambiente heterogêneo com diferentes computadores, sistemas operacionais e arquiteturas de rede.
 - Jornalização é o processo que garante a integridade dos dados (como se fosse um diário, do que o sistema de arquivos vai fazer antes que ele o faça, guardando essas informações em caso de perda de dados).
-
-```ad-info
-##### Outros tipos de sistemas de arquivos
-- Fat
-- exFat - Sistema de arquivos compatível com outros dispositivos, solução para o Fat32
-- Fat16
-- Fat32 (4 GB)
-
-```
-
 #### EXT
 Sistema de arquivos padrão do Linux.
 
@@ -382,7 +443,6 @@ Sistema de arquivos padrão do Linux.
 - Suporta arquivos com até 16 terabytes.
 - Não possui recursos de alocação de espaço eficiente.
 - Tem limitação em relação ao NTFS com arquivos grandes.
-
 #### ReFS (Resilient File System)
 É o sistema de arquivo mais recente desenvolvido pela Microsoft; foi introduzido no Windows 8. Sua arquitetura difere dos outros sistemas de arquivos do Windows por ser organizada na forma de árvore B+.
 #### XFS (Extended File System)
@@ -390,8 +450,9 @@ Criado para ser usado nos servidores da empresa Silicon Graphics. Em 2001, foi i
 #### FAT (File Allocation Table)
 Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95. A maioria dos sistemas operacionais suportam esse sistema de arquivos.
 - Alocação do tipo encadeada.
-#### VFS (Sistema de Arquivos Virtuais)
-Camada de abstração do sistema de arquivos, fornecendo uma interface para o usuário para a interação com outros sistemas de arquivos como Fat32, ext3, ReiserFS, exFat.
+- exFat - extensão da Microsoft para o FAT-32 que é otimizado para flash drives e sistemas de arquivos **MUITO** grandes.
+- Fat16
+- Fat32 (4 GB)
 #### Linux
 - /var - logs, filas de impressão, filas de e-mail e outros arquivos mantidos dinamicamente pelo sistema.
 - /proc - diretório virtual, arquivos servem como ponto de acesso para uma série de variáveis e recursos do sistema
