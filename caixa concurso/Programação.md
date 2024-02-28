@@ -2,7 +2,7 @@
 
 #### Overload e Override
 - Overload: Escrever vários métodos com o mesmo nome mas com parâmetros diferentes.  
-- Override: Escrever o mesmo método, com os mesmos parâmetros. Ou seja, é uma anulação de um método herdado, para fazer o seu especifico. Aqui entra polimorfismo!
+- Override: Escrever o mesmo método, com os mesmos parâmetros. Ou seja, é uma anulação de um método herdado, para fazer o seu especifico.
 #### POO
 - **Encapsular**: Proteger os dados do acesso direto, controlando a forma como são acessados e modificados, **getter** e **setter**. 
 - **Polimorfismo**: permite que objetos de diferentes classes respondam a uma mesma mensagem (ou método) de diferentes maneiras.

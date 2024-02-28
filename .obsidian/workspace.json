@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6063a9e137ed6257",
+        "id": "3d1d2b011a223851",
         "type": "tabs",
         "children": [
           {
-            "id": "6fbb9d2e1e56ea03",
+            "id": "a13ba0996165d33e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"caixa concurso/\" ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,19 +164,20 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a64e880cb5c50e81",
+  "active": "2aab6586082883e9",
   "lastOpenFiles": [
+    "imgs/sistemas operacionais/so-dma.png",
+    "caixa concurso/Edital Tecnologia.md",
+    "cnu concurso/Edital Tecnologia.md",
+    "caixa concurso/Sistemas Operacionais.md",
+    "caixa concurso/Programação.md",
     "imgs/sistemas operacionais/so-vfs.png",
     "imgs/sistemas operacionais/so-esquema-particao.png",
-    "caixa concurso/Sistemas Operacionais.md",
-    "caixa concurso/Edital Tecnologia.md",
     "caixa concurso/Data Warehouse.md",
     "caixa concurso/Banco de Dados.md",
     "Novo Documento de Texto.txt",
-    "cnu concurso/Edital Tecnologia.md",
     "imgs/sistemas operacionais/so-alg-relogio.png",
     "imgs/sistemas operacionais/so-segmentacao.png",
-    "caixa concurso/Programação.md",
     "Sem título.md",
     "imgs/sistemas operacionais/so-index-alocation.png",
     "caixa concurso/Desenvolvimento Web.md",
@@ -188,7 +188,6 @@
     "cnu concurso/Rede de Computadores.md",
     "imgs/sistemas operacionais/so-contigua.png",
     "imgs/sistemas operacionais/so-dr-arvore.png",
-    "imgs/sistemas operacionais/so-estrutura-sa.png",
     "caixa concurso/Engenharia de Software.md",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "caixa concurso/Big Data.md",

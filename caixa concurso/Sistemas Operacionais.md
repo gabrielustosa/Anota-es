@@ -159,8 +159,6 @@ O principal objetivo é fornecer uma maneira eficiente e segura para que os pro
 ##### Multiprogramação
 Técnica  onde vários programas são carregados na memória simultaneamente.
 ```
-##### O DMA (Direct Memory Access) 
-É uma técnica de transferência de dados que permite que dispositivos periféricos acessem diretamente a memória do sistema.
 #### MMU (Memory Manager Unit)
 O acesso do processador a memória é controlador pelo sistema operacional através do controlador denominado **MMU** que é o responsável por analisar cada endereço acessado pelo processador, validar e efetuar conversões necessárias entres os endereços lógicos e físicos garantindo o desempenho máximo.
 
@@ -177,17 +175,11 @@ flowchart LR
 
 CPU --> |endereço lógico| G["GERENCIADOR DE MEMÓRIA"] --> |endereço físico| MEMÓRIA
 ```
- ##### Registrador Intermediário (buffer)
- Estrutura de dados assíncrona compartilhada que permite a comunicação entre processos; Ele armazena temporariamente dados de entrada ou saída na tentativa de ajustar melhor as velocidades de dois dispositivos
- - Leitura: recebe a palavra da memória 
- - Escrita: contém a informação a ser gravada na memória
-```mermaid
-flowchart LR
-
-PRODUTOR --> BUFFER --> CONSUMIDOR
+```ad-tip
+##### Buffer
+Região da memória física do computador utilizada para armazenar dados temporariamente, tendo como finalidade manter as informações salvas antes de serem efetivamente usadas.
+- Um buffer armazena os dados na memória RAM devido ao tempo de acesso rápido
 ```
- ##### Pooling 
- A criação de um espaço de alocamento de memória temporário para o acesso de outros processos.   
 #### Partições
 O sistema de gestão de memória é baseado na divisão da memória em um certo número de regiões ou partições.
 
@@ -398,16 +390,26 @@ Onde cada entrada da tabela é associada a um bloco e representado por um bit, q
  - Esta estrutura gera um gasto excessivo de memória já que para cada bloco deve existir uma entrada na tabela.
 #### Desempenho do sistema de arquivos
 ##### Cache de blocos (cache de buffer)
-A técnica mais comum usada para reduzir os acessos ao disco. Nesse contexto, uma cache é uma coleção de blocos que logicamente pertencem ao disco, mas estão sendo mantidas na memória por razões de segurança.
+A técnica mais comum usada para reduzir os acessos ao disco. Nesse contexto, uma cache é uma coleção de blocos que logicamente pertencem ao disco, mas estão sendo mantidas na memória por razões de segurança. A maneira usual é mapear o dispositivo e endereço de disco e olhar o resultado em uma tabela de espalhamento. Todos os blocos com o mesmo valor de espalhamento são encadeados em uma lista de maneira que a cadeia de colisão possa ser seguida.
+
+Passos do funcionamento da cache: 
 1. Confere para ver se o bloco requerido está na cache.
 2. Se estiver, o pedido de leitura pode ser satisfeito sem acesso ao disco.
 3. Se o bloco não estiver, primeiro ele é lido na cache e então copiado para onde quer que seja necessário
-A maneira usual é mapear o dispositivo e endereço de disco e olhar o resultado em uma tabela de espalhamento. Todos os blocos com o mesmo valor de espalhamento são encadeados em uma lista de maneira que a cadeia de colisão possa ser seguida.
 
+Todos os algoritmos de substituição de páginas também podem ser aplicados nesse contexto. Nesse sentido, o LRU é o mais utilizado, na qual há uma lista bidirecional ligando todos os blocos na ordem de uso. Quando um bloco é referenciado, ele pode ser removido da sua posição na lista bidirecional e colocado no fim. Dessa maneira, a ordem do LRU exata pode ser mantida.
+##### Leitura antecipada de blocos
+Uma segunda técnica para melhorar o desempenho percebido do sistema de arquivos é tentar transferir blocos para a cache antes que eles sejam necessários para aumentar a taxa de acertos. Quando se pede a um sistema de arquivos para obter o bloco k em um arquivo, ele o faz, mas quando termina, faz uma breve verificação na cache para ver se o bloco k + 1 já está ali. Se não estiver, ele programa uma leitura para o bloco k + 1 na esperança de que, quando ele for necessário, já terá chegado na cache. No mínimo, ele já estará a caminho.
+
+- Funciona somente para arquivos que estão sendo lidos de forma sequencial.
+
+Se os arquivos estiverem dispostos de forma aleatória a leitura antecipada pode acabar atrasando o processo, cabendo assim associar um bit a cada arquivo aberto para monitorar se o arquivo está em acesso sequencial ou aleatório. Dessa maneira, será possível saber quando utilizar a leitura antecipada.
 
 ```ad-important
 ##### Fragmentação Externa
 Em um sistema operacional trabalhando com alocação contígua de memória, quando há memória suficiente para o atendimento de um pedido de alocação, mas esta memória não é contígua.
+
+- os SSDs não sofrem de maneira alguma com a fragmentação.
 ```
 
 ```ad-important
@@ -425,6 +427,21 @@ Reorganiza os dados, movendo os arquivos fragmentados para locais contíguos no 
 Um processo demorado realizado pelo **S.O**. que combina todos os buracos formados na memória em um mesmo bloco contíguo.
 - É raramente utilizada devido a grande utilização de **CPU** requerida.
 ```
+# Princípios de E/S (I/O)
+Além de oferecer abstrações como processos, espaços de endereçamentos e arquivos, um sistema operacional também controla todos os dispositivos de E/S (entrada/saída) do computador. Fornecendo uma interface entre os dispositivos e o resto do sistema que seja simples e fácil de usar.
+#### Dispositivos de E/S
+##### Dispositivos de Blocos 
+Armazena informações em blocos de tamanho fixo, cada um com seu próprio endereço. Todas as transferências são em unidades de um ou mais blocos inteiros (consecutivos).
+- Discos rígidos, discos Blu-ray e pendrives são dispositivos de bloco comuns.
+##### Dispositivos de Caractere
+Um dispositivo de caractere envia ou aceita um fluxo de caracteres, desconsiderando qualquer estrutura de bloco. Ele não é endereçável e não tem qualquer operação de busca.
+-  Impressoras, interfaces de rede, mouses (para apontar) e a maioria dos outros dispositivos que não são parecidos com discos podem ser vistos como dispositivos de caracteres.
+#### DMA (Direct Memory Access) 
+É uma técnica de transferência de dados que permite que dispositivos periféricos acessem diretamente a memória do sistema. Ele tem acesso ao barramento do sistema. Ele contém vários registradores que podem ser escritos e lidos pela CPU. Esses incluem um registrador de endereço de memória, um registrador contador de bytes e um ou mais registradores de controle. 
+
+![[so-dma.png]]
+#### Spooling 
+técnica usada em sistemas operacionais para lidar com dispositivos de E/S dedicados em um ambiente de multiprogramação. Ele permite que processos de usuário enviem suas tarefas para uma fila, liberando assim os recursos e permitindo que outros processos continuem sem interrupções. O spooling envolve a criação de um processo especial chamado "daemon" para gerenciar a E/S dos dispositivos. Esse daemon é responsável por acessar os arquivos na fila de spooling e executar as operações necessárias nos dispositivos de E/S.
 #### NTFS 
 Sistema de arquivos padrão do Windows, oferece recursos como criptografia, permissões e suporte a arquivos grandes.
 
