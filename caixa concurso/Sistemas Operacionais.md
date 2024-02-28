@@ -94,18 +94,6 @@ A comunicação entre processos (**IPC**) ocorre de diversas formas como: compar
   Estruturas de sincronização de alto nível que garantem a exclusão mútua e a sincronização de processos. 
 * Somente pode estar ativo um processo dentro do monitor em um mesmo instante
 
- ##### DeadLock
- Quando 2 ou mais programas estão tentando acessar um programa ao mesmo tempo resultando na bloqueamento dos 2 programas.
- **TODAS** as condições para o DeadLock ocorrer: 
-	 - **Exclusão mútua**:  cada recurso só pode estar alocado a um único processo em um determinado instante;
-	 - **Posse e Espera**: um processo, além dos recursos já alocado, pode estar esperando por outros recursos;
-	 - **Não-Preempção**: um recurso não pode ser liberado de um processo só porque outros processos desejam o mesmo recurso;
-	 - **Espera circular**: um processo pode ter de esperar por um recurso alocado a outro processo e vice-versa.
-  #### Algoritmo do Banqueiro
-  O algoritmo do banqueiro é um algoritmo usado para evitar impasses (deadlocks) em sistemas computacionais, requer que cada processo declare o máximo de recursos que pode precisar antecipadamente. 
-  #### Algoritmo do Avestruz
-  Uma estratégia de ignorar com base no fato de que eles podem ser extremamente raros.
-
 ```ad-info
 #### Tempo de Turnaround
 Conta o tempo total, desde a submissão do processo até a sua conclusão.
@@ -149,15 +137,35 @@ Responsável por tomar as decisões sobre quais processos devem ser executados, 
  A cada processo é designada uma prioridade, e o processo executável com a prioridade mais alta é autorizado a executar. Para evitar que processos de prioridade mais alta executem indefinidamente, o escalonador  talvez diminua a prioridade do processo que está sendo executado em cada tique do relógio
  ## Por Loteria
  Dar bilhetes de loteria aos processos para vários recursos do sistema, como o tempo da CPU. Sempre que uma decisão de escalonamento tiver de ser feita, um bilhete de loteria será escolhido ao acaso, e o processo com o bilhete fica com o recurso. Processos mais importantes podem receber bilhetes extras, para aumentar a chance de vencer
+#### Impasses
+##### DeadLock
+ Quando 2 ou mais programas estão tentando acessar algo ao mesmo tempo resultando na bloqueamento dos 2 programas.
+ **TODAS** as condições para o DeadLock ocorrer: 
+	 - **Exclusão mútua**:  cada recurso só pode estar alocado a um único processo em um determinado instante;
+	 - **Posse e Espera**: um processo, além dos recursos já alocado, pode estar esperando por outros recursos;
+	 - **Não-Preempção**: um recurso não pode ser liberado de um processo só porque outros processos desejam o mesmo recurso;
+	 - **Espera circular**: um processo pode ter de esperar por um recurso alocado a outro processo e vice-versa.
+![[so-impasses.png]]
+  
+  ## Algoritmo do Banqueiro
+  O algoritmo do banqueiro é um algoritmo usado para evitar impasses (deadlocks) em sistemas computacionais, requer que cada processo declare o máximo de recursos que pode precisar antecipadamente. 
+  ## Algoritmo do Avestruz
+  Uma estratégia de ignorar deadlocks. "Enfie a cabeça na areia e finja que não há um problema".
+##### Livelock
+Em algumas situações, um processo tenta ser educado abrindo mão dos bloqueios que ele já adquiriu sempre que nota que não pode obter o bloqueio seguinte de que precisa. Então ele espera um milissegundo, digamos, e tenta de novo. No entanto, se o outro processo faz a mesma coisa exatamente no mesmo momento, eles estarão na situação na qual nem um dois conseguira terminar sua execução.
+##### Inanição (starving)
+Devido a má gerência de escalonamento é possível que processos sofram de inanição, ou seja, mesmo estejam prontos para ser executados podem não tem acesso ao recurso desejado.
 
- ##### Inanição (starving)
- Devido a má gerência de escalonamento é possível que processos sofram de inanição, ou seja, mesmo estejam prontos para ser executados podem não tem acesso ao recurso desejado.
+- Pode ser evitada com uma política de alocação de recursos primeiro a chegar, primeiro a ser servido
 # Gerência de Memória
 O principal objetivo é fornecer uma maneira eficiente e segura para que os processos em um sistema computacional acessem e compartilhem a memória.
 
 ```ad-tip
 ##### Multiprogramação
-Técnica  onde vários programas são carregados na memória simultaneamente.
+Denota um sistema operacional que provê gerenciamento da totalidade de recursos tais como CPU, memória, sistema de arquivos, em adição ao suporte da execução concorrente dos processos
+
+- Integral: caso mais de um processo possa se encontrarem execução na memória em um dado instante.
+- Serial: apenas um processo se encontra em execução a cada instante, sendo a CPU alocada aos processos de forma intercalada ao longo do tempo.
 ```
 #### MMU (Memory Manager Unit)
 O acesso do processador a memória é controlador pelo sistema operacional através do controlador denominado **MMU** que é o responsável por analisar cada endereço acessado pelo processador, validar e efetuar conversões necessárias entres os endereços lógicos e físicos garantindo o desempenho máximo.
@@ -436,10 +444,27 @@ Armazena informações em blocos de tamanho fixo, cada um com seu próprio ender
 ##### Dispositivos de Caractere
 Um dispositivo de caractere envia ou aceita um fluxo de caracteres, desconsiderando qualquer estrutura de bloco. Ele não é endereçável e não tem qualquer operação de busca.
 -  Impressoras, interfaces de rede, mouses (para apontar) e a maioria dos outros dispositivos que não são parecidos com discos podem ser vistos como dispositivos de caracteres.
-#### DMA (Direct Memory Access) 
+#### Modos de Transferência
+##### E/S Programada
+Cada transferência de item de dados é iniciada por uma instrução no programa. Normalmente, a transferência é de um registro e memória da CPU. Neste caso, requer monitoramento constante pela CPU dos dispositivos periféricos.
+- É responsabilidade do processador verificar periodicamente o estado do módulo, para ver se a operação foi completada. 
+- É muito custoso para a CPU.
+##### Interrupção
+A interface emite um sinal de solicitação de interrupção sempre que houver dados disponíveis de qualquer dispositivo. Processador efetua a transferência de dados e depois retorna ao seu processamento original.
+
+- É mais eficiente que a E/S programada, pois elimina ciclos de espera desnecessários.
+- Elas precisam ser tratadas pelo sistema operacional (SO)
+##### DMA (Direct Memory Access) 
 É uma técnica de transferência de dados que permite que dispositivos periféricos acessem diretamente a memória do sistema. Ele tem acesso ao barramento do sistema. Ele contém vários registradores que podem ser escritos e lidos pela CPU. Esses incluem um registrador de endereço de memória, um registrador contador de bytes e um ou mais registradores de controle. 
 
+- Independente da CPU.
+- Imita o processador nas funções de E/S de dados.
+
 ![[so-dma.png]]
+
+O controlador de DMA pode operar das seguintes maneiras:
+1. Usando o barramento apenas quando o processador não o utiliza.
+2. Forçando o processador a suspender temporariamente sua operação – técnica conhecida como roubo de ciclo.
 #### Spooling 
 técnica usada em sistemas operacionais para lidar com dispositivos de E/S dedicados em um ambiente de multiprogramação. Ele permite que processos de usuário enviem suas tarefas para uma fila, liberando assim os recursos e permitindo que outros processos continuem sem interrupções. O spooling envolve a criação de um processo especial chamado "daemon" para gerenciar a E/S dos dispositivos. Esse daemon é responsável por acessar os arquivos na fila de spooling e executar as operações necessárias nos dispositivos de E/S.
 #### NTFS 
