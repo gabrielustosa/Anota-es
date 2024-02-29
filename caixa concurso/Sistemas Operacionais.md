@@ -1,4 +1,4 @@
-# Base do SO
+# Conceitos base sobre SO
 #### Núcleo (Kernel)
 Coração do SO, responsável pela gerenciamento recursos de memória, energia, arquivos, tarefas e proteção. Ele também implementa abstrações utilizada por aplicativos. 
 
@@ -25,6 +25,10 @@ Estrutura básica:
 Divide o sistema operacional em sistemas sobrepostos. Cada módulo oferece um conjunto de funções que pode ser usado por outros módulos.
 
 ![[so-camadas.png]]
+#### Sistemas micro-núcleo (microkernel)
+A ideia básica por trás do projeto do micronúcleo é alcançar alta confiabilidade por meio da divisão do sistema operacional em módulos pequenos, bem defini dos, e  apenas um desses módulos – o micronúcleo – é executado no modo núcleo e o restante é executado como processos  de usuário.
+#### Modelo Cliente Servidor
+Uma variação da ideia do micronúcleo é distinguir entre duas classes de processos, os servidores, que prestam serviço, e os clientes, que usam serviços.
 # Processo
 Uma abstração de uma instância de um programa em execução. São úteis para a organização de um sistema de processo paralelo (pseudo-async).
 
@@ -232,7 +236,7 @@ Mapeia o espaço de endereçamento de cada processo em uma parte diferente da me
 #### Memória virtual
 Cada programa tem seu espaço de endereçamento, divido em blocos chamados de páginas. Cada página é uma série contígua de endereços. Estas são mapeadas na memória física, porém não necessitam estar carregadas na memória física, podem estar alocadas em um disco rígido, sendo trabalho do sistema operacional carrega-las na memória física se necessário.
 
-A memória virtual pode ser implementada dividindo o espaço do endereço virtual em páginas e mapeando cada uma delas em algum quadro de página da memória física ou não as mapeando (temporariamente). Desse modo, ela diz respeito basicamente à abstração criada pelo sistema operacional e como essa abstração é gerenciada.
+A memória virtual pode ser implementada dividindo o espaço do endereço virtual em páginas e mapeando cada uma delas em algum quadro de página da memória física ou não as mapeando (temporariamente). Há quatro momentos em que o sistema operacional tem de se envolver com a paginação: na criação do processo, na execução do processo, em faltas de páginas e no término do processo.
 
  ##### Swapping
  Técnica utilizada para poupar espaço na memória física (RAM), movendo processo temporariamente para um disco rígido. Quando o processo é movido ele é salvo em um arquivo chamado swap que depois é utilizado para mover o processo novamente para memória.
@@ -241,7 +245,7 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
  ##### Quadros
  As  páginas em memória virtual  correspondentes na memória física são chamadas de quadros de página, ou página física. As páginas e os quadros de página são geralmente do mesmo tamanho fixo.
  ##### Tabela de Páginas
- Registra em que bloco de memória cada página está carregada. As tabelas de páginas são mantidas pelo S.O. Se uma página é acessada mas não está na memória, o **S.O.** consulta a tabela de blocos livres, aloca a página no bloco selecionado e atualiza a tabela de páginas. Em uma implementação simples, o mapeamento de endereços virtuais em endereços físicos pode ser resumido como a seguir: o endereço virtual é dividido em um número de página virtual (bits mais significativos) e um deslocamento (bits menos significativos).
+ Registra em que bloco de memória cada página está carregada. As tabelas de páginas são mantidas pelo S.O. Se uma página é acessada mas não está na memória, o **S.O.** consulta a tabela de blocos livres, aloca a página no bloco selecionado e atualiza a tabela de páginas. Em uma implementação simples, o mapeamento de endereços virtuais em endereços físicos pode ser resumido como a seguir: o endereço virtual é dividido em um número de página virtual (bits mais significativos) e um deslocamento (bits menos significativos). Um **bit sujo** ou **bit** **modificado** é um bit associado a um bloco de memória de computador e indica se o bloco de memória correspondente foi modificado ou não.
   ## Multinível
   O objetivo é evitar manter toda a tabela de páginas na memória durante todo o tempo. Divisão do processo em várias etapas.
   - Apresenta-se como uma solução para o dimensionamento da tabela de páginas.
@@ -250,6 +254,10 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
   Há apenas uma entrada por moldura de página na memória real, em vez de uma entrada por página do espaço de endereçamento virtual, isto é ter o tamanho da quantidade de molduras (memória real) e não da quantidade de páginas (memória virtual).
   - Solução muito lenta.
   - Pode-se utilizar TLB para melhoria das referências das páginas.
+ ##### Translation Lookaside Buffer (TLB)
+ É um cache de memória que armazena as traduções recentes da memória virtual para a memória física. Ele é utilizado para reduzir o tempo necessário para acessar uma localização de memória do usuário.
+ ##### Trashing
+ nome dado à excessiva transferência de páginas/segmentos da memória principal para a secundária e vice-versa (elevado número de page-faults). Como resultado, o processo fica pouco tempo executando suas funções. Os principais motivos que levam ao thrashing são o mau dimensionamento, a não obediência ao princípio da localidade de referência 
  ##### Segmentação
  A região do espaço de endereçamento alocada para a tabela de símbolos pode se esgotar, mas talvez haja muito espaço nas outras tabelas. A segmentação é uma solução direta para esse problema, visto que consiste em uma alocação contígua de memória, agindo como um tipo alocação em memoria virtual não física dependente da lógica do programa, tendo o tamanho variável durante o seu tempo de vida.
  - Existe um tamanho máximo para o segmento;
@@ -269,6 +277,8 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
   ## Algoritmo de substituição de páginas usadas menos recentemente (LRU)
   A ideia por trás do LRU é que as páginas que foram menos utilizadas recentemente têm maior probabilidade de serem as próximas a serem substituídas. Um dos algoritmos mais eficazes em termos de desempenho para a substituição de páginas em sistemas operacionais. O funcionamento do LRU é baseado no histórico de referências às páginas. Quando ocorre uma falta de página, o algoritmo identifica a página que não foi usada há mais tempo e a substitui. É necessário que seja mantida uma lista encadeada de todas as páginas na memória, com a página mais recentemente usada na frente e a menos recentemente usada na parte de trás. A dificuldade é que a lista precisa ser atualizada a cada referência de memória
   - Excelente algoritmo, porém difícil de ser implementado de maneira exata.
+  ## LFU (Least-Frequently-Used)
+  Seleciona a pagina menos referenciada (frame menos utilizado).
   ## Algoritmo de envelhecimento (Aging)
   Substituição de páginas que simula o algoritmo LRU, no entanto, determina quais páginas devem ser substituídas com base em seu histórico de referências. No algoritmo de envelhecimento, cada página na memória é associada a um contador que é atualizado periodicamente. A cada intervalo de tempo, um bit de referência (R) é movido para a esquerda no contador. Uma vantagem do algoritmo de envelhecimento é sua capacidade de aproximar o comportamento do LRU sem a necessidade de manter uma lista encadeada de todas as páginas na memória.
   ## O algoritmo de substituição de páginas do conjunto de trabalho
@@ -461,7 +471,7 @@ Criado para ser usado nos servidores da empresa Silicon Graphics. Em 2001, foi i
 Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95. A maioria dos sistemas operacionais suportam esse sistema de arquivos. Utiliza alocação do tipo encadeada.
 - exFat - extensão da Microsoft para o FAT-32 que é otimizado para flash drives e sistemas de arquivos **MUITO** grandes.
 - Fat16 -  limita a partições de disco não maiores que 2 GB.
-- Fat32 - Suporta partições de até 2TB, não há segurança, utilizado somente para mídias portáteis. 
+- Fat32 - Suporta partições de até 2TB e arquivos de até 4GB, não há segurança, utilizado somente para mídias portáteis. 
 # Princípios de E/S (I/O)
 Além de oferecer abstrações como processos, espaços de endereçamentos e arquivos, um sistema operacional também controla todos os dispositivos de E/S (entrada/saída) do computador. Fornecendo uma interface entre os dispositivos e o resto do sistema que seja simples e fácil de usar.
 #### Dispositivos de E/S
