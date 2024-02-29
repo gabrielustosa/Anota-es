@@ -435,6 +435,33 @@ Reorganiza os dados, movendo os arquivos fragmentados para locais contíguos no 
 Um processo demorado realizado pelo **S.O**. que combina todos os buracos formados na memória em um mesmo bloco contíguo.
 - É raramente utilizada devido a grande utilização de **CPU** requerida.
 ```
+#### Exemplos de Sistemas de Arquivos
+#### NTFS 
+Sistema de arquivos padrão do Windows, oferece recursos como criptografia, journaling, permissões e suporte a partições e arquivos grandes. Cada volume do NTFS (por exemplo, a partição do disco) contém arquivos, diretórios, mapas de bits e outras estruturas de dados. Cada volume é organizado como uma sequência linear de blocos.
+
+- Permite nomes de arquivos com até 255 caracteres (não permitidos: **\ / | < > * : ?**, CON, LPT1, AUX)
+- Pode operar em um ambiente heterogêneo com diferentes computadores, sistemas operacionais e arquiteturas de rede.
+##### MFT
+A principal estrutura de dados, cada volume é a MFT (Master File Table — Tabela mestra de arquivos), que é uma sequência linear de registros com tamanho fixo de 1 KB.
+- Cada registro da MFT descreve somente um arquivo ou um diretório. (O registro contém atributos do arquivo, como seu nome e sua estampa de tempo e a lista de endereços de disco onde seus blocos estão localizados)
+- Podem existir vários para controle de arquivos extremamente grandes.
+#### EXT
+Sistema de arquivos padrão do Linux, com suporte a criptografia, journaling, permissões e suporte a partições e arquivos grandes. Sistema de arquivo baseada na estruturação do tipo indexada.
+ ## EXT2
+ Feito para superar a limitação do sistema de arquivos Ext, não possui um recurso de registro no diário, possui um limite máximo podendo ser de até 32TB, dependendo do tamanho do bloco, e é recomendado para unidades flash e USB 
+ ## EXT3
+ Melhora na confiabilidade, novo sistema de journaling, suporte a crescimento do sistema de arquivos online e indexação de grandes diretórios HTree.
+ ## EXT4
+ Foi introduzido inicialmente para estender os limites de armazenamento e melhorar o desempenho do sistema. É  suportado por outros sistemas operacionais, incluindo Windows, Free BSD, macOS e KolibriOS (somente leitura).
+#### ReFS (Resilient File System)
+É o sistema de arquivo mais recente desenvolvido pela Microsoft; foi introduzido no Windows 8. Sua arquitetura difere dos outros sistemas de arquivos do Windows por ser organizada na forma de árvore B+, dimensionar de modo eficiente conjuntos de dados muito grandes em diversas cargas de trabalho e fornecer integridade dos dados com resiliência a danos.
+#### XFS (Extended File System)
+Criado para ser usado nos servidores da empresa Silicon Graphics. Em 2001, foi integrado ao Kernel do Linux e, atualmente, é suportado pela maioria das distribuições Linux. Trata-se de um sistema de arquivo otimizado para suportar arquivos e volumes muito grandes (8 Exabytes).
+#### FAT (File Allocation Table)
+Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95. A maioria dos sistemas operacionais suportam esse sistema de arquivos. Utiliza alocação do tipo encadeada.
+- exFat - extensão da Microsoft para o FAT-32 que é otimizado para flash drives e sistemas de arquivos **MUITO** grandes.
+- Fat16 -  limita a partições de disco não maiores que 2 GB.
+- Fat32 - Suporta partições de até 2TB, não há segurança, utilizado somente para mídias portáteis. 
 # Princípios de E/S (I/O)
 Além de oferecer abstrações como processos, espaços de endereçamentos e arquivos, um sistema operacional também controla todos os dispositivos de E/S (entrada/saída) do computador. Fornecendo uma interface entre os dispositivos e o resto do sistema que seja simples e fácil de usar.
 #### Dispositivos de E/S
@@ -467,44 +494,42 @@ O controlador de DMA pode operar das seguintes maneiras:
 2. Forçando o processador a suspender temporariamente sua operação – técnica conhecida como roubo de ciclo.
 #### Spooling 
 técnica usada em sistemas operacionais para lidar com dispositivos de E/S dedicados em um ambiente de multiprogramação. Ele permite que processos de usuário enviem suas tarefas para uma fila, liberando assim os recursos e permitindo que outros processos continuem sem interrupções. O spooling envolve a criação de um processo especial chamado "daemon" para gerenciar a E/S dos dispositivos. Esse daemon é responsável por acessar os arquivos na fila de spooling e executar as operações necessárias nos dispositivos de E/S.
-#### NTFS 
-Sistema de arquivos padrão do Windows, oferece recursos como criptografia, permissões e suporte a arquivos grandes.
+# Linux
 
-- Estruturação hierárquica no formato de árvore (nodes). 
-- Permite nomes de arquivos com até 255 caracteres (não permitidos: **\ / | < > * : ?**, CON, LPT1, AUX)
-- O NTFS usa abordagem de alocação indexada com ponteiros de 64 bits.
-- sistema de arquivo otimizado para suportar arquivos e volumes muito grandes (8 Exabytes).
-- Opera em um ambiente heterogêneo com diferentes computadores, sistemas operacionais e arquiteturas de rede.
-- Jornalização é o processo que garante a integridade dos dados (como se fosse um diário, do que o sistema de arquivos vai fazer antes que ele o faça, guardando essas informações em caso de perda de dados).
-#### EXT
-Sistema de arquivos padrão do Linux.
+![[so-linux.png]]
 
-- Estruturação em i-node.
-- Alocação do tipo indexada.
-- Conta com o sistema de Jornalização.
-- Suporta arquivos com até 16 terabytes.
-- Não possui recursos de alocação de espaço eficiente.
-- Tem limitação em relação ao NTFS com arquivos grandes.
-#### ReFS (Resilient File System)
-É o sistema de arquivo mais recente desenvolvido pela Microsoft; foi introduzido no Windows 8. Sua arquitetura difere dos outros sistemas de arquivos do Windows por ser organizada na forma de árvore B+.
-#### XFS (Extended File System)
-Criado para ser usado nos servidores da empresa Silicon Graphics. Em 2001, foi integrado ao Kernel do Linux e, atualmente, é suportado pela maioria das distribuições Linux. Trata-se de um sistema de arquivo otimizado para suportar arquivos e volumes muito grandes (8 Exabytes).
-#### FAT (File Allocation Table)
-Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95. A maioria dos sistemas operacionais suportam esse sistema de arquivos.
-- Alocação do tipo encadeada.
-- exFat - extensão da Microsoft para o FAT-32 que é otimizado para flash drives e sistemas de arquivos **MUITO** grandes.
-- Fat16
-- Fat32 (4 GB)
-#### Linux
+#### Sistemas de Arquivos
+Por padrão, o Linux pode suportar diversos sistemas de arquivos em diversas partições de disco. Para gerenciar isso o Linux utiliza o VFS [[Sistemas Operacionais#VFS (Virtual File System — sistema de arquivos virtuais)|(Sistema Virtual de Arquivos)]] para lidar com múltiplos sistemas de arquivos.
+##### Estrutura de Arquivos
 - /var - logs, filas de impressão, filas de e-mail e outros arquivos mantidos dinamicamente pelo sistema.
 - /proc - diretório virtual, arquivos servem como ponto de acesso para uma série de variáveis e recursos do sistema
 - /usr - hierarquia de diretórios, comandos de usuário, código fonte, documentação
 - /etc -  arquivos de configuração do sistema
-
- ##### Comandos
- fdisk, cfdisk: manipula ou mostra tabela de partição de um dispositivo.
- df: Mostra a informação de utilização do disco para sistema de arquivos montados e diretórios
- chmod: Modifica o modo de acesso à arquivos  ``$ chmod 644 -r afile`` 
+- /bin - Programas binários (executáveis)
+- /dev - Arquivos especiais para dispositivos de E/S 
+##### Principais sistemas de arquivos utilizados no Linux
+- Ext4 (Sistema de arquivos Padrão)
+- XFS (Lida com grandes volumes de dados)
+- BTRFS (Usado em servidores de rede e backup)
+- ZFS (Altamente resistente a falhas)
+#### Comandos
+fdisk, cfdisk: manipula ou mostra tabela de partição de um dispositivo.
+df: Mostra a informação de utilização do disco para sistema de arquivos montados e diretórios
+cat: Concatena vários arquivos para a saída-padrão
+cp: Copia um ou mais arquivos
+cut: Corta colunas de texto de um arquivo
+grep: Procura um certo padrão dentro de um arquivo
+head: Extrai as primeiras linhas de um arquivo
+ls: Lista diretório
+make: Compila arquivos e constrói um binário
+mkdir: Cria um diretório
+paste: Cola colunas de texto dentro de um arquivo
+ps: Lista os processos em execução
+rm: Remove um ou mais arquivos
+rmdir: Remove um diretório
+sort: Ordena um arquivo de linhas alfabeticamente
+tail: Extrai as últimas linhas de um arquivo
+chmod: Modifica o modo de acesso à arquivos  ``$ chmod 644 -r afile`` 
 - -c: como o modo verboso, mas só reporta as mudanças.
 - -r: modo recursivo
 - -v: modo verboso
@@ -519,6 +544,10 @@ Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95.
 - O primeiro número refere-se às permissões do proprietário do arquivo.
 - O segundo número refere-se às permissões do grupo ao qual o arquivo pertence.
 - O terceiro número refere-se às permissões para todos os outros usuários que não se encaixam nas duas categorias anteriores.
+# Windows
+![[so-windows.png]]
+#### Sistemas de Arquivos
+[[Sistemas Operacionais#Exemplos de Sistemas de Arquivos|NTFS]] é o sistema de arquivos padrão do Windows.
 
 ```ad-attention
 sistemas distribuídos: http://profs.ic.uff.br/~simone/sd/contaulas/

@@ -150,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 244.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,6 +166,8 @@
   },
   "active": "a13ba0996165d33e",
   "lastOpenFiles": [
+    "imgs/sistemas operacionais/so-windows.png",
+    "imgs/sistemas operacionais/so-linux.png",
     "imgs/sistemas operacionais/so-impasses.png",
     "caixa concurso/Sistemas Operacionais.md",
     "imgs/sistemas operacionais/so-dma.png",
@@ -184,7 +186,6 @@
     "caixa concurso/Desenvolvimento Web.md",
     "Pasted image 20240222131352.png",
     "imgs/sistemas operacionais/so-estados.png",
-    "imgs/sistemas operacionais/so-camadas.png",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "cnu concurso/Rede de Computadores.md",
     "caixa concurso/Engenharia de Software.md",
