@@ -37,7 +37,7 @@
 	- [ ] Kotlin; 
 	- [ ] Objective-C; Flutter; Swift
 	- [ ] Cobol;
-- [ ] Desenvolvimento de software para a Web: 
+- [ ] Desenvolvimento de software para a Web:  [[Desenvolvimento Web Java|estudar]]
 	- [ ] sistemas distribuídos e microsserviços;
 	- [ ] Arquitetura e padrões de projeto Java EE8; 
 	- [ ] Servlets; 
@@ -46,8 +46,8 @@
 	- [ ] Ajax;
 	- [ ] Interoperabilidade de sistemas; 
 	- [ ] SOA e Web Services (Quarkus); 
-	- [ ] Padrões REST, 
-	- [ ] Padrões HTML 4.01,
+	- [ ] Padrões REST
+	- [ ] Padrões HTML 4.01
 	- [ ] HTTP response Status Code
 	- [ ] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
 - [ ] Teste de software 

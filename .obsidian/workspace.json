@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3d1d2b011a223851",
+        "id": "bb8d5b92d83f9e53",
         "type": "tabs",
         "children": [
           {
-            "id": "a13ba0996165d33e",
+            "id": "40c4dcf321df9269",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Sistemas Operacionais.md",
+                "file": "caixa concurso/Edital Tecnologia.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Sistemas Operacionais.md",
+                "file": "caixa concurso/Edital Tecnologia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Sistemas Operacionais.md",
+                "file": "caixa concurso/Edital Tecnologia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Sistemas Operacionais.md"
+                "file": "caixa concurso/Edital Tecnologia.md"
               }
             }
           },
@@ -164,15 +164,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a13ba0996165d33e",
+  "active": "40c4dcf321df9269",
   "lastOpenFiles": [
+    "caixa concurso/Desenvolvimento Web Java.md",
+    "imgs/web java/web-jsf-ciclo.png",
+    "imgs/web java/web-jpa-ciclo.png",
+    "cnu concurso/Edital Tecnologia.md",
+    "imgs/web java",
+    "caixa concurso/Edital Tecnologia.md",
+    "caixa concurso/Sistemas Operacionais.md",
     "imgs/sistemas operacionais/so-windows.png",
     "imgs/sistemas operacionais/so-linux.png",
     "imgs/sistemas operacionais/so-impasses.png",
-    "caixa concurso/Sistemas Operacionais.md",
     "imgs/sistemas operacionais/so-dma.png",
-    "caixa concurso/Edital Tecnologia.md",
-    "cnu concurso/Edital Tecnologia.md",
     "caixa concurso/Programação.md",
     "imgs/sistemas operacionais/so-vfs.png",
     "imgs/sistemas operacionais/so-esquema-particao.png",
@@ -182,10 +186,6 @@
     "imgs/sistemas operacionais/so-alg-relogio.png",
     "imgs/sistemas operacionais/so-segmentacao.png",
     "Sem título.md",
-    "imgs/sistemas operacionais/so-index-alocation.png",
-    "caixa concurso/Desenvolvimento Web.md",
-    "Pasted image 20240222131352.png",
-    "imgs/sistemas operacionais/so-estados.png",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "cnu concurso/Rede de Computadores.md",
     "caixa concurso/Engenharia de Software.md",

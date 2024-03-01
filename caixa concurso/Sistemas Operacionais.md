@@ -507,7 +507,6 @@ técnica usada em sistemas operacionais para lidar com dispositivos de E/S dedic
 # Linux
 
 ![[so-linux.png]]
-
 #### Sistemas de Arquivos
 Por padrão, o Linux pode suportar diversos sistemas de arquivos em diversas partições de disco. Para gerenciar isso o Linux utiliza o VFS [[Sistemas Operacionais#VFS (Virtual File System — sistema de arquivos virtuais)|(Sistema Virtual de Arquivos)]] para lidar com múltiplos sistemas de arquivos.
 ##### Estrutura de Arquivos
