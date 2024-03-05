@@ -1,8 +1,10 @@
 # Servlet 
-O nome “servlet” vem do inglês e dá uma ideia de servidor pequeno cujo objetivo basicamente é receber requisições HTTP, processá-las e responder ao cliente, essa resposta pode ser um HTML, uma imagem etc.
+Servlets são classes Java do lado do servidor que recebem requisições HTTP, processam-nas (podendo interagir com o Model) e geram respostas, que podem ser um HTML, redirecionamento para outra página, dentre outros. Dessa forma, servlets são ideais para o papel de Controller no MVC pois gerenciam e orquestram o fluxo dentro da aplicação. Estes são executados dentro de um container de Servlets, como o Apache Tomcat ou o Jetty, que gerencia seu ciclo de vida.
+
+A classe `HttpServlet` gera aplicações Web baseadas no protocolo HTTP. Nessa classe, além de possuir os verbos padrões do protocolo HTTP ainda possui os métodos de ciclo `init()`, `service()`, `destroy()`.
 
 ``` java
-@WebServlet(urlPatterns="/visualizar")
+@WebServlet(urlPatterns="/visualizar") // Substitui os mapeamentos de Servlet presentes no web.xml
 public class VisualizaAutomovelServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 	    AutomovelDAO dao = new AutomovelDAO();
@@ -18,8 +20,41 @@ public class VisualizaAutomovelServlet extends HttpServlet {
 	}
 }
 ```
+
+Deve-se observar que Servlets não foram criadas somente para o protocolo HTTP.
+
+```java
+public class HelloWorldServlet extends GenericServlet {
+
+    @Override
+    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+        // código
+    }
+}
+```
+
+As rotas também podem ser definidas no arquivo web.xml da seguinte maneira.
+
+```xml
+<servlet>
+  <servlet-name >watermelon< /servlet-name>
+  <servlet-class >myservlets.watermelon</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>watermelon< /servlet-name>
+  <url-pattern>/fruit/summer/*</url-pattern>
+</servlet-mapping>
+```
+#### Ciclo do Servlet
+Quando um Servlet é inicializado, o servidor web cria uma única instância deste Servlet para atender todas as requisições dos clientes. Essa instância gera diversas threads, cada uma pra atender uma requisição diferente. Isso significa que todas as variáveis de instância dentro do Servlet são compartilhadas e podem afetar simultaneamente o estado do objeto durante o processamento de múltiplas requisições. Essa característica de compartilhamento de estado pode levar a condições de corrida se não for gerenciada corretamente. Portanto, é típico sincronizar o acesso a recursos compartilhados ou utilizar mecanismos como o `HttpSession` para armazenar dados relacionados a uma sessão de usuário específica. 
+ ##### Init()
+ É o que é chamado quando o Servlet é criado pela primeira vez. Este método é utilizado para inicializar recursos que o Servlet possa necessitar durante sua vida útil. Ele é invocado uma única vez e é aqui onde o Servlet é colocado em um estado de serviço.
+ ##### Service()
+ É chamado cada vez que o Servlet é requisitado para processar uma requisição. Portanto, ele será chamado várias vezes durante o ciclo de vida do Servlet, lidando com múltiplas requisições de diferentes clientes.
+ ##### Destroy()
+ É chamado uma única vez quando o Servlet está sendo retirado de serviço, normalmente quando o container web está sendo desligado ou o Servlet está sendo descarregado por algum outro motivo.
 # JSP
-As JSPs, são páginas HTML que podem ter dentro de si trechos de código Java. Nas JSPs temos a possibilidade da escrita direta do HTML, que além de deixar o código mais legível, deixa-o mais manutenível.
+permite a criação de páginas Web que tenha componentes estáticos e dinâmicos. A tecnologia JSP disponibiliza todos os recursos dinâmicos da tecnologia Java Servlet, mas fornece uma abordagem mais natural para a criação de conteúdo estático. Na verdade, os JSPs são compilados em Servlets pelo servidor. Dessa forma, JSP são executados em um Container de Servlets, que é uma parte da plataforma Java EE. Objetos referenciados neste escopo possuem o menor ciclo de vida, pois estão vinculados a uma única solicitação de página (uma página JSP, por exemplo). Quando a resposta é enviada ao cliente, os objetos neste escopo não estão mais disponíveis. Portanto, eles são adequados para dados temporários usados durante a geração de uma resposta específica.
 
 ```html 
 <html>
@@ -39,7 +74,7 @@ JPA é uma camada que descreve uma interface comum para frameworks ORM. Todos os
 Objetos detached são objetos que já foram gerenciados, ou seja, que existem no banco de dados, mas a EntityManager que os trouxe do banco de dados já foi fechada, ou explicitamente desanexou o objeto do seu contexto via o método detach.
 ```
 # JSF 
-JSF é um framework para a construção backend de um servidor que utiliza a arquitetura **MVC**. As telas do JSF podem ser escritas utilizando XHTML. O JSF conhece todo o estado da nossa tela, e guarda isso através das requisições, por isso ele é considerado um framework stateful. Para começar a usá-lo, é preciso configurar a servlet do JSF no ``web.xml`` ou ``faces-config.xml`` da aplicação. Esse Servlet é responsável por receber as requisições e delegá-las ao JSF.
+JSF é um framework para a construção backend de um servidor que utiliza a arquitetura **MVC**. As telas do JSF podem ser escritas utilizando XHTML. O JSF conhece todo o estado da nossa tela, e guarda isso através das requisições, por isso ele é considerado um framework stateful. Para começar a usá-lo, é preciso configurar a servlet do JSF no ``web.xml`` ou ``faces-config.xml`` da aplicação. Esse Servlet é responsável por receber as requisições e delegá-las ao JSF. 
 
 ![[web-jfs.png]]
 
@@ -243,6 +278,12 @@ public class LoggerActionListener implements ActionListener{
 	</f:facet>
 	#{automovel.marca}
 </h:column>
+```
+
+```ad-tip
+##### Facelets
+Tecnologia de renderização de páginas para JSF que substituiu a tecnologia JSP.
+- `xmlns:ui="http://java.sun.com/jsf/facelets">`
 ```
 #### Request Scope
 O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 

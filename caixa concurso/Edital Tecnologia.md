@@ -40,8 +40,8 @@
 - [ ] Desenvolvimento de software para a Web:  [[Desenvolvimento Web Java|estudar]]
 	- [ ] sistemas distribuídos e microsserviços;
 	- [ ] Arquitetura e padrões de projeto Java EE8; 
-	- [ ] Servlets; 
-	- [ ] JSF;
+	- [x] Servlets; 
+	- [x] JSF;
 	- [ ] JSP; 
 	- [x] Ajax;
 	- [ ] Interoperabilidade de sistemas; 
