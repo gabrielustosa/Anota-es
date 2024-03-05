@@ -39,9 +39,15 @@ JPA é uma camada que descreve uma interface comum para frameworks ORM. Todos os
 Objetos detached são objetos que já foram gerenciados, ou seja, que existem no banco de dados, mas a EntityManager que os trouxe do banco de dados já foi fechada, ou explicitamente desanexou o objeto do seu contexto via o método detach.
 ```
 # JSF 
-JSF é um framework para a construção backend de um servidor que utiliza a arquitetura **MVC**. As telas do JSF podem ser escritas utilizando XHTML. O JSF conhece todo o estado da nossa tela, e guarda isso através das requisições, por isso ele é considerado um framework stateful.
+JSF é um framework para a construção backend de um servidor que utiliza a arquitetura **MVC**. As telas do JSF podem ser escritas utilizando XHTML. O JSF conhece todo o estado da nossa tela, e guarda isso através das requisições, por isso ele é considerado um framework stateful. Para começar a usá-lo, é preciso configurar a servlet do JSF no ``web.xml`` ou ``faces-config.xml`` da aplicação. Esse Servlet é responsável por receber as requisições e delegá-las ao JSF.
 
-- `h:<tag>` faz referência a taglibs fornecida pelo próprio JSF.
+![[web-jfs.png]]
+
+- Faces Servlet processa as requisições HTTP, cria ou restaura a árvore de componentes da visão correspondente, executa o ciclo de vida do JSF para essa árvore e, por fim, renderiza a resposta (normalmente uma página HTML) de volta ao usuário. Dessa forma, ele faz parte da camada de controle.
+
+- Tag `<f>`: As ações personalizadas centrais do JavaServer Faces que são independentes de qualquer RenderKit específico.
+- Tag `<h>`: Esta biblioteca de tags contém tags de componentes JFS para todas as combinações de UIComponent + HTML RenderKit Renderer definidas na Especificação do JFS.
+
 ```xhtml
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
 	<h:head>
@@ -108,12 +114,19 @@ public class AutomovelBean {
 }
 ```
 #### Ciclo de Vida
-1. Restore View: Quando uma requisição chega ao JSF, a primeira tarefa realizada por ele é construir ou restaurar a árvore de componentes correspondente ao arquivo XHTML lido.
-2. Apply Request Values:  O JSF irá buscar os valores informados pelo usuário e colocá-los nos seus respectivos componentes.
-3. Process Validation: Os dados que foram submetidos com o formulário são validados.
-4. Update Model Values: Após todas essas validações terminarem, os objetos de negócio que criam a aplicação são atualizados com os dados validados da requisição.
-5. Invoke Application: Os métodos de ação de qualquer botão ou link que foi ativado serão chamados.
-6. Render Response: Essa fase renderizará a página de resposta requisitada pelo usuário.
+
+ ##### Restore View - Fase 1 
+ Quando uma requisição chega ao JSF, a primeira tarefa realizada por ele é construir ou restaurar a árvore de componentes correspondente ao arquivo XHTML lido. Se a requisição for um **postback**, o JSF tentará restaurar a view existente. Depois que a árvore é restaurada, seja buscando na sessão ou via deserialização, a requisição do usuário segue para a fase 2.
+ ##### Apply Request Values - Fase 2
+ Os valores de entrada são lidos e atribuídos aos componentes correspondentes, mas não são mapeados para as propriedades do Managed Bean nesta fase.
+ ##### Process Validation - Fase 3
+ Os dados que foram submetidos com o formulário são validados. Essa fase é dividida em partes converte e valida. Normalmente provocará uma chamada recursiva do método `processValidators()` de cada componente da árvore.
+ ##### Update Model Values  - Fase 4
+ Os valores inseridos pelo usuário são mapeados para os respectivos atributos da classe Bean, envolvendo os procedimentos de conversão de valores, quando necessário. Se tivéssemos o objeto Funcionário ligado à EL `#{cadastroBean.cadastro.funcionario}`, o JSF recuperaria o objeto cadastro que é propriedade do `#{cadastroBean}` e chamaria o método `setFuncionario` do objeto cadastro.
+ ##### Invoke Application - Fase 5
+ Nessa fase acontece a lógica da aplicação, como chamadas para métodos nos Managed Beans. A aplicação tem os insumos necessários para aplicar a lógica de negócio. Outro fator importante dessa fase, é o direcionamento do usuário de acordo com as submissões realizadas pelo mesmo.
+ ##### Render Response - Fase 6
+ Nessa fase acontece a geração do HTML a partir da árvore de componentes do JSF. Se ocorrer um erro de conversão ou validação, as fases 4 e 5 são puladas e vamos direto para a fase 6. Também podemos chegar aqui logo depois da fase 1, quando o usuário pede a página pela primeira vez. Nesse caso o JSF monta a árvore e já manda a fase 6, já que, na primeira requisição à aplicação, não haverá formulário sendo submetido e nem ação para ser invocada. 
 
 ![[web-jsf-ciclo.png]]
 
@@ -137,8 +150,9 @@ public class LifeCycleListener implements PhaseListener {
 
 }```
 #### Componentes 
-Praticamente todos os componentes podem possuir esses dois atributos:
+Frameworks de componentes: PrimeFaces, ICEfaces, RichFaces.
 
+Praticamente todos os componentes podem possuir esses dois atributos:
 ```html
 <h:inputText style="padding: 10px;" styleClass="valor_numerico" />
 ```
@@ -149,12 +163,30 @@ Gera um formulário HTML com o id formulario e o inputText com id formulario:cam
 	Idade: <h:inputText id="campo_idade"/>
 </h:form>
 ```
+##### h:dataTable
+Utilizado para mostrar dados tabulares. As duas principais propriedades são ``value``  que é a lista que queremos iterar e ``var`` que  define um nome de variável que usaremos para referenciar cada objeto da lista.
+```xhtml
+<h:dataTable value="#{automovelBean.automoveis}" var="auto" rowClasses="table-linha-par,table-linha-impar" border="1">
+	<h:column>
+		<f:facet name="header">Marca</f:facet> #{auto.modelo.marca}
+	</h:column>
+	<h:column>
+		<f:facet name="header">Modelo</f:facet> #{auto.modelo}
+	</h:column>
+	<h:column>
+		<f:facet name="header">Ano Fabricação</f:facet> #{auto.anoFabricacao}
+	</h:column>
+	<h:column>
+		<f:facet name="header">Ano Modelo</f:facet> #{auto.anoModelo}
+	</h:column>
+</h:dataTable>
+```
 ##### h:input
 Gera um input HTML. A principal propriedade é value, é a ela que é ligada a ``Expression Language`` que depois das conversões e validações, permitirá ao JSF colocar o valor que o usuário digitou no campo diretamente na propriedade especificada.
 ```xhtml
 <h:inputText value="#{managedBean.objeto.descricao}"/>
-Descrição: <h:inputTextarea value="#{managedBean.objeto.descricao}"/>
-Senha: <h:inputSecret value="#{managedBean.usuario.senha}"/>
+	Descrição: <h:inputTextarea value="#{managedBean.objeto.descricao}"/>
+	Senha: <h:inputSecret value="#{managedBean.usuario.senha}"/>
 <h:inputHidden value="#{managedBean.objeto.id}"/>
 ```
 ##### h:outputText
@@ -202,3 +234,31 @@ public class LoggerActionListener implements ActionListener{
 	}
 }
 ```
+##### f:facet
+É utilizada para definir uma área dentro de um componente JSF para a qual podem ser adicionados componentes filhos.
+```xhtml
+<h:column>
+	<f:facet name="header">
+	Marca
+	</f:facet>
+	#{automovel.marca}
+</h:column>
+```
+#### Request Scope
+O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 
+
+São aplicados no Managed Beans dessa forma:
+```java
+@ManagedBean
+// @RequestScoped, @SessionScoped, @ApplicationScoped, @ViewScoped
+public class MeuBean {
+}
+```
+##### Request
+Apenas sobrevivem por uma passada de vida no ciclo do JSF, ou seja, da fase 1 até a fase 6. Por ser um escopo que tem o tempo de vida curto é apropriado quando não precisamos memorizar dados entre as requisições dos usuários. É o padrão dos Managed Beans, dessa forma, ao não anotar sua classe, esse escopo será utilizado.
+##### Session
+Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do usuário estiver ativa. Ela é útil para armazenar informação sobre a última operação realizada por uma sessão, para proporcionar uma forma fácil de voltar a ela.
+##### Application
+Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
+##### View
+Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.

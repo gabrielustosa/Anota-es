@@ -43,7 +43,7 @@
 	- [ ] Servlets; 
 	- [ ] JSF;
 	- [ ] JSP; 
-	- [ ] Ajax;
+	- [x] Ajax;
 	- [ ] Interoperabilidade de sistemas; 
 	- [ ] SOA e Web Services (Quarkus); 
 	- [ ] Padrões REST
