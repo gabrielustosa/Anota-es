@@ -54,16 +54,44 @@ Quando um Servlet é inicializado, o servidor web cria uma única instância des
  ##### Destroy()
  É chamado uma única vez quando o Servlet está sendo retirado de serviço, normalmente quando o container web está sendo desligado ou o Servlet está sendo descarregado por algum outro motivo.
 # JSP
-permite a criação de páginas Web que tenha componentes estáticos e dinâmicos. A tecnologia JSP disponibiliza todos os recursos dinâmicos da tecnologia Java Servlet, mas fornece uma abordagem mais natural para a criação de conteúdo estático. Na verdade, os JSPs são compilados em Servlets pelo servidor. Dessa forma, JSP são executados em um Container de Servlets, que é uma parte da plataforma Java EE. Objetos referenciados neste escopo possuem o menor ciclo de vida, pois estão vinculados a uma única solicitação de página (uma página JSP, por exemplo). Quando a resposta é enviada ao cliente, os objetos neste escopo não estão mais disponíveis. Portanto, eles são adequados para dados temporários usados durante a geração de uma resposta específica.
+Permite a criação de páginas Web que tenha componentes estáticos e dinâmicos. A tecnologia JSP disponibiliza todos os recursos dinâmicos da tecnologia Java Servlet, mas fornece uma abordagem mais natural para a criação de conteúdo estático. Na verdade, os JSPs são compilados em Servlets pelo servidor. Dessa forma, JSP são executados em um Container de Servlets, que é uma parte da plataforma Java EE. Objetos referenciados neste escopo possuem o menor ciclo de vida, pois estão vinculados a uma única solicitação de página (uma página JSP, por exemplo). Quando a resposta é enviada ao cliente, os objetos neste escopo não estão mais disponíveis. Portanto, eles são adequados para dados temporários usados durante a geração de uma resposta específica.
 
-```html 
+```jsp
 <html>
 	<body>
 		Modelo: <%= req.getAttribute("modelo") %>
-		Ano do Modelo: <%= req.getAttribute("anoModelo") %>
+		Ano do Modelo: <%= req.getAttribute("anoModelo") %> // avalia e imprime
+		<% List deps = (List) request.getAttribute("automoveis"); %> // código java
 	</body>
 </html>
 ```
+
+Essas são algumas diretivas, as quais são utilizadas para informações especiais dentro de páginas, sendo dividido em três tipos:
+
+- `@include` - Utilizado para inserir os códigos de arquivos à página corrente;
+- `@page` - Responsável por trazer informações sobre a página JSP;
+- `@taglib` - Responsável por habilitar uma biblioteca de tags personalizada (item que será abordado em outro artigo com mais detalhes).
+```jsp
+<%@page contentType="text/html" import="java.util.Date, java.text."pageEncoding="ISO-8859-1"%>
+<html>
+    <body>
+        <h1>
+            <%=new Date()=%>
+        </h1>
+    </body>
+</html>
+```
+
+Alguns métodos JSP.
+
+- `invalidate():` serve para terminar uma sessão de usuário que não é mais necessária e interrompe a conexão da sessão com todos os objetos armazenados.
+- `isNew():` Este método é usado para verificar se a sessão é nova ou não. O valor booleano (verdadeiro ou falso) é retornado por ele.
+- `getId():` ao criar uma sessão, o contêiner de servlet atribui um identificador de string distinto à sessão. Este identificador de string distinto é retornado pelo método `getId()`.
+- `getAttributeNames():` Todos os objetos armazenados na sessão são retornados pelo método `getAttributeNames()`.
+- `getCreationTime():` A hora de criação da sessão (a hora em que a sessão se tornou ativa ou a sessão começou).
+- `getAttribute (String name):` Usando o método `getAttribute()`, o objeto que é armazenado pelo método `setAttribute()` é recuperado da sessão.
+- `setAttribute (String, object):` O método `setAttribute()` é usado para armazenar um objeto na sessão atribuindo uma string única ao objeto. Posteriormente, usando a mesma string, este objeto pode ser acessado da sessão até que ela esteja ativa. No JSP, ao lidar com a sessão, `setAttribute()` e `getAttribute()` são os dois métodos mais usados regularmente.
+- `removeAttribute (String name):` Usando o método `removeAttribute(String name)`, os objetos que estão armazenados na sessão podem ser removidos da sessão.
 # JPA
 JPA é uma camada que descreve uma interface comum para frameworks ORM. Todos os objetos mapeados com o JPA são de responsabilidade do ``EntityManager``, ou seja, se algum atributo for alterado ele acabará salvo no banco de dados através dele.
 
