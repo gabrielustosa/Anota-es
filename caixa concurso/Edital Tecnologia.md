@@ -42,14 +42,14 @@
 	- [ ] Arquitetura e padrões de projeto Java EE8; 
 	- [x] Servlets; 
 	- [x] JSF;
-	- [ ] JSP; 
+	- [x] JSP; 
 	- [x] Ajax;
 	- [ ] Interoperabilidade de sistemas; 
 	- [ ] SOA e Web Services (Quarkus); 
 	- [ ] Padrões REST
-	- [ ] Padrões HTML 4.01
-	- [ ] HTTP response Status Code
-	- [ ] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
+	- [x] Padrões HTML 4.01
+	- [x] HTTP response Status Code
+	- [x] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
 - [ ] Teste de software 
 	- [ ] Controle da qualidade estático: revisão, inspeção, medição estática, análise estática; 
 	- [ ] Princípios e técnicas de teste de software: teste de unidade, teste de integração, teste de regressão, teste alfa, teste beta, teste de segurança, teste de aceitação e de aprovação; 

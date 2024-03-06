@@ -331,3 +331,58 @@ Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do us
 Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
 ##### View
 Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.
+
+# HTTP Status Code
+#### Respostas 100-199
+São respostas informativas.
+- 100 - Continue a requisição
+- 101 - Mudança de protocolo 
+- 102 - O servidor recebeu e está processando.
+#### Respostas  200-299
+Respostas bem-sucedidas. 
+- 202 - Solicitação recebida mas não atendida.
+- 205 - Redefinir a solicitação o documento enviado.
+- 206 - Usado quando o cabeçalho range é enviado do cliente para solicitar apenas parte de um recurso.
+#### Repostas 300-399
+Respostas de redirecionamento.
+- 300 - A solicitação tem mais de uma resposta possível.
+- 301 - Movido permanentemente.
+- 302 - Encontrada mas foi temporariamente movida.
+- 307 - mesmo do 302, só mantenha o método HTTP utilizado.
+- 309 - Recurso movido permanentemente para outro URI, localizado no cabeçalho em `Location:`.
+#### Respostas 400-499
+Respostas de erro do cliente. 
+- 402 - Pagamento necessário
+- 407 - Semelhante ao 401 porém necessita de um proxy para autenticação.
+- 408 - Timeout.
+- 411 - Cabeçalho `content-length:`  é obrigatório.
+- 413 - Payload muito grande.
+- 414 - URI muito grande.
+- 429 - Muitas requisições.
+#### Respostas 500-599
+Respostas de erro do servidor
+501 - Não implementado.
+502 - Gateway inválido.
+503 - Serviço indisponível.
+# REST
+Representa uma abordagem para desenvolver serviços web baseados nos métodos do protocolo HTTP, como GET, POST, PUT, DELETE, etc. RESTful não é um protocolo ou um padrão, mas sim um conjunto de princípios arquiteturais que baseia na estrutura cliente servidor.
+
+```ad-info
+##### Idempotência
+Propriedade que a computação herdou da matemática. uando falamos que uma operação é idempotente significa que, se a aplicarmos uma vez ou várias vezes, o resultado é o mesmo. 
+```
+
+# XHTML
+É a versão estendida do HTML que combina regras de XML ao HTML para melhoria na semântica. (foi substituída pelo HTML5)
+# XML
+São formados com árvores de documentos, com somente uma raiz e elementos únicos em cada nó, dispostos de forma hierárquica. Todos os documentos XML devem começam com uma declaração do tipo `<?xml version="1.1" encoding="UTF-8"?>`.
+
+- É case sensitive.
+# WSDL Web Services Description Language
+É uma linguagem baseada em XML utilizada para descrever os serviços oferecidos por um serviço web. Ela detalha a interface pública de acesso, incluindo os métodos disponíveis, os parâmetros necessários e os formatos de mensagem esperados.
+# UDDI - Universal Description, Discovery and Integration
+É uma plataforma que permite que serviços web sejam listados e descobertos. Funciona como uma espécie de diretório, onde se pode buscar por serviços web disponíveis e obter informações para acessá-los.
+# SOAP - Simple Object Access Protocol
+É um protocolo de comunicação que utiliza XML para a troca de informações entre aplicações em uma rede. O SOAP define um envelope que encapsula a mensagem XML, além de regras de transporte e processamento.
+
+#TODO WEBSERVICES 
