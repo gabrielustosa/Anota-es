@@ -44,9 +44,9 @@
 	- [x] JSF;
 	- [x] JSP; 
 	- [x] Ajax;
-	- [ ] Interoperabilidade de sistemas; 
+	- [x] Interoperabilidade de sistemas; 
 	- [ ] SOA e Web Services (Quarkus); 
-	- [ ] Padrões REST
+	- [x] Padrões REST
 	- [x] Padrões HTML 4.01
 	- [x] HTTP response Status Code
 	- [x] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 

@@ -365,7 +365,14 @@ Respostas de erro do servidor
 502 - Gateway inválido.
 503 - Serviço indisponível.
 # REST
-Representa uma abordagem para desenvolver serviços web baseados nos métodos do protocolo HTTP, como GET, POST, PUT, DELETE, etc. RESTful não é um protocolo ou um padrão, mas sim um conjunto de princípios arquiteturais que baseia na estrutura cliente servidor.
+Representa uma abordagem para desenvolver serviços web baseados nos métodos do protocolo HTTP, como GET, POST, PUT, DELETE, etc. RESTful não é um protocolo ou um padrão, mas sim um conjunto de princípios arquiteturais que baseia na estrutura de conexões síncronas entre cliente servidor. 
+
+ #### Propriedades REST
+1. O servidor deve ser stateless, isto é, toda informação de estado deve ser armazenada no cliente e a requisição deve conter toda a informação necessária para ser respondida.
+2. As requisições podem ser cacheadas. Criando-se uma interface uniforme e onde o recurso é identificado pela URI. O cache pode ser adicionado tanto no cliente como no servidor.
+3. Interface uniforme. APIs REST são construídas levando em conta que os recursos podem ser identificados através da URI e a ação identificada pelo verbo HTTP.
+4. Ela pode ser distribuída entre vários componentes. Podemos ter componentes de cache, componentes específicos para recursos e componentes para recursos estáticos.
+5. O código pode ser provido sob demanda. Uma API REST pode prover, além de recursos, arquivos contendo a lógica de negócios. Essa propriedade permite termos o que hoje conhecemos como Single Page Application e Progressive Web Applications.
 
 ```ad-info
 ##### Idempotência
@@ -375,14 +382,43 @@ Propriedade que a computação herdou da matemática. uando falamos que uma oper
 # XHTML
 É a versão estendida do HTML que combina regras de XML ao HTML para melhoria na semântica. (foi substituída pelo HTML5)
 # XML
-São formados com árvores de documentos, com somente uma raiz e elementos únicos em cada nó, dispostos de forma hierárquica. Todos os documentos XML devem começam com uma declaração do tipo `<?xml version="1.1" encoding="UTF-8"?>`.
+São formados com árvores de documentos, com somente uma raiz e elementos únicos em cada nó, dispostos de forma hierárquica. 
 
+- Todos os documentos XML devem começam com uma declaração do tipo `<?xml version="1.1" encoding="UTF-8"?>`.
+- XML são bastante abrangentes e incluem tipos primitivos como string, integer, booleans, e tipos complexos que podem ser definidos pelo usuário.
 - É case sensitive.
-# WSDL Web Services Description Language
+# XSLT - eXtensible Stylesheet Language Transformations
+Uma linguagem de folhas de estilo projetada para transformar documentos XML em outros formatos de documentos, como HTML, XHTML ou até mesmo outro documento XML com estrutura diferente.  O processo de transformação realizado pelo XSLT envolve a adição ou remoção de elementos e atributos no documento de saída, conforme especificado na folha de estilo XSLT. Isso permite que os dados contidos em um documento XML sejam reapresentados de maneira completamente nova, adequando-se a diferentes propósitos ou padrões de visualização.
+
+Além disso, com o XSLT, é possível reorganizar a estrutura do documento, alterar os valores dos elementos e atributos e até criar outputs em formatos não XML, como textos simples ou HTML, que é amplamente utilizado para a exibição de dados na web. Neste contexto, a transformação para HTML ou XHTML é particularmente valiosa, pois permite que informações originalmente armazenadas em XML sejam acessíveis e apresentáveis em navegadores de internet, ampliando sua usabilidade.
+# WSDL - Web Services Description Language
 É uma linguagem baseada em XML utilizada para descrever os serviços oferecidos por um serviço web. Ela detalha a interface pública de acesso, incluindo os métodos disponíveis, os parâmetros necessários e os formatos de mensagem esperados.
+
+Existem 4 padrões de mensagem WSDL:
+
+- Request-response
+- One-way
+- Notification
+- Solicit-response
 # UDDI - Universal Description, Discovery and Integration
 É uma plataforma que permite que serviços web sejam listados e descobertos. Funciona como uma espécie de diretório, onde se pode buscar por serviços web disponíveis e obter informações para acessá-los.
 # SOAP - Simple Object Access Protocol
-É um protocolo de comunicação que utiliza XML para a troca de informações entre aplicações em uma rede. O SOAP define um envelope que encapsula a mensagem XML, além de regras de transporte e processamento.
+É um protocolo de comunicação que utiliza XML para a troca de informações entre aplicações em uma rede. Ao contrário do gRPC, o SOAP exige um documento WSDL compartilhado pelo servidor para implementar um cliente. Ele usa HTTP e XML, com cada serviço tendo um endpoint dedicado. Enquanto o REST usa diferentes verbos HTTP, o SOAP geralmente usa apenas POST, com GET sendo usado apenas para obter a documentação. O SOAP encapsula as chamadas de serviço em corpos de mensagem XML, sem depender dos detalhes do protocolo HTTP. Apesar de suas diferenças, o SOAP compartilha uma arquitetura semelhante ao gRPC, mas usa XML em vez de protocol buffers e HTTP/2.
 
-#TODO WEBSERVICES 
+- Pode ser transportado por protocolos como HTTP, SMTP e JMS.
+
+ #### Composição
+- Body - Contém a informação a ser transportada para o seu destino final. - OBRIGATÓRIO
+- Fault - Contém informações e status de erro da mensagem. - OPCIONAL 
+- Envelope - É o container de toda a mensagem SOAP, podendo conter a declaração de namespace que indica a versão de SOAP usada. - OBRIGATÓRIO
+- Cabeçalho - Possui informações de controle e processamento, responsável por carregar informações adicionais, tal como se a mensagem deve ser processada por um determinado nó intermediário. - OPCIONAL
+# Web Services
+Web services são serviços de aplicação que podem ser acessados usando os protocolos padrões da Web, como HTTP e SOAP. Eles permitem que aplicações se comuniquem umas com as outras através da web, independentemente de sua plataforma ou linguagem de programação. Web Services são fracamente acoplados por foram projetados para viabilizar comunicação entre sistemas, plataformas e linguagens e padrões totalmente incompatíveis.
+# Quarkus
+É um framework para desenvolvimento de aplicações cloud native. foi desenvolvido com o objetivo de ser portado dentro de
+contêineres (a infraestrutura imutável).
+
+#TODO JAVA JAX-RS https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
+#TODO Microservices Patterns: With examples in Java - Livro
+#TODO Sistemas distribuidos TUNEBAUM 
+#TODO Beging Quarkus - Livro
