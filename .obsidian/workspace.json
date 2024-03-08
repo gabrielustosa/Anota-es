@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "bb8d5b92d83f9e53",
+        "id": "3c86628b02a1efee",
         "type": "tabs",
         "children": [
           {
-            "id": "40c4dcf321df9269",
+            "id": "84384acc8b6594c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
+                "file": "caixa concurso/Engenharia de Software.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "191646db366f455b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Edital Tecnologia.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
+                "file": "caixa concurso/Engenharia de Software.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
+                "file": "caixa concurso/Engenharia de Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md"
+                "file": "caixa concurso/Engenharia de Software.md"
               }
             }
           },
@@ -164,13 +176,19 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "40c4dcf321df9269",
+  "active": "2aab6586082883e9",
   "lastOpenFiles": [
+    "imgs/engenharia de software/engs-pu-ciclo.png",
     "caixa concurso/Edital Tecnologia.md",
+    "caixa concurso/Engenharia de Software.md",
+    "imgs/engenharia de software/engs-req-ela.png",
+    "imgs/engenharia de software/engs-req-dr.png",
+    "imgs/engenharia de software",
+    "imgs/engenharia de software/engs-req-nf.png",
+    "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "caixa concurso/Banco de Dados.md",
     "cnu concurso/Edital Tecnologia.md",
-    "caixa concurso/Engenharia de Software.md",
     "caixa concurso/Sistemas Operacionais.md",
     "imgs/web java/web-jfs.png",
     "imgs/web java/web-jsf-ciclo.png",
@@ -181,15 +199,11 @@
     "imgs/sistemas operacionais/so-impasses.png",
     "imgs/sistemas operacionais/so-dma.png",
     "caixa concurso/Programação.md",
-    "imgs/sistemas operacionais/so-vfs.png",
-    "imgs/sistemas operacionais/so-esquema-particao.png",
     "caixa concurso/Data Warehouse.md",
     "Novo Documento de Texto.txt",
-    "imgs/sistemas operacionais/so-alg-relogio.png",
     "Sem título.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "cnu concurso/Rede de Computadores.md",
-    "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "caixa concurso/Big Data.md",
     "imgs/sistemas operacionais",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
@@ -208,7 +222,6 @@
     "caixa concurso/programação/Java.md",
     "caixa concurso/programação",
     "caixa concurso/organização e arq",
-    "caixa concurso",
     "Untitled.md"
   ]
 }
