@@ -4,7 +4,7 @@
 	- [ ] UX; 
 	- [ ] Análise e projeto orientados a objetos; 
 	- [ ] A Linguagem UML: modelos e diagramas; 
-	- [ ] Engenharia de requisitos. 
+	- [x] Engenharia de requisitos. 
 - [x] Estrutura de dados e algoritmos [[caixa concurso/Estrutura de Dados e Algoritmos|estudar]]
 	- [x] Busca sequencial 
 	- [x] busca binária 
@@ -19,7 +19,7 @@
 - [ ] Linguagens de programação [[caixa concurso/Programação|estudar]]
 	- [x] linguagens orientadas a objeto e procedurais;
 	- [ ] Padrões de Projeto;
-	- [ ] Linguagens Java SE; JEE;
+	- [x] Linguagens Java SE; JEE;
 	- [ ] Microprofile, 
 	- [ ] C#; .NET; 
 	- [ ] AngularJS; Angular; 

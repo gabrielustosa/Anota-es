@@ -1,5 +1,5 @@
 # Processo Unificado 
-Um conjunto de atividades executadas para transformar um conjunto de requisitos do cliente em um sistema de software.
+Um conjunto de atividades executadas para transformar um conjunto de requisitos do cliente em um sistema de software. Promove o uso de melhores práticas, como desenvolvimento orientado a casos de uso, arquitetura baseada em componentes, controle de versões, e a integração contínua. 
 
 - É baseado em componentes que utilizam interfaces.
 - Utiliza toda uma definição em UML.
@@ -58,8 +58,8 @@ Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
 Descreve as sequências das atividades e as iterações com que participa, sendo realizadas a qualquer momento do ciclo.
 
 ```
-#### Casos de usos
-Um caso de uso é uma sequência de ações, executada por atores que produzem um ou mais resultados de valor para outros atores.
+#### Casos de Usos (Cenários de Uso)
+Um caso de uso é uma sequência de ações, executada por atores que produzem um ou mais resultados de valor para outros atores. 
 
 - Possibilitam que os requisitos funcionais possam ser capturados na perspectiva de cada usuário do sistema.
 - Os testes são baseados nos casos de usos.
@@ -68,21 +68,39 @@ Um caso de uso é uma sequência de ações, executada por atores que produzem u
 ```ad-info
 ###### Atores
 É uma pessoa ou outro sistema
+
+- Todo ator possui uma ou mais metas ao usar o sistema.
 ```
 # UML
-#TODO
 #### Diagramas de classe
-Foca na estrutura interna do sistema, representando classes, seus atributos, métodos e as relações entre elas.
+Um diagrama de classe fornece uma visão estática ou estrutural do sistema. Ele não mostra a natureza dinâmica das comunicações entre os objetos das classes no diagrama. A visibilidade é indicada pelos sinais –, #, ~ ou +, que indicam, respectivamente, visibilidade ``private``, ``protected``, ``package`` ou ``public``.  Atributos estáticos podem ser referenciados sendo sublinhados. 
 
-- **Modelagem da Estrutura:** Utilizado para modelar a estrutura estática do sistema, incluindo as entidades do domínio, suas propriedades e os relacionamentos entre elas.
-- **Não envolve atores diretamente:** Não representa atores (usuários ou sistemas externos) interagindo com o sistema.
-#### Diagramas de casos de uso
-O Diagrama de Casos de Uso foca no comportamento do sistema do ponto de vista dos usuários, representando as interações entre atores e casos de uso.
+![[engs-uml-dc.png]]
 
-- **Modelagem do Comportamento:** Utilizado para modelar o comportamento do sistema, mostrando como os usuários interagem com o sistema por meio de casos de uso.
-- **Envolvimento Direto de Atores:** Atores (usuários ou sistemas externos) são parte fundamental do diagrama, representando quem interage com o sistema.
-# Métricas 
-Métrica é a medição de uma propriedade de uma determinada entidade (produto, processo ou recursos).
+Uma classe abstrata ou método abstrato é indicado pelo uso de itálico no nome da classe no diagrama de classes. Uma interface é indicada acrescentando-se a expressão ``<<interface>>``. 
+
+![[engs-uml-dca.png]]
+
+Os diagramas de classe também podem exibir relações entre classes. Uma classe que seja subclasse de outra classe é conectada a ela por uma seta com uma linha sólida como eixo e com uma ponta triangular vazia. A seta aponta da subclasse para a superclasse. Em UML, uma relação como essa é chamada de generalização  ``Horse -> Thoroughbred/QuarterHouse``. Uma seta tendo como eixo uma linha tracejada indica implementação de interface ``OwnedObject - Horse``. A associação entre duas classes indica que há uma relação estrutural entre elas. Associações são representadas por linhas sólidas. ``OwnedObject - Person``. Uma relação de dependência representa outra conexão entre classes e é indicada por uma linha tracejada (com setas opcionais nas extremidades e com rótulos opcionais) `Thoroughbred - Date``. 
+
+![[engs-uml-dcl.png]]
+
+Uma agregação é um tipo especial de associação representada por um losango vazio em uma extremidade do ícone. Ela indica uma relação “todo/parte”, em que a classe para a qual a seta aponta é considerada uma “parte” da classe na extremidade do losango da associação. Uma composição é uma agregação indicando forte relação de propriedade entre as partes. Em uma composição, as partes vivem e morrem com o proprietário porque não têm um papel a desempenhar no sistema de software independente do proprietário.
+
+Uma classe ``College`` tem uma agregação de objetos ``Building`` que representam os edifícios que formam o campus. ``College`` tem também uma coleção de cursos. Mesmo que a universidade fechasse, os edifícios ainda continuariam a existir (supondo que a universidade não fosse fisicamente destruída) e poderiam ser usados para outros propósitos, mas um objeto ``Course`` não tem utilidade fora da universidade na qual está sendo oferecido. Se a universidade deixasse de existir como uma entidade de negócios, o objeto ``Course`` não teria mais utilidade e, portanto, também deixaria de existir
+#### Diagrama de Implantação
+Focalizam a estrutura do sistema de software e são úteis para mostrar a distribuição física de um sistema de software entre plataformas de hardware e ambientes de execução. Por exemplo, suponha que você esteja desenvolvendo um pacote de renderização gráfica baseado na Web. Os usuários do seu pacote de software usarão o navegador Web para acessar o seu site e introduzir as informações de renderização. O seu site vai renderizar uma imagem gráfica de acordo com as especificações do usuário e a enviará de volta ao usuário. Como a renderização gráfica pode ser cara em termos de computação, você decide tirar a renderização do servidor Web, colocando-a em uma plataforma separada.
+
+![[engs-uml-di.png]]
+#### Diagrama de Casos de Uso
+Ajudam a determinar a funcionalidade e as características do software sob o ponto de vista do usuário. Um caso de uso descreve como um usuário interage com o sistema, definindo os passos necessários para atingir um objetivo específico (p. ex., gravar uma lista de músicas em um CD). Variações na sequência de passos descrevem vários cenários (p. ex., o que acontece se as músicas da lista não couberem em um CD?). No diagrama de caso de uso, os casos de uso são mostrados como elipses. Os atores são conectados por linhas aos casos de uso que eles executam.
+
+![[engs-uml-cu.png]]
+
+#### Diagramas de Sequência
+Ao contrário dos diagramas de classe e de implantação, que mostram a estrutura estática de um componente de software, o diagrama de sequência é utilizado para indicar as comunicações dinâmicas entre objetos durante a execução de uma tarefa. Ele mostra a ordem temporal na qual as mensagens são enviadas entre os objetos para executar aquela tarefa. Podemos usar um diagrama de sequência para mostrar as interações em um caso de uso ou em um cenário do sistema de software.
+
+![[engs-uml-ds.png]]
 # Engenharia de Requisitos
 Os requisitos de um sistema são as descrições do que o sistema deve fazer, os serviços que oferece e as restrições a seu funcionamento. Este, é o processo de descobrir, analisar, documentar e verificar esses serviços e restrições. Idealmente, eles devem especificar somente o comportamento externo do sistema. A elaboração de requisitos é norteada pela criação e pelo refinamento de cenários que descrevem como o usuário e outros atores interagirão com o sistema. Cada cenário de usuário é analisado a fim de extrair classes de análise, ou seja, entidades do domínio de negócio visíveis para o usuário. O documento de requisitos não deve incluir detalhes da arquitetura ou projeto do sistema.  Eles podem ser usados como parte do contrato para a implementação do sistema e devem consistir em uma especificação completa e detalhada de todo o sistema.
 
@@ -112,7 +130,7 @@ São restrições aos serviços ou funções oferecidos pelo sistema. Incluem re
 - Como exemplo, a **interoperabilidade**, que é a capacidade do sistema de se comunicar e operar com outros sistemas, é um exemplo de requisito não funcional.
 - Sempre que possível, os requisitos não funcionais devem ser escritos quantitativamente, para que possam ser objetivamente testados. 
 ##### Requisitos de Produto
-Esses requisitos especificam ou restringem o comportamento do software. É um requisito de disponibilidade que define quando o sistema deve estar disponível e o tempo diário permitido de seu não funcionamento. Exemplos incluem os requisitos de desempenho quanto à rapidez com que o sistema deve executar e quanta memória ele requer, os requisitos de confiabilidade que estabelecem a taxa aceitável de falhas, os requisitos de proteção e os requisitos de usabilidade.
+Esses requisitos especificam ou restringem o comportamento do software . É um requisito de disponibilidade que define quando o sistema deve estar disponível e o tempo diário permitido de seu não funcionamento. Exemplos incluem os requisitos de desempenho quanto à rapidez com que o sistema deve executar e quanta memória ele requer, os requisitos de confiabilidade que estabelecem a taxa aceitável de falhas, os requisitos de proteção e os requisitos de usabilidade.
  ## Exemplo Real
  O MHC-PMS deve estar disponível para todas as clínicas durante as horas normais de trabalho (segunda a sexta-feira, 8h30 às 17h30). Períodos de não operação dentro do horário normal de trabalho não podem exceder cinco segundos em um dia.
 ##### Requisitos Organizacionais
@@ -120,7 +138,7 @@ Esses são os requisitos gerais de sistemas derivados das políticas e procedime
  ## Exemplo Real
  Usuários do sistema MHC-PMS devem se autenticar com seus cartões de identificação da autoridade da saúde.
 ##### Requisitos Externos
-Esse tipo abrange todos os requisitos que derivam de fatores externos ao sistema e seu pro- cesso de desenvolvimento. Podem incluir requisitos reguladores, que definem o que deve ser feito para que o sistema seja aprovado para uso, por um regulador, tal como um banco central; requisitos legais, que devem ser seguidos para garantir que o sistema opere dentro da lei; e requisitos éticos, que asseguram que o sistema será aceitável para seus usuários e o público em geral.
+Esse tipo abrange todos os requisitos que derivam de fatores externos ao sistema e seu processo de desenvolvimento. Podem incluir requisitos reguladores, que definem o que deve ser feito para que o sistema seja aprovado para uso, por um regulador, tal como um banco central; requisitos legais, que devem ser seguidos para garantir que o sistema opere dentro da lei; e requisitos éticos, que asseguram que o sistema será aceitável para seus usuários e o público em geral.
  ## Exemplo Real
  O sistema deve implementar as disposições de privacidade dos pacientes, tal como estabelecido no HStan-03-2006-priv.
 
@@ -145,6 +163,9 @@ Visam descobrir requisitos. A elicitação e análise de requisitos podem envolv
 4. Especificação de requisitos. 
 
 ![[engs-req-ela.png]]
+ 
+ ## Modelo Espiral
+ Modelo de processo de software evolucionário que acopla a natureza iterativa da prototipação com os aspectos sistemáticos e controlados do modelo cascata. Fornece potencial para o rápido desenvolvimento de versões cada vez mais completas do software. é um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistemas intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos.
 ##### Especificação
 Converte os requisitos em alguma forma-padrão de documentação das funcionalidades e restrições do software. Este processo é essencial para dar direção ao desenvolvimento e garantir que o produto final atenda às expectativas.
 ##### Validação
@@ -157,6 +178,6 @@ Técnica de observação que pode ser utilizada para compreender os requisitos s
 ##### Prototipagem 
 Tem por objetivo explorar aspectos críticos dos requisitos de um produto, implementando de forma rápida um pequeno subconjunto de funcionalidades deste produto. O protótipo é indicado para estudar as alternativas de interface do usuário; problemas de comunicação com outros produtos; e a viabilidade de atendimento dos requisitos de desempenho.
 ##### Entrevistas
-Convém que o entrevistador dê margem ao entrevistado para expor as suas idéias. É necessário ter um plano de entrevista para que não haja dispersão do assunto principal e a entrevista fique longa, deixando o entrevistado cansado e não produzindo bons resultados.
+Convém que o entrevistador dê margem ao entrevistado para expor as suas ideias. É necessário ter um plano de entrevista para que não haja dispersão do assunto principal e a entrevista fique longa, deixando o entrevistado cansado e não produzindo bons resultados.
 
 - Requer interação direta e pode ser custosa em termos de tempo e recursos se os entrevistados estiverem em locais distintos.
