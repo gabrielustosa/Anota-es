@@ -3,7 +3,7 @@
 	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
 	- [ ] UX; 
 	- [ ] Análise e projeto orientados a objetos; 
-	- [ ] A Linguagem UML: modelos e diagramas; 
+	- [x] A Linguagem UML: modelos e diagramas; 
 	- [x] Engenharia de requisitos. 
 - [x] Estrutura de dados e algoritmos [[caixa concurso/Estrutura de Dados e Algoritmos|estudar]]
 	- [x] Busca sequencial 

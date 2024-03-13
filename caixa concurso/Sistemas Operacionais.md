@@ -36,7 +36,10 @@ Uma abstração de uma instância de um programa em execução. São úteis para
 1. Execução (está sendo executado pela CPU naquele momento)
 2. Pronto (executável ou parado temporariamente para deixar outro processo prioritário ser executado)
 3. Bloqueado ou Wait (incapaz de ser executado, esperando outro evento acontecer)
-
+ 
+ ## BCP  (Process Control Block – PCB)
+ Estrutura onde o SO guarda todas as informações do processo, contendo sua identificação, prioridade, estado corrente, recursos alocados por ele e informações sobre o programa em execução.
+ 
  ## Dentro de um processo 
 1. Conjunto de instruções (Programa)
 2. Espaçamento de endereçamento.
@@ -214,23 +217,23 @@ Mapeia o espaço de endereçamento de cada processo em uma parte diferente da me
 - Endereços lógicos se igualam com os físicos.
 - o espaço de memória é definido durante o processo de **compilação**
 #### Algoritmos de Alocação de Memória 
- ##### First-Fit
+ ##### First-Fit (tamanho suficiente)
  O primeiro segmento livre com tamanho suficiente para alocar o arquivo é selecionado. A busca na lista é sequencial, sendo interrompida tão logo se encontre um segmento adequado.
  - Mais rápido e o melhor.
  - Ele gera no inicio da memória pequenas partições livres que necessitam ser pesquisadas a cada passo subsequente do First-Fit.
- ##### Next-Fit
+ ##### Next-Fit (grande,  próximo ao último segmento)
  Parecido com o First-Fit, porém inicia a procura a partir do local onde foi feito a ultima locação e escolhe o bloco que é grande o suficiente para o processo a ser alocado;
  - Frequentemente aloca blocos livres no fim da memória.
  - Performance inferior ao First-Fit.
- ##### Best-Fit
+ ##### Best-Fit (menor)
  Seleciona o menor segmento livre disponível com tamanho suficiente para armazenar o arquivo. A busca em toda a lista se faz necessária para a seleção do segmento, a não ser que a lista esteja ordenada por tamanho.
  - Tem a pior performance.
  - Procura pelo menor bloco que satisfaça o requisito.
- ##### Worst-Fit
+ ##### Worst-Fit (maior)
  Maior segmento é alocado e a busca por toda a lista se faz necessária, a menos que exista uma ordenação por tamanho.
  - Escolhe Maior espaço possível;
  - Tempo de busca grande;
- ##### Quick-Fit
+ ##### Quick-Fit (tabela)
  Mantém listas em separado para alguns dos tamanhos mais comuns solicitados. Ele pode ter uma tabela com n entradas, na qual a primeira é um ponteiro para o início de uma lista espaços livres.
  - Tem as mesmas desvantagens de todos os esquemas que ordenam por tamanho do espaço livre.
 #### Memória virtual

@@ -75,6 +75,11 @@ Um caso de uso é uma sequência de ações, executada por atores que produzem u
 #### Diagramas de classe
 Um diagrama de classe fornece uma visão estática ou estrutural do sistema. Ele não mostra a natureza dinâmica das comunicações entre os objetos das classes no diagrama. A visibilidade é indicada pelos sinais –, #, ~ ou +, que indicam, respectivamente, visibilidade ``private``, ``protected``, ``package`` ou ``public``.  Atributos estáticos podem ser referenciados sendo sublinhados. 
 
+```ad-tip
+###### ~ (package)
+Pode ser acessado pela própria classe ou por qualquer classe que pertença ao mesmo pacote. (Pacote)
+```
+
 ![[engs-uml-dc.png]]
 
 Uma classe abstrata ou método abstrato é indicado pelo uso de itálico no nome da classe no diagrama de classes. Uma interface é indicada acrescentando-se a expressão ``<<interface>>``. 
@@ -82,12 +87,29 @@ Uma classe abstrata ou método abstrato é indicado pelo uso de itálico no nome
 ![[engs-uml-dca.png]]
 
 Os diagramas de classe também podem exibir relações entre classes. Uma classe que seja subclasse de outra classe é conectada a ela por uma seta com uma linha sólida como eixo e com uma ponta triangular vazia. A seta aponta da subclasse para a superclasse. Em UML, uma relação como essa é chamada de generalização  ``Horse -> Thoroughbred/QuarterHouse``. Uma seta tendo como eixo uma linha tracejada indica implementação de interface ``OwnedObject - Horse``. A associação entre duas classes indica que há uma relação estrutural entre elas. Associações são representadas por linhas sólidas. ``OwnedObject - Person``. Uma relação de dependência representa outra conexão entre classes e é indicada por uma linha tracejada (com setas opcionais nas extremidades e com rótulos opcionais) `Thoroughbred - Date``. 
+##### Relacionamentos 
+ ## Dependência
+ Dependência fraca, usualmente transiente, que ilustra que uma classe usa informações de outra classe em algum momento.
+ 
+![[engs-uml-dcd.png]]
 
-![[engs-uml-dcl.png]]
-
-Uma agregação é um tipo especial de associação representada por um losango vazio em uma extremidade do ícone. Ela indica uma relação “todo/parte”, em que a classe para a qual a seta aponta é considerada uma “parte” da classe na extremidade do losango da associação. Uma composição é uma agregação indicando forte relação de propriedade entre as partes. Em uma composição, as partes vivem e morrem com o proprietário porque não têm um papel a desempenhar no sistema de software independente do proprietário.
-
-Uma classe ``College`` tem uma agregação de objetos ``Building`` que representam os edifícios que formam o campus. ``College`` tem também uma coleção de cursos. Mesmo que a universidade fechasse, os edifícios ainda continuariam a existir (supondo que a universidade não fosse fisicamente destruída) e poderiam ser usados para outros propósitos, mas um objeto ``Course`` não tem utilidade fora da universidade na qual está sendo oferecido. Se a universidade deixasse de existir como uma entidade de negócios, o objeto ``Course`` não teria mais utilidade e, portanto, também deixaria de existir
+ ## Associação
+ Relacionamento mais forte que a dependência, indica que a classe mantém uma referência a outra classe ao longo do tempo. As associações podem conectar mais de duas classes.
+ 
+![[engs-uml-dcas.png]]
+  
+  ## Agregação
+  Relacionamento mais específico do que a associação, indica que uma classe é um contêiner ou uma coleção de outras classes. As classes contidas não dependem do contêiner - assim, quando o contêiner é destruído, as classes continuam existindo. 
+   ![[engs-uml-ag.png]]
+   ## Composição
+   Variação mais específico da agregação, este relacionamento indica uma dependência de ciclo de vida forte entre as classes, de modo que quando um contêiner é destruído, seu conteúdo também é.
+   ![[engs-uml-co.png]]
+   ## Generalização/Especialização
+   Relacionamento entre itens gerias (superclasses/classes-mãe) e tipos mais específicos desses itens (subclasses/classes-filha). Representa a herança entre as classes.
+   
+![[engs-uml-ge.png]]
+##### Diagrama de Objeto
+É usado para ilustrar instâncias de coisas contidas nos **Diagramas de Classes**. Essas instâncias são conhecidas como objetos e cada um é uma representação concreta de uma classe, em um determinado momento durante a execução do sistema. Esse diagrama é útil para visualizar, especificar e documentar as estruturas de objetos e mostrar como eles se relacionam uns com os outros, capturando assim o estado do sistema em um ponto específico no tempo.
 #### Diagrama de Implantação
 Focalizam a estrutura do sistema de software e são úteis para mostrar a distribuição física de um sistema de software entre plataformas de hardware e ambientes de execução. Por exemplo, suponha que você esteja desenvolvendo um pacote de renderização gráfica baseado na Web. Os usuários do seu pacote de software usarão o navegador Web para acessar o seu site e introduzir as informações de renderização. O seu site vai renderizar uma imagem gráfica de acordo com as especificações do usuário e a enviará de volta ao usuário. Como a renderização gráfica pode ser cara em termos de computação, você decide tirar a renderização do servidor Web, colocando-a em uma plataforma separada.
 
@@ -97,10 +119,67 @@ Ajudam a determinar a funcionalidade e as características do software sob o pon
 
 ![[engs-uml-cu.png]]
 
+```ad-info
+###### Ator
+Representa uma entidade externa que interage com o sistema, seja um usuário, outro sistema ou uma entidade organizacional.
+###### Relacionamento de Comunicação
+Conexão entre um ator e um caso de uso, mostrando a interação.
+###### Relacionamento de Extensão `<<extend>>`
+Um caso de uso estende outro, adicionando comportamento opcional. (não são utilizados entre atores)
+###### Relacionamento de Inclusão `<<include>>`
+Um caso de uso inclui as funcionalidades de outro, indicando que é necessário para sua execução.
+```
 #### Diagramas de Sequência
-Ao contrário dos diagramas de classe e de implantação, que mostram a estrutura estática de um componente de software, o diagrama de sequência é utilizado para indicar as comunicações dinâmicas entre objetos durante a execução de uma tarefa. Ele mostra a ordem temporal na qual as mensagens são enviadas entre os objetos para executar aquela tarefa. Podemos usar um diagrama de sequência para mostrar as interações em um caso de uso ou em um cenário do sistema de software.
+Ao contrário dos diagramas de classe e de implantação, que mostram a estrutura estática de um componente de software, o diagrama de sequência é utilizado para indicar as comunicações dinâmicas entre objetos durante a execução de uma tarefa (caso de uso). Ele mostra a ordem temporal na qual as mensagens são enviadas entre os objetos para executar aquela tarefa. Podemos usar um diagrama de sequência para mostrar as interações em um caso de uso ou em um cenário do sistema de software.
 
 ![[engs-uml-ds.png]]
+##### Operadores 
+- **alt** para situações alternativas (semelhante a "if-else");
+- **opt** para situações opcionais (semelhante a "if" sem o "else");
+- **loop** para repetições (semelhante a "while" ou "for");
+- **par** para processamento paralelo;
+- **critical** para regiões críticas que não devem ser interrompidas;
+- **break** quebra de execução
+- **neg** negação/interação inválida
+- **strict** ordem sequencial estrita
+##### Mensagens 
+![[engs-uml-sem.png]]
+#### Diagrama de Comunicação
+Fornece outra indicação da ordem temporal das comunicações, mas dá ênfase às relações entre os objetos e classes em vez da ordem temporal. Em um diagrama de comunicação, os objetos que interagem são representados por retângulos. Associações entre objetos são representadas por linhas ligando os retângulos. Normalmente, há uma seta apontando para um objeto no diagrama, que inicia a sequência de passagem de mensagens. A seta é identificada com um número e um nome de mensagem. Se você estiver interessado em mostrar as relações entre os objetos, além das mensagens que estão sendo enviadas entre eles, o diagrama de comunicação provavelmente é uma opção melhor do que o diagrama de sequência. 
+
+![[engs-uml-dco.png]]
+#### Diagrama de Atividade
+O diagrama de atividade mostra o comportamento dinâmico de um sistema ou de parte de um sistema por meio do fluxo de controle entre ações que o sistema executa. Ele é similar a um fluxograma, exceto que pode mostrar fluxos concorrentes. O componente principal de um diagrama de atividade é um nó de ação, representado por um retângulo arredondado, que corresponde a uma tarefa executada por um sistema de software. Setas que vão de um nó ação para outro indicam o fluxo de controle. Isto é, uma seta entre dois nós ação significa que, depois que a primeira ação é completada, a segunda ação começa. A escolha do diagrama de atividades é apropriada quando se destina a capturar o fluxo de tarefas entre múltiplos participantes.
+
+![[engs-uml-da.png]]
+##### Símbolos 
+![[engs-uml-da-s.png]]
+#### Diagrama de Estado
+Utilizado para modelar o comportamento de um objeto ao longo do tempo, incluindo seus diferentes estados e as transições que ocorrem em resposta a eventos específicos. São muito usados para modelar o comportamento de Interfaces, Casos de Uso, Instâncias de classes. 
+
+![[engs-uml-de.png]]
+#### Diagrama de Componentes
+Representa a organização e a dependência entre os componentes físicos do sistema, como bibliotecas, módulos ou pacotes.
+
+![[engs-uml-dcom.png]]
+#### Diagrama de Pacotes
+Diagrama estrutural que mostra como elementos de um sistema são organizados em pacotes, bem como as dependências entre esses pacotes. Eles são úteis para organizar e estruturar um sistema em elementos de mais alto nível, facilitando o gerenciamento de complexidade do sistema.
+
+![[engs-uml-dp.png]]
+#### Classificação
+**Diagramas Estáticos (ou Estruturais)** modelam a estrutura e organização de um sistema, incluindo informações sobre classes, atributos, métodos, pacotes, etc.
+- Diagrama de Classes
+- Diagrama de Objetos
+- Diagrama de Componentes
+- Diagrama de Implantação
+- Diagrama de Pacotes
+
+**Diagramas Dinâmicos (ou Comportamentais)** modelam eventos que ocorrem durante a execução de um sistema.
+- Diagrama de Casos de Uso
+- Diagrama de Sequência
+- Diagrama de Atividades
+- Diagrama de Estados
+- Diagrama de Colaboração
 # Engenharia de Requisitos
 Os requisitos de um sistema são as descrições do que o sistema deve fazer, os serviços que oferece e as restrições a seu funcionamento. Este, é o processo de descobrir, analisar, documentar e verificar esses serviços e restrições. Idealmente, eles devem especificar somente o comportamento externo do sistema. A elaboração de requisitos é norteada pela criação e pelo refinamento de cenários que descrevem como o usuário e outros atores interagirão com o sistema. Cada cenário de usuário é analisado a fim de extrair classes de análise, ou seja, entidades do domínio de negócio visíveis para o usuário. O documento de requisitos não deve incluir detalhes da arquitetura ou projeto do sistema.  Eles podem ser usados como parte do contrato para a implementação do sistema e devem consistir em uma especificação completa e detalhada de todo o sistema.
 
