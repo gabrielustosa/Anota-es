@@ -1,7 +1,7 @@
 
 - [ ] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
 	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
-	- [ ] UX; 
+	- [x] UX; 
 	- [ ] Análise e projeto orientados a objetos; 
 	- [x] A Linguagem UML: modelos e diagramas; 
 	- [x] Engenharia de requisitos. 

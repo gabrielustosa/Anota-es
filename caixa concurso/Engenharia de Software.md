@@ -260,3 +260,35 @@ Tem por objetivo explorar aspectos críticos dos requisitos de um produto, imple
 Convém que o entrevistador dê margem ao entrevistado para expor as suas ideias. É necessário ter um plano de entrevista para que não haja dispersão do assunto principal e a entrevista fique longa, deixando o entrevistado cansado e não produzindo bons resultados.
 
 - Requer interação direta e pode ser custosa em termos de tempo e recursos se os entrevistados estiverem em locais distintos.
+# Experiência do Usuário (UX)
+A experiência do usuário é fundamental para a acessibilidade e compreensão de uso do software. Isso significa levar em conta todas as ações e expectativas razoáveis do usuário durante cada passo do processo de desenvolvimento.  Para facilitar o gerenciamento da tarefa de elaborar uma experiência do usuário positiva, Garrett sugere dividi-la em seus elementos de componentes: estratégia, escopo, estrutura, esqueleto e superfície.
+
+![[engs-ux-comp.png]]
+
+- **Estratégia** - Identifica as necessidades do usuário e os objetivos de negócio. (é a base do UX)
+- **Escopo** -  Inclui os requisitos funcionais e de conteúdo (ex., informações, mídias, serviços)
+- **Estrutura** - Consiste no projeto de interação (como o sistema reage em resposta às ações dos usuários)
+- **Esqueleto** -  Composto por três componentes: projeto informacional (ex., apresentação do conteúdo de forma a torná-lo compreensível para o usuário), projeto de interface (ex., organizar os objetos na tela da interface para que o usuário consiga trabalhar com a funcionalidade do sistema) e projeto de navegação (ex., o conjunto de elementos da tela que permite que os usuários se localizem na arquitetura da informação).
+- **Superfície** - Apresenta o projeto visual ou a aparência do projeto acabado para os seus usuários.
+#### Processo de Projeto
+O projeto de interfaces do usuário começa com a identificação dos requisitos do usuário, de tarefas e dos ambientes. Uma vez que as tarefas de usuário tenham sido identificadas, cenários de usuário (casos de uso) são criados e analisados para definir um conjunto de ações e objetos de interface. Informações contidas no modelo de requisitos formam a base para a criação de um layout de tela que representa o design gráfico e o posicionamento de ícones, a definição de texto de tela descritivo, a especificação e a colocação de títulos para as janelas, bem como a especificação de itens de menu principais e secundários. Então, são usadas ferramentas para prototipação e, por fim, a implementação do modelo de projeto para interface.
+
+![[engs-ux-ciclo.png]]
+
+Três importantes princípios orientam o projeto de interfaces do usuário eficazes: 
+1. Deixar o usuário no comando; 
+2. Reduzir a carga de memória do usuário; 
+3. Tornar a interface consistente. Para obter uma interface que observe esses princípios, deve ser realizado um processo de projeto organizado.
+##### Interface
+A interface do usuário é a janela para o software. Em muitos casos, ela molda a percepção do usuário quanto à qualidade de um sistema. Se a “janela” estiver embaçada, ondulada ou quebrada, o usuário poderá rejeitar um sistema computacional que, de outra forma, seria considerado poderoso. Por esse motivo, o desenvolvimento de uma interface do usuário começa com uma série de tarefas de análise:
+
+ ## Análise dos usuários 
+ Define personas para os perfis de vários usuários e é reunida com base em uma série de fontes técnicas e comerciais. (A análise do usuário permite que os desenvolvedores criem um mapa da jornada do cliente que serve de representação visual dos objetivos do artefato) 
+ ## Análise de tarefas
+ Define as tarefas e ações de usuários usando uma abordagem de refinamento ou orientada a objetos, aplicando casos de uso, elaboração de tarefa e objetos, análise de fluxos de trabalho e representações hierárquicas de tarefas para entender completamente a interação homem-computador. 
+ ## Análise do ambiente 
+ Identifica as estruturas físicas e sociais em que a interface deve operar.
+ ## Análise dos cenários de uso
+ São criados objetos e ações de interface que fornecem uma base para a criação de um layout de tela que represente o design gráfico e o posicionamento de ícones, a definição de texto de tela descritivo, a especificação e a colocação de títulos para as janelas, bem como a especificação de itens de menu principais e secundários. 
+
+Pode ser criado um storyboard para ilustrar a navegação pelas telas desenvolvidas para o produto de modo a realizar tarefas específicas. Questões de projeto, como tempo de resposta, estrutura de comandos e ações, tratamento de erros e recursos de ajuda, são consideradas à medida que o modelo de projeto é refinado. Uma grande variedade de ferramentas de implementação é usada para construir um protótipo para avaliação por parte do usuário.
