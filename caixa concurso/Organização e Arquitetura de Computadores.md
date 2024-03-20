@@ -5,7 +5,6 @@
 1. Temporal: Refere-se à tendência de um processador acessar locais de memória que foram usados recentemente. Por exemplo, durante a execução de um laço de instruções
 2. Espacial Refere-se à tendência de a execução de um programa envolver uma série de locais de memória que estão próximos; Os caches utilizam esse conceito para tirar salvar estados acessados recentemente.
 3. Sequencial:  Técnica de referência à posição seguinte (listas encadeadas)
-
 #### Níveis
 ```mermaid
 --- 
@@ -18,7 +17,6 @@ cpu(Registradores)  --> cache(Cache) -->  ram(Memória RAM) -->  IO("Dispositivo
 
 * Cache (ou S-RAM) são memórias de acesso rápido gerenciadas pelo hardware do processador (L1, L2, ...) L1 mais próxima da CPU, capacidade menor, invisíveis para programas e o sistema operacional.
 * RAM (ou D-RAM) é uma memória de acesso aleatório para armazenar dados de processos ativos do sistema operacional.
-
 # CPU
 
 #### UC (Unidade de Controle)

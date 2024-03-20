@@ -79,6 +79,7 @@ Está relacionada com identificação de padrões, modelagem dos dados, detecç�
  - Transformação de dados categóricos para numéricos; 
  - Agregação de dados, por meio da combinação de dados de diferentes conjuntos em uma única fonte, de forma coerente; 
  - Criação de novos atributos.
+ - Deduplicação: redução de dados, que remove duplicatas de um conjunto de dados, mantendo apenas uma única instância de cada dado. 
  ##### Redução e sintetização dos dados
  Gera uma representação reduzida do conjunto de dados, porém mantendo os mesmos (ou próximo a isso) resultados da análise. Para isso, essa prática requer uma fase de seleção de atributos, identificando quais são irrelevantes para a análise e podem ser removidos da base.
  - Análise de Componentes Principais (Principal Component Analysis — PCA): detecta a correlação entre as variáveis. E caso seja detectado uma forte correlação entre elas, cria-se um conjunto menor de combinações lineares dessas variáveis, reduzindo assim a dimensionalidade dos dados.

@@ -5,8 +5,7 @@
 #### POO
 - **Encapsular**: Proteger os dados do acesso direto, controlando a forma como são acessados e modificados, **getter** e **setter**. 
 - **Polimorfismo**: permite que objetos de diferentes classes respondam a uma mesma mensagem (ou método) de diferentes maneiras.
-
- #### Ordem de acrescimento de variáveis
+#### Ordem de acrescimento de variáveis
 - ++i: O valor é acrescentado imediatamente 
 - i++: O valor continua o mesmo e será incrementado na próxima linha de execução.
 #### Ordem de execução de variáveis

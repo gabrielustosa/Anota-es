@@ -127,3 +127,13 @@
 - [ ] Gestão e governança de TI
 	- [ ] ITIL v.4; 
 	- [ ] COBIT
+
+- [ ] Estatística 
+	- [ ] Representação tabular e gráfica. 
+	- [ ] Medidas de tendência central (média, mediana, moda, medidas de posição, mínimo e máximo) e de dispersão (amplitude, amplitude interquartil, variância, desvio padrão e coeficiente de variação).
+	- [x] Cálculo de probabilidade.  
+	- [x] Teorema de Bayes e Probabilidade condicional. 
+	- [ ] População e amostra.
+	- [ ] Correlação linear simples. 
+	- [ ] Ciência de dados, People analytics. 
+	- [ ] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)

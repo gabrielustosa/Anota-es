@@ -8,6 +8,7 @@ São grandes armazéns que oferecem capacidade de armazenamento de dados sumariz
 - Não volátil (significa que os dados permanecem inalterados entre as cargas de dados).
 - Variável em relação ao tempo, através da exclusão de dados que não são importantes no suporte ao processo de decisão.
 - Integrado: os dados a serem carregados no data warehouse devem ser consistentes, ou seja, devem ser atribuídas convenções para a padronização de dados. 
+- Armazena apenas dados estruturados
 #### Estrutura 
 A estrutura de um DW é composta por Metadados, detalhes antigos ou dados históricos, detalhes correntes (onde ocorre a transformação operacional), dados levemente resumidos (aí se situam os data marts) e dados altamente resumidos. 
 
@@ -39,6 +40,11 @@ Passos para criação:
  
 ![[dw-star.jpeg]]
  
+```ad-tip
+###### Medida
+No design de esquema em estrela uma medida é uma coluna de tabela de fatos que armazena valores a serem resumidos.
+```
+
  ## Modelo Floco de Neve
  Tem dimensões separadas em hierarquias, uma tabela para cada nível. A hierarquia é o resultado da decomposição de uma ou mais dimensões que possuem hierarquia entre seus membros, o u seja relacionamentos muitos para um entre os membros de uma dimensão, formando relacionamentos entre tabelas dimensões. Sua utilização preserva os meios de armazenamento, como ocorre em um modelo normalizado, desta forma, ele evita a redundância de valores textuais em uma tabela.
  ![[dw-snow.png]]
@@ -78,6 +84,12 @@ Processo de definição do nível de detalhamento das informações a serem arma
 
 ![[dw-etl.png]]
 
+```ad-tip
+##### Surrogate Key
+É a chave utilizadas nas dimensões para se ligar a tabela fato. Em resumo, a “Surrogate Key” é uma “Primary Key” localizada na dimensão.
+- chave artificial
+- auto incremental
+```
 #### OLTP
 Realizado em operações diárias, lidando com transações individuais em tempo real, como inserções, atualizações e exclusões.
 

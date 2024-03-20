@@ -331,7 +331,6 @@ Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do us
 Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
 ##### View
 Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.
-
 # HTTP Status Code
 #### Respostas 100-199
 São respostas informativas.
@@ -378,7 +377,6 @@ Representa uma abordagem para desenvolver serviços web baseados nos métodos do
 ##### Idempotência
 Propriedade que a computação herdou da matemática. uando falamos que uma operação é idempotente significa que, se a aplicarmos uma vez ou várias vezes, o resultado é o mesmo. 
 ```
-
 # XHTML
 É a versão estendida do HTML que combina regras de XML ao HTML para melhoria na semântica. (foi substituída pelo HTML5)
 # XML
