@@ -18,7 +18,7 @@
 	- [x] Noções de árvore binária. 
 - [ ] Linguagens de programação [[caixa concurso/Programação|estudar]]
 	- [x] linguagens orientadas a objeto e procedurais;
-	- [ ] Padrões de Projeto;
+	- [x] Padrões de Projeto;
 	- [x] Linguagens Java SE; JEE;
 	- [ ] Microprofile, 
 	- [ ] C#; .NET; 
@@ -97,13 +97,13 @@
 	- [x] Gerência de memória: partições fixas e variáveis, realocação, memória virtual, swapping, sistemas de arquivos; 
 	- [ ] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
 - [ ] Arquiteturas de software
-	- [ ] arquitetura em camadas;
-	- [ ] arquitetura MVC;
-	- [ ] arquitetura orientada a serviços; 
-	- [ ] arquitetura monolítica;
-	- [ ] arquitetura microsserviços;
-	- [ ] micro front end.
-	- [ ] Nuvem pública e privada;
+	- [x] arquitetura em camadas;
+	- [x] arquitetura MVC;
+	- [x] arquitetura orientada a serviços; 
+	- [x] arquitetura monolítica;
+	- [x] arquitetura microsserviços;
+	- [x] micro front end.
+	- [x] Nuvem pública e privada;
 	- [ ] métricas e estimativas de software;
 	- [ ] Análise por pontos de função: conceitos básicos e aplicações;
 	- [ ] Estratégias de Migração de Aplicações para o ambiente de nuvem;
@@ -133,7 +133,7 @@
 	- [ ] Medidas de tendência central (média, mediana, moda, medidas de posição, mínimo e máximo) e de dispersão (amplitude, amplitude interquartil, variância, desvio padrão e coeficiente de variação).
 	- [x] Cálculo de probabilidade.  
 	- [x] Teorema de Bayes e Probabilidade condicional. 
-	- [ ] População e amostra.
+	- [x] População e amostra.
 	- [ ] Correlação linear simples. 
 	- [ ] Ciência de dados, People analytics. 
 	- [ ] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)

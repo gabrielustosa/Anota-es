@@ -75,7 +75,46 @@ P(CO, CA)= 0,6.0,4=0,24
 P(CO, CO)= 0,4.0,4=0,16
 Somando as probabilidades de pelo menos uma cara, temos 0,24+0,24+0,16=0,64._
 #### Teorema da Probabilidade Total
-Lei que permite calcular a probabilidade de um evento que não faz parte de um espaço amostral a partir das probabilidades condicionais de todos os eventos nesse espaço amostral.
+Lei que permite calcular a probabilidade de um evento que não faz parte de um espaço amostral a partir das probabilidades condicionais de todos os eventos nesse espaço amostral. Dado pela fórmula:
+$$
+P(B) = \sum_{i=1} ^{N} P(B|An).P(Ai)
+$$
+##### Exercício
+Suponha que três fábricas forneçam lâmpadas para o mercado. As lâmpadas da fábrica X trabalham por mais de 5 000 horas em 99% dos casos, enquanto as lâmpadas de Y trabalham por mais de 5 000 horas em 95% e da fábrica Z em 90% dos casos. Sabe-se que a fábrica X fornece 60% e Y fornece 30% das lâmpadas. Qual é a chance de que a lâmpada comprada irá funcionar por mais de 5 000 horas?
+_Primeiro, é importante anotar as probabilidades de se comprar uma lâmpada nas lojas. Assim, P(X) = 0,6, P(Y) = 0,3, P(Z) = 0,1. Agora, é necessário anotar quais são as probabilidades de comprar uma lâmpada e ela durar mais de 5000 horas. P(+5k|X) = 0,99, P(+5k|Y) = 0,95, P(+5k|Z) = 0,9. Dessa forma, basta aplicar os valores na fórmula, realizando o somatório obtendo um chance de 96,9%._
+$$
+P(+5k|X).P(X) + P(+5k|Y).P(Y) + P(+5k|Z).P(Z)=0,99.0,6+0,95*0,3+0,9.0,1=0,969
+$$
+#### Teorema de Bayes
+O teorema de Bayes é uma **fórmula de probabilidade** que calcula a possibilidade de um evento acontecer, com base em um conhecimento que pode estar relacionado ao evento.
+$$
+P(A|B) =  \frac{P(B|A).P(A)}{P(B)}
+$$
+$$
+P(Ak|B) =  \frac{P(B|Ak).P(Ak)}{\sum_{i=1} ^{N} P(B|Ai).P(Ai)}
+$$
+##### Exercício
+Imaginemos que o teste de mamografia se comporte da seguinte forma:
+• 1% das mulheres têm câncer de mama
+• 80% das mamografias detectam o câncer quando ele existe
+• 9% das mamografias detectam o câncer quando ele não existe
+Qual é a probabilidade de uma mulher com resultado positivo tenha de fato câncer?
+_Primeiro, organizamos as probabilidades. 
+Ter câncer é P(C) = 0,01
+Não tem câncer é P(SC) = 0,99
+Ter câncer e ser positivo é P(Po|C) = 0,8
+Ter câncer e ser falso positivo é P(N|C) = 0,2
+Não ter câncer e ser positivo é P(Po|SC)= 0,09
+Não ter câncer e ser um falso positivo é P(N|SC) = 0,91
+Aplicaremos na fórmula a probabilidade do resultado positivo ser realmente câncer P(C|PO) é de 8,2%_
+$$
+P(C|Po)=\frac{P(Po|C).P(C)}{\sum_{i=1} ^{2} P(Po|Ai).P(Ai)}=\frac{0,8.0,01}{P(Po|C).P(C)+P(Po|SC).P(SC)} = \frac{0,8.0,01}{0,8.0,01+0,09.0,99} = 0,082
+$$
+https://www.youtube.com/watch?v=TV-8D20Ul78&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=24&pp=iAQB
+https://www.youtube.com/watch?v=vpL_E5nR4Dk&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=25&pp=iAQB
+https://www.youtube.com/watch?v=3-Qc8ZTrFXI&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=26&pp=iAQB
+https://www.youtube.com/watch?v=eIwy6lyxS7Q&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=27&pp=iAQB
+https://www.youtube.com/watch?v=3NrjXOWkKLs&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=35&pp=iAQB
 # Análise Combinatória
 #### Princípio Fundamental da Contagem
 O princípio fundamental da contagem (ou princípio multiplicativo) é utilizado para encontrar o número de possibilidades para um evento constituído de **k** etapas. Para isso, as etapas devem ser sucessivas e independentes.
