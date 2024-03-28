@@ -2,7 +2,7 @@
 - [ ] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
 	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
 	- [x] UX; 
-	- [ ] Análise e projeto orientados a objetos; 
+	- [x] Análise e projeto orientados a objetos; 
 	- [x] A Linguagem UML: modelos e diagramas; 
 	- [x] Engenharia de requisitos. 
 - [x] Estrutura de dados e algoritmos [[caixa concurso/Estrutura de Dados e Algoritmos|estudar]]
@@ -18,7 +18,7 @@
 	- [x] Noções de árvore binária. 
 - [ ] Linguagens de programação [[caixa concurso/Programação|estudar]]
 	- [x] linguagens orientadas a objeto e procedurais;
-	- [x] Padrões de Projeto;
+	- [x] Padrões de Projeto; [[Padrões de Projeto|estudar]]
 	- [x] Linguagens Java SE; JEE;
 	- [ ] Microprofile, 
 	- [ ] C#; .NET; 
@@ -50,9 +50,9 @@
 	- [x] Padrões HTML 4.01
 	- [x] HTTP response Status Code
 	- [x] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
-- [ ] Teste de software 
-	- [ ] Controle da qualidade estático: revisão, inspeção, medição estática, análise estática; 
-	- [ ] Princípios e técnicas de teste de software: teste de unidade, teste de integração, teste de regressão, teste alfa, teste beta, teste de segurança, teste de aceitação e de aprovação; 
+- [ ] Teste de software [[Testes|estudar]]
+	- [x] Controle da qualidade estático: revisão, inspeção, medição estática, análise estática; 
+	- [x] Princípios e técnicas de teste de software: teste de unidade, teste de integração, teste de regressão, teste alfa, teste beta, teste de segurança, teste de aceitação e de aprovação; 
 	- [x] Desenvolvimento dirigido por testes. 
 - [ ] Bancos de dados [[caixa concurso/Banco de Dados|estudar]]
 	- [x] Modelagem conceitual de dados: a abordagem entidade-relacionamento;
@@ -60,12 +60,12 @@
 	- [x] Conceitos de banco de dados e sistemas gerenciadores de bancos de dados (SGBD);
 	- [x] Linguagem SQL; 
 - [ ] Data Warehouse [[caixa concurso/Data Warehouse|estudar]]
-	- [ ] modelagem física de dados: tabelas, índices, particionamento, desempenho; 
+	- [x] modelagem física de dados: tabelas, índices, particionamento, desempenho; 
 	- [x] modelagem conceitual para data warehouses, dados multidimensionais; 
 - [ ] Big data [[caixa concurso/Big Data|estudar]]
 	- [x] Fundamentos, técnicas de preparação e apresentação de dados; 
 	- [x] soluções de big data. 
-- [ ] Agilidade
+- [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
 	- [ ] Lean; Lean IT; 
 	- [ ] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
 	- [ ] ágil em escala e ágil escalado; 
@@ -73,8 +73,8 @@
 	- [ ] management 3.0; 
 	- [ ] Lean UX; 
 	- [ ] Design Thinking;
-	- [ ] História de Usuário; 
-	- [ ] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 
+	- [x] História de Usuário; 
+	- [x] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 
 	- [ ] técnica para estimativa de escopo (planning poker, Story points, enquete, T-shirt sizing);
 	- [ ] Kanban e o fluxo de valor; 
 	- [ ] técnicas/cerimônias para colaboração e integração do time ágil (SoS, PoSinc, planning, review, retrospectiva, daily, PI Plannig); 
@@ -96,7 +96,7 @@
 	- [x] Processos: conceitos básicos, comunicação, sincronização e escalonamento;
 	- [x] Gerência de memória: partições fixas e variáveis, realocação, memória virtual, swapping, sistemas de arquivos; 
 	- [ ] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
-- [ ] Arquiteturas de software
+- [ ] Arquiteturas de software [[Arquitetura de Software|estudar]]
 	- [x] arquitetura em camadas;
 	- [x] arquitetura MVC;
 	- [x] arquitetura orientada a serviços; 
@@ -110,10 +110,10 @@
 	- [ ] Governança;
 	- [ ] Computação Serverless;
 	- [ ] Segurança Compartilhada; 
-- [ ] Gerência de configuração
-	- [ ] Conceitos e práticas;
-	- [ ] Uso de ferramentas de gerência de configuração; 
-	- [ ] Controle de defeitos: conceitos e práticas.
+- [x] Gerência de configuração
+	- [x] Conceitos e práticas;
+	- [x] Uso de ferramentas de gerência de configuração; 
+	- [x] Controle de defeitos: conceitos e práticas.
 - [ ] Portais corporativos:
 	- [ ] Arquitetura da informação, portlets e RSS; 
 	- [ ] Ferramentas de Gestão de Conteúdos; 
@@ -129,11 +129,11 @@
 	- [ ] COBIT
 
 - [ ] Estatística 
-	- [ ] Representação tabular e gráfica. 
+	- [x] Representação tabular e gráfica. 
 	- [ ] Medidas de tendência central (média, mediana, moda, medidas de posição, mínimo e máximo) e de dispersão (amplitude, amplitude interquartil, variância, desvio padrão e coeficiente de variação).
 	- [x] Cálculo de probabilidade.  
 	- [x] Teorema de Bayes e Probabilidade condicional. 
 	- [x] População e amostra.
 	- [ ] Correlação linear simples. 
-	- [ ] Ciência de dados, People analytics. 
+	- [x] Ciência de dados, People analytics. 
 	- [ ] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)

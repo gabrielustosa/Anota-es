@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1d67619be00ea913",
+        "id": "49a490f97ef7f042",
         "type": "tabs",
         "children": [
           {
-            "id": "6a3a802fefea8c79",
+            "id": "28ed01abd3273dc0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "357677353af68b3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Data Warehouse.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Edital.md",
+                "file": "caixa concurso/Data Warehouse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Edital.md",
+                "file": "caixa concurso/Data Warehouse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Edital.md"
+                "file": "caixa concurso/Data Warehouse.md"
               }
             }
           },
@@ -164,8 +177,21 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "6a3a802fefea8c79",
+  "active": "357677353af68b3d",
   "lastOpenFiles": [
+    "caixa concurso/Edital.md",
+    "caixa concurso/Data Warehouse.md",
+    "caixa concurso/Agilidade.md",
+    "imgs/agilidade/ag-backlog.png",
+    "imgs/agilidade",
+    "caixa concurso/Estrutura de Dados e Algoritmos.md",
+    "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Estatística.md",
+    "caixa concurso/Desenvolvimento Web Java.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Banco de Dados.md",
+    "caixa concurso/Testes.md",
     "caixa concurso/Padrões de Projeto.md",
     "imgs/padroes de projeto/pp-visit.png",
     "imgs/padroes de projeto/pp-templ.png",
@@ -176,18 +202,8 @@
     "imgs/padroes de projeto/pp-meme.png",
     "Pasted image 20240326143909.png",
     "imgs/padroes de projeto/pp-mediator.png",
-    "imgs/padroes de projeto/pp-iterator.png",
-    "caixa concurso/Estatística.md",
-    "caixa concurso/Edital.md",
-    "caixa concurso/Engenharia de Software.md",
     "imgs/padroes de projeto",
-    "caixa concurso/Arquitetura de Software.md",
-    "caixa concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Estrutura de Dados e Algoritmos.md",
-    "caixa concurso/Data Warehouse.md",
     "caixa concurso/Programação.md",
-    "caixa concurso/Banco de Dados.md",
-    "caixa concurso/Big Data.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "caixa concurso/Sistemas Operacionais.md",
     "cnu concurso/Edital Tecnologia.md",
@@ -208,9 +224,6 @@
     "principais.md",
     "Sem título.canvas",
     "Estrutura de Dados e Algoritmos (Acesse).md",
-    "cnu concurso",
-    "caixa concurso/wadaw.md",
-    "2024-01-21.md",
-    "caixa concurso/programação/Java.md"
+    "caixa concurso/wadaw.md"
   ]
 }

@@ -1,9 +1,6 @@
-
 # Lista encadeada
-
-São estruturas de dados dinâmicas que contém um valor que apontam para o próximo valor presenta na lista permitindo a inserção e remoção de elementos em qualquer posição, incluindo início, meio e fim. Elas também permitem o acesso aos elementos em posições intermediárias.
+São estruturas de dados dinâmicas que contém um valor que apontam para o próximo valor presenta na lista permitindo a inserção e remoção de elementos em qualquer posição, incluindo início, meio e fim. Elas também permitem o acesso aos elementos em posições intermediárias. Os elementos de uma lista encadeada não são acessados em tempo constante. O primeiro elemento é acessado em O(1) e o último em O(n).
 # Busca Binária
-
 Conquistar e dividir.
 
 - Precisa de um vetor previamente ordenado.
@@ -33,7 +30,6 @@ a = [5, 18, 27, 33, 44, 49, 54, 67, 69, 72, 79, 86, 87, 92]
 binary_search(78) # passou pelos números 54, 79, 69, 72
 ```
 # Ordenação por bolha
-
 Comparações de elementos que estão em posições consecutivas até estarem ordenadas iterando até o **FINAL** da array.
 
 - Sua complexidade é, onde n representa o número de elementos na array.
@@ -52,7 +48,6 @@ alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 bubble_sort(alist) # [17, 20, 26, 31, 44, 54, 55, 77, 93]
 ```
 # Ordenação por seleção
-
 Percorre toda a lista até encontrar o menor elemento do vetor (ou maior) e **TROCA** para a posição do passo da estrutura de repetição.
 
 - Sua complexidade é, onde n representa o número de elementos na array.
@@ -74,7 +69,6 @@ alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 selection_sort(alist) # [17, 20, 26, 31, 44, 54, 55, 77, 93]
 ```
 # Ordenação por inserção
-
 Método que percorre um vetor de elementos da esquerda para a direita e à medida que avança vai **ORDENANDO** os elementos à esquerda
 
 - Sua complexidade é, onde n representa o número de elementos na array.
@@ -97,8 +91,8 @@ alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 insertion_sort(alist) # [17, 20, 26, 31, 44, 54, 55, 77, 93]
 ```
 # Árvore Binária
-
-Leitura em linha sempre começa pela direita
+Grau é a quantidade de nó filho.
+Nível é a posição relativa ao nó raiz.
 
 - Pré ordem: bolinha a esquerda
 - Em ordem: bolinha em baixo

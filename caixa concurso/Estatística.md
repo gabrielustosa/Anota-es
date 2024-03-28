@@ -110,10 +110,8 @@ Aplicaremos na fórmula a probabilidade do resultado positivo ser realmente cân
 $$
 P(C|Po)=\frac{P(Po|C).P(C)}{\sum_{i=1} ^{2} P(Po|Ai).P(Ai)}=\frac{0,8.0,01}{P(Po|C).P(C)+P(Po|SC).P(SC)} = \frac{0,8.0,01}{0,8.0,01+0,09.0,99} = 0,082
 $$
-https://www.youtube.com/watch?v=TV-8D20Ul78&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=24&pp=iAQB
-https://www.youtube.com/watch?v=vpL_E5nR4Dk&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=25&pp=iAQB
-https://www.youtube.com/watch?v=3-Qc8ZTrFXI&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=26&pp=iAQB
-https://www.youtube.com/watch?v=eIwy6lyxS7Q&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=27&pp=iAQB
+
+https://www.youtube.com/watch?v=eIwy6lyxS7Q&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=29
 https://www.youtube.com/watch?v=3NrjXOWkKLs&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=35&pp=iAQB
 # Análise Combinatória
 #### Princípio Fundamental da Contagem

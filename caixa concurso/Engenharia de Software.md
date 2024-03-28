@@ -1,3 +1,5 @@
+# Análise e Projeto Orientados a Objetos
+A perspectiva empregada na análise é de _objetos_ (coisas, conceitos ou entidades). Durante a Análise OO, a ênfase está em achar e descrever objetos (ou conceitos) no domínio do problema. Por exemplo, num sistema de informação para uma biblioteca, alguns dos conceitos são _Livro_, _Biblioteca_, _Usuário_. Tais objetos podem ter atributos e responsabilidades. Durante o projeto orientado a objeto, a ênfase está em achar objetos lógicos de software que poderão ser eventualmente implementados usando uma linguagem de programação OO. Tais objetos podem ter atributos e métodos. Durante a construção (programação OO), os objetos do projeto são implementados e testados
 # Processo Unificado 
 Um conjunto de atividades executadas para transformar um conjunto de requisitos do cliente em um sistema de software. Promove o uso de melhores práticas, como desenvolvimento orientado a casos de uso, arquitetura baseada em componentes, controle de versões, e a integração contínua. 
 
@@ -86,7 +88,7 @@ Uma classe abstrata ou método abstrato é indicado pelo uso de itálico no nome
 
 ![[engs-uml-dca.png]]
 
-Os diagramas de classe também podem exibir relações entre classes. Uma classe que seja subclasse de outra classe é conectada a ela por uma seta com uma linha sólida como eixo e com uma ponta triangular vazia. A seta aponta da subclasse para a superclasse. Em UML, uma relação como essa é chamada de generalização  ``Horse -> Thoroughbred/QuarterHouse``. Uma seta tendo como eixo uma linha tracejada indica implementação de interface ``OwnedObject - Horse``. A associação entre duas classes indica que há uma relação estrutural entre elas. Associações são representadas por linhas sólidas. ``OwnedObject - Person``. Uma relação de dependência representa outra conexão entre classes e é indicada por uma linha tracejada (com setas opcionais nas extremidades e com rótulos opcionais) `Thoroughbred - Date``. 
+Os diagramas de classe também podem exibir relações entre classes. Uma classe que seja subclasse de outra classe é conectada a ela por uma seta com uma linha sólida como eixo e com uma ponta triangular vazia. A seta aponta da subclasse para a superclasse. Em UML, uma relação como essa é chamada de generalização  ``Horse -> Thoroughbred/QuarterHouse``. Uma seta tendo como eixo uma linha tracejada indica implementação de interface ``OwnedObject - Horse``. A associação entre duas classes indica que há uma relação estrutural entre elas. Associações são representadas por linhas sólidas. ``OwnedObject - Person``. Uma relação de dependência representa outra conexão entre classes e é indicada por uma linha tracejada (com setas opcionais nas extremidades e com rótulos opcionais) `Thoroughbred - Date`. 
 ##### Relacionamentos 
  ## Dependência
  Dependência fraca, usualmente transiente, que ilustra que uma classe usa informações de outra classe em algum momento.

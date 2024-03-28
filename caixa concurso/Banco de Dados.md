@@ -15,7 +15,6 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
  **Total**: significa que para cada ocorrência da entidade genérica, existe sempre um ocorrência em uma das entidades especializadas
  **Exclusiva**: significa que uma ocorrência da entidade genérica A é especializada no máximo uma vez, ou seja, uma instancia de A aparece apenas uma vez nas entidades B ou C, nunca em ambas ao mesmo tempo.
 # Normalização
-
 - Cada forma normal depende das anteriores estarem sendo cumpridas.
 
  #### 1 FN
@@ -29,7 +28,6 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
  #### 5 FN
  Dependência de junção. Quando uma tabela T pode ser decomposta em outras tabelas como T1, T2, T3
 # Conceitos 
-
  #### CONCEITUAL
  Definição de user-views, saída, requerimentos, diagramas (relacionamento, entidades, atributos).
  #### LÓGICO
@@ -46,7 +44,6 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
  ##### Durabilidade
  Garante que o resultado de toda transação executada com sucesso deverá ser mantido no banco de dados, mesmo na ocorrência de falhas.
 # SQL
-
  #### DDL (DATA DEFINITION LANGUAGE) 
  Create, Drop, Truncate, Rename, Alter, Constraint
  #### DML (DATA MANIPULATION LANGUAGE)
@@ -60,7 +57,6 @@ FROM users u
 JOIN users_roles ur ON u.id = ur.user_id 
 JOIN roles r ON ur.role_id = r.id;
 ```
-
 #### Left/Right (Outter) Join  
 Usado para retornar todos os resultados que estão relacionados pela chave além de trazer todos os resultados do lado esquerdo/direito da junção que apresentam valores nulos. 
 
@@ -69,7 +65,6 @@ SELECT u.first_name, u.salary, p.bio
 FROM users u 
 LEFT ou RIGHT JOIN profiles p ON u.id = p.user_id;
 ```
-
 #### Full (Outter) Join
 Usado para retornar todos os resultados de ambas as tabelas com os valores que não combinam preenchidos com null.
 
@@ -78,7 +73,6 @@ SELECT u.first_name, u.salary, p.bio
 FROM users u 
 FULL JOIN profiles p ON u.id = p.user_id;
 ```
-
 #### Group By 
 Agrupa resultados com base em uma coluna. (Geralmente utilizado com funções de agregação)
 
@@ -89,7 +83,6 @@ JOIN users_roles ur ON ur.user_id = u.id
 JOIN roles r ON r.id = ur.role_id 
 GROUP BY r.name;
 ```
-
 #### Having
 Existe pois o **WHERE** não pode ser usado dentro de funções de agregação, como o Group By. 
 
@@ -102,5 +95,4 @@ GROUP BY r.name
 HAVING r.name NOT LIKE 'c%';
 ```
 
-#TODO **Metadata Management**, **Concurrency Control**, **Query Optimization**, **Indexing**, **Storage Management**
 
