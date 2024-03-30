@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Edital.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "357677353af68b3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "caixa concurso/Data Warehouse.md",
+                "file": "caixa concurso/Agilidade.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Data Warehouse.md",
+                "file": "caixa concurso/Agilidade.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Data Warehouse.md",
+                "file": "caixa concurso/Agilidade.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Data Warehouse.md"
+                "file": "caixa concurso/Agilidade.md"
               }
             }
           },
@@ -177,11 +164,18 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "357677353af68b3d",
+  "active": "28ed01abd3273dc0",
   "lastOpenFiles": [
+    "imgs/agilidade/ag-devops.png",
     "caixa concurso/Edital.md",
-    "caixa concurso/Data Warehouse.md",
     "caixa concurso/Agilidade.md",
+    "imgs/agilidade/ag-kanban.png",
+    "imgs/web java/a.md",
+    "Pasted image 20240329132953.png",
+    "imgs/agilidade/ag-xp.png",
+    "imgs/agilidade/ag-scrum.png",
+    "caixa concurso/Padrões de Projeto.md",
+    "caixa concurso/Data Warehouse.md",
     "imgs/agilidade/ag-backlog.png",
     "imgs/agilidade",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
@@ -192,16 +186,10 @@
     "caixa concurso/Big Data.md",
     "caixa concurso/Banco de Dados.md",
     "caixa concurso/Testes.md",
-    "caixa concurso/Padrões de Projeto.md",
     "imgs/padroes de projeto/pp-visit.png",
     "imgs/padroes de projeto/pp-templ.png",
     "imgs/padroes de projeto/pp-strat.png",
     "imgs/padroes de projeto/pp-obs.png",
-    "imgs/padroes de projeto/pp-state.png",
-    "Pasted image 20240326145148.png",
-    "imgs/padroes de projeto/pp-meme.png",
-    "Pasted image 20240326143909.png",
-    "imgs/padroes de projeto/pp-mediator.png",
     "imgs/padroes de projeto",
     "caixa concurso/Programação.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
@@ -223,7 +211,6 @@
     "cnu concurso/Organização e Arquitetura de Computadores.md",
     "principais.md",
     "Sem título.canvas",
-    "Estrutura de Dados e Algoritmos (Acesse).md",
-    "caixa concurso/wadaw.md"
+    "Estrutura de Dados e Algoritmos (Acesse).md"
   ]
 }

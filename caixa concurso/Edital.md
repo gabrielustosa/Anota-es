@@ -67,7 +67,7 @@
 	- [x] soluções de big data. 
 - [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
 	- [ ] Lean; Lean IT; 
-	- [ ] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
+	- [x] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
 	- [ ] ágil em escala e ágil escalado; 
 	- [ ] ferramentas; artefatos, métricas e indicadores ágeis; 
 	- [ ] management 3.0; 
@@ -76,10 +76,10 @@
 	- [x] História de Usuário; 
 	- [x] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 
 	- [ ] técnica para estimativa de escopo (planning poker, Story points, enquete, T-shirt sizing);
-	- [ ] Kanban e o fluxo de valor; 
+	- [x] Kanban e o fluxo de valor; 
 	- [ ] técnicas/cerimônias para colaboração e integração do time ágil (SoS, PoSinc, planning, review, retrospectiva, daily, PI Plannig); 
-	- [ ] Integração contínua;
-	- [ ] Deploy contínuo; Entrega contínua;
+	- [x] Integração contínua;
+	- [x] Deploy contínuo; Entrega contínua;
 	- [ ] tratamento de débito técnicos e incidentes; 
 	- [ ] Arquitetura e Qualidade ágeis;
 	- [ ] DevSecOps.
