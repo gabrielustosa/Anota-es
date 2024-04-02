@@ -18,7 +18,7 @@
 	- [x] Noções de árvore binária. 
 - [ ] Linguagens de programação [[caixa concurso/Programação|estudar]]
 	- [x] linguagens orientadas a objeto e procedurais;
-	- [x] Padrões de Projeto; [[Padrões de Projeto|estudar]]
+	- [x] Padrões de Projeto; [[caixa concurso/Padrões de Projeto|estudar]]
 	- [x] Linguagens Java SE; JEE;
 	- [ ] Microprofile, 
 	- [ ] C#; .NET; 
@@ -68,21 +68,21 @@
 - [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
 	- [ ] Lean; Lean IT; 
 	- [x] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
-	- [ ] ágil em escala e ágil escalado; 
-	- [ ] ferramentas; artefatos, métricas e indicadores ágeis; 
+	- [x] ágil em escala e ágil escalado; 
+	- [x] ferramentas; artefatos, métricas e indicadores ágeis; 
 	- [ ] management 3.0; 
 	- [ ] Lean UX; 
 	- [ ] Design Thinking;
 	- [x] História de Usuário; 
 	- [x] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 
-	- [ ] técnica para estimativa de escopo (planning poker, Story points, enquete, T-shirt sizing);
+	- [x] técnica para estimativa de escopo (planning poker, Story points, enquete, T-shirt sizing);
 	- [x] Kanban e o fluxo de valor; 
-	- [ ] técnicas/cerimônias para colaboração e integração do time ágil (SoS, PoSinc, planning, review, retrospectiva, daily, PI Plannig); 
+	- [x] técnicas/cerimônias para colaboração e integração do time ágil (SoS, PoSinc, planning, review, retrospectiva, daily, PI Plannig); 
 	- [x] Integração contínua;
 	- [x] Deploy contínuo; Entrega contínua;
-	- [ ] tratamento de débito técnicos e incidentes; 
-	- [ ] Arquitetura e Qualidade ágeis;
-	- [ ] DevSecOps.
+	- [x] tratamento de débito técnicos e incidentes; 
+	- [x] Arquitetura e Qualidade ágeis;
+	- [x] DevSecOps.
 - [ ] Organização e arquitetura de computadores [[caixa concurso/Organização e Arquitetura de Computadores|estudar]]
 	- [x] Arquitetura básica de um computador
 	- [x] CPU e hierarquia de memória
@@ -118,8 +118,8 @@
 	- [ ] Arquitetura da informação, portlets e RSS; 
 	- [ ] Ferramentas de Gestão de Conteúdos; 
 	- [ ] Modelo de Acessibilidade do Governo Eletrônico.
-- [ ] Qualidade de software: 
-	- [ ] CMMI/MPS-BR: Conceitos básicos e objetivos;
+- [ ] Qualidade de software:  [[caixa concurso/Engenharia de Software#Qualidade de Software|estudar]]
+	- [x] CMMI/MPS-BR: Conceitos básicos e objetivos;
 	- [ ] Disciplinas e formas de representação; 
 	- [ ] Níveis de capacidade e maturidade.
 - [ ] Conceitos de Arquitetura de Referência:

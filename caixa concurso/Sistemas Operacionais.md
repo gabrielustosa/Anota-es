@@ -511,7 +511,7 @@ técnica usada em sistemas operacionais para lidar com dispositivos de E/S dedic
 
 ![[so-linux.png]]
 #### Sistemas de Arquivos
-Por padrão, o Linux pode suportar diversos sistemas de arquivos em diversas partições de disco. Para gerenciar isso o Linux utiliza o VFS [[Sistemas Operacionais#VFS (Virtual File System — sistema de arquivos virtuais)|(Sistema Virtual de Arquivos)]] para lidar com múltiplos sistemas de arquivos.
+Por padrão, o Linux pode suportar diversos sistemas de arquivos em diversas partições de disco. Para gerenciar isso o Linux utiliza o VFS [[caixa concurso/Sistemas Operacionais#VFS (Virtual File System — sistema de arquivos virtuais)|(Sistema Virtual de Arquivos)]] para lidar com múltiplos sistemas de arquivos.
 ##### Estrutura de Arquivos
 - /var - logs, filas de impressão, filas de e-mail e outros arquivos mantidos dinamicamente pelo sistema.
 - /proc - diretório virtual, arquivos servem como ponto de acesso para uma série de variáveis e recursos do sistema
@@ -559,7 +559,7 @@ chmod: Modifica o modo de acesso à arquivos  ``$ chmod 644 -r afile``
 # Windows
 ![[so-windows.png]]
 #### Sistemas de Arquivos
-[[Sistemas Operacionais#Exemplos de Sistemas de Arquivos|NTFS]] é o sistema de arquivos padrão do Windows.
+[[caixa concurso/Sistemas Operacionais#Exemplos de Sistemas de Arquivos|NTFS]] é o sistema de arquivos padrão do Windows.
 
 ```ad-attention
 sistemas distribuídos: http://profs.ic.uff.br/~simone/sd/contaulas/

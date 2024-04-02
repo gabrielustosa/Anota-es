@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "49a490f97ef7f042",
+        "id": "5ff1badc4a76de74",
         "type": "tabs",
         "children": [
           {
-            "id": "28ed01abd3273dc0",
+            "id": "106cd4869d4f7569",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Agilidade.md",
+                "file": "caixa concurso/Engenharia de Software.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Agilidade.md",
+                "file": "caixa concurso/Engenharia de Software.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Agilidade.md",
+                "file": "caixa concurso/Engenharia de Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Agilidade.md"
+                "file": "caixa concurso/Engenharia de Software.md"
               }
             }
           },
@@ -164,53 +164,52 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "28ed01abd3273dc0",
+  "active": "106cd4869d4f7569",
   "lastOpenFiles": [
-    "imgs/agilidade/ag-devops.png",
+    "cnu concurso/Engenharia de Software.md",
+    "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Engenharia de Softwarea.md",
+    "cnu concurso/Engenharia de Software.md.lnk",
+    "caixa concurso/Engenharia de Software.md.lnk",
     "caixa concurso/Edital.md",
     "caixa concurso/Agilidade.md",
+    "imgs/engenharia de software/engs-pu-disc.png",
+    "imgs/agilidade/ag-cfd.png",
+    "imgs/agilidade/ag-burndown.png",
+    "caixa concurso/Padrões de Projeto.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "cnu concurso/Edital.md",
+    "caixa concurso/Testes.md",
+    "cnu concurso/Data Warehouse.md",
+    "cnu concurso/Big Data.md",
+    "cnu concurso/Banco de Dados.md",
+    "cnu concurso/Programação.md",
+    "cnu concurso/Padrões de Projeto.md",
+    "cnu concurso/Rede de Computadores.md",
+    "cnu concurso/Sistemas Operacionais.md",
+    "caixa concurso/Sistemas Operacionais.md",
+    "imgs/agilidade/ag-devops.png",
     "imgs/agilidade/ag-kanban.png",
     "imgs/web java/a.md",
     "Pasted image 20240329132953.png",
     "imgs/agilidade/ag-xp.png",
     "imgs/agilidade/ag-scrum.png",
-    "caixa concurso/Padrões de Projeto.md",
     "caixa concurso/Data Warehouse.md",
     "imgs/agilidade/ag-backlog.png",
     "imgs/agilidade",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
-    "caixa concurso/Engenharia de Software.md",
     "caixa concurso/Estatística.md",
     "caixa concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Arquitetura de Software.md",
     "caixa concurso/Big Data.md",
     "caixa concurso/Banco de Dados.md",
-    "caixa concurso/Testes.md",
     "imgs/padroes de projeto/pp-visit.png",
-    "imgs/padroes de projeto/pp-templ.png",
-    "imgs/padroes de projeto/pp-strat.png",
-    "imgs/padroes de projeto/pp-obs.png",
     "imgs/padroes de projeto",
-    "caixa concurso/Programação.md",
-    "caixa concurso/Organização e Arquitetura de Computadores.md",
-    "caixa concurso/Sistemas Operacionais.md",
-    "cnu concurso/Edital Tecnologia.md",
     "imgs/estatistica",
     "imgs/engenharia de software",
     "imgs/web java",
     "Novo Documento de Texto.txt",
-    "Sem título.md",
-    "cnu concurso/Rede de Computadores.md",
     "imgs/sistemas operacionais",
-    "cnu concurso/Estrutura de Dados e Algoritmos.md",
-    "cnu concurso/Big Data.md",
     "imgs/big data",
-    "imgs/data warehouse",
-    "Fluentia.md",
-    "imgs",
-    "cnu concurso/Organização e Arquitetura de Computadores.md",
-    "principais.md",
-    "Sem título.canvas",
-    "Estrutura de Dados e Algoritmos (Acesse).md"
+    "Sem título.canvas"
   ]
 }

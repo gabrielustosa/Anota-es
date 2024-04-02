@@ -3,15 +3,16 @@ A perspectiva empregada na análise é de _objetos_ (coisas, conceitos ou entida
 # Processo Unificado 
 Um conjunto de atividades executadas para transformar um conjunto de requisitos do cliente em um sistema de software. Promove o uso de melhores práticas, como desenvolvimento orientado a casos de uso, arquitetura baseada em componentes, controle de versões, e a integração contínua. 
 
-- É baseado em componentes que utilizam interfaces.
+- Estrutura a arquitetura do sistema em componentes, permitindo assim uma melhor modularidade e reutilização.
 - Utiliza toda uma definição em UML.
 - Dirigido por casos de usos
 - Centrado na arquitetura, Interativo e incremental
+- Tem foco em riscos
 
 É geralmente descrito sobre três perspectivas:
 
-1. Uma perspectiva dinâmica, que mostra as fases do modelo ao longo do tempo.
-2. Uma perspectiva estática, que mostra as atividades realizadas no processo.
+1. Uma perspectiva dinâmica, representado pelas fases, que mostra as fases do modelo ao longo do tempo.
+2. Uma perspectiva estática, representados pelas disciplinas, que mostra as atividades realizadas no processo.
 3. Uma perspectiva prática, que sugere boas práticas a serem usadas durante o processo.
 
  ```ad-info
@@ -38,7 +39,13 @@ O software não é implementado a partir de um instante no fim do projeto, o cic
  ##### Construção
  A fase de construção envolve projeto, programação e testes do sistema. Durante essa fase, as partes do sistema são desenvolvidas em paralelo e integradas. Na conclusão dessa fase, você deve ter um sistema de software já funcionando, bem como a documentação associada pronta para ser entregue aos usuários.
  ##### Transição
- Implica transferência do sistema da comunidade de desenvolvimento para a comunidade de usuários e em seu funcionamento em um ambiente real. Isso é ignorado na maioria dos modelos de processo de software, mas é, de fato, uma atividade cara e, às vezes, problemática. Na conclusão dessa fase, você deve ter um sistema de software documentado e funcionando corretamente em seu ambiente operacional.
+ Implica transferência do sistema da comunidade de desenvolvimento para a comunidade de usuários e em seu funcionamento em um ambiente real. Tipicamente, essa fase inclui várias iterações, incluindo versões beta, versões de disponibilidade geral, além de correções de erros e lançamentos de aprimoramento. Isso é ignorado na maioria dos modelos de processo de software, mas é, de fato, uma atividade cara e, às vezes, problemática. Na conclusão dessa fase, você deve ter um sistema de software documentado e funcionando corretamente em seu ambiente operacional.
+ 
+ ## MARCOS
+- Fase Iniciação: Identificar escopo ou objetivo do ciclo de vida
+- Fase Elaboração: Arquitetura, equipe e projeto estabilizado de acordo com o ciclo de vida
+- Fase Construção: Capacidade operacional inicial
+- Fase Transição: Lançamento (Release) do produto.
 #### 4 Ps (Pessoa, Projeto, Produto e Processo)
  ##### Pessoas
  Financiam, escolhem, desenvolvem, gerenciam, testam, usam e são beneficiadas pelo produto.
@@ -56,10 +63,11 @@ O software não é implementado a partir de um instante no fim do projeto, o cic
 Responsável pela produção ou modificação de artefatos; Exemplos (programador, analista, testador)
 ##### Atividades
 Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
-##### Disciplina
-Descreve as sequências das atividades e as iterações com que participa, sendo realizadas a qualquer momento do ciclo.
-
 ```
+ 
+ ## Disciplina
+ Descreve as sequências das atividades e as iterações com que participa, sendo realizadas a qualquer momento do ciclo.
+ ![[engs-pu-disc.png]]
 #### Casos de Usos (Cenários de Uso)
 Um caso de uso é uma sequência de ações, executada por atores que produzem um ou mais resultados de valor para outros atores. 
 
@@ -210,11 +218,11 @@ São restrições aos serviços ou funções oferecidos pelo sistema. Incluem re
 -  São frequentemente mais críticos que requisitos funcionais individuais. 
 - Como exemplo, a **interoperabilidade**, que é a capacidade do sistema de se comunicar e operar com outros sistemas, é um exemplo de requisito não funcional.
 - Sempre que possível, os requisitos não funcionais devem ser escritos quantitativamente, para que possam ser objetivamente testados. 
-##### Requisitos de Produto
+##### Requisitos de Produto (Software)
 Esses requisitos especificam ou restringem o comportamento do software . É um requisito de disponibilidade que define quando o sistema deve estar disponível e o tempo diário permitido de seu não funcionamento. Exemplos incluem os requisitos de desempenho quanto à rapidez com que o sistema deve executar e quanta memória ele requer, os requisitos de confiabilidade que estabelecem a taxa aceitável de falhas, os requisitos de proteção e os requisitos de usabilidade.
  ## Exemplo Real
  O MHC-PMS deve estar disponível para todas as clínicas durante as horas normais de trabalho (segunda a sexta-feira, 8h30 às 17h30). Períodos de não operação dentro do horário normal de trabalho não podem exceder cinco segundos em um dia.
-##### Requisitos Organizacionais
+##### Requisitos Organizacionais (Políticas)
 Esses são os requisitos gerais de sistemas derivados das políticas e procedimentos da organização do cliente e do desenvolvedor. Exemplos incluem como os usuários se autenticam para o sistema, os requisitos do processo operacional que definem como o sistema será usado, os requisitos do processo de desenvolvimento que especificam a linguagem de programação, o ambiente de desenvolvimento ou normas de processo a serem usadas, bem como os requisitos ambientais que especificam o ambiente operacional do sistema.
  ## Exemplo Real
  Usuários do sistema MHC-PMS devem se autenticar com seus cartões de identificação da autoridade da saúde.
@@ -236,6 +244,14 @@ Durante o processo de levantamento e análise, alguns requisitos podem mudar ou 
 Podem incluir quatro atividades de alto nível:
 ##### Estudo de Viabilidade 
 Elas visam avaliar se o sistema é útil para a empresa.
+ 
+ ## SMART
+ O método SMART é um acrônimo que serve de guia para definir objetivos de maneira eficaz. 
+- **S** – Específico: O objetivo ou requisito deve ser claro e preciso.
+- **M** – Mensurável: Deve ser possível mensurar o progresso e o sucesso.
+- **A** – Alcançável: Deve ser realista e atingível.
+- **R** – Relevante: Deve ser relevante para a organização, alinhado com suas metas.
+- **T** – Temporal: Deve ter um prazo definido.
 ##### Elicitação e Análise
 Visam descobrir requisitos. A elicitação e análise de requisitos podem envolver diversos tipos de pessoas em uma organização para obter informações sobre o domínio da aplicação, os serviços que o sistema deve oferecer, o desempenho do sistema, restrições de hardware e assim por diante.
 1. Descoberta de requisitos do sistema.
@@ -247,10 +263,18 @@ Visam descobrir requisitos. A elicitação e análise de requisitos podem envolv
  
  ## Modelo Espiral
  Modelo de processo de software evolucionário que acopla a natureza iterativa da prototipação com os aspectos sistemáticos e controlados do modelo cascata. Fornece potencial para o rápido desenvolvimento de versões cada vez mais completas do software. é um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistemas intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos.
+ 
+ ### Levantamento vs Elaboração
+ - Levantamento de Requisitos: primeira fase do processo de engenharia de requisitos. Seu objetivo é identificar, coletar e documentar os requisitos do sistema.
+ - Elaboração de Requisitos: Ocorre após o levantamento de requisitos. Seu objetivo é transformar os requisitos de alto nível coletados durante o levantamento em requisitos mais detalhados e compreensíveis.
 ##### Especificação
 Converte os requisitos em alguma forma-padrão de documentação das funcionalidades e restrições do software. Este processo é essencial para dar direção ao desenvolvimento e garantir que o produto final atenda às expectativas.
 ##### Validação
 Verificar se os requisitos realmente definem o sistema que o cliente quer. Ela se sobrepõe à análise, uma vez que está preocupada em encontrar problemas com os requisitos. A validação de requisitos é importante porque erros em um documento de requisitos podem gerar altos custos de retrabalho quando descobertos durante o desenvolvimento ou após o sistema já estar em serviço.
+
+ ### Verificação vs Validação
+  - Verificação: Processo que ocorre durante o desenvolvimento do software. Seu objetivo é garantir que o software está sendo construído corretamente, de acordo com as especificações dos requisitos.
+  - Validação: A validação de requisitos ocorre após a construção do software, durante a fase de testes. Seu objetivo é garantir que o software atenda às necessidades reais do cliente e aos objetivos de negócio.
 #### Técnicas para o Levantamento de Requisitos
 ##### Questionário
 Adequada para situações onde os usuários estão dispersos geograficamente ou quando se busca obter dados quantificáveis de um grande número de pessoas. Essa abordagem é eficiente em coletar informações de forma estruturada, permitindo análises estatísticas e uma compreensão abrangente das necessidades dos usuários.
@@ -262,6 +286,10 @@ Tem por objetivo explorar aspectos críticos dos requisitos de um produto, imple
 Convém que o entrevistador dê margem ao entrevistado para expor as suas ideias. É necessário ter um plano de entrevista para que não haja dispersão do assunto principal e a entrevista fique longa, deixando o entrevistado cansado e não produzindo bons resultados.
 
 - Requer interação direta e pode ser custosa em termos de tempo e recursos se os entrevistados estiverem em locais distintos.
+##### Workshops
+Elicitação em grupo usada em uma reunião estruturada. Devem fazer parte do grupo uma equipe de analistas e uma seleção dos stakeholders que melhor representam a organização e o contexto em que o sistema será usado, obtendo assim um conjunto de requisitos bem definidos.
+##### JAD
+O JAD facilita a criação de uma visão compartilhada do que o produto de software deve ser. Através da sua utilização os desenvolvedores ajudam os usuários a formular problemas e explorar soluções. Dessa forma, os usuários ganham um sentimento de envolvimento, posse e responsabilidade com o sucesso do produto.
 # Experiência do Usuário (UX)
 A experiência do usuário é fundamental para a acessibilidade e compreensão de uso do software. Isso significa levar em conta todas as ações e expectativas razoáveis do usuário durante cada passo do processo de desenvolvimento.  Para facilitar o gerenciamento da tarefa de elaborar uma experiência do usuário positiva, Garrett sugere dividi-la em seus elementos de componentes: estratégia, escopo, estrutura, esqueleto e superfície.
 
@@ -294,3 +322,7 @@ A interface do usuário é a janela para o software. Em muitos casos, ela molda 
  São criados objetos e ações de interface que fornecem uma base para a criação de um layout de tela que represente o design gráfico e o posicionamento de ícones, a definição de texto de tela descritivo, a especificação e a colocação de títulos para as janelas, bem como a especificação de itens de menu principais e secundários. 
 
 Pode ser criado um storyboard para ilustrar a navegação pelas telas desenvolvidas para o produto de modo a realizar tarefas específicas. Questões de projeto, como tempo de resposta, estrutura de comandos e ações, tratamento de erros e recursos de ajuda, são consideradas à medida que o modelo de projeto é refinado. Uma grande variedade de ferramentas de implementação é usada para construir um protótipo para avaliação por parte do usuário.
+# Qualidade de Software
+Qualidade de software trata sobre a maturidade dos processos de uma organização, visando a qualidade do produto gerado e a consequente satisfação dos seus clientes.
+### CMMI
+O CMMI procura nortear a organização no sentido de implementar a melhoria contínua do processo de software, e o faz através de um modelo que contempla duas representações, divididas em níveis, priorizando de forma lógica as ações a serem realizadas. Quanto maior o nível, maior a maturidade da organização, o que pode se traduzir em maior qualidade do produto final, com maior previsibilidade em cronogramas e orçamentos.

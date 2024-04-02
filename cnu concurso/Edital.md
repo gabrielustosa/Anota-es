@@ -1,0 +1,95 @@
+
+- [ ] Segurança da informação
+	- [ ] Princípios em segurança da informação.
+	- [ ] Políticas de segurança. 
+	- [ ] Classificação de informações. 
+	- [ ] Autenticação e controle de acesso.
+	- [ ] Análise de vulnerabilidade. 
+	- [ ] Plano de continuidade de negócio.
+	- [ ] Normas ISO 17799 e ISO 27001.
+	- [ ] Auditoria e conformidade.
+- [ ] Governança e Gestão de TI
+	- [ ] ITIL: fundamentos, suporte a serviços, entrega de serviços.
+	- [ ] Fundamentos de COBIT. 
+	- [ ] Governança Digital. 
+	- [ ] Gestão de Relacionamento.
+- [x] Sistemas operacionais  [[cnu concurso/Sistemas Operacionais|estudar]]
+	- [x] Conceitos básicos: funções e estruturas de sistemas operacionais. 
+	- [x] Gerenciamento de processos: escalonamento do processador, programação concorrente, deadlock, comunicação e sincronização. 
+	- [x] Gerenciamento de memória: partições, realocação, memória virtual, swapping.
+	- [x] Sistemas de arquivos.
+- [ ] Redes de Computadores [[Rede de Computadores|estudar]]
+	- [x] Conceitos básicos de redes de computadores e Internet.
+	- [x] Camadas de protocolos e serviços:
+		- [x] Camada Física: características do meio de transmissão, técnicas de transmissão. 
+		- [x] Camada de aplicação: principais protocolos. 
+		- [x] Camada de Transporte: serviços, protocolos TCP e UDP, princípios do controle de congestionamento. 
+		- [ ] Camada de Rede: protocolos IPv4 e IPv6, algoritmos de roteamento. 
+		- [ ] Camada de enlace e redes locais: serviços oferecidos, protocolos de acesso múltiplo, endereçamento na camada de enlace.
+	- [ ] Redes Ethernet.
+	- [ ] Redes sem fio.
+	- [ ] Redes móveis. 
+	- [ ] Princípios da Gerência de Redes.
+- [x] Programação 
+	- [x] Linguagens de programação Python e Java.  [[cnu concurso/Programação|estudar]]
+	- [x] Orientação a objetos: conceitos básicos, padrões de projeto.  [[cnu concurso/Padrões de Projeto|estudar]]
+- [x]  Estruturas de dados - [[cnu concurso/Estrutura de Dados e Algoritmos|estudar]]
+	- [x] Estruturas lineares: lista encadeada, pilha, fila. 
+	- [x] Árvores: formas de representação, recursão em árvores, árvores binárias, árvores binárias de busca, filas de prioridades, árvores balanceadas
+	- [ ] Algoritmos de busca e ordenação.
+- [x] Programação Web
+	- [x] Conceitos fundamentais de programação para a Web. 
+	- [x] Linguagens: HTML, XML, CSS, JavaScript. 
+	- [x] Navegadores. 
+	- [x] Frameworks de desenvolvimento para a Web. 
+	- [x] Servidores Web
+- [ ] Desenvolvimento para plataformas móveis
+	- [ ] Plataformas de programação.
+	- [ ] Emuladores e padrões de programação para smartphones e tablets.
+	- [ ] Principais componentes de interface com o usuário. 
+	- [ ] Tecnologias de persistência de dados em dispositivos móveis.
+- [x] Engenharia de software  [[cnu concurso/Engenharia de Software|estudar]]
+	- [x] Processos ágeis.
+	- [x] Engenharia de requisitos. 
+	- [ ] Ideação e especificação ágil. 
+	- [x] Arquitetura MVC e princípios de projeto. 
+	- [x] Testes unitários. 
+	- [x] Revisões de software modernas. 
+	- [x] DevOps (controle de versões, integração contínua e deployment contínuo). 
+	- [x] Testes de aceitação.
+- [ ] Banco de dados [[cnu concurso/Banco de Dados|estudar]]
+	- [x] Projeto de banco de dados: projeto conceitual, lógico e físico.
+	- [x] A abordagem Entidade-Relacionamento (E-R).
+	- [x] Modelo relacional: conceitos, restrições de integridade, mapeamento de modelos E-R para esquemas relacionais
+	- [x] Dependências funcionais e normalização. 
+	- [x] Linguagem SQL: DDL, DML, restrições de integridade, visões, autorização de acesso. 
+	- [x] Sistemas de gerência de bancos de dados.
+	- [x] Bancos de dados NoSQL: definição de NoSQL, orientação à agregados, tipos de SGBD NoSQL: chave valor, chave valor orientado à documentos, família de colunas, grafos
+- [ ] Arquitetura e tecnologias de sistemas de informação
+	- [ ] Conceitos básicos.
+	- [ ] Workflow e gerenciamento eletrônico de documentos
+- [ ] Big Data [[cnu concurso/Big Data|estudar]]
+	- [x] Definição de Big Data.
+	- [ ] Bancos de dados na nuvem. 
+		- [ ] O paradigma de computação na nuvem. 
+		- [ ] Requisitos de gerência de dados na nuvem. 
+		- [ ] Categorias de bancos de dados na nuvem.
+	- [ ] Infraestruturas para processamento distribuído de Big Data: Hadoop, Spark, Kafka.
+- [ ] Data Warehouse [[cnu concurso/Data Warehouse|estudar]]
+	- [x] Definição e características de um Data Warehouse.
+	- [x] Data Mart.
+	- [x] Processamento de Transações em tempo real: OLTP e OLAP.
+	- [x] Modelagem Multidimensional. 
+	- [x] Bancos de Dados Multidimensionais. 
+	- [x] Projeto de Data Warehouse.
+	- [x] Conceitos de extração, transformação e carga (ETL).
+- [ ] Descoberta de Conhecimento e Mineração de Dados
+	- [ ] Conceitos básicos do processo de descoberta de conhecimento em bancos de dados (KDD).
+	- [ ] Metodologia de KDD. 
+	- [ ] Métodos de Data Mining.
+	- [ ] Pré processamento de dados. 
+	- [ ] Mineração de dados: classificação, regressão, detecção de agrupamentos, descoberta de regras de associação, sumarização, modelagem de dependências, detecção de tendências e exceções.
+	- [ ] Visualização de Dados.
+- [ ] Aprendizado de máquina
+	- [ ] Tipos de aprendizado de máquina: aprendizado supervisionado, aprendizado não supervisionado e aprendizado por reforço. 
+	- [ ] Algoritmos de aprendizado de máquina: regressão, árvores de decisão, redes neurais, máquinas de vetor de suporte e algoritmos de agrupamento

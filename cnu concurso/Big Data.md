@@ -79,6 +79,7 @@ Está relacionada com identificação de padrões, modelagem dos dados, detecç�
  - Transformação de dados categóricos para numéricos; 
  - Agregação de dados, por meio da combinação de dados de diferentes conjuntos em uma única fonte, de forma coerente; 
  - Criação de novos atributos.
+ - Deduplicação: redução de dados, que remove duplicatas de um conjunto de dados, mantendo apenas uma única instância de cada dado. 
  ##### Redução e sintetização dos dados
  Gera uma representação reduzida do conjunto de dados, porém mantendo os mesmos (ou próximo a isso) resultados da análise. Para isso, essa prática requer uma fase de seleção de atributos, identificando quais são irrelevantes para a análise e podem ser removidos da base.
  - Análise de Componentes Principais (Principal Component Analysis — PCA): detecta a correlação entre as variáveis. E caso seja detectado uma forte correlação entre elas, cria-se um conjunto menor de combinações lineares dessas variáveis, reduzindo assim a dimensionalidade dos dados.
@@ -93,33 +94,3 @@ Está relacionada com identificação de padrões, modelagem dos dados, detecç�
 5. Representação — Refere-se às atividades iniciais da representação visual dos dados. O objetivo nesse estágio é gerar o modelo visual básico dos dados, como foco principal na análise exploratória dos dados.
 6. Refinamento — Esse estágio é essencial para aperfeiçoar a visualização dos dados analisados. É nesse momento que as técnicas gráficas são utilizadas para tornar a visualização mais eficiente.
 7. Interação — Além do refinamento, a interação também melhora a visualização dos dados, permitindo inserir funcionalidades que ofereçam uma melhor experiência ao leitor.
-
-```
-O enunciado propõe uma avaliação sobre o conhecimento das tecnologias Hadoop e Spark. Para responder corretamente, é necessário entender o que cada uma dessas tecnologias representa no contexto de Big Data.
-
-Hadoop é um framework de software que permite o processamento distribuído de grandes conjuntos de dados através de clusters de computadores. O Hadoop utiliza um modelo de armazenamento conhecido como Hadoop Distributed File System (HDFS), que é, de fato, hierárquico e permite o armazenamento de grandes volumes de dados em um ambiente distribuído.
-
-Por outro lado, Spark é uma plataforma de computação em cluster que fornece uma API para programação distribuída. Spark é projetado para ser rápido e generalista, sendo capaz de realizar processamento em batch e também processamento em tempo real. O Spark SQL é um módulo dentro do Spark que permite a execução de SQL e também a leitura de dados de diversas fontes de dados, incluindo, mas não se limitando a, arquivos hierárquicos.
-
-O erro na afirmação do enunciado está em descrever o Spark como uma "arquitetura de sistema operacional", o que não é verdade. Spark é uma plataforma de processamento e análise de dados e não tem relação com sistemas operacionais. Além disso, o Spark SQL permite consultar dados de maneira estruturada, não necessariamente "arquivos organizados de forma hierárquica" como sugere o enunciado, e sim, estruturas de dados como DataFrames e datasets que podem ser originados de diversas fontes de dados, incluindo bancos de dados relacionais, NoSQL, HDFS e até mesmo formatos como parquet e JSON.
-
-Entender essa distinção é crucial, pois as características do Spark são bastante distintas das de um sistema operacional. O Spark é uma ferramenta na camada de processamento de dados, e não na camada de sistemas operacionais, que gerencia recursos de hardware e fornece serviços essenciais para os programas de computador.
-
-Para compreender a questão é necessário conhecer as características dos frameworks **Apache Spark** e **Apache Hadoop**, bem como suas diferenças fundamentais no contexto de processamento de **Big Data**.
-
-O **Spark** é conhecido por sua capacidade de processar grandes volumes de dados de maneira extremamente rápida, devido à sua arquitetura que realiza operações **em memória**. Utilizando o conceito de **Resilient Distributed Datasets (RDDs)**, o Spark minimiza o acesso ao disco, que é mais lento, optando por manter os dados em memória sempre que possível, o que acelera as operações de leitura e escrita.
-
-Por outro lado, o **Hadoop** é tradicional por usar o modelo de processamento **MapReduce**, que realiza leituras e escritas no disco entre as etapas de map e reduce. Isso resulta em uma velocidade de processamento tipicamente inferior à do Spark para a maioria das cargas de trabalho. Embora o Hadoop seja altamente escalável e adequado para processamento em lote de dados, ele não pode superar a rapidez proporcionada pela computação em memória do Spark.
-
-As afirmações de que o Hadoop seria mais rápido (Alternativa B), que o Spark seria adequado para cargas mais pesadas e o Hadoop para cargas leves (Alternativa C), que ambos utilizam as mesmas técnicas de processamento (Alternativa D) ou que o Hadoop é uma tecnologia mais recente (Alternativa E) estão incorretas.
-
-A **alternativa correta (A)** descreve acuradamente a principal diferença entre Spark e Hadoop: o Spark é mais rápido devido ao seu processamento baseado em memória e uso de RDDs, ao passo que o Hadoop, embora seja robusto e escalável, tem uma abordagem de processamento baseado em disco, utilizando MapReduce.
-
-**Análise Descritiva**: compreende a descrição das características dos **acontecimentos em tempo real,** de maneira a visualizar e entender o comportamento dos dados, de modo a auxiliar na tomada de decisões.
-
-**Análise Preditiva**: esse item tem como objetivo prever **comportamentos futuros**, bem como as **tendências** dos dados, através da análise de informações anteriores. Desse modo, os gestores podem tomar decisões baseadas nos cenários futuros previstos por essa análise.
-
-**Análise Prescritiva**: essa análise descreve os possíveis **efeitos e consequências** de ações que possam ser tomadas. Assim, é possível que possa ser realizada a melhor escolha para determinado cenário.
-
-**Análise Diagnóstica**: neste caso, a análise procura entender as **relações de causa e efeito** entre situações, de modo a compreender os resultados obtidos em decorrência das ações tomadas.
-``` 
