@@ -82,10 +82,10 @@ A comunicação entre processos (**IPC**) ocorre de diversas formas como: compar
  4. Nenhum processo deve ser obrigado a esperar eternamente para entrar em sua região crítica.
  
  ##### Exclusão mútua
- Técnicas usada em programação  para evitar que  processos  tenham acesso simultaneamente a um recurso compartilhado.
+ Técnicas usada em programação para evitar que processos tenham acesso simultaneamente a um recurso compartilhado.
   ## Busy Wait (Espera ocupada)
   Consiste na constante checagem por algum valor para saber se a região crítica está sendo utilizada. 
-  - requer muito processamento da CPU
+  - Requer muito processamento da CPU.
   ## Sleep/Wake up (Dormir/Acordar)
   utilizando funções de "acordar" ou "despertar" processos a depender se condições são atendidas.
   -  Surge como solução a processo **busy wait**, não utilizando um loop infinito para checagem de estado.
@@ -95,11 +95,17 @@ A comunicação entre processos (**IPC**) ocorre de diversas formas como: compar
 - Geral (Contadores): São utilizado para controlar um número de acessos pré-definido.
  ##  Mutexes
   Uma versão simplificada de semáforos, utilizada para exclusão mútua.
- * é uma variável que pode estar definida com travada (1) e destravada (0). 
- * bastante utilizada em processos concorrentes 
+ * É uma variável que pode estar definida com travada (1) e destravada (0). 
+ * Bastante utilizada em processos concorrentes 
  ##  Monitor
   Estruturas de sincronização de alto nível que garantem a exclusão mútua e a sincronização de processos. 
-* Somente pode estar ativo um processo dentro do monitor em um mesmo instante
+* Somente pode estar ativo um processo dentro do monitor em um mesmo instante.
+ ## Centralizado
+ Geralmente, é utilizado em sistemas distribuídos. Se comunica através de mensagens, solicitando para entrar e avisando quando saem da região crítica.
+ ## Lamport
+ Geralmente, é utilizado em sistemas distribuídos. São baseados em relógios lógicos distribuídos, ou seja, cada processo possui seu próprio relógio lógico que é usado para determinar a ordem das operações que lidam com regiões críticas.
+ ## Token Ring
+ Gerenciada por um token que é passado de um processo para o próximo em uma estrutura de anel. Somente o processo que possui o token pode acessar a seção crítica.
 
 ```ad-info
 #### Tempo de Turnaround
@@ -175,7 +181,7 @@ Denota um sistema operacional que provê gerenciamento da totalidade de recursos
 - Serial: apenas um processo se encontra em execução a cada instante, sendo a CPU alocada aos processos de forma intercalada ao longo do tempo.
 ```
 #### MMU (Memory Manager Unit)
-O acesso do processador a memória é controlador pelo sistema operacional através do controlador denominado **MMU** que é o responsável por analisar cada endereço acessado pelo processador, validar e efetuar conversões necessárias entres os endereços lógicos e físicos garantindo o desempenho máximo.
+O acesso do processador a memória é controlador pelo sistema operacional através do controlador denominado **MMU** que é o responsável por analisar cada endereço acessado pelo processador, validar e efetuar conversões necessárias entres os endereços lógicos e físicos garantindo o desempenho máximo. A MMU usa uma tabela de páginas para mapear endereços lógicos para endereços físicos, o que permite ao sistema operacional gerenciar a memória de maneira mais flexível e eficiente.
 
 ![[so-mmu.png]]
 
@@ -244,11 +250,13 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
  ##### Swapping
  Técnica utilizada para poupar espaço na memória física (RAM), movendo processo temporariamente para um disco rígido. Quando o processo é movido ele é salvo em um arquivo chamado swap que depois é utilizado para mover o processo novamente para memória.
  ##### Paginação
- técnica de endereçamento de memória que utiliza o conceito de memória virtual, em que o espaço de endereçamento virtual é dividido em pequenos blocos iguais conhecidos como páginas virtuais.
+ Técnica de endereçamento de memória que utiliza o conceito de memória virtual, em que o espaço de endereçamento virtual é dividido em pequenos blocos iguais conhecidos como páginas virtuais.
+ - Quando uma página não é encontrada ocorre um Page Interrupt, no qual a MMU realiza um desvio para a CPU, resultando em uma Page Fault, que é buscada utilizado o algoritmo de busca responsável.
  ##### Quadros
  As  páginas em memória virtual  correspondentes na memória física são chamadas de quadros de página, ou página física. As páginas e os quadros de página são geralmente do mesmo tamanho fixo.
  ##### Tabela de Páginas
- Registra em que bloco de memória cada página está carregada. As tabelas de páginas são mantidas pelo S.O. Se uma página é acessada mas não está na memória, o **S.O.** consulta a tabela de blocos livres, aloca a página no bloco selecionado e atualiza a tabela de páginas. Em uma implementação simples, o mapeamento de endereços virtuais em endereços físicos pode ser resumido como a seguir: o endereço virtual é dividido em um número de página virtual (bits mais significativos) e um deslocamento (bits menos significativos). Um **bit sujo** ou **bit** **modificado** é um bit associado a um bloco de memória de computador e indica se o bloco de memória correspondente foi modificado ou não.
+ Registra em que bloco de memória cada página está carregada. As tabelas de páginas são mantidas pelo S.O. Se uma página é acessada mas não está na memória, o **S.O.** consulta a tabela de blocos livres, aloca a página no bloco selecionado e atualiza a tabela de páginas. Em uma implementação simples, o mapeamento de endereços virtuais em endereços físicos pode ser resumido como a seguir: o endereço virtual é dividido em um número de página virtual (bits mais significativos) e um deslocamento (bits menos significativos). 
+ * Um **bit sujo** ou **bit** **modificado** é um bit associado a um bloco de memória de computador e indica se o bloco de memória correspondente foi modificado ou não.
   ## Multinível
   O objetivo é evitar manter toda a tabela de páginas na memória durante todo o tempo. Divisão do processo em várias etapas.
   - Apresenta-se como uma solução para o dimensionamento da tabela de páginas.

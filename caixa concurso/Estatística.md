@@ -19,7 +19,7 @@ $$
 ##### Exemplo
 No lançamento de dois dados temos o espaço amostral de 36 elementos (6x6). Considerando os eventos em que a soma seja quatro, temos: {(1, 3), (3, 1), (2, 2)}. Sendo assim, a probabilidade de cair uma soma igual a quatro é 3/36, para determinar a probabilidade de não sair uma soma quatro é
 $$
- \frac{11}{12} = 1-\frac{3}{36}
+  P(A^c) = 1-\frac{3}{36} = \frac{11}{12}
 $$
 #### Exercícios
 Qual é a probabilidade de sair duas caras no lançamento de duas moedas honestas? E a probabilidade de sair uma cara e uma coroa?
@@ -88,9 +88,6 @@ $$
 #### Teorema de Bayes
 O teorema de Bayes é uma **fórmula de probabilidade** que calcula a possibilidade de um evento acontecer, com base em um conhecimento que pode estar relacionado ao evento.
 $$
-P(A|B) =  \frac{P(B|A).P(A)}{P(B)}
-$$
-$$
 P(Ak|B) =  \frac{P(B|Ak).P(Ak)}{\sum_{i=1} ^{N} P(B|Ai).P(Ai)}
 $$
 ##### Exercício
@@ -122,7 +119,7 @@ _Como as escolhas não são restritivas e são independentes, é possível multi
 #### Número Binomial
 Eles representam o número de maneiras de escolher **p** elementos distintos em um conjunto com **n** elementos. Nesta escolha, a ordem dos elementos não é considerada.
 $$
- \frac{n}{p} =  \frac{n!}{p!(n-p)!}
+ C_{n, p} =  \frac{n!}{p!(n-p)!}
 $$
 #### Permutação Simples
 É a ordenação dos elementos de um conjunto finito, quando seus **elementos não se repetem**. É utilizada para determinar a quantidade dessas ordenações. n=p
@@ -143,7 +140,7 @@ $$
 #### Arranjo Simples
 Agrupamentos formados com **n** elementos tomados de **p** em **p**, sabendo que o valor de **n** > **p**. No qual, a ordem da ordenação é importante.
 $$
-\frac{n!}{(n-p)!}
+A_{n,p} = \frac{n!}{(n-p)!}
 $$
 ##### Exemplo
 Quantas possibilidades de senhas existem em um cofre, sabendo que nesse cofre as senhas tem 4 dígitos e que os dígitos de cada senha devem ser distintos?
@@ -154,8 +151,9 @@ $$
 _Também é possível resolver utilizando o princípio fundamental da contagem. Como no primeiro dígito tem 10 opções, o segundo 9 e assim por diante, podemos fazer 10.9.8.7=5040_
 #### Arranjo com Repetição
 Reagrupamentos ordenados que podemos formar com **k** elementos de um conjunto com **n** elementos, sendo que um elemento de **n** pode aparecer mais de uma vez. No qual, a ordem da ordenação é importante. Sabendo que o valor de n > k ou k > n.
+
 $$
-n^p
+A_{n,p} = n^p
 $$
 ##### Exemplo
 Quantas possibilidades de senhas existem em um cofre, sabendo que nesse cofre as senhas tem 4 dígitos?
@@ -163,7 +161,7 @@ _Basta entender que em cada espaço do dígito podem ir 10 possibilidades (0 at�
 #### Combinação Simples
 Combinação a contagem de todos os subconjuntos de **k** elementos que podemos formar de um conjunto de **n** elementos. No qual, a ordem dos elementos não é importante, não existindo repetições entre os elementos. Sabendo que **n** > **k**.
 $$
- \frac{n}{p} =  \frac{n!}{p!(n-p)!}
+ C_{n,p} =  \frac{n!}{p!(n-p)!}
 $$
 ##### Exemplo
 Em uma sala com 7 alunos, o professor Douglas vai escolher 3 alunos para formar uma comissão para a formatura da turma. Quantas comissões distintas é possível formar?
@@ -174,7 +172,7 @@ $$
 #### Combinação com Repetição
 Um conjunto **C** com **n** elementos, admitindo repetições com **k** elementos, todos pertencentes ao conjunto **C**.
 $$
-\frac{(n + p - 1)!}{p!(n-1)!}
+C_{n, p} = \frac{(n + p - 1)!}{p!(n-1)!}
 $$
 ##### Exemplo
 Shirley faz três tipos de doces (brigadeiro, beijinho e cajuzinho) e vende uma caixa com 8 doces dentre estes 3 tipos. Quantas combinações distintas é possível fazer, em relação a esta caixa de doces?

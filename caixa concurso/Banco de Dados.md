@@ -83,6 +83,12 @@ JOIN users_roles ur ON ur.user_id = u.id
 JOIN roles r ON r.id = ur.role_id 
 GROUP BY r.name;
 ```
+
+Agrupar pro todos as combinações.
+
+```sql
+GROUP BY CUBE (coluna1, coluna2);
+```
 #### Having
 Existe pois o **WHERE** não pode ser usado dentro de funções de agregação, como o Group By. 
 
@@ -94,5 +100,37 @@ JOIN roles r ON r.id = ur.role_id
 GROUP BY r.name
 HAVING r.name NOT LIKE 'c%';
 ```
+#### Alter Table
+Alterar o estado das colunas.
 
+```sql
+-- Adicionar
+ALTER TABLE Customers  
+ADD Email varchar(255);
 
+-- Remover
+ALTER TABLE Customers  
+DROP COLUMN Email;
+
+-- Alterar
+ALTER TABLE Customers
+ALTER COLUMN Email TYPE VARCHAR(255);
+
+-- Renomear
+ALTER TABLE Customers  
+RENAME COLUMN Email to EmailNovo;
+```
+#### Grant
+Altera as permissões do usuário.
+
+```sql
+GRANT <permissions> ON <object> TO <user or role> [WITH GRANT OPTION];]
+-- Dar tudo :)
+GRANT ALL PRIVILEGES ON DATABASE database TO usuario;
+```
+#### Role
+Criar um novo usuário.
+
+```sql
+CREATE ROLE username WITH LOGIN SUPERUSER CREATEDB CREATEROLE PASSWORD 'password';
+```

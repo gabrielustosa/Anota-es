@@ -38,7 +38,7 @@ Permite que você componha objetos em estruturas de árvores e então trabalhe c
 
 ![[pp-compos.png]]
 ### Decorator 
-Permite que você acople novos comportamentos para objetos ao colocá-los dentro de invólucros de objetos que contém os comportamentos.
+Permite que você acople novos comportamentos para objetos ao colocá-los dentro de invólucros de objetos que contém os comportamentos. Acrescentando ou removendo responsabilidades a objetos individuais dinamicamente
 
 ![[pp-deco.png]]
 ### Facade
@@ -53,6 +53,10 @@ Permite a você colocar mais objetos na quantidade de RAM disponível ao compart
 Permite que você forneça um substituto ou um espaço reservado para outro objeto. Um proxy controla o acesso ao objeto original, permitindo que você faça algo ou antes ou depois do pedido chegar ao objeto original. O padrão Proxy sugere que você crie uma nova classe proxy com a mesma interface do objeto do serviço original. Então você atualiza sua aplicação para que ela passe o objeto proxy para todos os clientes do objeto original. Ao receber uma solicitação de um cliente, o proxy cria um objeto do serviço real e delega a ele todo o trabalho. Se você precisa executar alguma coisa tanto antes como depois da lógica primária da classe, o proxy permite que você faça isso sem mudar aquela classe. Uma vez que o proxy implementa a mesma interface que a classe original, ele pode ser passado para qualquer cliente que espera um objeto do serviço real.
 
 ![[pp-proxy.png]]
+### Gateway
+Visa facilitar a interação e comunicação entre um sistema principal e sistemas externos, como bibliotecas, serviços remotos, bancos de dados ou arquivos. Ele atua como um ponto central para lidar com a complexidade desses sistemas externos, oferecendo uma interface mais familiar e conveniente para o sistema principal.
+
+![[pp-gat.png]]
 # Padrões Comportamentais
 Cuidam da comunicação eficiente e da assinalação de responsabilidades entre objetos.
 ### Chain of Responsability 
@@ -60,7 +64,7 @@ Permite que você passe pedidos por uma corrente de handlers. Ao receber um pedi
 
 ![[pp-chain.png]]
 ### Command
-Transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas. O padrão Command sugere que os objetos GUI não enviem esses pedidos diretamente. Ao invés disso, você deve extrair todos os detalhes do pedido, tais como o objeto a ser chamado, o nome do método, e a lista de argumentos em uma classe comando separada que tem apenas um método que aciona esse pedido.
+Transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrizem diferentes requisições, filas ou requisições de log, suportar operações reversíveis, atrasar ou colocar a execução do pedido em uma fila, e suporte operações que não podem ser feitas. O padrão Command sugere que os objetos GUI não enviem esses pedidos diretamente. Ao invés disso, você deve extrair todos os detalhes do pedido, tais como o objeto a ser chamado, o nome do método, e a lista de argumentos em uma classe comando separada que tem apenas um método que aciona esse pedido.
 ![[pp-cmd.png]]
 ### Iterator
 Permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.). A ideia principal do padrão Iterator é extrair o comportamento de travessia de uma coleção para um objeto separado chamado um iterador. 
@@ -79,7 +83,7 @@ Permite que você defina um mecanismo de assinatura para notificar múltiplos ob
 
 ![[pp-obs.png]]
 ### State
-Permite que um objeto altere seu comportamento quando seu estado interno muda. O padrão State é intimamente relacionado com o conceito de uma Máquina de Estado Finito. A ideia principal é que, em qualquer dado momento, há um número finito de estados que um programa possa estar. Dentro de qualquer estado único, o programa se comporta de forma diferente, e o programa pode ser trocado de um estado para outro instantaneamente. Contudo, dependendo do estado atual, o programa pode ou não trocar para outros estados. Essas regras de troca, chamadas transições, também são finitas e pré determinadas. O padrão State sugere que você crie novas classes para todos os estados possíveis de um objeto e extraia todos os comportamentos específicos de estados para dentro dessas classes. Ao invés de implementar todos os comportamentos por conta própria, o objeto original, chamado contexto, armazena uma referência para um dos objetos de estado que representa seu estado atual, e delega todo o trabalho relacionado aos estados para aquele objeto.
+Permite que um objeto altere seu comportamento quando seu estado interno muda. O padrão State é intimamente relacionado com o conceito de uma Máquina de Estado Finito. A ideia principal é que, em qualquer dado momento, há um número finito de estados que um programa possa estar. Dentro de qualquer estado único, o programa se comporta de forma diferente, e o programa pode ser trocado de um estado para outro instantaneamente. Contudo, dependendo do estado interno atual, o programa pode ou não trocar para outros estados. Essas regras de troca, chamadas transições, também são finitas e pré determinadas. O padrão State sugere que você crie novas classes para todos os estados possíveis de um objeto e extraia todos os comportamentos específicos de estados para dentro dessas classes. Ao invés de implementar todos os comportamentos por conta própria, o objeto original, chamado contexto, armazena uma referência para um dos objetos de estado que representa seu estado atual, e delega todo o trabalho relacionado aos estados para aquele objeto.
 
 ![[pp-state.png]]
 - Essa estrutura pode ser parecida com o padrão Strategy, mas há uma diferença chave. No padrão State, os estados em particular podem estar cientes de cada um e iniciar transições de um estado para outro, enquanto que estratégias quase nunca sabem sobre as outras estratégias.

@@ -15,6 +15,31 @@ Esse gráfico monitora o progresso das tarefas (story points ou horas de projeto
 Avalia o status do trabalho em andamento, identificando visualmente ao longo do tempo o que foi feito, o que está em delivery, em review, em acompanhamento e esperando. Dentro de um diagrama de fluxo cumulativo, várias métricas podem ser acompanhadas.
 
 ![[ag-cfd.png]]
+# Design Thinking 
+Framework usado para promover a inovação com uma abordagem centrada no ser humano, onde a empatia pelo usuário final é fundamental. Dentro do Design Thinking, passamos por diferentes fases: _Empatia_, _Definição_, _Ideação_, _Prototipagem_, _Teste_ e _Implementar_.
+### Empatia
+A etapa da empatia é quando você pode conduzir uma pesquisa para entender quais são as necessidades das pessoas (consumidores, colaboradores, público, usuários…) envolvidas no problema, o que precisam, gostam e querem. O objetivo é reunir o máximo de observações, para que você possa realmente começar a ter empatia com o outro e vice versa.
+### Definição
+Combine todas as suas pesquisas e observe onde existem os problemas dos seus usuários. Ao identificar as necessidades de seus usuários, comece a destacar as oportunidades de inovação.
+### Idealização
+É o momento de fazer o brainstorm de várias ideias que atendam às necessidades não atendidas do usuário identificadas na fase de definição. Dê a você e sua equipe total liberdade, nenhuma ideia é impossível, rebuscada e a quantidade substitui a qualidade.
+### Prototipagem
+O objetivo desta fase é entender quais componentes de suas ideias funcionam ou não. Nesta fase, você começa a pensar no impacto x a viabilidade de suas ideias por meio de feedback sobre seus protótipos.
+### Teste
+Retorne aos seus usuários e feedback para refletir se esta solução atende às necessidades dos usuários e melhorou como eles se sentem, pensam ou fazem suas tarefas.
+### Implementar
+Por mais impactante que o design thinking possa ser para uma organização, ele só leva à **verdadeira inovação** se a visão for executada. O sucesso do design thinking está em sua capacidade de transformar um aspecto da vida do usuário final. Por isso, se lembre de certificar de que sua solução seja materializada.
+# Management 3.0
+Metodologia que prioriza a **valorização dos colaboradores**, forjando um ambiente propício para seu empoderamento e destacando o trabalho em equipe. Em vez de estruturas rígidas de controle (hierarquias), ele compreende as organizações como grandes redes nas quais os **principais elementos são as pessoas**. A chave, então, é **dar mais liberdade** para que os funcionários cultivem sua autonomia, cumprindo responsabilidades que condizem com sua expertise e adaptando os processos de acordo com suas preferências.
+
+Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pode ser visto pro 6 visões diferentes:
+
+1. **Alinhar Restrições**: Criar um ambiente transparente com regras e objetivos claros para que todos estejam na mesma página.
+2. **Energizar Pessoas**: Motivar e inspirar a equipe para que trabalhem com paixão e entusiasmo
+3. **Empoderar Times**:  Dar autonomia e confiança para que a equipe tome decisões e seja responsável por seus resultados.
+4. **Desenvolver Competências**: Investir no aprendizado e desenvolvimento contínuo da equipe para que todos alcancem seu potencial máximo. (Oferecendo treinamentos, workshops e oportunidades de feedback.)
+5. **Aumentar as Estruturas**: Criar uma estrutura organizacional flexível e adaptável que suporte as necessidades da equipe. (Implementar metodologias ágeis, reduzir a burocracia e fomentar a colaboração.)
+6. **Melhorar Tudo**: Implementar metodologias ágeis, reduzir a burocracia e fomentar a colaboração. (Incentivar a cultura de feedback, realizar experimentos e aprender com os erros.)
 # Frameworks Ágeis
 ### Scrum
  Usados para orientar as atividades de desenvolvimento dentro deum processo que incorpora as seguintes atividades metodológicas: requisitos, análise, projeto, evolução e entrega. Em cada atividade metodológica, ocorrem tarefas realizadas em um período chamado de sprint. O trabalho realizado dentro de um sprint (o número de sprints necessários para cada atividade metodológica varia dependendo do tamanho e da complexidade do produto) é adaptado ao problema em questão e definido, e muitas vezes modicado em tempo real, pela equipe Scrum.

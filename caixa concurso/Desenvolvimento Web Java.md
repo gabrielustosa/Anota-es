@@ -1,3 +1,4 @@
+``Front Controller (direcionar a requisição para views (Django) específicas) Context Object (criar um objeto "customizado") Application Controller (Direciona para cada ação específica do CRUD) View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``
 # Servlet 
 Servlets são classes Java do lado do servidor que recebem requisições HTTP, processam-nas (podendo interagir com o Model) e geram respostas, que podem ser um HTML, redirecionamento para outra página, dentre outros. Dessa forma, servlets são ideais para o papel de Controller no MVC pois gerenciam e orquestram o fluxo dentro da aplicação. Estes são executados dentro de um container de Servlets, como o Apache Tomcat ou o Jetty, que gerencia seu ciclo de vida.
 
