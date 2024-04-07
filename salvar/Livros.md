@@ -1,0 +1,14 @@
+- Expressões regulares - NovaTec
+- O grande microlivro do Git 
+- Unix Networking Programming - W. Richard Stevens
+- Despertar de Tudo
+- Origens da Civilização 
+- Fundamentals of Software Architecture - O'Reilly
+- Building Microsservices - O'Reilly 
+- O Projeto Fênix
+- Tudo que você não soube
+- Teoremas Matemáticos
+- A história do universo para quem tem pressa
+- Uma breve história do tempo
+- O senhor das mosca
+- Amigo imaginário

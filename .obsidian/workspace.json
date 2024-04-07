@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "b1939ee125f810b1",
+        "id": "9e7e6487564d5dd3",
         "type": "tabs",
         "children": [
           {
-            "id": "f193e94df5b5e28d",
+            "id": "70c1f7cb67c25b14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Arquitetura de Software.md",
+                "file": "salvar/Livros.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e87e4de4ba60a24f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "salvar/Sites.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Arquitetura de Software.md",
+                "file": "salvar/Livros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Arquitetura de Software.md",
+                "file": "salvar/Livros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Arquitetura de Software.md"
+                "file": "salvar/Livros.md"
               }
             }
           },
@@ -164,16 +176,22 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f193e94df5b5e28d",
+  "active": "70c1f7cb67c25b14",
   "lastOpenFiles": [
+    "salvar/Sites.md",
+    "salvar/Livros.md",
+    "cnu concurso/Estrutura de Dados e Algoritmos.md",
+    "cnu concurso/Edital.md",
+    "conteúdos/Sem título",
+    "salvar",
+    "cnu concurso/Rede de Computadores.md",
+    "caixa concurso/Edital.md",
+    "caixa concurso/Arquitetura de Software.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Arquitetura de Software.md",
     "caixa concurso/Estatística.md",
-    "caixa concurso/Edital.md",
     "imgs/padroes de projeto/pp-gat.png",
     "caixa concurso/Agilidade.md",
-    "cnu concurso/Edital.md",
     "caixa concurso/Sistemas Operacionais.md",
     "caixa concurso/Data Warehouse.md",
     "caixa concurso/Banco de Dados.md",
@@ -194,9 +212,6 @@
     "imgs/agilidade/ag-burndown.png",
     "cnu concurso/Banco de Dados.md",
     "cnu concurso/Programação.md",
-    "cnu concurso/Padrões de Projeto.md",
-    "cnu concurso/Rede de Computadores.md",
-    "cnu concurso/Sistemas Operacionais.md",
     "imgs/agilidade/ag-devops.png",
     "imgs/agilidade/ag-kanban.png",
     "Pasted image 20240329132953.png",
@@ -209,8 +224,6 @@
     "imgs/engenharia de software",
     "imgs/web java",
     "Novo Documento de Texto.txt",
-    "imgs/sistemas operacionais",
-    "imgs/big data",
     "Sem título.canvas"
   ]
 }

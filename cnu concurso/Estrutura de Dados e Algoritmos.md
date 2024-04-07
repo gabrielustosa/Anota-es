@@ -1,4 +1,3 @@
-
 # Lista encadeada
 
 São estruturas de dados dinâmicas que contém um valor que apontam para o próximo valor presenta na lista permitindo a inserção e remoção de elementos em qualquer posição, incluindo início, meio e fim. Elas também permitem o acesso aos elementos em posições intermediárias.
