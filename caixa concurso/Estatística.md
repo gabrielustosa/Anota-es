@@ -88,7 +88,7 @@ $$
 #### Teorema de Bayes
 O teorema de Bayes é uma **fórmula de probabilidade** que calcula a possibilidade de um evento acontecer, com base em um conhecimento que pode estar relacionado ao evento.
 $$
-P(Ak|B) =  \frac{P(B|Ak).P(Ak)}{\sum_{i=1} ^{N} P(B|Ai).P(Ai)}
+P(A_k|B) =  \frac{P(B|A_k).P(A_k)}{\sum_{i=1} ^{N} P(B|A_i).P(A_i)}
 $$
 ##### Exercício
 Imaginemos que o teste de mamografia se comporte da seguinte forma:

@@ -1,3 +1,10 @@
+# Valores do Desenvolvimento Ágil
+1. **Indivíduos e interações mais que processos e ferramentas**: Este valor enfatiza a importância das pessoas e a maneira como elas trabalham juntas em vez de se concentrar estritamente em ferramentas e processos.
+2. **Software em funcionamento mais que documentação abrangente**: Embora a documentação seja importante, o principal objetivo é entregar um software que funcione.
+3. **Colaboração com o cliente mais que negociação de contratos**: Este valor destaca a importância de trabalhar em estreita colaboração com os clientes para entender suas necessidades e entregar valor.
+4. **Responder a mudanças mais que seguir um plano**: O desenvolvimento ágil aceita que as necessidades do cliente podem mudar ao longo do tempo e que é importante ser flexível e adaptável a essas mudanças.
+# Lean UX
+O objetivo do Lean UX é obter feedback dos usuários o mais cedo possível durante o processo de desenvolvimento do produto. A abordagem Lean UX enfatiza a iteração rápida e frequente, o que permite que as equipes obtenham feedback valioso dos usuários desde as fases iniciais do projeto. Isso permite que as equipes façam ajustes e iterações no produto com base no feedback dos usuários de forma contínua ao longo do processo de desenvolvimento.
 ## Ágil em Escala 
 Pode ser entendido como algo que foi aumentado, como um conjunto de times que utilizando a metodologia ágil para realizar a entrega de tarefas ou produtos. Para implementação é necessário: **Mudanças na estrutura organizacional e nos papéis desempenhados pelos profissionais**, **Cadência nas entregas**, **Foco no cliente**, **Remoção de Barreiras e Dependências**, **Sincronização total**, **Pensamento Lean** e **Profissionais Capacitados**.
 ## Ágil Escalado
@@ -46,30 +53,50 @@ Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pod
  
 ![[ag-scrum.png]]
 #### Estrutura
-É composta por um product owner, um Scrum master (ajudador, facilitador, orientador) e uma pequena equipe de desenvolvimento (três a seis pessoas), no qual não há nenhuma hierarquia definida. Os principais artefatos do Scrum são o backlog do produto, o backlog do sprint e o incremento de código. O desenvolvimento avança pela
-divisão do projeto em uma série de períodos de desenvolvimento incremental do protótipo, com duração de 2 a 4 semanas, chamados de sprints. 
+É composta por um product owner, um Scrum master (ajudador, facilitador, orientador) e uma pequena equipe de desenvolvimento (três a seis pessoas), no qual não há nenhuma hierarquia definida. Os principais artefatos do Scrum são o backlog do produto, o backlog do sprint e o incremento de código. O desenvolvimento avança pela divisão do projeto em uma série de períodos de desenvolvimento incremental do protótipo, com duração de 2 a 4 semanas, chamados de sprints. 
 
+Podem ser criados multiplos Incrementos dentro de um Sprint. A soma dos Incremento é apresentada na Sprint Review, apoiando assim o empirismo. No entanto, um Incremento pode ser entregue aos stakeholders antes do fim do Sprint. A Sprint Review nunca deve ser considerada como uma porta para a entrega de valor.
+##### Artefatos
 - Backlog do Produto -> Meta do Produto
 - Backlog da Sprint -> Meta da Sprint
 - Incremento -> Definição de Pronto
-#### Reunião Diária
-Evento de 15 minutos programado no início de cada dia de trabalho para permitir que os membros da equipe sincronizem as suas atividades e se planejem para as próximas 24 horas. O Scrum master e a equipe de desenvolvimento sempre participam da reunião diária. São feitas três perguntas-chave que são respondidas por todos os membros da equipe:
-- O que você realizou desde a última reunião de equipe?
-- Quais obstáculos está encontrando?
-- O que planeja realizar até a próxima reunião da equipe?
+##### Pilares
+- T: Transparência
+- I: Inspeção
+- A: Adaptação
+#### Revisão do Scrum
+Sprint Review nada mais é que uma "demo" funcional do produto. Buscando validar as entregas da equipe e verificar se os critérios estabelecidos no planejamento foram executados. É o momento de coletar e inspecionar os feedbacks do que a equipe construiu. Em outras palavras, esse objetivo pode ser entendido como uma conversa entre a equipe e as partes interessadas sobre como melhorar o produto. As pautas da reunião são:
+
+1. Apresentação das entregas pela equipe;
+2. Feedback do Product Owner;
+3. Validação se a entrega foi concluída ou não
+#### Retrospectiva Scrum
+Nessa reunião busca-se olhar para o passado e fazer uma revisão do processo de trabalho da equipe Scrum. Isso significa que cada Sprint deve ser um pouco melhor do que o anterior, visto que ele reúne os conhecimentos dos outros, para melhorar o próximo. Geralmente, essas são as 4 perguntas norteadoras:
+
+1. O que fizemos bem?
+2. O que fizemos que pode melhorar?
+3. O que aprendemos na Sprint?
+4. O que faremos diferente?
+#### Reunião Diária Scrum
+Daily Scrum é, basicamente, uma reunião diária, que deve durar até 15 minutos. Essa conversa visa entender o que já foi feito, o que precisa ser colocado em prática naquele dia e também identificar gargalos que estejam impossibilitando o andamento dos processos. Geralmente, essas são as 3 perguntas norteadoras:
+
+1. O que você fez ontem?
+2. O que você fará hoje?
+3. Existe/Existiu algum impedimento no seu caminho?
 ### XP (eXtreme Programming)
 A Extreme Programming (Programação Extrema) envolve um conjunto de regras e práticas constantes no contexto de quatro atividades metodológicas: planejamento, projeto, codificação e testes.
 
 - O cliente é considerado um membro da equipe, fornecendo feedback constante e ajudando a definir e priorizar as histórias do usuário.
+- Abordagem mais colaborativa e flexível, em que os membros da equipe frequentemente compartilham responsabilidades e trabalham de forma interdisciplinar, ao invés de ter papéis rigidamente definidos.
+- Simplicidade do projeto.
 
 ![[ag-xp.png]]
 #### Planejamento
 Se inicia com ouvir. A atividade de ouvir conduz à criação de um conjunto de histórias do usuário. Cada história de usuário é escrita pelo cliente e colocada em uma ficha. O cliente atribui um valor à história baseando-se no valor de negócio global do recurso ou da função. Os membros da equipe XP avaliam, então, cada história e atribuem um custo, medido em semanas de desenvolvimento. A equipe XP ordena as histórias que serão desenvolvidas em uma de três formas: (1) todas as histórias serão implementadas imediatamente (em um prazo de poucas semanas); (2) as histórias de maior valor serão deslocadas para cima no cronograma e implementadas primeiro; ou (3) as histórias de maior risco serão deslocadas para cima no cronograma e implementadas primeiro.
 #### Projeto
-O projeto XP segue rigorosamente o princípio KISS (keep it simple, stupid!). Os cartões CRC (mecanismo eficaz para
-pensar o software em um contexto orientado a objetos) são o único artefato de projeto produzido como parte do processo XP. Refatoração (modicar/otimizar o código sem alterar o comportamento externo do software) significa que o “projetar” é realizado continuamente enquanto o sistema estiver em elaboração.
+O projeto XP segue rigorosamente o princípio KISS (keep it simple, stupid!). Os cartões CRC (mecanismo eficaz para pensar o software em um contexto orientado a objetos) são o único artefato de projeto produzido como parte do processo XP como um mecanismo de pensar o software (numa abordagem OOP). Refatoração (modicar/otimizar o código sem alterar o comportamento externo do software) significa que o “projetar” é realizado continuamente enquanto o sistema estiver em elaboração.
 #### Codificação
-A primeira etapa é a implementação da metodologia TDD para desenvolver os testes de unidade que exercitarão cada uma das histórias a ser incluída na versão corrente. Um conceito-chave na atividade de codificação (e um dos mais discutidos aspectos da XP) é a programação em pares.
+A primeira etapa é a implementação da metodologia TDD para desenvolver os testes de unidade que exercitarão cada uma das histórias a ser incluída na versão corrente. Um conceito-chave na atividade de codificação (e um dos mais discutidos aspectos da XP) é a programação em pares (dois programadores compartilham uma única máquina).
 #### Testes
 Os testes de unidades criados devem ser implementados usando-se uma metodologia que os capacite a ser automatizados. Isso estimula uma estratégia de testes de regressão. Os testes de aceitação da XP, também denominados testes de cliente, são especificados pelo cliente e mantêm o foco nas características e na funcionalidade do sistema total que são visíveis e que podem ser revistas pelo cliente. Os testes de aceitação são obtidos de histórias de usuário implementadas como parte de uma versão do software.
 ### Kanban
@@ -149,27 +176,14 @@ O objetivo do planejamento do sprint é definir o que pode ser entregue no sprin
 3. O quem - O proprietário do produto define a meta com base no valor que procura, para que a equipe de desenvolvimento entenda.
 4. As entradas - Ponto de partida, é relevante observar o backlog do produto.
 5. Os resultados - Descrição dos objetivos do sprint que será realizado.
-### Revisão do Scrum
-Validar as entregas da equipe e verificar se os critérios estabelecidos no planejamento foram executados. É o momento de coletar os feedbacks do que a equipe construiu. Em outras palavras, esse objetivo pode ser entendido como uma conversa entre a equipe e as partes interessadas sobre como melhorar o produto. As pautas da reunião são:
-
-1. Apresentação das entregas pela equipe;
-2. Feedback do Product Owner;
-3. Validação se a entrega foi concluída ou não
-### Retrospectiva Scrum
-Reunião de retrospectiva que busca olhar para o passado e fazer uma Revisão da Sprint. Isso significa que cada Sprint deve ser um pouco melhor do que o anterior, visto que ele reúne os conhecimentos dos outros, para melhorar o próximo. Geralmente, essas são as 4 perguntas norteadoras:
-
-1. O que fizemos bem?
-2. O que fizemos que pode melhorar?
-3. O que aprendemos na Sprint?
-4. O que faremos diferente?
-### Reunião Diária Scrum
-Daily Scrum é, basicamente, uma reunião diária, que deve durar até 15 minutos. Essa conversa visa entender o que já foi feito, o que precisa ser colocado em prática naquele dia e também identificar gargalos que estejam impossibilitando o andamento dos processos. Geralmente, essas são as 3 perguntas norteadoras:
-
-1. O que você fez ontem?
-2. O que você fará hoje?
-3. Existe/Existiu algum impedimento no seu caminho?
 ### PI Planning 
-Evento ou reunião para criar uma visão compartilhada entre as equipes Ágeis. Durante todo o evento, os stakeholders, proprietários de projetos e equipes de projetos revisam seu Backlog de Programas. Eles identificam prioridades, analisam objetivos, identificam dependências e determinam a nova direção para o negócio.
+período fixo de tempo, geralmente de 8 a 12 semanas, durante o qual um conjunto de equipes, conhecidas como Agile Release Train (ART), entrega ao cliente um valor incremental. O PI é dividido em cinco iterações (sprints), cada uma com duração de duas semanas.
+
+O PI Planning é um evento de planejamento que ocorre no início de cada PI. Durante o PI Planning, as equipes se reúnem para alinhar seus objetivos e planos para o PI.
+##### Benefícios
+- Alinhamento das equipes e dos stakeholders: O PI ajuda a alinhar as equipes e os stakeholders em torno de um objetivo comum.
+- Planejamento e priorização eficazes: O PI Planning ajuda as equipes a planejar e priorizar seu trabalho de forma eficaz.
+- Entrega de valor incremental: O PI ajuda as equipes a entregar valor incremental ao cliente a cada duas semanas.
 # Técnica para Estimativa de Escopo
 ### Planning Poker 
 O objetivo é obter uma estimativa mais precisa e consensual por meio da colaboração da equipe. 

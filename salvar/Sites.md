@@ -33,4 +33,4 @@
 - [Simulados Enem](https://drive.google.com/drive/folders/13VA16w7gX2H_GJSR4PKqkfnvyuYG4a5c)
 - [Drive de Estudos Enem](https://drive.google.com/drive/folders/1-DgBQCInjBoks0iNpvpizYDwbdxs0xL-)
 - [Comprar Camisas](https://www.1688.com/)
-
+- [Datasets Gratuitos](https://www.kaggle.com/datasets/)

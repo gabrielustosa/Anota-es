@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9e7e6487564d5dd3",
+        "id": "a719a0589ff1a70a",
         "type": "tabs",
         "children": [
           {
-            "id": "70c1f7cb67c25b14",
+            "id": "0759d83ada78a425",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "salvar/Livros.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e87e4de4ba60a24f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "salvar/Sites.md",
+                "file": "cnu concurso/Edital.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "salvar/Livros.md",
+                "file": "cnu concurso/Edital.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "salvar/Livros.md",
+                "file": "cnu concurso/Edital.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "salvar/Livros.md"
+                "file": "cnu concurso/Edital.md"
               }
             }
           },
@@ -162,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 249.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,54 +164,53 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "70c1f7cb67c25b14",
+  "active": "0759d83ada78a425",
   "lastOpenFiles": [
-    "salvar/Sites.md",
+    "caixa concurso/Estatística.md",
+    "cnu concurso/Aprendizado de Máquina.md",
+    "cnu concurso/Edital.md",
+    "caixa concurso/Sistemas Operacionais.md",
+    "imgs/aprendizado de maquina/am-matriz.png",
+    "imgs/aprendizado de maquina/am-arv-boosting.png",
+    "imgs/aprendizado de maquina/am-arv-random-forest.png",
+    "imgs/aprendizado de maquina/am-arv-exemplo-3.png",
+    "imgs/aprendizado de maquina/am-arv-exemplo-2.png",
+    "imgs/aprendizado de maquina/am-arv-exemplo-1.png",
+    "imgs/aprendizado de maquina/am-arv-exemplo.png",
+    "imgs/aprendizado de maquina/am-arv-clas.png",
+    "imgs/aprendizado de maquina/am-arv-reg.png",
+    "imgs/aprendizado de maquina/am-red-neu-deep.png",
+    "caixa concurso/Edital.md",
+    "cnu concurso/Big Data.md",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Data Warehouse.md",
+    "cnu concurso/Data Mining.md",
     "salvar/Livros.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
-    "cnu concurso/Edital.md",
+    "salvar/Sites.md",
+    "imgs/aprendizado de maquina",
+    "caixa concurso/Agilidade.md",
     "conteúdos/Sem título",
     "salvar",
     "cnu concurso/Rede de Computadores.md",
-    "caixa concurso/Edital.md",
     "caixa concurso/Arquitetura de Software.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Estatística.md",
-    "imgs/padroes de projeto/pp-gat.png",
-    "caixa concurso/Agilidade.md",
-    "caixa concurso/Sistemas Operacionais.md",
-    "caixa concurso/Data Warehouse.md",
     "caixa concurso/Banco de Dados.md",
     "caixa concurso/Testes.md",
     "caixa concurso/Programação.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "caixa concurso/Engenharia de Software.md",
-    "caixa concurso/Big Data.md",
-    "cnu concurso/Big Data.md",
     "cnu concurso/Data Warehouse.md",
     "cnu concurso/Engenharia de Software.md",
-    "caixa concurso/Engenharia de Softwarea.md",
     "cnu concurso/Engenharia de Software.md.lnk",
     "caixa concurso/Engenharia de Software.md.lnk",
-    "imgs/engenharia de software/engs-pu-disc.png",
-    "imgs/agilidade/ag-cfd.png",
-    "imgs/agilidade/ag-burndown.png",
-    "cnu concurso/Banco de Dados.md",
-    "cnu concurso/Programação.md",
-    "imgs/agilidade/ag-devops.png",
-    "imgs/agilidade/ag-kanban.png",
-    "Pasted image 20240329132953.png",
-    "imgs/agilidade/ag-xp.png",
-    "imgs/agilidade/ag-scrum.png",
-    "imgs/agilidade/ag-backlog.png",
     "imgs/agilidade",
     "imgs/padroes de projeto",
     "imgs/estatistica",
     "imgs/engenharia de software",
     "imgs/web java",
-    "Novo Documento de Texto.txt",
     "Sem título.canvas"
   ]
 }

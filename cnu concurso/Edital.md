@@ -90,6 +90,6 @@
 	- [ ] Pré processamento de dados. 
 	- [ ] Mineração de dados: classificação, regressão, detecção de agrupamentos, descoberta de regras de associação, sumarização, modelagem de dependências, detecção de tendências e exceções.
 	- [ ] Visualização de Dados.
-- [ ] Aprendizado de máquina
-	- [ ] Tipos de aprendizado de máquina: aprendizado supervisionado, aprendizado não supervisionado e aprendizado por reforço. 
-	- [ ] Algoritmos de aprendizado de máquina: regressão, árvores de decisão, redes neurais, máquinas de vetor de suporte e algoritmos de agrupamento
+- [x] Aprendizado de máquina [[Aprendizado de Máquina|estudar]]
+	- [x] Tipos de aprendizado de máquina: aprendizado supervisionado, aprendizado não supervisionado e aprendizado por reforço. 
+	- [x] Algoritmos de aprendizado de máquina: regressão, árvores de decisão, redes neurais, máquinas de vetor de suporte e algoritmos de agrupamento

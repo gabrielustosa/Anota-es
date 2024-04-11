@@ -10,5 +10,5 @@
 - Teoremas Matemáticos
 - A história do universo para quem tem pressa
 - Uma breve história do tempo
-- O senhor das mosca
+- O senhor das moscas
 - Amigo imaginário
