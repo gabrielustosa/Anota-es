@@ -37,7 +37,7 @@
 	- [ ] Kotlin; 
 	- [ ] Objective-C; Flutter; Swift
 	- [ ] Cobol;
-- [ ] Desenvolvimento de software para a Web:  [[Desenvolvimento Web Java|estudar]]
+- [ ] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
 	- [ ] sistemas distribuídos e microsserviços;
 	- [ ] Arquitetura e padrões de projeto Java EE8; 
 	- [x] Servlets; 

@@ -1,4 +1,6 @@
 # Java
+#TODO https://www.devmedia.com.br/entendendo-anotacoes-em-java/26772
+#TODO https://www.youtube.com/watch?v=7udU24-VK0w
 #### Overload e Override
 - Overload: Escrever vários métodos com o mesmo nome mas com parâmetros diferentes.  
 - Override: Escrever o mesmo método, com os mesmos parâmetros. Ou seja, é uma anulação de um método herdado, para fazer o seu especifico.
@@ -90,7 +92,6 @@ Random r = new Random();
 r.nextInt(5) // gera 5 valores de 0-5
 ```
 
-#TODO https://www.youtube.com/watch?v=7udU24-VK0w
 # Python
 
 #### Numpy

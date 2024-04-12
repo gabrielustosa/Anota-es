@@ -34,3 +34,4 @@
 - [Drive de Estudos Enem](https://drive.google.com/drive/folders/1-DgBQCInjBoks0iNpvpizYDwbdxs0xL-)
 - [Comprar Camisas](https://www.1688.com/)
 - [Datasets Gratuitos](https://www.kaggle.com/datasets/)
+- [Computação Empírica](https://dl.acm.org/doi/10.1145/360018.360022)

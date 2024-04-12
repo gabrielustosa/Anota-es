@@ -7,8 +7,17 @@
 - Building Microsservices - O'Reilly 
 - O Projeto Fênix
 - Tudo que você não soube
+- Fundamentos da matemática elementar
+- Elementos da matemática
 - Teoremas Matemáticos
+- Tópicos de Física
+- Física em 12 lições
 - A história do universo para quem tem pressa
 - Uma breve história do tempo
 - O senhor das moscas
 - Amigo imaginário
+- O mito de sisifo 
+- A vida não é útil
+- A sociedade do cansaço 
+- Elogio da loucura
+- A utilidade do inútil

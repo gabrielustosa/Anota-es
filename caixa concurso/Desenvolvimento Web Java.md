@@ -73,8 +73,10 @@ Essas são algumas diretivas, as quais são utilizadas para informações especi
 - `@page` - Responsável por trazer informações sobre a página JSP;
 - `@taglib` - Responsável por habilitar uma biblioteca de tags personalizada (item que será abordado em outro artigo com mais detalhes).
 ```jsp
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@page contentType="text/html" import="java.util.Date, java.text."pageEncoding="ISO-8859-1"%>
 <html>
+	<%@ include file="header.jsp" %>
     <body>
         <h1>
             <%=new Date()=%>
@@ -314,6 +316,17 @@ public class LoggerActionListener implements ActionListener{
 Tecnologia de renderização de páginas para JSF que substituiu a tecnologia JSP.
 - `xmlns:ui="http://java.sun.com/jsf/facelets">`
 ```
+##### Partial View Processing (Ajax)
+``` jsp
+<h:form> 
+	<h:commandButton value="Atualizar" action="#{bean.atualizar}">        
+		<f:ajax render="conteudo" />   
+	</h:commandButton>      
+	<h:panelGroup id="conteudo">        
+		<p>Conteúdo inicial</p>   
+	</h:panelGroup> 
+</h:form>
+```
 #### Request Scope
 O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 
 
@@ -376,48 +389,359 @@ Representa uma abordagem para desenvolver serviços web baseados nos métodos do
 
 ```ad-info
 ##### Idempotência
-Propriedade que a computação herdou da matemática. uando falamos que uma operação é idempotente significa que, se a aplicarmos uma vez ou várias vezes, o resultado é o mesmo. 
+Propriedade que a computação herdou da matemática. Quando falamos que uma operação é idempotente significa que, se a aplicarmos uma vez ou várias vezes, o resultado é o mesmo. 
 ```
 # XHTML
 É a versão estendida do HTML que combina regras de XML ao HTML para melhoria na semântica. (foi substituída pelo HTML5)
+
+- É uma versão mais rigorosa.
+- - `<!DOCTYPE>` é obrigatório.
+- O atributo xmlns em `<html>` é obrigatório.
+- `<html>`, `<head>`, `<title>` e `<body>` são obrigatórios.
+- Os elementos sempre devem ser corretamente aninhados.
+- Os elementos sempre devem ser fechados. (exceção de elementos self-closed `<br />`)
+- Os elementos sempre devem estar em minúsculas.
+- Os nomes dos atributos sempre devem estar em minúsculas.
+- Os valores dos atributos sempre devem estar entre aspas.
+- A minimização de atributos é proibida. (Todos os atributos devem possuir valor  `checked=""`)
+
+```xhtml
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+	<head>  
+	  <title>Título do documento</title>  
+	</head>  
+	<body>  
+		 conteúdo aqui  
+	</body>  
+</html>
+```
 # XML
 São formados com árvores de documentos, com somente uma raiz e elementos únicos em cada nó, dispostos de forma hierárquica. 
 
-- Todos os documentos XML devem começam com uma declaração do tipo `<?xml version="1.1" encoding="UTF-8"?>`.
+- Documentos XML precisam ter um elemento root. 
+- Todos os documentos XML podem começam com uma declaração do tipo `<?xml version="1.1" encoding="UTF-8"?>`.
 - XML são bastante abrangentes e incluem tipos primitivos como string, integer, booleans, e tipos complexos que podem ser definidos pelo usuário.
-- É case sensitive.
+- XDM (XML Data Model) usado em tecnologias de consulta e transformação de XML.
+- PSVI (Post-Schema-Validation Infoset) Validação de um documento XML contra seu esquema XML
+- Os nomes dos elementos são sensíveis a maiúsculas e minúsculas.
+- Os nomes dos elementos devem começar com uma letra ou sublinhado.
+- Os nomes dos elementos não devem começar com um número.
+- Os nomes dos elementos não podem começar com as letras xml (ou XML, ou Xml, etc).
+- Os nomes dos elementos podem conter letras, dígitos, hifens, sublinhados e pontos.
+- Os nomes dos elementos não podem conter espaços.
+- Os atributos não podem conter múltiplos valores (os elementos podem) 
+- Os atributos não podem conter estruturas de árvore (os elementos podem) 
+- Os atributos não são facilmente expansíveis (para mudanças futuras)
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>  
+<bookstore>  
+  <book category="cooking">  
+    <title lang="en">Everyday Italian</title>  
+    <author>Giada De Laurentiis</author>  
+    <year>2005</year>  
+    <price>30.00</price>  
+  </book>  
+  <book category="children">  
+    <title lang="en">Harry Potter</title>  
+    <author>J K. Rowling</author>  
+    <year>2005</year>  
+    <price>29.99</price>  
+  </book>  
+  <book category="web">  
+    <title lang="en">Learning XML</title>  
+    <author>Erik T. Ray</author>  
+    <year>2003</year>  
+    <price>39.95</price>  
+  </book>  
+</bookstore>
+```
+
+Fechando aninhamento corretamente
+```xml
+<b><i>This text is bold and italic</i></b>
+```
+
+Atributos nos elementos
+ ``` xml
+<note date="12/11/2007">  
+  <to>Tove</to>  
+  <from>Jani</from>  
+</note>
+
+<gangster name='George "Shotgun" Ziegler'>
+```
+
+Comentários 
+``` xml
+<!-- This is a comment -->
+```
+
+Vazio
+```xml
+<element></element>
+<element />
+```
+
+##### Validação
+Um documento XML "bem formado" não é o mesmo que um documento XML "válido".
+Um documento XML "válido" deve ser bem formado. Além disso, ele deve conformar-se a uma definição de tipo de documento.
+
+Existem duas definições de tipo de documento diferentes que podem ser usadas com XML:
+
+- DTD - A Definição de Tipo de Documento original
+- XML Schema - Uma alternativa baseada em XML para DTD
+
+Uma definição de tipo de documento define as regras e os elementos e atributos legais para um documento XML.
+##### DTD
+DTD significa Definição de Tipo de Documento.
+
+Uma DTD define a estrutura e os elementos e atributos legais de um documento XML. Porém, menos expressivo e flexível, não oferece suporte a tipos de dados complexos e restrições avançadas.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE note SYSTEM "Note.dtd">  
+<note>  
+	<to>Tove</to>  
+	<from>Jani</from>  
+	<heading>Reminder</heading>  
+	<body>Don't forget me this weekend!</body>  
+</note>
+```
+
+Note.dtd
+```dtd 
+<!DOCTYPE note  
+[  
+<!ELEMENT note (to,from,heading,body)>  
+<!ELEMENT to (#PCDATA)>  
+<!ELEMENT from (#PCDATA)>  
+<!ELEMENT heading (#PCDATA)>  
+<!ELEMENT body (#PCDATA)>  
+]>
+```
+
+Esse DTO vai se interpretado da seguinte forma:
+
+- !DOCTYPE note - Define que o elemento raiz do documento é note.
+- !ELEMENT note - Define que o elemento note deve conter os elementos: "to, from, heading, body".
+- !ELEMENT to - Define que o elemento to deve ser do tipo "#PCDATA".
+- !ELEMENT from - Define que o elemento from deve ser do tipo "#PCDATA".
+- !ELEMENT heading - Define que o elemento heading deve ser do tipo "#PCDATA".
+- !ELEMENT body - Define que o elemento body deve ser do tipo "#PCDATA".
+
+```ad-tip
+"#PCDATA" significa data caractere "parseavel".
+```
+##### Schema
+Um XML Schema descreve a estrutura de um documento XML, assim como uma DTD.
+
+- Esquemas XML são escritos em XML.
+- Esquemas XML são extensíveis para adições.
+- Esquemas XML suportam tipos de dados.
+- Esquemas XML suportam namespaces.
+
+```xml
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+	<xs:element name="note">  
+		<xs:complexType>  
+		  <xs:sequence>  
+		    <xs:element name="to" type="xs:string"/>  
+		    <xs:element name="from" type="xs:string"/>  
+		    <xs:element name="heading" type="xs:string"/>  
+		    <xs:element name="body" type="xs:string"/>  
+		  </xs:sequence>  
+		</xs:complexType>  
+	</xs:element>
+</xs:schema>
+```
+
+Esse schema deve ser interpretado da seguinte forma
+
+- `<xs:element name="note">` define o elemento chamado "note".
+- `<xs:complexType>` o elemento "note" é um tipo complexo.
+- `<xs:sequence>` o tipo complexo é uma sequência de elementos.
+- `<xs:element name="to" type="xs:string">` o elemento "to" é do tipo string.
+- `<xs:element name="from" type="xs:string">` o elemento "from" é do tipo string.
+- `<xs:element name="heading" type="xs:string">` o elemento "heading" é do tipo string.
+- `<xs:element name="body" type="xs:string">` o elemento "body" é do tipo string.
 # XSLT - eXtensible Stylesheet Language Transformations
 Uma linguagem de folhas de estilo projetada para transformar documentos XML em outros formatos de documentos, como HTML, XHTML ou até mesmo outro documento XML com estrutura diferente.  O processo de transformação realizado pelo XSLT envolve a adição ou remoção de elementos e atributos no documento de saída, conforme especificado na folha de estilo XSLT. Isso permite que os dados contidos em um documento XML sejam reapresentados de maneira completamente nova, adequando-se a diferentes propósitos ou padrões de visualização.
 
-Além disso, com o XSLT, é possível reorganizar a estrutura do documento, alterar os valores dos elementos e atributos e até criar outputs em formatos não XML, como textos simples ou HTML, que é amplamente utilizado para a exibição de dados na web. Neste contexto, a transformação para HTML ou XHTML é particularmente valiosa, pois permite que informações originalmente armazenadas em XML sejam acessíveis e apresentáveis em navegadores de internet, ampliando sua usabilidade.
+No processo de transformação, XSLT usa XPath para definir partes do documento de origem que devem corresponder a um ou mais modelos predefinidos. Quando uma correspondência é encontrada, o XSLT transformará a parte correspondente do documento de origem no documento de resultado.
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<html> 
+			<body>
+			  <h2>My CD Collection</h2>
+			  <table border="1">
+			    <tr bgcolor="#9acd32">
+			      <th style="text-align:left">Title</th>
+			      <th style="text-align:left">Artist</th>
+			    </tr>
+			    <xsl:for-each select="catalog/cd">
+			    <tr>
+			      <td><xsl:value-of select="title"/></td>
+			      <td><xsl:value-of select="artist"/></td>
+			    </tr>
+			    </xsl:for-each>
+			  </table>
+			</body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>
+```
 # WSDL - Web Services Description Language
 É uma linguagem baseada em XML utilizada para descrever os serviços oferecidos por um serviço web. Ela detalha a interface pública de acesso, incluindo os métodos disponíveis, os parâmetros necessários e os formatos de mensagem esperados.
+##### Estrutura
+Um documento WSDL descreve um serviço da web. Ele especifica a localização do serviço e os métodos do serviço, usando estes elementos principais.
 
-Existem 4 padrões de mensagem WSDL:
+`<types>` Define os tipos de dados (XML Schema) usados pelo serviço da web. 
+`<message>` Define os elementos de dados para cada operação.
+`<portType>` Descreve as operações que podem ser realizadas e as mensagens envolvidas.
+`<binding>` Define o protocolo e o formato de dados para cada tipo de porta.
 
-- Request-response
-- One-way
-- Notification
-- Solicit-response
+```xml
+<message name="getTermRequest">  
+  <part name="term" type="xs:string"/>  
+</message>  
+  
+<message name="getTermResponse">  
+  <part name="value" type="xs:string"/>  
+</message>  
+  
+<portType name="glossaryTerms">  
+  <operation name="getTerm">  
+    <input message="getTermRequest"/>  
+    <output message="getTermResponse"/>  
+  </operation>  
+</portType>
+```
+
+##### Elemento portType
+O elemento `<portType>` define um serviço da web, as operações que podem ser realizadas e as mensagens envolvidas.
+
+- One-way: A operação pode receber uma mensagem, mas não retornará uma resposta. 
+- Request-response: A operação pode receber uma solicitação e retornará uma resposta. 
+- Solicit-response: A operação pode enviar uma solicitação e aguardará por uma resposta.
+- Notification: A operação pode enviar uma mensagem, mas não aguardará por uma resposta.
 # UDDI - Universal Description, Discovery and Integration
 É uma plataforma que permite que serviços web sejam listados e descobertos. Funciona como uma espécie de diretório, onde se pode buscar por serviços web disponíveis e obter informações para acessá-los.
+# AJAX
+técnica de desenvolvimento web que permite que páginas da web sejam atualizadas de forma assíncrona, ou seja, sem recarregar a página inteira. Usando JavaScript para enviar e receber dados do servidor em segundo plano, geralmente em formato JSON ou XML, sem interromper a experiência do usuário.
+
+![[web-ajax.png]]
+#### XMLHttpRequest
+Basta utilizar o método `XMLHttpRequest` para se comunicar e interagir com o servidor através de algum evento sem que a página seja recarregada.
+
+| Propriedades do objeto XMLHttpRequest |                                                                                                                                                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **readyState**                        | A requisição se apresenta em 4 (quatro) estágios; ambos representando por um número.<br><br> 0 - não inicializado;<br> 1 - carregamento;<br> 2 - carregado;<br> 3 - interativo;<br> 4 - completo. |
+| **status**                            | Código númerico do status HTTP retornado pelo servidor web.                                                                                                                                       |
+| **statusText**                        | Texto associado ao código númerico do status HTTP. Por exemplo: 200 significa "OK" e 404 significa "Página não encontrada".                                                                       |
+| **responseText**                      | String que contém os dados retornados pelo servidor web.                                                                                                                                          |
+| **responseXML**                       | Se o servidor web retornar um documento XML, lhe permitindo acessá-lo através de funções JavaScript utilizando o DOM.                                                                             |
+
+| Métodos do objeto XMLHttpRequest                |                                                                                                                                                                                                                                                                                                                                                              |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **open(método, url, síncrono, usuário, senha)** | Inicia uma nova requisição, onde:<br><br>método - Requisição HTTP, na maioria da das vezes "GET", ou "POST";<br>url - endereço da URL que será requisitada no servidor web;<br>síncrono - se o método trabalhará de forma síncrona ou assíncrona; o valor padrão é true - assíncrona;<br>usuário e senha - se o servidor web necessitar de uma autenticação. |
+| **setRequestHeader(nome, valor)**               | Informa um cabeçalho (header) para a requisição.                                                                                                                                                                                                                                                                                                             |
+| **send(dados)**                                 | Envia a requisição. Enviando opcionalmente os dados.                                                                                                                                                                                                                                                                                                         |
+| **abort()**                                     | Aborta uma requisição em atividade.                                                                                                                                                                                                                                                                                                                          |
+| **getResponseHeader(nome)**                     | Retorna o valor do cabeçalho (header) informado.                                                                                                                                                                                                                                                                                                             |
+| **getAllResponseHeaders()**                     | Retorna uma string contendo todos os cabeçalhos (header).                                                                                                                                                                                                                                                                                                    |
+
+|Eventos do objeto XMLHttpRequest|   |
+|---|---|
+|**onreadystatechange**|Elevando a cada mudança da propriedade readyState.
+
 # SOAP - Simple Object Access Protocol
 É um protocolo de comunicação que utiliza XML para a troca de informações entre aplicações em uma rede. Ao contrário do gRPC, o SOAP exige um documento WSDL compartilhado pelo servidor para implementar um cliente. Ele usa HTTP e XML, com cada serviço tendo um endpoint dedicado. Enquanto o REST usa diferentes verbos HTTP, o SOAP geralmente usa apenas POST, com GET sendo usado apenas para obter a documentação. O SOAP encapsula as chamadas de serviço em corpos de mensagem XML, sem depender dos detalhes do protocolo HTTP. Apesar de suas diferenças, o SOAP compartilha uma arquitetura semelhante ao gRPC, mas usa XML em vez de protocol buffers e HTTP/2.
 
-- Pode ser transportado por protocolos como HTTP, SMTP e JMS.
+- Pode ser transportado por outros protocolos como SMTP e JMS.
+- DEVE ser codificada usando XML.
+- DEVE usar o namespace Envelope do SOAP.
+- NÃO deve conter uma referência a DTD.
+- NÃO deve conter Instruções de Processamento XML.
+#### Composição
+- Um elemento Envelope que identifica o documento XML como uma mensagem SOAP  - OBRIGATÓRIO
+- Um elemento Header que contém informações de cabeçalho  - OPCIONAL
+- Um elemento Body que contém informações de chamada e resposta - OBRIGATÓRIO
+- Um elemento Fault contendo erros e informações de status - OPCIONAL
 
- #### Composição
-- Body - Contém a informação a ser transportada para o seu destino final. - OBRIGATÓRIO
-- Fault - Contém informações e status de erro da mensagem. - OPCIONAL 
-- Envelope - É o container de toda a mensagem SOAP, podendo conter a declaração de namespace que indica a versão de SOAP usada. - OBRIGATÓRIO
-- Cabeçalho - Possui informações de controle e processamento, responsável por carregar informações adicionais, tal como se a mensagem deve ser processada por um determinado nó intermediário. - OPCIONAL
+```xml
+<?xml version="1.0"?>  
+<soap:Envelope  
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"  
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">  
+<soap:Header>  
+...  
+</soap:Header>  
+<soap:Body>  
+...
+  <soap:Fault>  
+  ...  
+  </soap:Fault>  
+</soap:Body>  
+</soap:Envelope>
+```
 # Web Services
 Web services são serviços de aplicação que podem ser acessados usando os protocolos padrões da Web, como HTTP e SOAP. Eles permitem que aplicações se comuniquem umas com as outras através da web, independentemente de sua plataforma ou linguagem de programação. Web Services são fracamente acoplados por foram projetados para viabilizar comunicação entre sistemas, plataformas e linguagens e padrões totalmente incompatíveis.
+
+- São componentes de aplicativos 
+- Se comunicam usando protocolos abertos 
+- São autocontidos e auto descritivos
+- Podem ser descobertos usando UDDI 
+- Podem ser usados por outras aplicações HTTP e XML são a base para os serviços da web
+- O maior foco é na interoperabilidade
+- Geralmente são usadas para reutilização de componentes de aplicação ou conectar softwares já existentes.
+
+```xml
+<form action='tempconvert.asmx/FahrenheitToCelsius' <!-- serviço que fornece os resultados -->
+method="post" target="_blank">  
+<table>  
+  <tr>  
+    <td>Fahrenheit to Celsius:</td>  
+    <td>  
+    <input class="frmInput" type="text" size="30" name="Fahrenheit">  
+    </td>  
+  </tr>  
+  <tr>  
+    <td></td>  
+    <td align="right">  
+     <input type="submit" value="Submit" class="button">  
+     </td>  
+  </tr>  
+</table>  
+</form>  
+  
+<form action='tempconvert.asmx/CelsiusToFahrenheit' <!-- serviço que fornece os resultados -->
+method="post" target="_blank">  
+<table>  
+  <tr>  
+    <td>Celsius to Fahrenheit:</td>  
+    <td>  
+    <input class="frmInput" type="text" size="30" name="Celsius">  
+    </td>  
+  </tr>  
+  <tr>  
+    <td></td>  
+    <td align="right">  
+    <input type="submit" value="Submit" class="button">  
+    </td>  
+  </tr>  
+</table>  
+</form>
+```
 # Quarkus
 É um framework para desenvolvimento de aplicações cloud native. foi desenvolvido com o objetivo de ser portado dentro de
 contêineres (a infraestrutura imutável).
 
 #TODO JAVA JAX-RS https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
-#TODO Microservices Patterns: With examples in Java - Livro
 #TODO Sistemas distribuidos TUNEBAUM 
 #TODO Beging Quarkus - Livro
