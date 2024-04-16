@@ -49,7 +49,7 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
  #### DML (DATA MANIPULATION LANGUAGE)
  Select, Where, And, Or, Not, Order By, Insert, Update, Delete, Limit 
 #### Join
-Um **Join**, também conhecido como **Inner Join**m combina resultados de diferentes tabelas baseado em colunas que estão relacionadas.
+Um **Join**, também conhecido como **Inner Join** combina resultados de diferentes tabelas baseado em colunas que estão relacionadas.
 
 ```sql
 SELECT u.first_name, u.salary, r.name 
@@ -66,7 +66,7 @@ FROM users u
 LEFT ou RIGHT JOIN profiles p ON u.id = p.user_id;
 ```
 #### Full (Outter) Join
-Usado para retornar todos os resultados de ambas as tabelas com os valores que não combinam preenchidos com null.
+Usado para retornar todos os resultados de ambas as tabelas com os valores que não combinam preenchidos com null. A diferença para um inner join é que quando T1 ou T2 possuírem algum valor que o outro não possui, essa tupla ainda será apresentada na tabela mas sem valores correspondentes ao lado oposto, somando assim a quantidade n\*2 de linhas null no total com o resultado da query.
 
 ```sql
 SELECT u.first_name, u.salary, p.bio

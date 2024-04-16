@@ -82,12 +82,12 @@ Um caso de uso é uma sequência de ações, executada por atores que produzem u
 - Todo ator possui uma ou mais metas ao usar o sistema.
 ```
 # UML
-#### Diagramas de classe
+#### Diagramas de Classe
 Um diagrama de classe fornece uma visão estática ou estrutural do sistema. Ele não mostra a natureza dinâmica das comunicações entre os objetos das classes no diagrama. A visibilidade é indicada pelos sinais –, #, ~ ou +, que indicam, respectivamente, visibilidade ``private``, ``protected``, ``package`` ou ``public``.  Atributos estáticos podem ser referenciados sendo sublinhados. 
 
 ```ad-tip
 ###### ~ (package)
-Pode ser acessado pela própria classe ou por qualquer classe que pertença ao mesmo pacote. (Pacote)
+Pode ser acessado pela própria classe ou por qualquer classe que pertença ao mesmo pacote. 
 ```
 
 ![[engs-uml-dc.png]]
@@ -104,7 +104,13 @@ Os diagramas de classe também podem exibir relações entre classes. Uma classe
 ![[engs-uml-dcd.png]]
 
  ## Associação
- Relacionamento mais forte que a dependência, indica que a classe mantém uma referência a outra classe ao longo do tempo. As associações podem conectar mais de duas classes.
+ Relacionamento mais forte que a dependência, indica que a classe mantém uma referência a outra classe ao longo do tempo. As associações podem conectar mais de duas classes. 
+ 
+ ```ad-tip
+ ##### Navegabilidade 
+ Representada por uma seta em um dos fins da associação, determina o sentido em que os métodos poderão ser disparados.
+ - É opcional (caso não exista, singificará que as informações podem transitar bilateralmente entre as classes.)
+```
  
 ![[engs-uml-dcas.png]]
   
@@ -118,14 +124,56 @@ Os diagramas de classe também podem exibir relações entre classes. Uma classe
    Relacionamento entre itens gerias (superclasses/classes-mãe) e tipos mais específicos desses itens (subclasses/classes-filha). Representa a herança entre as classes.
    
 ![[engs-uml-ge.png]]
-##### Diagrama de Objeto
-É usado para ilustrar instâncias de coisas contidas nos **Diagramas de Classes**. Essas instâncias são conhecidas como objetos e cada um é uma representação concreta de uma classe, em um determinado momento durante a execução do sistema. Esse diagrama é útil para visualizar, especificar e documentar as estruturas de objetos e mostrar como eles se relacionam uns com os outros, capturando assim o estado do sistema em um ponto específico no tempo.
+ 
+ ## Classe Associativa
+ São necessárias nos casos em que existem atributos relacionados à associação que não podem ser armazenados por nenhuma das classes envolvidas. Costumam ser utilizadas principalmente em associações que apresentem multiplicidade muitos (\*) em todas as suas extremidades.
+ ![[engs-uml-clsassoc.png]]
+ ## Associação Qualificada 
+ Quando existe um atributo único em uma classe, é possível criar uma associação qualificada, que é uma forma de identificar individualmente um objeto dentro de uma coleção (uma coleção pode ser definida como um conjunto de instâncias associadas a outro objeto). O qualificador de uma associação é representado por um pequeno retângulo ligado ao final da associação.
+ ![[engs-uml-assq.png]]
+ ## Associação Unária
+ Este tipo de associação ocorre quando existe um relacionamento de um objeto de uma classe com objetos da mesma classe. No exemplo, funcionário pode ou não chefiar vários funcionários.
+ ![[engs-uml-dcasu.png]]
+##### Restrições OCL
+Essa linguagem procura fornecer um maior formalismo na declaração de restrições, procurando, assim, evitar a ambiguidade em suas representações. Por exemplo, que em uma classe `PessoaFisica` queiramos deixar explícito que nenhum objeto dessa classe poderá conter um valor inferior a 18 em seu atributo idade. Em OCL, poderíamos representar isso da seguinte maneira:
+
+![[engs-uml-dcrestr.png]]
+
+Há, ainda, outros tipos de restrições que podem ser aplicados a atributos. Por exemplo, pode-se definir um atributo como {readOnly} (somente leitura), determinando que seu valor só pode ser lido e não modificado.
+
+![[engs-uml-dcrestrro.png]]
+ 
+ Também é possível determinar que um atributo é estático (Static). Um atributo estático é apresentado sublinhado.
+ 
+![[engs-uml-dcrestrst.png]]
+
+As restrições podem ainda ser utilizadas para definir melhor a semântica de classes especializadas derivadas de classes gerais. As restrições predefinidas para classes especializadas são:
+
+• **Completa (complete)** – Quando todas as subclasses possíveis foram derivadas da classe geral.
+• **Incompleta (incomplete)** – Quando ainda é possível derivar novas subclasses.
+• **Separada (disjoint)** – Quando as subclasses são mutuamente exclusivas, ou seja, no momento em que uma instância pertence a uma subclasse, não poderá de forma alguma pertencer a nenhuma das outras subclasses derivadas.
+
+A figura abaixo fornece um exemplo de classes especializadas separadas e completas.
+
+![[engs-uml-dcrestrme.png]]
+
+Nesse exemplo, foram derivadas duas subclasses a partir da classe Pessoa, as classes Física e Jurídica. Dentro do escopo em que estão inseridas, não existem mais classes que possam ser derivadas da classe Pessoa, por isso a restrição entre as classes generalizadas é completa. Além disso, no momento em que uma pessoa for física, não poderá ser jurídica, e vice-versa. Portanto, a especialização também é separada (disjoint).
+
+• Sobreposta (overlapping) – Quando o fato de pertencer a uma subclasse não impede que pertença a outras.
+
+A figura apresenta um exemplo, no qual, a partir da classe Veiculo, derivaram-se duas subclasses Aéreo e Aquático. Como poderiamos ainda derivar uma classe para veículos terrestres, colocou-se uma restrição incompleta e, como pode ocorrer de um veículo ser tanto aéreo quanto aquático, como é o caso do hidroavião, acrescentamos, ainda, a restrição de sobreposta (overlapping) à especialização. Como é possível perceber, as restrições podem ser combinadas, sendo separadas por vírgulas.
+
+![[engs-uml-dcrestrme2.png]]
+#### Diagrama de Objeto
+O diagrama de objetos tem como objetivo fornecer uma “visão” dos valores armazenados pelos objetos das classes, definidas no diagrama de classes, em um determinado momento do sistema. Assim, embora o diagrama de classes seja estático, podem ser criados diagramas de objetos, onde as possíveis situações pelas quais os objetos das classes passarão podem ser simuladas.
+
+![[engs-uml-do.png]]
 #### Diagrama de Implantação
 Focalizam a estrutura do sistema de software e são úteis para mostrar a distribuição física de um sistema de software entre plataformas de hardware e ambientes de execução. Por exemplo, suponha que você esteja desenvolvendo um pacote de renderização gráfica baseado na Web. Os usuários do seu pacote de software usarão o navegador Web para acessar o seu site e introduzir as informações de renderização. O seu site vai renderizar uma imagem gráfica de acordo com as especificações do usuário e a enviará de volta ao usuário. Como a renderização gráfica pode ser cara em termos de computação, você decide tirar a renderização do servidor Web, colocando-a em uma plataforma separada.
 
 ![[engs-uml-di.png]]
 #### Diagrama de Casos de Uso
-Ajudam a determinar a funcionalidade e as características do software sob o ponto de vista do usuário. Um caso de uso descreve como um usuário interage com o sistema, definindo os passos necessários para atingir um objetivo específico (p. ex., gravar uma lista de músicas em um CD). Variações na sequência de passos descrevem vários cenários (p. ex., o que acontece se as músicas da lista não couberem em um CD?). No diagrama de caso de uso, os casos de uso são mostrados como elipses. Os atores são conectados por linhas aos casos de uso que eles executam.
+Ajudam a determinar a funcionalidade e as características do software sob o ponto de vista do usuário. Um caso de uso descreve como um usuário interage com o sistema, definindo os passos necessários para atingir um objetivo específico (p. ex., gravar uma lista de músicas em um CD). Variações na sequência de passos descrevem vários cenários (p. ex., o que acontece se as músicas da lista não couberem em um CD?). No diagrama de caso de uso, os casos de uso são mostrados como elipses. Os atores são conectados por linhas aos casos de uso que eles executam. 
 
 ![[engs-uml-cu.png]]
 
@@ -138,9 +186,13 @@ Conexão entre um ator e um caso de uso, mostrando a interação.
 Um caso de uso estende outro, adicionando comportamento opcional. (não são utilizados entre atores)
 ###### Relacionamento de Inclusão `<<include>>`
 Um caso de uso inclui as funcionalidades de outro, indicando que é necessário para sua execução.
+###### Casos de Uso
+Os casos de uso são utilizados para capturar os requisitos funcionais do sistema, ou seja, referem-se a serviços, tarefas ou funcionalidades identificados como necessários ao software e que podem ser utilizados de alguma maneira pelos atores que interagem com o sistema.
+- **Caso Primario**: Quando se refere a um processo importante, que enfoca um dos requisitos funcionais do software, como realizar um saque ou emitir um extrato em um sistema de controle bancário.
+- **Caso Secundário**: Refere a um processo periférico, como a manutenção de um cadastro ou a emissão de um relatório simples.
 ```
 #### Diagramas de Sequência
-Ao contrário dos diagramas de classe e de implantação, que mostram a estrutura estática de um componente de software, o diagrama de sequência é utilizado para indicar as comunicações dinâmicas entre objetos durante a execução de uma tarefa (caso de uso). Ele mostra a ordem temporal na qual as mensagens são enviadas entre os objetos para executar aquela tarefa. Podemos usar um diagrama de sequência para mostrar as interações em um caso de uso ou em um cenário do sistema de software.
+Ao contrário dos diagramas de classe e de implantação, que mostram a estrutura estática de um componente de software, o diagrama de sequência é utilizado para indicar as comunicações dinâmicas entre objetos durante a execução de uma tarefa (caso de uso). Ele mostra a ordem temporal na qual as mensagens são enviadas entre os objetos para executar aquela tarefa. Podemos usar um diagrama de sequência para mostrar as interações em um caso de uso ou em um cenário do sistema de software. Obviamente, o diagrama de sequência depende também do diagrama de classes, uma vez que as classes dos objetos utilizados no diagrama de sequência estão descritas nele. No entanto, o diagrama de sequência é uma excelente forma de validar e complementar o diagrama de classes, pois é ao modelar um diagrama de sequência que se percebe quais métodos são necessários declarar em que classes.
 
 ![[engs-uml-ds.png]]
 ##### Operadores 
@@ -155,17 +207,26 @@ Ao contrário dos diagramas de classe e de implantação, que mostram a estrutur
 ##### Mensagens 
 ![[engs-uml-sem.png]]
 #### Diagrama de Comunicação
-Fornece outra indicação da ordem temporal das comunicações, mas dá ênfase às relações entre os objetos e classes em vez da ordem temporal. Em um diagrama de comunicação, os objetos que interagem são representados por retângulos. Associações entre objetos são representadas por linhas ligando os retângulos. Normalmente, há uma seta apontando para um objeto no diagrama, que inicia a sequência de passagem de mensagens. A seta é identificada com um número e um nome de mensagem. Se você estiver interessado em mostrar as relações entre os objetos, além das mensagens que estão sendo enviadas entre eles, o diagrama de comunicação provavelmente é uma opção melhor do que o diagrama de sequência. 
+Este diagrama está amplamente associado ao diagrama de sequência: na verdade, um complementa o outro. As informações mostradas no diagrama de comunicação são, com frequência, praticamente as mesmas apresentadas no diagrama de sequência, porém com um enfoque diferente, visto que esse diagrama não se preocupa com a temporalidade do processo, concentrando-se em como os elementos do diagrama estão vinculados e quais mensagens trocam entre si durante um processo.
 
 ![[engs-uml-dco.png]]
 #### Diagrama de Atividade
 O diagrama de atividade mostra o comportamento dinâmico de um sistema ou de parte de um sistema por meio do fluxo de controle entre ações que o sistema executa. Ele é similar a um fluxograma, exceto que pode mostrar fluxos concorrentes. O componente principal de um diagrama de atividade é um nó de ação, representado por um retângulo arredondado, que corresponde a uma tarefa executada por um sistema de software. Setas que vão de um nó ação para outro indicam o fluxo de controle. Isto é, uma seta entre dois nós ação significa que, depois que a primeira ação é completada, a segunda ação começa. A escolha do diagrama de atividades é apropriada quando se destina a capturar o fluxo de tarefas entre múltiplos participantes.
 
-![[engs-uml-da.png]]
+![[imgs/engenharia de software/engs-uml-da.png]]
 ##### Símbolos 
 ![[engs-uml-da-s.png]]
+
+ ## Join Node
+ Combina fluxos concorrentes em um único fluxo. Quando cada fluxo de entrada possui um token aguardando, um token é produzido na saída.
+![[engs-uml-da-join.png]] 
+
+ ## Fork Node 
+ Divide um único fluxo em fluxos concorrentes. Cada token de entrada produz um token em cada conector de saída.
+ 
+![[engs-uml-da-fork.png]]
 #### Diagrama de Estado
-Utilizado para modelar o comportamento de um objeto ao longo do tempo, incluindo seus diferentes estados e as transições que ocorrem em resposta a eventos específicos. São muito usados para modelar o comportamento de Interfaces, Casos de Uso, Instâncias de classes. 
+Utilizado para modelar o comportamento de um objeto ao longo do tempo, incluindo seus diferentes estados e as transições que ocorrem em resposta a eventos específicos. São muito usados para modelar o comportamento de Interfaces, Casos de Uso, Instâncias de classes. Um diagrama de máquina de estados deve seguir a regra de que existe **apenas um estado inicial**. Esse é o ponto de partida para que a máquina comece sua execução. A partir daí, a máquina pode transitar por vários estados conforme sua especificação e reagir a diferentes eventos, até eventualmente chegar a um número não especificado de estados finais.
 
 ![[engs-uml-de.png]]
 #### Diagrama de Componentes
@@ -176,6 +237,9 @@ Representa a organização e a dependência entre os componentes físicos do sis
 Diagrama estrutural que mostra como elementos de um sistema são organizados em pacotes, bem como as dependências entre esses pacotes. Eles são úteis para organizar e estruturar um sistema em elementos de mais alto nível, facilitando o gerenciamento de complexidade do sistema.
 
 ![[engs-uml-dp.png]]
+#### Diagrama de Perfil
+permite definir tipos padronizados de estereótipos, valores rotulados e restrições. A UML define o mecanismo de perfils como um
+"mecanismo leve de extensão" da linguagem. Permite adaptar os modelos UML para diferentes plataformas e domínios.
 #### Classificação
 **Diagramas Estáticos (ou Estruturais)** modelam a estrutura e organização de um sistema, incluindo informações sobre classes, atributos, métodos, pacotes, etc.
 - Diagrama de Classes
@@ -189,7 +253,7 @@ Diagrama estrutural que mostra como elementos de um sistema são organizados em 
 - Diagrama de Sequência
 - Diagrama de Atividades
 - Diagrama de Estados
-- Diagrama de Colaboração
+- Diagrama de Comunicação
 # Engenharia de Requisitos
 Os requisitos de um sistema são as descrições do que o sistema deve fazer, os serviços que oferece e as restrições a seu funcionamento. Este, é o processo de descobrir, analisar, documentar e verificar esses serviços e restrições. Idealmente, eles devem especificar somente o comportamento externo do sistema. A elaboração de requisitos é norteada pela criação e pelo refinamento de cenários que descrevem como o usuário e outros atores interagirão com o sistema. Cada cenário de usuário é analisado a fim de extrair classes de análise, ou seja, entidades do domínio de negócio visíveis para o usuário. O documento de requisitos não deve incluir detalhes da arquitetura ou projeto do sistema.  Eles podem ser usados como parte do contrato para a implementação do sistema e devem consistir em uma especificação completa e detalhada de todo o sistema.
 

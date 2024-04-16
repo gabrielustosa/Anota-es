@@ -51,7 +51,7 @@
 - [x] Engenharia de software  [[cnu concurso/Engenharia de Software|estudar]]
 	- [x] Processos ágeis.
 	- [x] Engenharia de requisitos. 
-	- [ ] Ideação e especificação ágil. 
+	- [x] Ideação e especificação ágil. 
 	- [x] Arquitetura MVC e princípios de projeto. 
 	- [x] Testes unitários. 
 	- [x] Revisões de software modernas. 

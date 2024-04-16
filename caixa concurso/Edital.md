@@ -1,5 +1,5 @@
 
-- [ ] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
+- [x] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
 	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
 	- [x] UX; 
 	- [x] Análise e projeto orientados a objetos; 
@@ -50,19 +50,19 @@
 	- [x] Padrões HTML 4.01
 	- [x] HTTP response Status Code
 	- [x] XHTML 1.0, XML, XSLT, UDDI, WSDL e SOAP. 
-- [ ] Teste de software [[Testes|estudar]]
+- [x] Teste de software [[Testes|estudar]]
 	- [x] Controle da qualidade estático: revisão, inspeção, medição estática, análise estática; 
 	- [x] Princípios e técnicas de teste de software: teste de unidade, teste de integração, teste de regressão, teste alfa, teste beta, teste de segurança, teste de aceitação e de aprovação; 
 	- [x] Desenvolvimento dirigido por testes. 
-- [ ] Bancos de dados [[caixa concurso/Banco de Dados|estudar]]
+- [x] Bancos de dados [[caixa concurso/Banco de Dados|estudar]]
 	- [x] Modelagem conceitual de dados: a abordagem entidade-relacionamento;
 	- [x] Modelo relacional de dados (conceitos básicos e normalização); 
 	- [x] Conceitos de banco de dados e sistemas gerenciadores de bancos de dados (SGBD);
 	- [x] Linguagem SQL; 
-- [ ] Data Warehouse [[caixa concurso/Data Warehouse|estudar]]
+- [x] Data Warehouse [[caixa concurso/Data Warehouse|estudar]]
 	- [x] modelagem física de dados: tabelas, índices, particionamento, desempenho; 
 	- [x] modelagem conceitual para data warehouses, dados multidimensionais; 
-- [ ] Big data [[caixa concurso/Big Data|estudar]]
+- [x] Big data [[caixa concurso/Big Data|estudar]]
 	- [x] Fundamentos, técnicas de preparação e apresentação de dados; 
 	- [x] soluções de big data. 
 - [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
@@ -104,8 +104,8 @@
 	- [x] arquitetura microsserviços;
 	- [x] micro front end.
 	- [x] Nuvem pública e privada;
-	- [ ] métricas e estimativas de software;
-	- [ ] Análise por pontos de função: conceitos básicos e aplicações;
+	- [x] métricas e estimativas de software;
+	- [x] Análise por pontos de função: conceitos básicos e aplicações;
 	- [ ] Estratégias de Migração de Aplicações para o ambiente de nuvem;
 	- [ ] Governança;
 	- [ ] Computação Serverless;

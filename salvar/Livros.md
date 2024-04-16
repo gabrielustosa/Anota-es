@@ -21,3 +21,4 @@
 - A sociedade do cansaço 
 - Elogio da loucura
 - A utilidade do inútil
+- Henessy Patternson - Arquitetura de Computadores

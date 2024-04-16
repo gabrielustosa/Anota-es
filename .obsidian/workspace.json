@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a92d50718539363b",
+        "id": "900a5a838bc0bf55",
         "type": "tabs",
         "children": [
           {
-            "id": "ec05d0c38bb40f19",
+            "id": "3887d9abc970aaa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aca0e9a8183ff3c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "cnu concurso/Edital.md",
+                "file": "caixa concurso/Arquitetura de Software.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
+                "file": "caixa concurso/Arquitetura de Software.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md",
+                "file": "caixa concurso/Arquitetura de Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Desenvolvimento Web Java.md"
+                "file": "caixa concurso/Arquitetura de Software.md"
               }
             }
           },
@@ -176,32 +164,36 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ec05d0c38bb40f19",
+  "active": "3887d9abc970aaa7",
   "lastOpenFiles": [
+    "cnu concurso/Aprendizado de Máquina.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "imgs/arquitetura de software/arq-analpf.png",
+    "imgs/arquitetura de software",
+    "caixa concurso/Edital.md",
+    "caixa concurso/Engenharia de Software.md",
+    "imgs/engenharia de software/engs-uml-da-join.png",
+    "imgs/engenharia de software/engs-uml-da-fork.png",
+    "imgs/engenharia de software/engs-uml-de.png",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Estatística.md",
+    "caixa concurso/Banco de Dados.md",
+    "imgs/engenharia de software/engs-uml-do.png",
+    "imgs/engenharia de software/engs-uml-dcrestrme2.png",
+    "imgs/engenharia de software/engs-uml-dcrestrme.png",
+    "Pasted image 20240414184302.png",
+    "imgs/engenharia de software/engs-uml-dcrestrst.png",
+    "imgs/engenharia de software/engs-uml-dcrestrro.png",
     "cnu concurso/Edital.md",
+    "salvar/Livros.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "cnu concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Edital.md",
-    "imgs/web java/web-ajax.png",
     "salvar/Sites.md",
-    "salvar/Livros.md",
-    "imgs/web java/web-wsdl.png",
     "cnu concurso/Programação.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "caixa concurso/Programação.md",
-    "caixa concurso/Estatística.md",
-    "cnu concurso/Aprendizado de Máquina.md",
     "caixa concurso/Sistemas Operacionais.md",
-    "imgs/aprendizado de maquina/am-matriz.png",
-    "imgs/aprendizado de maquina/am-arv-boosting.png",
-    "imgs/aprendizado de maquina/am-arv-random-forest.png",
-    "imgs/aprendizado de maquina/am-arv-exemplo-3.png",
-    "imgs/aprendizado de maquina/am-arv-exemplo-2.png",
-    "imgs/aprendizado de maquina/am-arv-exemplo-1.png",
-    "imgs/aprendizado de maquina/am-arv-exemplo.png",
-    "imgs/aprendizado de maquina/am-arv-clas.png",
     "cnu concurso/Big Data.md",
-    "caixa concurso/Big Data.md",
     "caixa concurso/Data Warehouse.md",
     "cnu concurso/Data Mining.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
@@ -210,19 +202,15 @@
     "conteúdos/Sem título",
     "salvar",
     "cnu concurso/Rede de Computadores.md",
-    "caixa concurso/Arquitetura de Software.md",
     "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Banco de Dados.md",
     "caixa concurso/Testes.md",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
-    "caixa concurso/Engenharia de Software.md",
     "cnu concurso/Engenharia de Software.md.lnk",
     "caixa concurso/Engenharia de Software.md.lnk",
     "imgs/agilidade",
     "imgs/padroes de projeto",
     "imgs/estatistica",
     "imgs/engenharia de software",
-    "imgs/web java",
     "Sem título.canvas"
   ]
 }
