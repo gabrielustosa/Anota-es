@@ -147,7 +147,6 @@ Por exemplo: Ele arrasta a coluna do valor da venda. Depois, ele quer ver essas 
  ##### Dice
  Extrair um subcubo do cubo original executando uma operação de seleção de uma ou mais dimensões.  
 # Data Mart
-
 É uma escala menor, que abrange um setor de uma determinada unidade de negócio, utilizando o modelo dimensional, assim como outros elementos do data warehouse.
 
 Pode ser construído independentemente do data warehouse, segundo uma necessidade departamental da organização, ou seja, reunindo dados que geram informações específicas de um setor da empresa, essa arquitetura é conhecida como "bottom-up", constroem primeiro os data marts que posteriormente alimentarão os data warehouses. 

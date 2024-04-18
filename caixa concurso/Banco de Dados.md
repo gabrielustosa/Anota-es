@@ -1,7 +1,39 @@
 # SGBD
-#### Metadados 
+Um SGBD deve conter: 
+- Compartilhamento de dados
+- Restrições de acesso
+- Fornecimento de Múltiplas Interfaces
+- Representação de relacionamento complexo entre dados
+- Restrições de integridade
+- Backup e Restauração
+- Controle de concorrência 
+- Segurança, a Integridade (só inclui dados válidos relativamente à realidade)
 
+![[bd-sgbd.png]]
+### Metadados 
 São informações sobre o próprio banco de dados e seus elementos como: esquema do banco, dicionário de dados (informações sobre os tipos de dados armazenados em cada tabela), estatísticas de desempenho, privilégios e permissões, logs e registros. 
+### Dump 
+O 1 de banco de dados é o processo de criação de um arquivo que contém todas as informações presentes em um banco de dados em um determinado momento. Esse arquivo é uma espécie de “snapshot” do banco de dados, capturando todas as tabelas, registros, relacionamentos e configurações existentes naquele momento. Podendo ser importado de volta para o banco de dados posteriormente, se necessário.
+### Backup
+Processo essencial que envolve a cópia dos dados do banco de dados em um determinado momento para um local seguro, como um disco rígido externo, armazenamento em nuvem ou outro dispositivo de armazenamento. O objetivo principal do backup é proteger os dados contra perda, corrupção ou dano, permitindo a recuperação dos dados em caso de falha do sistema, erro humano, desastre natural ou ataque cibernético.
+### Categorias de Restrições de Integridade
+- **Integridade de domínio:** Refere-se a regras que definem o conjunto de valores válidos para uma coluna, por exemplo, um campo de idade que deve conter apenas valores numéricos positivos.
+- **Integridade de entidade:** Garante que cada entidade tenha uma identificação única, geralmente por meio de uma chave primária.
+- **Integridade referencial:** Assegura que os relacionamentos entre tabelas sejam consistentes, ou seja, que uma chave estrangeira corresponda sempre a um valor existente na tabela a que se refere.
+- **Integridade de vazio:** Estabelece que certos campos não podem ser nulos, ou seja, devem conter dados obrigatoriamente.
+### Tipos
+#### Centralizado
+Opera em um único sistema computacional e não distribuído por múltiplos locais. Ele é acessado por diferentes usuários e aplicações que podem estar em locais diferentes, mas o gerenciamento e o armazenamento dos dados são feitos em um único local. Esta característica centralizada permite um controle e gerenciamento eficientes dos dados e dos acessos simultâneos por vários usuários.
+#### Distribuído 
+O Sistema de Gerenciamento de Banco de Dados Distribuídos (SGBDD) controla o armazenamento e processamento de dados relacionados logicamente por meio de sistemas computacionais interconectados através de uma rede, em que tanto os dados como as funções de processamento são distribuídos entre os diversos locais.
+##### Federado
+Quando um SGBDD usa _middleware_ para que os SGBDs estejam fracamente acoplados, estamos falando de um SGBDD **Federado**. Isso significa que cada banco de dados pode operar de forma independente, mas também pode se comunicar com outros bancos por meio do middleware. Essa comunicação permite o acesso e a manipulação de dados entre diferentes bancos de dados, sem a necessidade de integrá-los completamente em uma única base.
+#### Rede
+Neste modelo, os dados são organizados em uma estrutura de rede ou gráfico, onde cada registro pode ter vários pais e vários filhos. Esta estrutura permite um relacionamento mais complexo entre os registros.
+#### Hierárquico 
+O modelo hierárquico consiste em uma coleção de registros que são conectados em uma estrutura de árvore portanto, similar ao **modelo de rede**, no sentido de que dados e relacionamentos entre dados são também representados por registros e ligações, respectivamente.
+#### Orientado a Objetos
+Se baseia nos conceitos da orientação a objetos, como a encapsulação de dados e métodos, a herança e o polimorfismo. Essa abordagem foi uma resposta à necessidade de lidar com tipos de dados mais complexos e com um comportamento associado a eles, ou seja, objetos que combinam estado (dados) e comportamento (funções ou métodos).
 # DER (Diagrama Entidade Relacionamento) 
 
 ``` mermaid
@@ -29,16 +61,21 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
  Dependência de junção. Quando uma tabela T pode ser decomposta em outras tabelas como T1, T2, T3
 # Conceitos 
  #### CONCEITUAL
- Definição de user-views, saída, requerimentos, diagramas (relacionamento, entidades, atributos).
+ Definição de user-views, saída, requerimentos, diagramas (relacionamento, entidades, atributos), independente de implementação em um SGBD.
  #### LÓGICO
  Definição das tabelas, colunas, relacionamentos, verificação de normalizações e integridade.
  #### FÍSICO
  Definição de tabelas, views, indexes que estão relacionados com a parte física do armazenamento.
+ 
+ ## Independência 
+ A arquitetura lógica em 3 níveis pode ser usada para esclarecer o conceito de independência de dados, que pode ser definida como a capacidade de alterar o esquema em um nível sem alterar o esquema do nível imediatamente superior.
+- **Independência de dados LÓGICA** - é a capacidade de alterar o esquema **CONCEITUAL** sem alterar o esquema **EXTERNO** ou programas de aplicação.
+- **Independência de dados FÍSICA** - é a capacidade de alterar o esquema **INTERNO** sem alterar o esquema **CONCEITUAL**. Alterações no esquema interno podem ser necessárias, pois alguns arquivos físicos são reorganizados – por exemplo, pela criação de estruturas de acesso adicionais – para melhorar a performance de consulta ou atualização.
 #### ACID 
  ##### Atomicidade 
  Garante que todas as alterações realizadas por uma transação serão efetivadas no banco de dados, ou nenhuma delas, caso ocorra algum problema. Ou seja, não há atualização parcial da transação. 
  ##### Consistência
- Nesse caso é garantido que novas transações somente serão completadas se elas não ferirem nenhuma regra do banco de dados que possa torná-lo inconsistente. 
+ A execução de uma transação deve levar o banco de dados de um estado consistente a um outro estado consistente;
  ##### Isolamento
  Propriedade que permite que os eventos em uma transação não interfiram nos eventos de outra transação concorrente. 
  ##### Durabilidade

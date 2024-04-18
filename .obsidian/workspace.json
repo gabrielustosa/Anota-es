@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "900a5a838bc0bf55",
+        "id": "fce3b941b133d9ee",
         "type": "tabs",
         "children": [
           {
-            "id": "3887d9abc970aaa7",
+            "id": "69f1def01a79de88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Engenharia de Software.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69c7649b96477e79",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0247eb2e7e7b631e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "caixa concurso/Edital.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#TODO",
+                "query": "cmMI",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,53 +189,53 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "3887d9abc970aaa7",
+  "active": "69c7649b96477e79",
   "lastOpenFiles": [
-    "cnu concurso/Aprendizado de Máquina.md",
+    "caixa concurso/Engenharia de Software.md",
     "caixa concurso/Arquitetura de Software.md",
+    "caixa concurso/Edital.md",
+    "imgs/engenharia de software/engs-qa-mps-br.png",
+    "caixa concurso/Agilidade.md",
+    "cnu concurso/Big Data.md",
+    "cnu concurso/Banco de Dados.md",
+    "imgs/engenharia de software/engs-qs-cmmi-n.png",
+    "caixa concurso/Data Warehouse.md",
+    "caixa concurso/Banco de Dados.md",
+    "cnu concurso/Data Warehouse.md",
+    "imgs/banco de dados",
+    "caixa concurso/Big Data.md",
+    "imgs/Sem título.md",
+    "imgs/banco de dados/bd-sgbd.png",
+    "salvar/Sites.md",
+    "salvar/Livros.md",
+    "cnu concurso/Aprendizado de Máquina.md",
     "imgs/arquitetura de software/arq-analpf.png",
     "imgs/arquitetura de software",
-    "caixa concurso/Edital.md",
-    "caixa concurso/Engenharia de Software.md",
     "imgs/engenharia de software/engs-uml-da-join.png",
     "imgs/engenharia de software/engs-uml-da-fork.png",
     "imgs/engenharia de software/engs-uml-de.png",
-    "caixa concurso/Big Data.md",
     "caixa concurso/Estatística.md",
-    "caixa concurso/Banco de Dados.md",
     "imgs/engenharia de software/engs-uml-do.png",
     "imgs/engenharia de software/engs-uml-dcrestrme2.png",
     "imgs/engenharia de software/engs-uml-dcrestrme.png",
-    "Pasted image 20240414184302.png",
-    "imgs/engenharia de software/engs-uml-dcrestrst.png",
-    "imgs/engenharia de software/engs-uml-dcrestrro.png",
     "cnu concurso/Edital.md",
-    "salvar/Livros.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "cnu concurso/Desenvolvimento Web Java.md",
-    "salvar/Sites.md",
     "cnu concurso/Programação.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
     "caixa concurso/Programação.md",
     "caixa concurso/Sistemas Operacionais.md",
-    "cnu concurso/Big Data.md",
-    "caixa concurso/Data Warehouse.md",
     "cnu concurso/Data Mining.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
     "imgs/aprendizado de maquina",
-    "caixa concurso/Agilidade.md",
     "conteúdos/Sem título",
     "salvar",
     "cnu concurso/Rede de Computadores.md",
-    "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Testes.md",
-    "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "cnu concurso/Engenharia de Software.md.lnk",
     "caixa concurso/Engenharia de Software.md.lnk",
     "imgs/agilidade",
     "imgs/padroes de projeto",
     "imgs/estatistica",
-    "imgs/engenharia de software",
     "Sem título.canvas"
   ]
 }

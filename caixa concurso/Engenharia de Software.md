@@ -263,6 +263,13 @@ Os requisitos de um sistema são as descrições do que o sistema deve fazer, os
 
 - É definido no processo de elicitação de requisitos.
 ```
+
+```ad-info
+##### Tipos de requisitos
+- **Normais**: objetivos declarados
+- **Esperados**: implícitos e podem ser tão básicos que o cliente não declara explicitamente
+- **Extraordinários**: vão além das expectativas do usuários
+```
 #### Requisitos de Usuário
 São abstratos, mais gerais e de alto nível. São declarações, em uma linguagem natural com diagramas, de quais serviços o sistema
 deverá fornecer a seus usuários e as restrições com as quais este deve operar.
@@ -327,18 +334,22 @@ Visam descobrir requisitos. A elicitação e análise de requisitos podem envolv
  
  ## Modelo Espiral
  Modelo de processo de software evolucionário que acopla a natureza iterativa da prototipação com os aspectos sistemáticos e controlados do modelo cascata. Fornece potencial para o rápido desenvolvimento de versões cada vez mais completas do software. é um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistemas intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos.
- 
- ### Levantamento vs Elaboração
- - Levantamento de Requisitos: primeira fase do processo de engenharia de requisitos. Seu objetivo é identificar, coletar e documentar os requisitos do sistema.
- - Elaboração de Requisitos: Ocorre após o levantamento de requisitos. Seu objetivo é transformar os requisitos de alto nível coletados durante o levantamento em requisitos mais detalhados e compreensíveis.
+
+```ad-tip
+#### Levantamento vs Elaboração
+ - **Levantamento**: Primeira fase do processo de engenharia de requisitos. Seu objetivo é identificar, coletar e documentar os requisitos do sistema.
+ - **Elaboração**: Ocorre após o levantamento de requisitos. Seu objetivo é transformar os requisitos de alto nível coletados durante o levantamento em requisitos mais detalhados e compreensíveis.
+```
 ##### Especificação
 Converte os requisitos em alguma forma-padrão de documentação das funcionalidades e restrições do software. Este processo é essencial para dar direção ao desenvolvimento e garantir que o produto final atenda às expectativas.
 ##### Validação
 Verificar se os requisitos realmente definem o sistema que o cliente quer. Ela se sobrepõe à análise, uma vez que está preocupada em encontrar problemas com os requisitos. A validação de requisitos é importante porque erros em um documento de requisitos podem gerar altos custos de retrabalho quando descobertos durante o desenvolvimento ou após o sistema já estar em serviço.
 
- ### Verificação vs Validação
-  - Verificação: Processo que ocorre durante o desenvolvimento do software. Seu objetivo é garantir que o software está sendo construído corretamente, de acordo com as especificações dos requisitos.
-  - Validação: A validação de requisitos ocorre após a construção do software, durante a fase de testes. Seu objetivo é garantir que o software atenda às necessidades reais do cliente e aos objetivos de negócio.
+```ad-tip
+#### Verificação vs Validação
+  - **Verificação**: Processo que ocorre durante o desenvolvimento do software. Seu objetivo é garantir que o software está sendo construído corretamente, de acordo com as especificações dos requisitos.
+  - **Validação**: A validação de requisitos ocorre após a construção do software, durante a fase de testes. Seu objetivo é garantir que o software atenda às necessidades reais do cliente e aos objetivos de negócio.
+```
 #### Técnicas para o Levantamento de Requisitos
 ##### Questionário
 Adequada para situações onde os usuários estão dispersos geograficamente ou quando se busca obter dados quantificáveis de um grande número de pessoas. Essa abordagem é eficiente em coletar informações de forma estruturada, permitindo análises estatísticas e uma compreensão abrangente das necessidades dos usuários.
@@ -387,6 +398,89 @@ A interface do usuário é a janela para o software. Em muitos casos, ela molda 
 
 Pode ser criado um storyboard para ilustrar a navegação pelas telas desenvolvidas para o produto de modo a realizar tarefas específicas. Questões de projeto, como tempo de resposta, estrutura de comandos e ações, tratamento de erros e recursos de ajuda, são consideradas à medida que o modelo de projeto é refinado. Uma grande variedade de ferramentas de implementação é usada para construir um protótipo para avaliação por parte do usuário.
 # Qualidade de Software
-Qualidade de software trata sobre a maturidade dos processos de uma organização, visando a qualidade do produto gerado e a consequente satisfação dos seus clientes.
+Qualidade de software trata sobre a maturidade dos processos de uma organização, visando a qualidade do produto gerado e a consequente satisfação dos seus clientes. É importante entender que a qualidade de um software não está restrita apenas a sua funcionalidade, mas também a como ele satisfaz requisitos tais como usabilidade, confiabilidade, eficiência, manutenibilidade e portabilidade, entre outros, o que pode incluir aspectos não explicitados formalmente, mas que são esperados pelo usuário.
+
+```ad-info
+##### Norma ISO/IEC 9126 
+Características de qualidade de produto de Software.
+- **Funcionalidade**: Adequação, Acurácia, Interoperabilidade, Segurança de acesso e Conformidade;
+- **Confiabilidade**: Maturidade, Tolerância a falhas, Recuperabilidade e Conformidade;
+- **Usabilidade**: Inteligibilidade, Apreensibilidade, Operacionalidade, Atratividade e Conformidade;
+- **Eficiência**: Comportamento em relação ao tempo, Utilização de recursos e Conformidade;
+- **Manutenibilidade**: Analisabilidade, Modificabilidade, Estabilidade e Conformidade;
+- **Portabilidade**: Adaptabilidade, Capacidade para ser instalado, Coexistência, Capacidade para substituir e Conformidade.
+```
+
+```ad-warning
+A maturidade determina o nível qualidade.
+```
 ### CMMI
-O CMMI procura nortear a organização no sentido de implementar a melhoria contínua do processo de software, e o faz através de um modelo que contempla duas representações, divididas em níveis, priorizando de forma lógica as ações a serem realizadas. Quanto maior o nível, maior a maturidade da organização, o que pode se traduzir em maior qualidade do produto final, com maior previsibilidade em cronogramas e orçamentos.
+Em suma, O CMMI é um framework para medir maturidade dos processos de TI. Este procura nortear a organização no sentido de implementar a melhoria contínua do processo de software, e o faz através de um modelo que contempla duas representações, divididas em níveis, priorizando de forma lógica as ações a serem realizadas. Quanto maior o nível, maior a maturidade da organização, o que pode se traduzir em maior qualidade do produto final, com maior previsibilidade em cronogramas e orçamentos.
+
+Essas duas representações possíveis são: a **estagiada** e a **contínua**. No caso da representação contínua, as organizações podem escolher áreas de processo para melhorar e podem ser classificadas em níveis para cada área escolhida.
+
+```ad-abstract
+###### Representação Por Estágios
+Disponibiliza uma seqüência pré-determinada para melhoria baseada em estágios que não deve ser desconsiderada, pois cada estágio serve de base para o próximo. É caracterizado por Níveis de Maturidade (_Maturity Levels_)
+###### Representação Continua  
+Possibilita a organização utilizar a ordem de melhoria que melhor atender os objetivos de negócio da empresa. É caracterizado por Níveis de Capacidade (_Capability Levels_)
+```
+
+Os níveis de maturidade do CMMI na representação contínua são os seguintes:
+
+- Nível 0 - Incompleto: Os processos não estão implementados ou não alcançam os objetivos da área de processo.
+- Nível 1 - Executado: Os processos estão implementados e atingem os objetivos.
+- Nível 2 - Gerenciado: Os processos são planejados, executados, monitorados e controlados.
+- Nível 3 - Definido: Os processos são bem caracterizados e entendidos e são descritos em padrões, procedimentos, ferramentas e métodos.
+- Nível 4 - Gerenciado Quantitativamente: Os processos são controlados usando técnicas estatísticas e quantitativas.
+- Nível 5 - Otimizado: O foco é na melhoria contínua dos processos através de inovação e otimização tecnológica.
+
+![[engs-qs-cmmi-n.png]]
+
+### MPS-BR
+Define a capacidade de um processo por meio de resultados esperados e níveis de maturidade, refletindo como os processos estão institucionalizados na organização. A medida que a organização evolui, espera-se que a capacidade para desempenhar os processos melhore, conforme descrito na afirmativa. O MPS.BR é um modelo de referência que visa estabelecer um padrão para a maturidade dos processos de software, sendo amplamente adotado, especialmente no Brasil.
+#### MR-MPS-SW
+O Modelo de Referência MPS para Software (MR-MPS-SW) define níveis de maturidade que resultam de uma combinação entre processos e sua capacidade. 
+
+A definição dos processos segue os requisitos para um modelo de referência de processo apresentados na ISO/IEC 15504-2, especificando o propósito e os resultados esperados de sua execução. Isso possibilita a avaliação e atribuição de graus de efetividade na execução dos processos. 
+
+A capacidade do processo refere-se à habilidade do processo para atingir os objetivos de negócio atuais e futuros, e está relacionada ao cumprimento dos atributos de processo associados aos processos de cada nível de maturidade.
+#### Níveis de Maturidade
+O modelo MPS-BR define 7 níveis de maturidade cuja escala inicia-se no nível **G** e progride até o nível **A**. 
+
+![[engs-qa-mps-br.png]]
+
+- Na passagem para um nível de maturidade superior, os processos anteriormente implementados devem passar a ser executados no nível de capacidade exigido neste nível superior.
+
+1. **G** – Parcialmente Gerenciado: somente gerenciamento de requisitos e projetos;
+2. **F** – Gerenciado: Controles de mediação, gerência de configuração, conceitos de aquisição e garantia de qualidade;
+3. **E** – Parcialmente Definido: processos como treinamento, adaptação de processos para gerência de projetos e melhoria e o controle do processo organizacional;
+4. **D** – Largamente Definido: validação, verificação, liberação, instalação e integração;
+5. **C** – Definido: Gerência de riscos;
+6. **B** – Gerenciado Quantitativamente: Desempenho dos processos e sua gerência quantitativa;
+7. **A** – Otimização: Inovação e análise de causas contínuas;
+
+```ad-summary
+#### Maturidade Inicial
+- Caracterizado pela ausência de processos padronizados e repetitivos.
+- Atividades são realizadas de maneira ad hoc, muitas vezes dependendo de esforços individuais.
+- O foco está na resolução de problemas imediatos.
+#### Maturidade Gerenciado
+- Introduz práticas de gerenciamento de projetos para melhorar a previsibilidade.
+- Processos começam a ser documentados e padronizados.
+- Controle básico sobre os projetos é estabelecido.
+#### Maturidade Definido
+- Processos são completamente documentados, padronizados e integrados.
+- Há um comprometimento com a melhoria contínua.
+- Papéis e responsabilidades são bem definidos.
+- Foco em estabelecer processos eficientes.
+#### Maturidade Quantitativamente Gerenciado
+- Introduz a medição quantitativa para entender e controlar o desempenho dos processos.
+- Estabelece objetivos quantitativos para melhorar a qualidade e a eficiência.
+- Tomada de decisão baseada em dados.
+#### Maturidade em Otimização
+- Foco na melhoria contínua e inovação.
+- Processos são continuamente ajustados e otimizados.
+- Inovações tecnológicas e melhores práticas são incorporadas.
+- Organização busca a excelência e a adaptação às mudanças.
+```

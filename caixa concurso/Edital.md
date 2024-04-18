@@ -24,7 +24,7 @@
 	- [ ] C#; .NET; 
 	- [ ] AngularJS; Angular; 
 	- [ ] TypeScript 4.X; Javascript;
-	- [ ] Python 3.9.X 
+	- [x] Python 3.9.X 
 		- [x] Pandas
 		- [x] NumPy
 		- [ ] SciPy
@@ -118,10 +118,10 @@
 	- [ ] Arquitetura da informação, portlets e RSS; 
 	- [ ] Ferramentas de Gestão de Conteúdos; 
 	- [ ] Modelo de Acessibilidade do Governo Eletrônico.
-- [ ] Qualidade de software:  [[caixa concurso/Engenharia de Software#Qualidade de Software|estudar]]
+- [x] Qualidade de software:  [[caixa concurso/Engenharia de Software#Qualidade de Software|estudar]]
 	- [x] CMMI/MPS-BR: Conceitos básicos e objetivos;
-	- [ ] Disciplinas e formas de representação; 
-	- [ ] Níveis de capacidade e maturidade.
+	- [x] Disciplinas e formas de representação; 
+	- [x] Níveis de capacidade e maturidade.
 - [ ] Conceitos de Arquitetura de Referência:
 	- [ ] arquitetura de solução para o desenvolvedor básico. 
 - [ ] Gestão e governança de TI

@@ -48,6 +48,13 @@ Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pod
 5. **Aumentar as Estruturas**: Criar uma estrutura organizacional flexível e adaptável que suporte as necessidades da equipe. (Implementar metodologias ágeis, reduzir a burocracia e fomentar a colaboração.)
 6. **Melhorar Tudo**: Implementar metodologias ágeis, reduzir a burocracia e fomentar a colaboração. (Incentivar a cultura de feedback, realizar experimentos e aprender com os erros.)
 # Frameworks Ágeis
+
+```ad-warning
+**Indivíduos e interação entre eles** > _processos e ferramentas_
+**Software em funcionamento** > _documentação abrangente_
+**Colaboração com o cliente** > _negociação de contratos_
+**Responder a mudanças** > _seguir um plano_
+```
 ### Scrum
  Usados para orientar as atividades de desenvolvimento dentro deum processo que incorpora as seguintes atividades metodológicas: requisitos, análise, projeto, evolução e entrega. Em cada atividade metodológica, ocorrem tarefas realizadas em um período chamado de sprint. O trabalho realizado dentro de um sprint (o número de sprints necessários para cada atividade metodológica varia dependendo do tamanho e da complexidade do produto) é adaptado ao problema em questão e definido, e muitas vezes modicado em tempo real, pela equipe Scrum.
  

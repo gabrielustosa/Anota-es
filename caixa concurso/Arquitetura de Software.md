@@ -66,6 +66,64 @@ Pode fornecer aos engenheiros de software métricas significativas para melhores
 - **Entendimento sobre os clientes**: Para ajudar os desenvolvedores a obter informações que levam a ações concretas sobre o uso do produto por parte dos clientes no campo durante a engenharia do produto.
 - **Avaliação da estabilidade**: Para ajudar gerentes e desenvolvedores a monitorar o estado do protótipo em evolução e antecipar necessidades de manutenção futuras.
 - **Inspeção direcionada**: Para ajudar as equipes a determinar o valor de atividades de inspeção individuais, a sua frequência e o seu escopo.
+### Tipos de Métrica x Método de Medição
+##### Métrica de Requisitos
+Medir o software do ponto de vista do usuário, levando em conta como será a interação do mesmo com o software e o que é esperado de cada interação. As regras de negócio devem ser especificadas, assim como regras de interface entre o software e o usuário. No final da contagem é mensurado o quanto que o usuário solicita de requisitos e/ou quanto o mesmo recebe.
+
+**Métodos de medição**: Análise de Pontos de Função e NESMA.
+##### Métrica de Arquitetura
+Medir a capacidade da arquitetura, em termos de quantidade de funcionalidades encapsuladas a mesma fornece para os projetistas, desenvolvedores e testadores.
+
+**Métodos de medição**: Não existe métricas formais. A arquitetura pode ser analisada pela quantidade de componentes abstratos e interfaces de serviços não-funcionais que a mesma atende.
+##### Métrica de Projeto UML
+Mede a quantidade de artefatos UML descrevem o software de forma horizontal e vertical. Consideramos horizontal a quantidade de tipos de artefatos, tais como Diagramas de Classe, Sequências, Componentes, Implantação, etc. Verticalmente a quantidade de elementos por diagrama, tal como Nós no Diagrama de Implantação, classes no Diagrama de Classe, etc.
+
+**Método de medição**: Não existe uma métricas formais. O Projeto UML é documentado de forma quantitativa, e a empresa deve criar um guia formalizando as regras de documentação com a finalidade de restringir o escopo de esforço, controlar a qualidade e tornar a base histórica de contagem efetiva para fins de estimativa.
+##### Métrica de Banco de Dados
+Mede as estruturas físicas e lógicas do banco de dados. Como o banco de dados está estruturado e as operações que são realizadas no mesmo devem ser mensuradas. É conveniente que até mesmo os tipos, periodicidades e tamanho de backup sejam mensurados e documentados. Por questões de gerenciamento é uma boa prática mensurar a arquitetura física do banco de dados, tal como Datafiles, Tablespaces, etc.
+
+**Métodos de medição**: Por padrão é de costume dos DBAs mensurar a quantidade de tabelas, quantidade de registros em sua carga inicial e fator de crescimento de registros em cada tabela. Os registros são mensurados considerando um fator quantitativo e também físico em bytes, com base na quantidade de bytes de cada registro. Colunas do tipo BLOB, CLOB, FILE, etc. devem ser mensuradas separadamente se orientando também nos requisitos de negócio e requisitos não-funcionais.
+##### Métrica de Implementação
+Mede fisicamente o tamanho do código implementado. Esta medida pode ser o tamanho físico em quantidade de linhas de cada arquivo de código fonte, ou lógica utilizando a quantidade de comandos existem em cada linha de código fonte.
+
+**Método de medição**: LOC (Line Of Code). 
+
+```ad-summary
+#### LOC (Line of Code)
+Técnica utilizada para na contagem literal do número de linhas presentes no código-fonte, incluindo linhas em branco e comentários. A técnica LOC possui duas variantes, SLOC (Sorce Line Of Code) e LLOC (Logical Line Of Code), que medem respectivamente a quantidade de linhas físicas e quantidade de comandos por linha de código.
+```
+##### Métrica de Teste
+Mede a quantidade de código que é coberto pelos testes. Existem diversos tipos de testes, Teste Unitário,  Teste Funcional, Teste de Aceitação, etc. O mais importante é ter devidamente documentado e acordado a quantidade mínima de código que deve ser coberto pela técnica escolhida.
+
+**Método de medição**: Code Coverage.
+##### Métrica de Performance
+Com os atuais dispositivos de pequeno porte em relação aos computadores, tais como Tablets e Smartphones, a performance de execução da aplicação retornou a ser um fator crucial para o sucesso e fracasso de um software, podendo até mesmo não alcançar determinados usuários por conta de fatores também relacionados e capacidade de telecomunicação.
+
+Previamente a produção do software, no momento em que o Arquiteto de Software estiver projetando o mesmo, deve-se documentar e estabelecer os requisitos mínimos e máximos de performance para o correto desenvolvimento da arquitetura de software e seleção de tecnologias e frameworks.
+
+Cabe ao Arquiteto de Software orientar ao Analista de Requisitos a projetar a realização do negócio com telas (protótipos) contendo barras de progresso, ou até mesmo operações assíncronas quando o processamento for inevitavelmente pesado.
+
+**Método de medição**: Mensurar em milissegundos a velocidade média que cada funcionalidade de negócio, que responde a cada ação do usuário nos tipos de dispositivos contemplados na arquitetura, estão de acordo o esperado.
+##### Métrica de Implantação
+A complexidade e cada atividade envolvida no processo de implantação do software afeta de forma significativa o projeto.
+
+Na etapa de implantação, principalmente primeira implantação, muitas vezes é necessário diversos perfis de profissional, bem como os mais capacitados da equipe para realizar tais atividades. Caso a implantação não seja mensurada o gestor de projeto poderá encontrar um planejamento “obscuro” onde a estimativa de Custo, Prazo e Esforço é baseada simplesmente no “feeling” e suscetível a muitas falhas de planejamento, resultando em baixo lucro ou até mesmo prejuízo, juntamente com o constrangimento do cliente.
+
+**Método de medição**: De acordo com a Base de Projetos formada pela empresa, deve-se obter o esforço médio de implantação com cada atividade da implantação, por exemplo, instalação de banco de dados, instalação de bibliotecas, configuração de usuários, etc.
+##### Métrica de Integração
+Projetos de software possuem alto risco ao desenvolver integrações. O Arquiteto de Software consegue estimar tecnicamente o esforço para integrar com determinado protocolo, mas jamais conseguirá estimar a estabilidade, risco, complexidade causada por pouca ou nenhuma documentação existente. Para evitar que problemas de integração sejam incorporados ao desenvolvimento do software e causa raiz para baixa produtividade da equipe, deve-se tratá-lo isoladamente com a finalidade de identificar o real riso e produtividade do mesmo, por exemplo, integrar com a Receita Federal, com o SAP, ou determinado banco financeiro, etc.
+
+**Método de medição:** Mensurar o esforço e manter a produtividade na base de projetos separadamente, por exemplo, a produtividade para integrar um software com uma rede social, um órgão público, etc. deve ser mantido separadamente do esforço para desenvolver as funcionalidades para o usuário final.
+##### Métrica de Operação
+Mesmo com o software desenvolvido, implantado e integrado com sucesso nada adianta se não for possível operacionalizá-lo. Como o gestor conseguirá estimar tal operacionalização? A resposta é simples! Mensurar o nível de mudança do software, a depreciação das tecnologias requerendo atualizações e upgrades, a produtividade e perfis dos profissionais envolvidos nas soluções de incidentes e desenvolvimento de mudanças e melhorias, o índice de SLA acordado em todas as infraestruturas envolvidas e comparar tudo isso a base de projetos.
+
+**Método de medição**: Reunir todas as atividades recorrentes, catalogar pelas criticidades, catalogar a produtividade de cada perfil da equipe em horas/criticidade. Assim poderá mensurar o prazo e custo médio para realizar determinada quantidade de atividades recorrentes com a equipe formada.
+##### Métrica de Monitoramento
+Uma operação por mais mensurada que seja não conseguirá fornecer informações suficiente para que ações proativas sejam tomadas para que um software não tenham incidentes de alta gravidade e risco. Para que possamos atuar proativamente e de forma preventiva temos que observar como que todo o ambiente onde o software está implantado se comporta, e para isso temos que monitorá-lo a maior quantidade de elementos possíveis.
+
+A quantidade de elementos a serem monitorados determinará o custo do monitoramento e sua eficiência.
+
+**Método de medição**: Levantar todos os itens de monitoramento do ambiente implantado e integrado, por exemplo, processador, memória, rede, internet, temperatura, espaço de armazenamento, etc. de toda infraestrutura. A quantidade de elementos definirá a complexidade de alertas e itens para atenção. Deve-se ter cuidado para não selecionar itens em demasia, pois sempre que isso acontece resulta em e-mails e SMS ignorados pelos técnicos como o “erro conhecido” infelizmente.
 # Análise de Ponto Função
 A Análise de Pontos de Função é uma técnica de medição das funcionalidades de um software sob o ponto de vista do usuário, ou seja, determina o tamanho funcional do software. A técnica mede o software quantificando as tarefas e serviços (isto é, funcionalidade) que o software fornece ao usuário, primordialmente com base no projeto lógico. Este é derivado por meio de uma relação empírica baseada em medidas calculáveis (diretas) do domínio de informações do software e avaliações qualitativas da complexidade do software.
 
@@ -79,9 +137,9 @@ Ponto de Função (PF) é a unidade de medida que tem por objetivo tornara medi�
 ![[arq-analpf.png]]
 
 1. **Obter documentação disponível do projeto**: A contagem de pontos de função se inicia com a análise da documentação disponível do projeto em questão, visando à identificação dos requisitos funcionais.
-2. **Propósito da Contagem**: Uma contagem deve prover uma resposta a um problema do negócio e é o problema do negócio que determina o propósito. O objetivo, nesta etapa, é tornar claro o que se pretende atingir com a contagem que será feita. Exemplos de tipos de propósito da contagem são:
+2. **Propósito da Contagem**: Uma contagem deve prover uma resposta a um problema do negócio e é o problema do negócio que determina o propósito. O objetivo, nesta etapa, é tornar claro o que se pretende atingir com a contagem que será feita. Por exemplo: _“Qual o tamanho deste software a nível funcional? Quanto tempo para desenvolver? Qual o tamanho da equipe?..”_. Os tipos de propósito da contagem são:
 	- Projeto de Desenvolvimento: Este tipo de contagem mede a funcionalidade entregue ao usuário na primeira instalação do software, quando o projeto estiver completo.
-	- Projeto de Melhoria (baseline): Este tipo de contagem mede as modificações em uma aplicação já existente que adicione, altere ou exclua funções entregues ao usuário quando o projeto estiver completo.
+	- Projeto de Melhoria: Este tipo de contagem mede as modificações em uma aplicação já existente que adicione, altere ou exclua funções entregues ao usuário quando o projeto estiver completo.
 	- Aplicação: Este tipo de contagem está relacionado à aplicação instalada. Representa a baseline da contagem de pontos de função de uma aplicação, ou seja, é uma medida das funções atuais providas ao usuário.
 3. **Escopo da aplicação**: define o conjunto de requisitos funcionais de usuários para ser incluídos na contagem. 
 	- Define o (sub)conjunto do software que está sendo medido;
