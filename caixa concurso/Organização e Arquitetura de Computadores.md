@@ -1,7 +1,5 @@
-
 # Hierarquia de Memória
 #### Princípios da localidade
-
 1. Temporal: Refere-se à tendência de um processador acessar locais de memória que foram usados recentemente. Por exemplo, durante a execução de um laço de instruções
 2. Espacial Refere-se à tendência de a execução de um programa envolver uma série de locais de memória que estão próximos; Os caches utilizam esse conceito para tirar salvar estados acessados recentemente.
 3. Sequencial:  Técnica de referência à posição seguinte (listas encadeadas)
@@ -18,7 +16,6 @@ cpu(Registradores)  --> cache(Cache) -->  ram(Memória RAM) -->  IO("Dispositivo
 * Cache (ou S-RAM) são memórias de acesso rápido gerenciadas pelo hardware do processador (L1, L2, ...) L1 mais próxima da CPU, capacidade menor, invisíveis para programas e o sistema operacional.
 * RAM (ou D-RAM) é uma memória de acesso aleatório para armazenar dados de processos ativos do sistema operacional.
 # CPU
-
 #### UC (Unidade de Controle)
 Responsável pelo controle de operações da CPU, ela busca e decodifica instruções armazenadas na memória, controlando o fluxo de dados
 de entra e saída e outros componentes. 
@@ -49,7 +46,6 @@ Vias de comunicação que facilita a transferência de dados entre diferentes co
  ##### Barramento de dados
  Transporta a informação a ser transferida entre o processador e a memória ou um controlador de dispositivo.
 # Armazenamento e Representação de Instruções
-
  ##### Ciclo das instruções 
   1. Trará a Instrução da memória principal (**PC**) para o registrador de instrução (**IR**). (busca)
   2. Decodificará a instrução, obtendo os operandos da memória, e armazenando-os na memória cache. (decodificação)

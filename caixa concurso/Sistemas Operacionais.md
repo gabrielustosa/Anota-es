@@ -106,6 +106,14 @@ A comunicação entre processos (**IPC**) ocorre de diversas formas como: compar
  Geralmente, é utilizado em sistemas distribuídos. São baseados em relógios lógicos distribuídos, ou seja, cada processo possui seu próprio relógio lógico que é usado para determinar a ordem das operações que lidam com regiões críticas.
  ## Token Ring
  Gerenciada por um token que é passado de um processo para o próximo em uma estrutura de anel. Somente o processo que possui o token pode acessar a seção crítica.
+ 
+```ad-summary
+##### Solução de Peterson
+É um método clássico para garantir a exclusão mútua em sistemas concorrentes. A ideia básica por trás da solução de Peterson é a utilização de **variáveis de turno** e **flags** para indicar a intenção de entrar na seção crítica. Sendo assim, a solução de Peterson utiliza a chamada de duas funções: `enter_region` (entrar na região crítica) e `leave_region` (sair da região crítica).
+
+- **Variáveis de Turno**: Cada processo tem uma variável associada que indica quando é sua vez de entrar na seção crítica. Isso permite que os processos entrem na seção crítica de forma alternada.
+- **Flags**: Cada processo tem uma flag associada que indica se ele deseja entrar na seção crítica. Isso permite que os processos expressem sua intenção de entrar na seção crítica.
+```
 
 ```ad-info
 #### Tempo de Turnaround
@@ -474,6 +482,8 @@ Sistema de arquivos padrão do Linux, com suporte a criptografia, journaling, pe
  Melhora na confiabilidade, novo sistema de journaling, suporte a crescimento do sistema de arquivos online e indexação de grandes diretórios HTree.
  ## EXT4
  Foi introduzido inicialmente para estender os limites de armazenamento e melhorar o desempenho do sistema. É  suportado por outros sistemas operacionais, incluindo Windows, Free BSD, macOS e KolibriOS (somente leitura).
+#### ReiserFS
+Projetado para sistemas Linux e foi um dos primeiros sistemas de arquivos a oferecer suporte a jornalização (journaling) em Linux. Ele era conhecido por sua eficiência na manipulação de muitos pequenos arquivos e sua rápida recuperação após falhas do sistema, devido à sua estrutura de jornal.
 #### ReFS (Resilient File System)
 É o sistema de arquivo mais recente desenvolvido pela Microsoft; foi introduzido no Windows 8. Sua arquitetura difere dos outros sistemas de arquivos do Windows por ser organizada na forma de árvore B+, dimensionar de modo eficiente conjuntos de dados muito grandes em diversas cargas de trabalho e fornecer integridade dos dados com resiliência a danos.
 #### XFS (Extended File System)
@@ -483,6 +493,15 @@ Foi desenvolvido para o MS-DOS e usado em versões do Windows até o Windows 95.
 - exFat - extensão da Microsoft para o FAT-32 que é otimizado para flash drives e sistemas de arquivos **MUITO** grandes.
 - Fat16 -  limita a partições de disco não maiores que 2 GB.
 - Fat32 - Suporta partições de até 2TB e arquivos de até 4GB, não há segurança, utilizado somente para mídias portáteis. 
+
+```ad-abstract
+##### VFAT (Virtual File Allocation Table)
+É uma extensão para os sistemas de arquivos FAT16 e FAT32 o incluída a partir do Windows 95 e suportado também no Linux e outros sistemas.
+```
+#### JFS (Journaladed File System)
+Sistema de arquivos desenvolvido pela IBM, inicialmente para uso em sistemas AIX e posteriormente portado para outras plataformas, incluindo OS/2 e Linux. É conhecido por sua confiabilidade e desempenho, especialmente em ambientes de servidor, onde a integridade dos dados é crucial.
+#### HPFS (High Performance File System)
+Sistema de arquivos desenvolvido pela IBM especificamente para seu sistema operacional OS/2. Foi projetado para superar as limitações do sistema de arquivos FAT (File Allocation Table), oferecendo melhor desempenho e suporte a recursos avançados, como nomes de arquivos longos e tamanhos de arquivos maiores.
 # Princípios de E/S (I/O)
 Além de oferecer abstrações como processos, espaços de endereçamentos e arquivos, um sistema operacional também controla todos os dispositivos de E/S (entrada/saída) do computador. Fornecendo uma interface entre os dispositivos e o resto do sistema que seja simples e fácil de usar.
 #### Dispositivos de E/S

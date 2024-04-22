@@ -1,5 +1,5 @@
 # Spring Boot
-Framework que segue o padrão estrutural MVC para construir aplicativos web e APIs RESTful.
+O Spring foi criado como uma alternativa aos modelos mais pesados e complexos da época, promovendo uma programação orientada a aspectos (AOP), acesso a dados simplificados, transações e abstração da camada de persistência, entre outras funcionalidades. Framework que segue o padrão estrutural MVC para construir aplicativos web e APIs RESTful.
 #### Model
 Representa as entidades de negócios, como representação de uma tabela no banco de dados, da sua aplicação, como usuários, produtos, pedidos, etc. Sendo mapeadas pela anotação `@Entity` da API de persistência de dados do Java.
 

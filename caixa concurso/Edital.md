@@ -27,11 +27,11 @@
 	- [x] Python 3.9.X 
 		- [x] Pandas
 		- [x] NumPy
-		- [ ] SciPy
-		- [ ] Matplotlib
-		- [ ] Tensorflow,
-		- [ ] PyTorch 
-		- [ ] Scikit-learn
+		- [x] SciPy
+		- [x] Matplotlib
+		- [x] Tensorflow,
+		- [x] PyTorch 
+		- [x] Scikit-learn
 	- [ ] Scala; 
 	- [ ] R;
 	- [ ] Kotlin; 

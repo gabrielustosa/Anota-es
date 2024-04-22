@@ -1,4 +1,35 @@
-``Front Controller (direcionar a requisição para views (Django) específicas) Context Object (criar um objeto "customizado") Application Controller (Direciona para cada ação específica do CRUD) View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``
+# Aplicações Web Java EE
+Em plataformas Java EE, os componentes web fornecem as capacidades de extensão dinâmica para um servidor web. Esses componentes podem ser servlets Java, páginas web implementadas com a tecnologia JavaServer Faces, APIs de serviços ou páginas JSP.
+
+![[web-diagram.png]]
+
+Na figura, o cliente envia uma requisição para a aplicação web que utiliza um servidor que implementa um Servlet convertendo a solicitação em um objeto `HttpServletRequest`. Este objeto é entregue a um componente web, que pode interagir com componentes JavaBeans ou um banco de dados para gerar conteúdo dinâmico. O componente web pode então gerar um `HTTPServletResponse` ou passar a solicitação para outro componente web, para então mandar uma resposta ao cliente.
+#### Java EE Server e Containers
+- **Servidor Java EE**: A parte em tempo de execução de um produto Java EE. Um servidor Java EE fornece contêineres EJB e web.
+- **Contêiner EJB**: Gerencia a execução de beans empresariais para aplicativos Java EE. Os beans empresariais e seu contêiner funcionam no servidor Java EE.
+- **Contêiner web**: Gerencia a execução de páginas web, servlets e alguns componentes EJB para aplicativos Java EE. Os componentes web e seu contêiner funcionam no servidor Java EE.
+- **Contêiner de cliente de aplicativo**: Gerencia a execução de componentes de cliente de aplicativo. Clientes de aplicativos e seu contêiner funcionam no cliente.
+- **Contêiner de applet**: Gerencia a execução de applets. Consiste em um navegador da web e um plug-in Java em execução no cliente juntos.
+
+![[web-java-ee-web.png]]
+# JavaBeans   
+Um componente Enterprise JavaBeans (EJB) é um corpo de código que possui campos e métodos para implementar módulos da lógica de negócios. Você pode pensar em um enterprise bean como um bloco de construção que pode ser usado sozinho ou com outros enterprise beans para executar a lógica de negócios no servidor Java EE. É dividido em dois principais, Session Beans (usados para a lógica de negócios, tanto em estado quanto sem estado), Message Driven Beans (manipulação de mensagens assíncronas). 
+## Tipos
+#### Stateful
+Esse tipo de Session Bean mantém o estado de seus atributos, não é compartilhado e pode ter apenas um cliente. Ou seja, enquanto a sessão do cliente estiver ativa, os valores das variáveis de instância desse tipo de objeto serão preservados.
+#### Stateless 
+Não mantém o estado de seus atributos, ou seja, não há garantia que os valores das variáveis de instância desse tipo de objeto sejam preservados entre as chamadas de seus métodos.
+#### Singleleton
+É instanciado apenas uma vez por aplicação e mantido durante todo ciclo de vida dela. Esse tipo de Session Bean é projetado para circunstâncias nas quais uma única instância do bean é compartilhada e acessada simultaneamente pelos clientes.
+## Serviços
+#### Transação
+O contêiner EJB gerencia as transações, o que permite aos desenvolvedores controlarem o comportamento transacional dos métodos EJB. Isso inclui o início, o commit e o rollback de transações para garantir a consistência dos dados.
+#### Persistência
+A persistência é o serviço que permite que o estado dos beans seja mantido entre chamadas de método, seja em um banco de dados ou outro tipo de armazenamento de dados. O EJB oferece o Entity Bean e o uso de JPA (Java Persistence API) para abstrair e facilitar a persistência de dados.
+#### Ciclo de vida
+O contêiner gerencia o ciclo de vida dos EJBs, incluindo a criação, a passivação (quando a instância está inativa), a ativação e a remoção de beans. Isso abstrai complexidades e permite que os desenvolvedores se concentrem na lógica de negócio.
+#### Segurança
+O contêiner EJB também oferece serviços robustos de segurança, permitindo a configuração de autorização e autenticação, além do controle de acesso aos componentes EJB de acordo com as regras definidas.
 # Servlet 
 Servlets são classes Java do lado do servidor que recebem requisições HTTP, processam-nas (podendo interagir com o Model) e geram respostas, que podem ser um HTML, redirecionamento para outra página, dentre outros. Dessa forma, servlets são ideais para o papel de Controller no MVC pois gerenciam e orquestram o fluxo dentro da aplicação. Estes são executados dentro de um container de Servlets, como o Apache Tomcat ou o Jetty, que gerencia seu ciclo de vida.
 
@@ -63,8 +94,22 @@ Permite a criação de páginas Web que tenha componentes estáticos e dinâmico
 		Modelo: <%= req.getAttribute("modelo") %>
 		Ano do Modelo: <%= req.getAttribute("anoModelo") %> // avalia e imprime
 		<% List deps = (List) request.getAttribute("automoveis"); %> // código java
+		
+		// acesso ao query param
+		${param.nome} 
+		<%= request.getParameter("nome")%> 
+		<% out.print(request.getParameter("nome")); %>
 	</body>
 </html>
+```
+
+```ad-tip
+#### Linguagem EL (Expression Language)
+Basicamente a EL é utilizada em páginas JSF ou JSP, para ler dinâmicamente informações armazenadas em componenetes `JavaBeans`, escrever dados dinâmicamente, invocar métodos, perfomar operações aritméticas ou executar código `Java`.
+##### Formas de Evaluação
+Existem dois tipos de avaliação de expressões: a avaliação **imediata** e a avaliação **deferida**. A avaliação imediata ocorre quando uma expressão é avaliada e o resultado é retornado imediatamente na primeira renderização da página. Por outro lado, a avaliação deferida permite que a expressão seja avaliada em um momento posterior do ciclo de vida da página, de acordo com a necessidade da tecnologia que está utilizando a EL.
+- A **imediata** usa ${expression}
+- A **deferida** usa #{expression}
 ```
 
 Essas são algumas diretivas, as quais são utilizadas para informações especiais dentro de páginas, sendo dividido em três tipos:
@@ -180,6 +225,7 @@ public class AutomovelBean {
 }
 ```
 #### Ciclo de Vida
+O ciclo de vida pode ser dividido em duas fases principais: **Executar** e **Renderizar**. A fase de Execução é ainda dividida em subfases para suportar a sofisticada árvore de componentes. Essa estrutura exige que os dados do componente sejam convertidos e validados, que eventos do componente sejam tratados e que os dados do componente sejam propagados para beans de maneira ordenada.
 
  ##### Restore View - Fase 1 
  Quando uma requisição chega ao JSF, a primeira tarefa realizada por ele é construir ou restaurar a árvore de componentes correspondente ao arquivo XHTML lido. Se a requisição for um **postback**, o JSF tentará restaurar a view existente. Depois que a árvore é restaurada, seja buscando na sessão ou via deserialização, a requisição do usuário segue para a fase 2.
@@ -215,8 +261,41 @@ public class LifeCycleListener implements PhaseListener {
     }
 
 }```
-#### Componentes 
-Frameworks de componentes: PrimeFaces, ICEfaces, RichFaces.
+#### Request Scope
+O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 
+
+São aplicados no Managed Beans dessa forma:
+```java
+@ManagedBean
+// @RequestScoped, @SessionScoped, @ApplicationScoped, @ViewScoped, @ConversationScoped, @Dependent
+public class MeuBean {
+}
+```
+##### Request
+Apenas sobrevivem por uma passada de vida no ciclo do JSF, ou seja, da fase 1 até a fase 6. Por ser um escopo que tem o tempo de vida curto é apropriado quando não precisamos memorizar dados entre as requisições dos usuários. É o padrão dos Managed Beans, dessa forma, ao não anotar sua classe, esse escopo será utilizado.
+##### Session
+Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do usuário estiver ativa. Ela é útil para armazenar informação sobre a última operação realizada por uma sessão, para proporcionar uma forma fácil de voltar a ela.
+##### Application
+Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
+##### View
+Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.
+##### Conversation
+Escopo que oferece um meio-termo entre o `@RequestScoped` e o `@SessionScoped`. O bean existe durante uma 'conversa' que pode abranger múltiplas requisições de um mesmo usuário.
+##### Dependent
+Escopo padrão quando nenhum outro é especificado. O ciclo de vida do bean dependente é vinculado ao bean que o está injetando. Se o bean injetor for destruído, o bean dependente também será.
+# Facelets
+Facelets é uma parte da especificação JavaServer Faces e também a tecnologia de apresentação preferida para construir aplicações baseadas em tecnologia JavaServer Faces.
+
+| Tag Library                           | URI                               | Prefix | Example          | Contents                                                                                 |
+| ------------------------------------- | --------------------------------- | ------ | ---------------- | ---------------------------------------------------------------------------------------- |
+| JavaServer Faces Facelets Tag Library | http://xmlns.jcp.org/jsf/facelets | ui     | ui:component     | Tags para templates UI                                                                   |
+|                                       |                                   |        | ui:insert        |                                                                                          |
+| JavaServer Faces HTML Tag Library     | http://xmlns.jcp.org/jsf/html     | h      | h:head           | Tags para elementos HTML                                                                 |
+|                                       |                                   |        | h:body           |                                                                                          |
+|                                       |                                   |        | h:outputText     |                                                                                          |
+|                                       |                                   |        | h:inputText      |                                                                                          |
+| JavaServer Faces Core Tag Library     | http://xmlns.jcp.org/jsf/core     | f      | f:actionListener | Tags para ações personalizadas independentes de qualquer kit de renderização específico. |
+|                                       |                                   |        | f:attribute      |                                                                                          |
 
 Praticamente todos os componentes podem possuir esses dois atributos:
 ```html
@@ -327,24 +406,6 @@ Tecnologia de renderização de páginas para JSF que substituiu a tecnologia JS
 	</h:panelGroup> 
 </h:form>
 ```
-#### Request Scope
-O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 
-
-São aplicados no Managed Beans dessa forma:
-```java
-@ManagedBean
-// @RequestScoped, @SessionScoped, @ApplicationScoped, @ViewScoped
-public class MeuBean {
-}
-```
-##### Request
-Apenas sobrevivem por uma passada de vida no ciclo do JSF, ou seja, da fase 1 até a fase 6. Por ser um escopo que tem o tempo de vida curto é apropriado quando não precisamos memorizar dados entre as requisições dos usuários. É o padrão dos Managed Beans, dessa forma, ao não anotar sua classe, esse escopo será utilizado.
-##### Session
-Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do usuário estiver ativa. Ela é útil para armazenar informação sobre a última operação realizada por uma sessão, para proporcionar uma forma fácil de voltar a ela.
-##### Application
-Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
-##### View
-Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.
 # HTTP Status Code
 #### Respostas 100-199
 São respostas informativas.
@@ -745,3 +806,5 @@ contêineres (a infraestrutura imutável).
 #TODO JAVA JAX-RS https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
 #TODO Sistemas distribuidos TUNEBAUM 
 #TODO Beging Quarkus - Livro
+
+#TODO ``Front Controller (direcionar a requisição para views (Django) específicas) Context Object (criar um objeto "customizado") Application Controller (Direciona para cada ação específica do CRUD) View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``
