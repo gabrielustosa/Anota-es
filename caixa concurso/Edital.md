@@ -45,7 +45,7 @@
 	- [x] JSP; 
 	- [x] Ajax;
 	- [x] Interoperabilidade de sistemas; 
-	- [ ] SOA e Web Services (Quarkus); 
+	- [x] SOA e Web Services (Quarkus); 
 	- [x] Padrões REST
 	- [x] Padrões HTML 4.01
 	- [x] HTTP response Status Code

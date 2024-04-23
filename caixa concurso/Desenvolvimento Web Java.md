@@ -11,23 +11,53 @@ Na figura, o cliente envia uma requisição para a aplicação web que utiliza u
 - **Contêiner de cliente de aplicativo**: Gerencia a execução de componentes de cliente de aplicativo. Clientes de aplicativos e seu contêiner funcionam no cliente.
 - **Contêiner de applet**: Gerencia a execução de applets. Consiste em um navegador da web e um plug-in Java em execução no cliente juntos.
 
-![[web-java-ee-web.png]]
+![[web-java-ee-container.png]]
+
+```ad-summary
+##### Java Applets
+Oequenos programas escritos na linguagem de programação Java que podem ser incorporados em páginas da web. Eles são executados no navegador do usuário por meio de uma máquina virtual Java (JVM).Quando uma página da web contendo um applet Java é carregada, o código do applet é transferido para a máquina do usuário e executado pela JVM no navegador. Isso permite que os applets forneçam funcionalidades interativas, como jogos ou calculadoras, diretamente na página da web.
+```
 # JavaBeans   
-Um componente Enterprise JavaBeans (EJB) é um corpo de código que possui campos e métodos para implementar módulos da lógica de negócios. Você pode pensar em um enterprise bean como um bloco de construção que pode ser usado sozinho ou com outros enterprise beans para executar a lógica de negócios no servidor Java EE. É dividido em dois principais, Session Beans (usados para a lógica de negócios, tanto em estado quanto sem estado), Message Driven Beans (manipulação de mensagens assíncronas). 
+Escrito no idioma de programação Java, um `EjB` é um componente do lado do servidor que encapsula a lógica de negócios de uma aplicação. A lógica de negócios é o código que cumpre o propósito da aplicação. Você pode pensar em um enterprise bean como um bloco de construção que pode ser usado sozinho ou com outros enterprise beans para executar a lógica de negócios no servidor Java EE. É dividido em dois principais, Session Beans (usados para a lógica de negócios, tanto em estado quanto sem estado, pode implementar um Web Service), Message Driven Beans (manipulação de mensagens assíncronas, como JMS). 
+
+```java
+import java.math.BigDecimal;
+import javax.ejb.*;
+
+@Stateless
+public class ConverterBean {
+	private BigDecimal yenRate = new BigDecimal("83.0602");
+	private BigDecimal euroRate = new BigDecimal("0.0093016");
+	
+	public BigDecimal dollarToYen(BigDecimal dollars) {
+		BigDecimal result = dollars.multiply(yenRate);
+		return result.setScale(2, BigDecimal.ROUND_UP);
+	}
+	public BigDecimal yenToEuro(BigDecimal yen) {
+		BigDecimal result = yen.multiply(euroRate);
+		return result.setScale(2, BigDecimal.ROUND_UP);
+	}
+}
+```
 ## Tipos
-#### Stateful
-Esse tipo de Session Bean mantém o estado de seus atributos, não é compartilhado e pode ter apenas um cliente. Ou seja, enquanto a sessão do cliente estiver ativa, os valores das variáveis de instância desse tipo de objeto serão preservados.
-#### Stateless 
-Não mantém o estado de seus atributos, ou seja, não há garantia que os valores das variáveis de instância desse tipo de objeto sejam preservados entre as chamadas de seus métodos.
-#### Singleleton
-É instanciado apenas uma vez por aplicação e mantido durante todo ciclo de vida dela. Esse tipo de Session Bean é projetado para circunstâncias nas quais uma única instância do bean é compartilhada e acessada simultaneamente pelos clientes.
+#### Stateful Session Bean
+Esse tipo de Session Bean mantém o estado de seus atributos, não é compartilhado e pode ter apenas um cliente. Ou seja, enquanto a sessão do cliente estiver ativa, os valores das variáveis de instância desse tipo de objeto serão preservados. Porque o cliente interage “conversa” com seu bean, esse estado é frequentemente chamado `conversational state`.
+##### Ciclo de Vida
+![[web-jeb-stful-lc.png]]
+#### Stateless Session Bean
+Não mantém o estado de seus atributos, ou seja, não há garantia que os valores das variáveis de instância desse tipo de objeto sejam preservados entre as chamadas de seus métodos. Eles podem suportar vários clientes, visto que este tipo de bean pode oferecer melhor escalabilidade para aplicações que requerem um grande número de clientes. 
+- Pode implementar um serviço web, mas um **Stateful Session Bean** não pode.
+##### Ciclo de Vida
+![[web-jeb-stless-lc.png]]
+#### Singleleton Session Bean
+É instanciado apenas uma vez por aplicação e mantido durante todo ciclo de vida dela. Os **singleton session beans** oferecem funcionalidades semelhantes aos **stateless session beans**, mas diferem deles no sentido de que há apenas **um singleton session bean por aplicação**, em oposição a um pool de **stateless session beans**, dos quais qualquer um pode responder a uma solicitação do cliente. Assim como os **stateless session beans**, os **singleton session beans** também podem implementar **pontos de extremidade de serviço da web**.
+##### Ciclo de Vida
+![[web-jeb-stless-lc.png]]
 ## Serviços
 #### Transação
 O contêiner EJB gerencia as transações, o que permite aos desenvolvedores controlarem o comportamento transacional dos métodos EJB. Isso inclui o início, o commit e o rollback de transações para garantir a consistência dos dados.
 #### Persistência
 A persistência é o serviço que permite que o estado dos beans seja mantido entre chamadas de método, seja em um banco de dados ou outro tipo de armazenamento de dados. O EJB oferece o Entity Bean e o uso de JPA (Java Persistence API) para abstrair e facilitar a persistência de dados.
-#### Ciclo de vida
-O contêiner gerencia o ciclo de vida dos EJBs, incluindo a criação, a passivação (quando a instância está inativa), a ativação e a remoção de beans. Isso abstrai complexidades e permite que os desenvolvedores se concentrem na lógica de negócio.
 #### Segurança
 O contêiner EJB também oferece serviços robustos de segurança, permitindo a configuração de autorização e autenticação, além do controle de acesso aos componentes EJB de acordo com as regras definidas.
 # Servlet 
@@ -86,14 +116,13 @@ Quando um Servlet é inicializado, o servidor web cria uma única instância des
  ##### Destroy()
  É chamado uma única vez quando o Servlet está sendo retirado de serviço, normalmente quando o container web está sendo desligado ou o Servlet está sendo descarregado por algum outro motivo.
 # JSP
-Permite a criação de páginas Web que tenha componentes estáticos e dinâmicos. A tecnologia JSP disponibiliza todos os recursos dinâmicos da tecnologia Java Servlet, mas fornece uma abordagem mais natural para a criação de conteúdo estático. Na verdade, os JSPs são compilados em Servlets pelo servidor. Dessa forma, JSP são executados em um Container de Servlets, que é uma parte da plataforma Java EE. Objetos referenciados neste escopo possuem o menor ciclo de vida, pois estão vinculados a uma única solicitação de página (uma página JSP, por exemplo). Quando a resposta é enviada ao cliente, os objetos neste escopo não estão mais disponíveis. Portanto, eles são adequados para dados temporários usados durante a geração de uma resposta específica.
+Permite a criação de páginas Web que tenha componentes estáticos e dinâmicos. A tecnologia JSP disponibiliza todos os recursos dinâmicos da tecnologia Java Servlet, mas fornece uma abordagem mais natural para a criação de conteúdo estático. Na verdade, os JSPs são compilados em Servlets pelo servidor. Dessa forma, JSP são compiladas e interpretadas em um Container de Servlets, que é uma parte da plataforma Java EE. Objetos referenciados neste escopo possuem o menor ciclo de vida, pois estão vinculados a uma única solicitação de página (uma página JSP, por exemplo). Quando a resposta é enviada ao cliente, os objetos neste escopo não estão mais disponíveis. Portanto, eles são adequados para dados temporários usados durante a geração de uma resposta específica.
 
 ```jsp
 <html>
 	<body>
-		Modelo: <%= req.getAttribute("modelo") %>
-		Ano do Modelo: <%= req.getAttribute("anoModelo") %> // avalia e imprime
-		<% List deps = (List) request.getAttribute("automoveis"); %> // código java
+		Ano do Modelo: <%= req.getAttribute("anoModelo") %> // avalia e imprime 
+		<% List deps = (List) request.getAttribute("automoveis"); %> // código java (Scriptlets JSP)
 		
 		// acesso ao query param
 		${param.nome} 
@@ -103,7 +132,7 @@ Permite a criação de páginas Web que tenha componentes estáticos e dinâmico
 </html>
 ```
 
-```ad-tip
+```ad-summary
 #### Linguagem EL (Expression Language)
 Basicamente a EL é utilizada em páginas JSF ou JSP, para ler dinâmicamente informações armazenadas em componenetes `JavaBeans`, escrever dados dinâmicamente, invocar métodos, perfomar operações aritméticas ou executar código `Java`.
 ##### Formas de Evaluação
@@ -117,21 +146,21 @@ Essas são algumas diretivas, as quais são utilizadas para informações especi
 - `@include` - Utilizado para inserir os códigos de arquivos à página corrente;
 - `@page` - Responsável por trazer informações sobre a página JSP;
 - `@taglib` - Responsável por habilitar uma biblioteca de tags personalizada (item que será abordado em outro artigo com mais detalhes).
+
 ```jsp
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@page contentType="text/html" import="java.util.Date, java.text."pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.ArrayList"%>_
 <html>
 	<%@ include file="header.jsp" %>
     <body>
         <h1>
-            <%=new Date()=%>
+            <% =new Date() %>
         </h1>
     </body>
 </html>
 ```
-
-Alguns métodos JSP.
-
+##### Métodos
 - `invalidate():` serve para terminar uma sessão de usuário que não é mais necessária e interrompe a conexão da sessão com todos os objetos armazenados.
 - `isNew():` Este método é usado para verificar se a sessão é nova ou não. O valor booleano (verdadeiro ou falso) é retornado por ele.
 - `getId():` ao criar uma sessão, o contêiner de servlet atribui um identificador de string distinto à sessão. Este identificador de string distinto é retornado pelo método `getId()`.
@@ -140,6 +169,32 @@ Alguns métodos JSP.
 - `getAttribute (String name):` Usando o método `getAttribute()`, o objeto que é armazenado pelo método `setAttribute()` é recuperado da sessão.
 - `setAttribute (String, object):` O método `setAttribute()` é usado para armazenar um objeto na sessão atribuindo uma string única ao objeto. Posteriormente, usando a mesma string, este objeto pode ser acessado da sessão até que ela esteja ativa. No JSP, ao lidar com a sessão, `setAttribute()` e `getAttribute()` são os dois métodos mais usados regularmente.
 - `removeAttribute (String name):` Usando o método `removeAttribute(String name)`, os objetos que estão armazenados na sessão podem ser removidos da sessão.
+##### Tags de Ação
+A especificação JSP fornece uma tag padrão chamada Action tag, usada dentro do código JSP e destinada a remover ou eliminar o código Scriptlet do seu código JSP, já que os Scriptlets JSP são obsoletos e não são considerados atualmente. Existem muitas tags ou elementos de ação JSP, e cada um deles possui seus próprios usos e características. Cada tag de ação JSP é implementada para realizar tarefas específicas.
+
+A tag de ação também é implementada para otimizar o fluxo entre páginas e para empregar um Java Bean. Como coincide com o padrão XML, a sintaxe para o elemento de ação é:
+
+```jsp
+<jsp:action_name attribute = "attribute_value" />
+```
+
+1. `jsp:forward`: é usado para encaminhar a solicitação e a resposta para outros recursos. `<jsp:forward page="outra_pagina.jsp"/>`
+2. `jsp:include`: é usado para incluir outro recurso. `<jsp:include page="cabecalho.jsp"/>`
+3. `jsp:useBean`: é usado para criar ou localizar objetos bean. `<jsp:useBean id= "instanceName" scope= "page | request | session | application"  class= "packageName.className" type= "packageName.className"  beanName="packageName.className" />`
+4.  `jsp:setProperty`: é usado para definir o valor do objeto bean. `<jsp:setProperty name="meuBean" property="nome" value="João"/>
+5. `sp:getProperty`: é usado para imprimir o valor da propriedade do bean. `<jsp:getProperty name="meuBean" property="nome"/>`
+##### Objetos Implícitos
+Durante a fase de tradução (ou seja, durante a conversão de JSP para Servlet), o mecanismo JSP produz esses objetos. Eles são criados dentro do método de serviço para que os desenvolvedores JSP possam usá-los diretamente no Scriptlet sem declaração e inicialização.
+
+- **out**: `javax.servlet.jsp.JspWriter`: Usado para escrever saída para a resposta HTTP.
+- **request**: `javax.servlet.http.HttpServletRequest`: Representa a requisição HTTP do cliente.
+- **response**: `javax.servlet.http.HttpServletResponse`: Representa a resposta HTTP que será enviada de volta ao cliente.
+- **session**: `javax.servlet.http.HttpSession`: Representa a sessão do usuário, permitindo armazenar informações específicas do usuário entre múltiplas requisições.
+- **application**: `javax.servlet.ServletContext`: Representa o contexto da aplicação web, permitindo o compartilhamento de informações entre todos os componentes da aplicação.
+- **exception**: `javax.servlet.jsp.JspException`: Usado para representar exceções que ocorrem durante a execução da página JSP.
+- **page**: `java.lang.Object`: Referência para o objeto da página JSP.
+- **pageContext**: `javax.servlet.jsp.PageContext`: Fornece acesso aos diversos objetos relacionados ao ciclo de vida da página JSP.
+- **config**: `javax.servlet.ServletConfig`: Fornece acesso à configuração do servlet, permitindo a leitura de parâmetros de inicialização.
 # JPA
 JPA é uma camada que descreve uma interface comum para frameworks ORM. Todos os objetos mapeados com o JPA são de responsabilidade do ``EntityManager``, ou seja, se algum atributo for alterado ele acabará salvo no banco de dados através dele.
 
@@ -241,7 +296,6 @@ O ciclo de vida pode ser dividido em duas fases principais: **Executar** e **Ren
  Nessa fase acontece a geração do HTML a partir da árvore de componentes do JSF. Se ocorrer um erro de conversão ou validação, as fases 4 e 5 são puladas e vamos direto para a fase 6. Também podemos chegar aqui logo depois da fase 1, quando o usuário pede a página pela primeira vez. Nesse caso o JSF monta a árvore e já manda a fase 6, já que, na primeira requisição à aplicação, não haverá formulário sendo submetido e nem ação para ser invocada. 
 
 ![[web-jsf-ciclo.png]]
-
 #### Phase Listeners
 Antes e depois de cada fase é possível realizar ações através da implementação da classe ``PhaseListener`` 
 
@@ -261,6 +315,63 @@ public class LifeCycleListener implements PhaseListener {
     }
 
 }```
+#### Event Handling
+Quando um usuário clica em um botão ou link do JSF ou altera qualquer valor no campo de texto, o componente de interface do usuário do JSF dispara um evento, que será tratado pelo código da aplicação. Para lidar com esse evento, um manipulador de eventos deve ser registrado no código da aplicação ou no bean gerenciado.
+
+A seguir estão alguns manipuladores de eventos importantes no JSF.
+##### ValueChangeListener
+Os eventos `ValueChangeListener` são disparados quando o usuário faz alterações nos componentes de entrada.
+
+```java
+public class LocaleChangeListener implements ValueChangeListener {
+   
+   @Override
+   public void processValueChange(ValueChangeEvent event)
+      throws AbortProcessingException {
+     
+      //access country bean directly
+      UserData userData = (UserData) FacesContext.getCurrentInstance().
+      getExternalContext().getSessionMap().get("userData"); 
+      userData.setSelectedCountry(event.getNewValue().toString());
+   }
+}
+```
+
+```xhtml
+<h:selectOneMenu value = "#{userData.selectedCountry}" onchange = "submit()">
+   <f:valueChangeListener type = "com.tutorialspoint.test.LocaleChangeListener"
+      />
+   <f:selectItems value = "#{userData.countries}" />
+</h:selectOneMenu>
+```
+##### ActionListener
+Os eventos `ActionListener` são disparados quando o usuário clica em um botão ou componente de link.
+
+```java
+public class UserActionListener implements ActionListener {
+   
+   @Override
+   public void processAction(ActionEvent arg0) throws AbortProcessingException {
+      
+      //access userData bean directly
+      UserData userData = (UserData) FacesContext.getCurrentInstance().
+      getExternalContext().getSessionMap().get("userData"); 
+      userData.setData("Hello World");
+   }
+}
+```
+
+```xhtml
+<h:commandButton id = "submitButton1" 
+   value = "Submit" action = "#{userData.showResult}" >
+   <f:actionListener type = "com.tutorialspoint.test.UserActionListener" />
+</h:commandButton>
+```
+##### Application Events
+Eventos disparados durante o ciclo de vida do JSF
+- **`PostConstructApplicationEvent`**: Disparado quando a aplicação é iniciada. Pode ser usado para realizar tarefas de inicialização após a aplicação ter iniciado.
+- **`PreDestroyApplicationEvent`**: Disparado quando a aplicação está prestes a ser encerrada. Pode ser usado para realizar tarefas de limpeza antes que a aplicação seja encerrada.
+- **`PreRenderViewEvent`**:  Disparado antes de uma página JSF ser exibida. Pode ser usado para autenticar o usuário e fornecer acesso restrito à Visualização JSF.
 #### Request Scope
 O escopo disponíveis são ``request``, ``session``, ``application`` e ``view``. 
 
@@ -273,14 +384,17 @@ public class MeuBean {
 ```
 ##### Request
 Apenas sobrevivem por uma passada de vida no ciclo do JSF, ou seja, da fase 1 até a fase 6. Por ser um escopo que tem o tempo de vida curto é apropriado quando não precisamos memorizar dados entre as requisições dos usuários. É o padrão dos Managed Beans, dessa forma, ao não anotar sua classe, esse escopo será utilizado.
+- O bean é criado e destruído a cada requisição HTTP.
 ##### Session
 Nesse escopo, tudo que armazenarmos ficará disponível enquanto a sessão do usuário estiver ativa. Ela é útil para armazenar informação sobre a última operação realizada por uma sessão, para proporcionar uma forma fácil de voltar a ela.
 ##### Application
 Tudo que é armazenado no escopo de aplicação permanece enquanto a aplicação estiver executando, e é compartilhada entre todos os usuários. 
 ##### View
 Esse escopo consiste em manter os dados contidos nele por quantas requisições forem feitas, mas desde que sejam todas para a mesma view. No momento em que trocamos de página o escopo é zerado. Isso é muito bom, porque evita que acumulemos objetos que ficam vivos por muito tempo, como no escopo de sessão, mas ao mesmo tempo permite ações feitas em sequência, como combos em cascata, que nesse escopo funcionam perfeitamente.
+- O bean é mantido durante a visualização de uma mesma página JSF.
 ##### Conversation
 Escopo que oferece um meio-termo entre o `@RequestScoped` e o `@SessionScoped`. O bean existe durante uma 'conversa' que pode abranger múltiplas requisições de um mesmo usuário.
+- O bean pode manter seu estado durante várias interações, que podem abranger múltiplas requisições e páginas.
 ##### Dependent
 Escopo padrão quando nenhum outro é especificado. O ciclo de vida do bean dependente é vinculado ao bean que o está injetando. Se o bean injetor for destruído, o bean dependente também será.
 # Facelets
@@ -389,13 +503,9 @@ public class LoggerActionListener implements ActionListener{
 	#{automovel.marca}
 </h:column>
 ```
+##### f:ajax
+Atualização parcial de view utilizando AJAX. 
 
-```ad-tip
-##### Facelets
-Tecnologia de renderização de páginas para JSF que substituiu a tecnologia JSP.
-- `xmlns:ui="http://java.sun.com/jsf/facelets">`
-```
-##### Partial View Processing (Ajax)
 ``` jsp
 <h:form> 
 	<h:commandButton value="Atualizar" action="#{bean.atualizar}">        
@@ -555,7 +665,7 @@ Existem duas definições de tipo de documento diferentes que podem ser usadas c
 - XML Schema - Uma alternativa baseada em XML para DTD
 
 Uma definição de tipo de documento define as regras e os elementos e atributos legais para um documento XML.
-##### DTD
+#### DTD
 DTD significa Definição de Tipo de Documento.
 
 Uma DTD define a estrutura e os elementos e atributos legais de um documento XML. Porém, menos expressivo e flexível, não oferece suporte a tipos de dados complexos e restrições avançadas.
@@ -595,7 +705,7 @@ Esse DTO vai se interpretado da seguinte forma:
 ```ad-tip
 "#PCDATA" significa data caractere "parseavel".
 ```
-##### Schema
+#### Schema
 Um XML Schema descreve a estrutura de um documento XML, assim como uma DTD.
 
 - Esquemas XML são escritos em XML.
@@ -762,49 +872,85 @@ Web services são serviços de aplicação que podem ser acessados usando os pro
 - O maior foco é na interoperabilidade
 - Geralmente são usadas para reutilização de componentes de aplicação ou conectar softwares já existentes.
 
-```xml
-<form action='tempconvert.asmx/FahrenheitToCelsius' <!-- serviço que fornece os resultados -->
-method="post" target="_blank">  
-<table>  
-  <tr>  
-    <td>Fahrenheit to Celsius:</td>  
-    <td>  
-    <input class="frmInput" type="text" size="30" name="Fahrenheit">  
-    </td>  
-  </tr>  
-  <tr>  
-    <td></td>  
-    <td align="right">  
-     <input type="submit" value="Submit" class="button">  
-     </td>  
-  </tr>  
-</table>  
-</form>  
-  
-<form action='tempconvert.asmx/CelsiusToFahrenheit' <!-- serviço que fornece os resultados -->
-method="post" target="_blank">  
-<table>  
-  <tr>  
-    <td>Celsius to Fahrenheit:</td>  
-    <td>  
-    <input class="frmInput" type="text" size="30" name="Celsius">  
-    </td>  
-  </tr>  
-  <tr>  
-    <td></td>  
-    <td align="right">  
-    <input type="submit" value="Submit" class="button">  
-    </td>  
-  </tr>  
-</table>  
-</form>
+### JAX-WS
+A **Java API para Serviços Web XML (JAX-WS)** é uma tecnologia para construir serviços web e clientes que se comunicam usando XML. O JAX-WS permite que os desenvolvedores escrevam serviços web orientados a mensagens, bem como serviços web orientados a Chamada de Procedimento Remoto (RPC).
+
+```java
+@WebServlet(name="HelloServlet", urlPatterns={"/HelloServlet"})
+public class HelloServlet extends HttpServlet {
+
+	@WebServiceRef(wsdlLocation = "http://localhost:8080/helloservice-war/HelloService?WSDL")
+	private HelloService service;
+	
+	protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html;charset=UTF-8");
+		try (PrintWriter out = response.getWriter()) {
+			out.println("<html lang=\"en\">");
+			out.println("<head>");
+			out.println("<title>Servlet HelloServlet</title>");
+			out.println("</head>");
+			out.println("<body>");
+			out.println("<h1>Servlet HelloServlet at " +
+			request.getContextPath () + "</h1>");
+			out.println("<p>" + sayHello("world") + "</p>");
+			out.println("</body>");
+			out.println("</html>");
+			}
+		}
+	}
+	
+	private String sayHello(java.lang.String arg0) {
+		javaeetutorial.helloservice.endpoint.Hello port = service.getHelloPort();
+		return port.sayHello(arg0);
+	}
+} 
+```
+### JAX-RS
+Facilita a criação de Web Services RESTful com a linguagem Java. 
+
+```java
+@Path("helloword")
+public class HelloWorld {
+	@Context
+	private UriInfo context;
+	
+	public HelloWorld() {
+	}
+	
+	@GET
+	@Produces("text/html")
+	public String getHtml(@QueryParam("test") String test) {
+		return "<html lang=\"en\"><body><h1>Hello, World!!</h1></body></html>";
+	}
+	
+	@GET
+	@Produces("text/xml")
+	@Path("users/{username: [a-zA-Z][a-zA-Z_0-9]*}")
+	public String getUser(@PathParam("username") String userName) {
+		...
+	}
+	
+	@POST
+	@Consumes("application/x-www-form-urlencoded")
+	public String doPost2(FormURLEncodedProperties formData) {
+		...
+	}
+}
+```
+
+```ad-summary
+##### Anotações
+Além das demais anotações relacionadas aos verbos HTTP como `@GET`, `@POST`, `@PATCH`, etc. Existem outras anotações para definir as estruturas dos endpoint relacionados ao Web Service.
+
+- **`@Path`**: Define um caminho URI relativo que mostra onde a classe Java será hospedada, como `/helloworld`. Você também pode colocar variáveis nos URIs para criar um modelo de caminho URI. Por exemplo, você pode pedir o nome de um usuário e passá-lo para a aplicação como uma variável no URI: `/helloworld/{nomeDoUsuario}`. Isso permite que a aplicação responda de forma personalizada para diferentes usuários.
+- **`@PathParam`**: é um tipo de parâmetro que você pode extrair para uso na sua classe de recurso. Os parâmetros do caminho URI são retirados do URI de solicitação, e os nomes dos parâmetros correspondem aos nomes das variáveis do modelo de caminho URI especificados na anotação de nível de classe `@Path`.
+- **`@QueryParam`**: Os parâmetros de consulta são extraídos dos parâmetros de consulta do URI de solicitação. Eles permitem que você passe informações adicionais para a sua aplicação através do URI
+- **`@Consumes`**: Especifica os tipos de mídia MIME que uma representação que um endpoint pode consumir, os quais foram enviados pelo cliente.
+- **`@Produces`**: Usada para especificar os tipos de mídia MIME que uma representação de recurso pode produzir e enviar de volta ao cliente. Por exemplo, “text/plain” indica que o recurso pode produzir uma representação de texto simples para o cliente
 ```
 # Quarkus
 É um framework para desenvolvimento de aplicações cloud native. foi desenvolvido com o objetivo de ser portado dentro de
 contêineres (a infraestrutura imutável).
 
-#TODO JAVA JAX-RS https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
-#TODO Sistemas distribuidos TUNEBAUM 
 #TODO Beging Quarkus - Livro
-
 #TODO ``Front Controller (direcionar a requisição para views (Django) específicas) Context Object (criar um objeto "customizado") Application Controller (Direciona para cada ação específica do CRUD) View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``
