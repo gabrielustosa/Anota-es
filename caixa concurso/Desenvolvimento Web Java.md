@@ -1,3 +1,91 @@
+# Arquitetura e Padrões de Projeto Java EE8
+### Camada de Apresentação (Web)
+A camada de apresentação, também conhecida como camada web, contém os componentes que criam um aplicativo web. Esta camada possui diversos componentes que utilizam o protocolo HTTP, constroem visualizações e interfaces para usuários e fornecem um serviço web. Esses componentes são chamados de componentes web.
+
+![[web-java-pp-overview.png]]
+
+Existem dois tipos de camada de apresentação.
+
+**Camada orientada à apresentação**: Esse tipo de camada de apresentação contém os componentes para construir uma página web interativa e conteúdo dinâmico usando HTML e XHTML. Esses componentes são a tecnologia JavaServer Faces (JSF), a tecnologia Java Servlet e a tecnologia JavaServer Pages (JSP), que nos permitem construir uma página web interativa.
+
+**Camada orientada ao servidor**: Esta camada contém os componentes para construir um ponto de extremidade de um serviço web. Esses componentes são JAX-RS e JAX-WS.
+
+![[web-java-pp-wt.png]]
+#### Padrão Intercepting Filter 
+Quando um cliente envia uma requisição ao servidor, o servidor muita das vezes precisa realizar uma série de processos como: autenticação, logs, validação, adicionar cookies, para finalmente enviar a resposta ao solicitante. Entretanto, não é interessante misturar esses processos junto com a lógica principal da requisição. 
+
+O padrão Intercepting Filter resolve esse problema separando a lógica que não faz parte do processo principal de processamento da requisição. Esse padrão cria um filtro para processar a requisição antes (pré-processamento) e depois (pós-processamento) dela ser tratada pela lógica principal da aplicação. Isso permite a criação de um bloco de lógica separado para resolver problemas que não fazem parte da funcionalidade central, separando assim as duas partes. Utilizando este padrão, podemos criar soluções plugáveis sem precisar modificar a lógica principal.
+
+![[web-java-pp-wt-if.png]]
+#### Padrão Front Controller
+Frequentemente, é necessário lidar com multiplos controladores para ser capaz de lidar com as várias requisições. As vezes, criar dezenas de classes de controladores é visto como uma má prática e pode se custoso de se manter. Dessa forma, existe a necessidade de criar um ponto central de controle que irá lidar com cada requisição e enviar diretamente para o processo certo.
+
+O padrão Controlador Frontal (Front Controller) cria um gerenciador central para tratar todas as requisições ou um grupo de requisições de uma aplicação. Esse gerenciador então encaminha as requisições para o processo específico responsável por tratá-las.
+
+![[web-java-pp-wt-fc.png]]
+#### Padrão Application Controller
+Algumas aplicações web têm uma lógica complexa para definir a view correta, conteúdo ou ação a ser invocada. O controlador MVC pode ser usado para tomar essa decisão e obter a visualização, conteúdo ou ação correta. No entanto, às vezes a lógica para definir uma decisão é muito difícil, e usar o controlador MVC para fazer isso pode causar duplicação de muito código.
+
+O padrão Application Controller é o padrão que permite a centralização de toda lógica de visualização e promove um processo único para definir o fluxo de páginas. Este padrão é usado em conjunto com o Front Controller, e é um intermediário entre o Front Controller e o Command. Usando este padrão, promoveremos o desacoplamento entre o tratamento da visualização e o tratamento da solicitação.
+
+![[web-java-pp-wt-ap.png]]
+###### Diferença entre Front Controller e Application Controller
+Esses dois padrões podem ser facilmente confundidos, visto que os dois resolvem o mesmo problema de centralizar a lógica em um só lugar. A principal diferença entre o Application Controller e o Front Controller é que o Application Controller trabalha para resolver a complexidade da lógica de visualização e fluxo de páginas, enquanto o Front Controller trabalha para resolver a complexidade das solicitações e suas configurações. Quando a lógica de visualização e de fluxo é simples, toda a lógica é por vezes inserida no Front Controller, e o Application Controller não é utilizado. No entanto, quando a lógica dentro da visualização e do fluxo de páginas é complexa, é recomendado usar o Application Controller para desacoplar a lógica de visualização e de fluxo e organizar o código.
+#### Padrão View Helper
+Ajuda a separar a lógica do negócio dos componentes de visualização.
+
+![[web-java-pp-wt-vh.png]]
+#### Padrão Composite View
+Permite a construção de uma visualização a partir de componentes modulares e atômicos que são combinados para criar um todo composto. Este padrão permite gerenciar o conteúdo e o layout de forma independente. Suponha que você quer construir uma visualização a partir de partes componentes modulares e atômicas que são combinadas para criar só composto por esse componentes, enquanto gerencia o conteúdo e o layout de forma independente.
+
+![[web-java-pp-wt-cv.png]]
+#### Padrão Dispatcher View
+Permite que uma view lide com uma solicitação e gere uma resposta, enquanto gerencia quantidades limitadas de processamento relacionadas ao negócios, geralmente com a utilização de controladores. Este padrão é útil quando você tem visualizações estáticas, visualizações geradas a partir de um modelo de apresentação existente, visualizações que são independentes de qualquer resposta de serviço de negócios e quando você tem processamento de negócios limitado.
+
+![[web-java-pp-wt-dv.png]]
+### Camada de Business
+Basicamente o nível do núcleo no qual é definida a lógica de negócio do projeto. As tecnologias que compõem essa camada incluem Enterprise Java Beans (EJB) e Java Persistence API (JPA). 
+
+![[web-java-pp-bt.png]]
+#### Padrão Business Delegate
+Para evitar responsabilidades adicionais na camada de apresentação, é interessante utilizar alguma interface que delegue responsabilidades das requisições para os serviços necessários. Essa é a função do Business Delegate, no qual impede que a camada de apresentação tenha acesso aos detalhes de implementação da camada business, simplificando e impondo a transparência na comunicação entre essas camadas. 
+
+Dessa forma, ele atua como uma porta de entrada para o cliente. Ele é responsável por receber a solicitação, identificar ou localizar o serviço empresarial real e chamar o serviço enviando a solicitação. Após isso, o delegado recebe a resposta do serviço e então envia a resposta de volta para o cliente.
+
+![[web-java-pp-bt-bd.png]]
+#### Session Facade
+Similar ao padrão de projeto Facade, no qual abstrai a complexidade do negócio em uma interface simples com métodos bem definidos. 
+
+![[web-java-pp-bt-sf.png]]
+#### Business Object Pattern
+Como o nome sugere, esse padrão está associado à algo do mundo real que está ligado a lógica do negócio. Quando para esse objeto não existe muitas lógicas de negócio a implementação desse padrão é desnecessária. Nesse sentido, a POJO (JPA) entity pode ser reconhecida como um BO (Business Object). Uma entidade ou um POJO representativo de uma entidade (como um POJO JPA) está mais próximo da tecnologia e da estrutura do que de um objeto de modelo de negócio.
+
+![[web-java-pp-bt-bo.png]]
+
+Ás vezes, a aplicação é tão simples que clientes da camada de negócios, como uma Session Facade (ou até mesmo clientes da camada de apresentação), podem acessar diretamente o modelo de dados através do DAO. Não há necessidade de um objeto de modelo lidar com uma complexidade maior para os negócios da aplicação.
+
+Estrutura gerenciamento de um BO complexo, separando a lógica de negócio da de persistência.
+
+![[web-java-pp-bt-bo-ex.png]]
+### Camada de Integração
+A camada de integração é responsável por desacoplar a lógica de negócios da lógica de integração em toda a aplicação. Esta camada possui a lógica de comunicação com um recurso ou sistema externo, mantendo-a separada da lógica de negócios. Essa camada tornará possível ler e escrever dados de fontes externas, viabilizando a comunicação entre aplicativos e componentes do ecossistema de negócios. Além disso, essa camada ocultará toda a complexidade de comunicação da camada de negócios. A camada de negócios, então, receberá os dados sem conhecer a complexidade da comunicação entre os componentes e como eles estão estruturados.
+#### Padrão Data Access Object (DAO)
+O padrão Data Access Object é um padrão utilizado para abstrair e ocultar todo o acesso às fontes de dados da camada de negócios. Se desejarmos substituir a fonte de dados por outra, precisaremos apenas modificar o código do padrão Data Access Object, e essa modificação não será visível na camada de negócios.
+
+![[web-java-pp-bi-dao.png]]
+#### Padrão Domain-Store
+Alguns problemas têm uma relação complexa entre os dados, e a persistência dos dados precisa ser feita por meio de um processo inteligente. Para promover essa característica, o padrão DAO não atende. Isso ocorre porque o DAO não deve manter estados, não deve conter processos inteligentes e só precisa conter um processo para salvar ou atualizar. Para resolver esse problema, foi criado o padrão Domain-Store — um padrão que pode adicionar funcionalidades ao DAO.
+
+O padrão de Domain-Store é um padrão que torna a persistência do modelo de objeto transparente, separando a lógica de persistência do modelo de objeto, possibilitando que a aplicação selecione a lógica de persistência de acordo com o estado do objeto. Dentro desse padrão, existe um DAO, projetado para comunicar e manipular dados com a fonte de dados, mas este DAO é ocultado da aplicação. Esse padrão raramente é implementado pelos desenvolvedores, pois o JPA já funciona como um padrão de domínio-armazenamento.
+
+![[web-java-pp-bi-ds.png]]
+#### Padrão Service Activator
+Suponha que um cliente precise solicitar um business service, o qual é um processo que leva muito tempo. Nesse caso, o cliente não deve esperar de forma síncrona até o final do processo. Em vez disso, deve haver uma maneira de fazer uma chamada de serviço assíncrona que não bloqueie o cliente ou usuário. Esse serviço pode então ser ativado em algum momento futuro. Pode haver várias razões para o atraso de um processo. Por exemplo, pode haver uma consulta ao banco de dados que consome muito tempo, ou um acesso a um sistema legado que está além do controle da aplicação atual. O padrão de realizar de forma assíncrona a tarefa necessária é conhecido como o service activator.
+
+A especificação JEE nos fornece soluções muito boas que são usadas para implementar esse padrão. Essas soluções são:
+- Java Message Service (JMS)
+- EJB asynchronous methods
+- Asynchronous events: producers e observers
 # Aplicações Web Java EE
 Em plataformas Java EE, os componentes web fornecem as capacidades de extensão dinâmica para um servidor web. Esses componentes podem ser servlets Java, páginas web implementadas com a tecnologia JavaServer Faces, APIs de serviços ou páginas JSP.
 
@@ -17,6 +105,19 @@ Na figura, o cliente envia uma requisição para a aplicação web que utiliza u
 ##### Java Applets
 Oequenos programas escritos na linguagem de programação Java que podem ser incorporados em páginas da web. Eles são executados no navegador do usuário por meio de uma máquina virtual Java (JVM).Quando uma página da web contendo um applet Java é carregada, o código do applet é transferido para a máquina do usuário e executado pela JVM no navegador. Isso permite que os applets forneçam funcionalidades interativas, como jogos ou calculadoras, diretamente na página da web.
 ```
+### Java Message Service (JMS)
+A Java Message Service (JMS) é uma interface de programação de aplicativos (API) que fornece uma interface MOM (Message-Oriented Middleware) para clientes que desejam um processo assíncrono.
+
+Um bean MDB (Message-Driven Bean) é um bean de sessão sem estado que é usado para ouvir solicitações ou objetos que chegam em uma fila JMS (Java Message Service). É importante observar que um MDB pode implementar qualquer tipo de mensagem, mas é mais comumente usado para lidar com mensagens JMS.
+
+Um MDB escuta mensagens que foram enviadas para uma fila ou para um tópico. Mensagens podem ser enviadas por qualquer componente JEE ou por outra aplicação fora do contexto JEE.
+
+```ad-summary
+##### Message-Driven Middleware (MOM)
+Arquitetura que utiliza trocas de mensagens, referindo-se ao envio e recebimento de mensagens, entre os módulos de uma aplicação ou entre sistemas distribuídos. O MOM oferece alguns serviços importantes, como persistência de mensagens ou garantias de entrega de mensagens. Um message broker é baseado em um MOM, por exemplo.
+```
+
+![[web-java-ee-jms.png]]
 # JavaBeans   
 Escrito no idioma de programação Java, um `EjB` é um componente do lado do servidor que encapsula a lógica de negócios de uma aplicação. A lógica de negócios é o código que cumpre o propósito da aplicação. Você pode pensar em um enterprise bean como um bloco de construção que pode ser usado sozinho ou com outros enterprise beans para executar a lógica de negócios no servidor Java EE. É dividido em dois principais, Session Beans (usados para a lógica de negócios, tanto em estado quanto sem estado, pode implementar um Web Service), Message Driven Beans (manipulação de mensagens assíncronas, como JMS). 
 
@@ -953,4 +1054,4 @@ Além das demais anotações relacionadas aos verbos HTTP como `@GET`, `@POST`, 
 contêineres (a infraestrutura imutável).
 
 #TODO Beging Quarkus - Livro
-#TODO ``Front Controller (direcionar a requisição para views (Django) específicas) Context Object (criar um objeto "customizado") Application Controller (Direciona para cada ação específica do CRUD) View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``
+#TODO View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``

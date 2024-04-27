@@ -1,4 +1,3 @@
-
 - [x] Engenharia de software  [[caixa concurso/Engenharia de Software|estudar]]
 	- [x] Processo Unificado (UP): conceitos gerais, disciplinas, fases, papéis, atividades e artefatos; 
 	- [x] UX; 
@@ -38,8 +37,8 @@
 	- [ ] Objective-C; Flutter; Swift
 	- [ ] Cobol;
 - [ ] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
-	- [ ] sistemas distribuídos e microsserviços;
-	- [ ] Arquitetura e padrões de projeto Java EE8; 
+	- [x] sistemas distribuídos e microsserviços;
+	- [x] Arquitetura e padrões de projeto Java EE8; 
 	- [x] Servlets; 
 	- [x] JSF;
 	- [x] JSP; 

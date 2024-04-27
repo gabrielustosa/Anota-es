@@ -5,6 +5,7 @@
 - Origens da Civilização 
 - Fundamentals of Software Architecture - O'Reilly
 - Building Microsservices - O'Reilly 
+- A lenda da caixa das almas
 - O Projeto Fênix
 - Tudo que você não soube
 - Fundamentos da matemática elementar
