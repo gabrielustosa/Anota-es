@@ -53,7 +53,7 @@ Onde o depósito de dados envia periodicamente solicitações para novos dados �
    - SCD Tipo 2: Técnica mais utilizada para atualizações de dimensões. Nesse tipo de SCD é adicionado um novo registro com as mudanças, preservando sempre os dados anteriores. 
    - SCD Tipo 3: Permite manter as modificações no mesmo registro. Essa técnica funciona com a adição de uma nova coluna na tabela de dimensão, onde é armazenada a atualização, mantendo na antiga coluna o valor anterior.
  ## Modelo Estrela
- Estrutura básica de um modelo de dados multidimensional, organizada por assuntos. Ele é composto por uma tabela central denominada fato e um conjunto de tabelas menores denominadas dimensões, as quais ficam dispostas ao redor desta tabela central formando uma estrela. O centro da estrela é o fato e ao seu redor estão dispostas as dimensões que participam deste fato. O relacionamento entre a tabela central e as tabelas dimensões é uma simples ligação entre as entidades em um relacionamento de um para muitos (ONE TO MANY).
+ Estrutura básica de um modelo de dados multidimensional, organizada por assuntos. Ele é composto por uma tabela central denominada fato e um conjunto de tabelas menores denominadas dimensões, as quais ficam dispostas ao redor desta tabela central formando uma estrela. O centro da estrela é o fato e ao seu redor estão dispostas as dimensões que participam deste fato. O relacionamento entre a tabela central e as tabelas dimensões é uma simples ligação entre as entidades em um relacionamento de um para muitos (ONE TO MANY). Não é a melhor alternativa para lidar com hierarquias.
  
 ![[dw-star.jpeg]]
  

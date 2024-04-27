@@ -1054,4 +1054,3 @@ Além das demais anotações relacionadas aos verbos HTTP como `@GET`, `@POST`, 
 contêineres (a infraestrutura imutável).
 
 #TODO Beging Quarkus - Livro
-#TODO View Helper (Como as templatetags do Django) Composite View (header, body_content, footer) Service to Worker (Como um Template Context Processor do Django, executado antes do controle ser passado para a view) Dispatcher View (Executado depois que o controle é passado para a view)``

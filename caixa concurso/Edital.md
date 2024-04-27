@@ -65,12 +65,12 @@
 	- [x] Fundamentos, técnicas de preparação e apresentação de dados; 
 	- [x] soluções de big data. 
 - [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
-	- [ ] Lean; Lean IT; 
+	- [x] Lean; Lean IT; 
 	- [x] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
 	- [x] ágil em escala e ágil escalado; 
 	- [x] ferramentas; artefatos, métricas e indicadores ágeis; 
 	- [x] management 3.0; 
-	- [ ] Lean UX; 
+	- [x] Lean UX; 
 	- [x] Design Thinking;
 	- [x] História de Usuário; 
 	- [x] O backlog do produto e as técnicas para priorização (Moscow, Scorecard, BUC, Testes de Suposição e Valor de negócio x risco); 

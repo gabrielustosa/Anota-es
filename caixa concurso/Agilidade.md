@@ -1,10 +1,47 @@
-# Valores do Desenvolvimento Ágil
-1. **Indivíduos e interações mais que processos e ferramentas**: Este valor enfatiza a importância das pessoas e a maneira como elas trabalham juntas em vez de se concentrar estritamente em ferramentas e processos.
-2. **Software em funcionamento mais que documentação abrangente**: Embora a documentação seja importante, o principal objetivo é entregar um software que funcione.
-3. **Colaboração com o cliente mais que negociação de contratos**: Este valor destaca a importância de trabalhar em estreita colaboração com os clientes para entender suas necessidades e entregar valor.
-4. **Responder a mudanças mais que seguir um plano**: O desenvolvimento ágil aceita que as necessidades do cliente podem mudar ao longo do tempo e que é importante ser flexível e adaptável a essas mudanças.
+# Lean
+Sistema de produção que se originou no Sistema Toyota de Produção, um método desenvolvido no Japão na primeira metade do século XX. O Lean busca maximizar o valor para o cliente enquanto minimiza o desperdício. Em outras palavras, o objetivo do Lean é **reduzir o desperdício de custos, aumentar a qualidade do produto e a maximização do valor entregue ao cliente**. O lean prima pela otimização de recursos, evitando falhas e um maior foco no público. Consequentemente, aí sim potencializar os resultados, sendo consequência.
+
+Os cinco princípios do Lean:
+
+1. **Valor**: Antes de qualquer coisa, é necessário compreender o que os clientes valorizam em um produto ou serviço. Esse valor é específico para cada produto e pode variar de acordo com o cliente ou as condições de mercado.
+2. **Fluxo de Valor**: Este princípio envolve examinar cada etapa do processo de produção ou serviço, desde a concepção até a entrega ao cliente final, e identificar quais etapas estão realmente adicionando valor e quais são desperdícios. O objetivo é eliminar as etapas que não agregam valor.
+3. **Fluxo Contínuo**: Depois de mapear o fluxo de valor e eliminar etapas desnecessárias, o foco muda para garantir que os passos restantes ocorram de maneira suave e contínua, com o mínimo de interrupções e atrasos.
+4. **Produção Puxada**: Em vez de produzir com base em previsões (que muitas vezes podem estar erradas), um sistema puxado se concentra em produzir apenas o que é necessário em resposta à demanda real do cliente. Isso ajuda a reduzir excessos de inventário e sobreprodução.
+5. **Perfeição**: O pensamento Lean não é um estado estático, mas um processo contínuo de melhoria. Ao adotar essa mentalidade, as empresas se esforçam para aprimorar continuamente, identificando e eliminando desperdícios e otimizando a eficiência em todas as áreas.
+
+Tipos de desperdícios: 
+1. **Espera**: Tempo não trabalhado, tempo de fila, espera por aprovação  
+2. **Transporte**: Tempo desperdiçado e esforço para mover coisas dentro de um processo ou entre processos  
+3. **Movimentação**: Planejamento e layout organizacional ruim frequentemente causando desperdício de movimentação  
+4. **Excesso de Produção**: produção maior do que necessário, antes do que é necessário, trabalho em itens não prioritários  
+5. **Defeitos**: Algo inaceitável pelo cliente, retrabalho ou reparos  
+6. **Inventário/Estoque:** Estoque excessivo de materiais que não estão sendo usados na atividade corrente ou no processo
+7. **Processamento sem valor:** Fazer mais trabalho do que é necessário para adicionar valor para o cliente
 # Lean UX
 O objetivo do Lean UX é obter feedback dos usuários o mais cedo possível durante o processo de desenvolvimento do produto. A abordagem Lean UX enfatiza a iteração rápida e frequente, o que permite que as equipes obtenham feedback valioso dos usuários desde as fases iniciais do projeto. Isso permite que as equipes façam ajustes e iterações no produto com base no feedback dos usuários de forma contínua ao longo do processo de desenvolvimento.
+### Princípios do Lean UX
+1. **Equipes multifuncionais** - Fomenta-se a conversa e colaboração entre equipes para garantir eficiência desde o início do projeto até sua conclusão.
+2. **Pequeno, dedicado, colocado** - Manter equipes pequenas facilita comunicação, foco e colaboração, permitindo uma melhor atualização sobre o projeto.
+3. **Progresso = resultados, não saída** - Os resultados do negócio são o indicador de progresso, permitindo a substituição de recursos que não atingem os resultados esperados.
+4. **Equipes focadas em problemas** - Identificação e resolução de problemas impulsionam um senso de orgulho e pertencimento à equipe.
+5. **Remoção de resíduos** - Eliminação de qualquer problema que não contribui para o objetivo final.
+6. **Pequenos lotes** - Criar apenas o design necessário para avançar, evitando ineficiências. 
+7. **Descoberta contínua**- Engajamento contínuo do cliente durante o projeto e desenvolvimento para entender o uso do produto.
+8. **GOOB: a nova centralidade do usuário** - Colocar o usuário no centro do negócio para maximizar aprendizado e melhorias.
+9. **Compreensão compartilhada** - Equipe compreende coletivamente o processo, produto e cliente para eficiência no trabalho.
+10. **Antipadrão: rockstars, gurus e ninjas** - Mentalidade de equipes multifuncionais em vez de especialistas.
+11. **Externalizar o trabalho** - Compartilhar ideias para inspirar novas e criar um fluxo de informações contínuo.
+12. **Fazer em vez de só analisar** - Criar uma primeira versão de uma ideia para obter respostas valiosas dos clientes.
+13. **Aprender antes de crescer** - Validar ideias antes de escalá-las para reduzir riscos e poupar recursos. 
+14. **Permissão para falhar** - Experimentação é incentivada, pois falhas frequentes levam ao aumento de habilidades. 
+15. **Sair do negócio de entregas** - Documentos não resolvem problemas dos clientes; foco na qualidade do produto e reação do mercado.
+### Lean UX na prática
+1. **Pressupostos** - Inicia-se realizando um **brainstorming das features**. 
+2. **Hipóteses** - Em seguida, **levanta-se algumas hipóteses** para a definição do MVP.
+3. **Protótipo/MVP** - A próxima etapa é **criar um protótipo** de baixa, média ou alta fidelidade do [MVP](https://www.supero.com.br/blog/mvp/) que foi definido anteriormente. 
+4. **Validação** - Nesse momento, ocorre a **validação interna e externa do produto**, guiada por testes de usabilidade do protótipo. Primeiro ocorre a validação interna, geralmente realizada com os stakeholders, e, depois, a validação externa, com os consumidores ou usuários do produto. 
+5. **Resultados** - **Avalia-se os dados coletados** e, caso ocorram falhas ou qualquer problema de uso, o time deve voltar para o passo do protótipo e, novamente, passar por todas as etapas seguintes, até chegar na realização de testes de usabilidade.
+# Valores do Desenvolvimento Ágil
 ## Ágil em Escala 
 Pode ser entendido como algo que foi aumentado, como um conjunto de times que utilizando a metodologia ágil para realizar a entrega de tarefas ou produtos. Para implementação é necessário: **Mudanças na estrutura organizacional e nos papéis desempenhados pelos profissionais**, **Cadência nas entregas**, **Foco no cliente**, **Remoção de Barreiras e Dependências**, **Sincronização total**, **Pensamento Lean** e **Profissionais Capacitados**.
 ## Ágil Escalado
@@ -50,6 +87,7 @@ Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pod
 # Frameworks Ágeis
 
 ```ad-warning
+#### Princípios Fundamentais
 **Indivíduos e interação entre eles** > _processos e ferramentas_
 **Software em funcionamento** > _documentação abrangente_
 **Colaboração com o cliente** > _negociação de contratos_
@@ -114,12 +152,12 @@ Abordagem para gerenciar alterações e entregar serviços. Ele define o process
 
 O Kanban depende de seis práticas fundamentais:
 
-1. Visualizar o fluxo de trabalho: Usando um quadro Kanban, as etapas de desenvolvimento são representadas por colunas, onde os cartões movem-se de "por fazer" para "fazendo" e "feito" conforme o progresso do projeto.
-2. Limitar o trabalho em progresso (WIP): Ao limitar a quantidade de trabalho em andamento, os desenvolvedores são incentivados a completar suas tarefas antes de iniciar novas, reduzindo o tempo de ciclo e melhorando a qualidade do trabalho.
-3. Gerenciar o fluxo de trabalho: Isso envolve entender o fluxo de valor — Trajeto que um item de trabalho percorre desde sua concepção até sua entrega final ao cliente. Ele engloba todas as etapas e atividades necessárias para transformar uma ideia ou requisito em um produto ou serviço pronto para uso —, identificar interrupções, definir e implementar mudanças para reduzir desperdícios.
-4. Explicitar políticas de processo: Registrar os critérios para selecionar e concluir itens de trabalho.
-5. Enfatizar a melhoria contínua: Criar ciclos de feedback baseados em dados de processo e medir os efeitos das mudanças implementadas.
-6. Mudar o processo colaborativamente: Engajar todos os membros da equipe e partes interessadas na alteração do processo, conforme necessário.
+1. **Visualizar o fluxo de trabalho**: Usando um quadro Kanban, as etapas de desenvolvimento são representadas por colunas, onde os cartões movem-se de "por fazer" para "fazendo" e "feito" conforme o progresso do projeto.
+2. **Limitar o trabalho em progresso (WIP)**: Ao limitar a quantidade de trabalho em andamento, os desenvolvedores são incentivados a completar suas tarefas antes de iniciar novas, reduzindo o tempo de ciclo e melhorando a qualidade do trabalho.
+3. **Gerenciar o fluxo de trabalho**: Isso envolve entender o fluxo de valor — Trajeto que um item de trabalho percorre desde sua concepção até sua entrega final ao cliente. Ele engloba todas as etapas e atividades necessárias para transformar uma ideia ou requisito em um produto ou serviço pronto para uso —, identificar interrupções, definir e implementar mudanças para reduzir desperdícios.
+4. **Explicitar políticas de processo**: Registrar os critérios para selecionar e concluir itens de trabalho.
+5. **Enfatizar a melhoria contínua:** Criar ciclos de feedback baseados em dados de processo e medir os efeitos das mudanças implementadas.
+6. **Mudar o processo colaborativamente**: Engajar todos os membros da equipe e partes interessadas na alteração do processo, conforme necessário.
 
 ![[ag-kanban.png]]
 ### SAFe
