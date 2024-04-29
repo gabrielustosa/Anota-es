@@ -36,7 +36,7 @@
 	- [ ] Kotlin; 
 	- [ ] Objective-C; Flutter; Swift
 	- [ ] Cobol;
-- [ ] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
+- [x] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
 	- [x] sistemas distribuídos e microsserviços;
 	- [x] Arquitetura e padrões de projeto Java EE8; 
 	- [x] Servlets; 
@@ -64,7 +64,7 @@
 - [x] Big data [[caixa concurso/Big Data|estudar]]
 	- [x] Fundamentos, técnicas de preparação e apresentação de dados; 
 	- [x] soluções de big data. 
-- [ ] Agilidade [[caixa concurso/Agilidade|estudar]]
+- [x] Agilidade [[caixa concurso/Agilidade|estudar]]
 	- [x] Lean; Lean IT; 
 	- [x] frameworks (XP; SCRUM; Kanban; SAFe SA; Nexus);
 	- [x] ágil em escala e ágil escalado; 
@@ -95,7 +95,7 @@
 	- [x] Processos: conceitos básicos, comunicação, sincronização e escalonamento;
 	- [x] Gerência de memória: partições fixas e variáveis, realocação, memória virtual, swapping, sistemas de arquivos; 
 	- [ ] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
-- [ ] Arquiteturas de software [[Arquitetura de Software|estudar]]
+- [x] Arquiteturas de software [[Arquitetura de Software|estudar]]
 	- [x] arquitetura em camadas;
 	- [x] arquitetura MVC;
 	- [x] arquitetura orientada a serviços; 
@@ -105,27 +105,26 @@
 	- [x] Nuvem pública e privada;
 	- [x] métricas e estimativas de software;
 	- [x] Análise por pontos de função: conceitos básicos e aplicações;
-	- [ ] Estratégias de Migração de Aplicações para o ambiente de nuvem;
-	- [ ] Governança;
-	- [ ] Computação Serverless;
-	- [ ] Segurança Compartilhada; 
+	- [x] Estratégias de Migração de Aplicações para o ambiente de nuvem;
+	- [x] Computação Serverless;
+	- [x] Segurança Compartilhada; 
+	- [x] Arquitetura de solução para o desenvolvedor básico. 
 - [x] Gerência de configuração
 	- [x] Conceitos e práticas;
 	- [x] Uso de ferramentas de gerência de configuração; 
 	- [x] Controle de defeitos: conceitos e práticas.
-- [ ] Portais corporativos:
-	- [ ] Arquitetura da informação, portlets e RSS; 
-	- [ ] Ferramentas de Gestão de Conteúdos; 
-	- [ ] Modelo de Acessibilidade do Governo Eletrônico.
+- [x] Portais corporativos: [[Portais Corporativos|estudar]]
+	- [x] Arquitetura da informação, portlets e RSS; 
+	- [x] Ferramentas de Gestão de Conteúdos; 
+	- [x] Modelo de Acessibilidade do Governo Eletrônico.
 - [x] Qualidade de software:  [[caixa concurso/Engenharia de Software#Qualidade de Software|estudar]]
 	- [x] CMMI/MPS-BR: Conceitos básicos e objetivos;
 	- [x] Disciplinas e formas de representação; 
 	- [x] Níveis de capacidade e maturidade.
-- [ ] Conceitos de Arquitetura de Referência:
-	- [ ] arquitetura de solução para o desenvolvedor básico. 
 - [ ] Gestão e governança de TI
 	- [ ] ITIL v.4; 
 	- [ ] COBIT
+	- [ ] Governança;
 
 - [ ] Estatística 
 	- [x] Representação tabular e gráfica. 

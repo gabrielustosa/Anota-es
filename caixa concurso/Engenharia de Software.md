@@ -281,6 +281,11 @@ São declarações de serviços que o sistema deve fornecer, de como o sistema d
 - Descrevem detalhes mais específicos como funções do sistema, suas entradas e saídas, exceções etc.
 - A especificação dos requisitos funcionais de um sistema deve ser completa e consistente.
 - Exemplos disso incluem processar pagamentos, gerar relatórios ou autenticar usuários.
+
+```ad-summary
+#### Matriz de rastreabilidade de requisitos
+É uma ferramenta que explicita a relação direta dos requisitos entre si ou com os outros componentes do projeto. Assim, caso alguma alteração seja feita no projeto, sabe-se quais requisitos serão afetados com tal mudança.
+```
 #### Requisitos Não Funcionais (como deve ser feito)
 São restrições aos serviços ou funções oferecidos pelo sistema. Incluem restrições de timing, restrições no processo de desenvolvimento, propriedades emergentes e restrições impostas pelas normas. Ao contrário das características individuais ou serviços do sistema, os requisitos não funcionais, muitas vezes, aplicam-se ao sistema como um todo.
 
@@ -316,13 +321,15 @@ Podem incluir quatro atividades de alto nível:
 ##### Estudo de Viabilidade 
 Elas visam avaliar se o sistema é útil para a empresa.
  
- ## SMART
+```ad-note
+#####  SMART
  O método SMART é um acrônimo que serve de guia para definir objetivos de maneira eficaz. 
 - **S** – Específico: O objetivo ou requisito deve ser claro e preciso.
 - **M** – Mensurável: Deve ser possível mensurar o progresso e o sucesso.
 - **A** – Alcançável: Deve ser realista e atingível.
 - **R** – Relevante: Deve ser relevante para a organização, alinhado com suas metas.
 - **T** – Temporal: Deve ter um prazo definido.
+```
 ##### Elicitação e Análise
 Visam descobrir requisitos. A elicitação e análise de requisitos podem envolver diversos tipos de pessoas em uma organização para obter informações sobre o domínio da aplicação, os serviços que o sistema deve oferecer, o desempenho do sistema, restrições de hardware e assim por diante.
 1. Descoberta de requisitos do sistema.
@@ -331,9 +338,11 @@ Visam descobrir requisitos. A elicitação e análise de requisitos podem envolv
 4. Especificação de requisitos. 
 
 ![[engs-req-ela.png]]
- 
- ## Modelo Espiral
- Modelo de processo de software evolucionário que acopla a natureza iterativa da prototipação com os aspectos sistemáticos e controlados do modelo cascata. Fornece potencial para o rápido desenvolvimento de versões cada vez mais completas do software. é um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistemas intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos.
+
+```ad-summary
+###### Modelo Espiral
+Modelo de processo de software evolucionário que acopla a natureza iterativa da prototipação com os aspectos sistemáticos e controlados do modelo cascata. Fornece potencial para o rápido desenvolvimento de versões cada vez mais completas do software. é um gerador de modelos de processos dirigidos a riscos e é utilizado para guiar a engenharia de sistemas intensivos de software, que ocorre de forma concorrente e tem múltiplos envolvidos.
+```
 
 ```ad-tip
 #### Levantamento vs Elaboração

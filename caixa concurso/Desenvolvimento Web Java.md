@@ -283,7 +283,7 @@ A tag de ação também é implementada para otimizar o fluxo entre páginas e p
 2. `jsp:include`: é usado para incluir outro recurso. `<jsp:include page="cabecalho.jsp"/>`
 3. `jsp:useBean`: é usado para criar ou localizar objetos bean. `<jsp:useBean id= "instanceName" scope= "page | request | session | application"  class= "packageName.className" type= "packageName.className"  beanName="packageName.className" />`
 4.  `jsp:setProperty`: é usado para definir o valor do objeto bean. `<jsp:setProperty name="meuBean" property="nome" value="João"/>
-5. `sp:getProperty`: é usado para imprimir o valor da propriedade do bean. `<jsp:getProperty name="meuBean" property="nome"/>`
+5. `jsp:getProperty`: é usado para imprimir o valor da propriedade do bean. `<jsp:getProperty name="meuBean" property="nome"/>`
 ##### Objetos Implícitos
 Durante a fase de tradução (ou seja, durante a conversão de JSP para Servlet), o mecanismo JSP produz esses objetos. Eles são criados dentro do método de serviço para que os desenvolvedores JSP possam usá-los diretamente no Scriptlet sem declaração e inicialização.
 
@@ -296,6 +296,32 @@ Durante a fase de tradução (ou seja, durante a conversão de JSP para Servlet)
 - **page**: `java.lang.Object`: Referência para o objeto da página JSP.
 - **pageContext**: `javax.servlet.jsp.PageContext`: Fornece acesso aos diversos objetos relacionados ao ciclo de vida da página JSP.
 - **config**: `javax.servlet.ServletConfig`: Fornece acesso à configuração do servlet, permitindo a leitura de parâmetros de inicialização.
+##### JSLT Tags
+As tags JSTL podem ser classificadas, de acordo com suas funções, nos seguintes grupos de bibliotecas de tags JSTL que podem ser usados ao criar uma página JSP:
+- **Core Tags**
+- **Formatting tags**
+- **SQL tags**
+- **XML tags**
+- **JSTL Functions**
+
+```jsp
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix = "x" uri = "http://java.sun.com/jsp/jstl/xml" %>
+
+<html>
+   <head>
+      <title> <c:out> Tag Example</title>
+   </head>
+
+   <body>
+	    <c:out value = "${'<tag> , &'}"/>
+		<p>Parsed Number (1) : <c:out value = "${i}" /></p>
+		<fmt:parseNumber var = "i" integerOnly = "true" type = "number" value = "${balance}" />
+		<x:out select = "$output/books/book[2]/price" /> <!-- Xpath expressions -->
+   </body>
+</html>
+```
 # JPA
 JPA é uma camada que descreve uma interface comum para frameworks ORM. Todos os objetos mapeados com o JPA são de responsabilidade do ``EntityManager``, ou seja, se algum atributo for alterado ele acabará salvo no banco de dados através dele.
 
