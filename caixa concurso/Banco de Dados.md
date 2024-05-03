@@ -45,6 +45,7 @@ b["B1 (0, 1)"] --- rel{Relacionamento} --- a["(1, n) B2"]
 - B2 pode ter nenhum um somente um relacionamento com B1
 
  **Total**: significa que para cada ocorrência da entidade genérica, existe sempre um ocorrência em uma das entidades especializadas
+ **Parcial**: uma entidade na superclasse não precisa necessariamente ser membro de pelo menos uma das subclasses na especialização
  **Exclusiva**: significa que uma ocorrência da entidade genérica A é especializada no máximo uma vez, ou seja, uma instancia de A aparece apenas uma vez nas entidades B ou C, nunca em ambas ao mesmo tempo.
 # Normalização
 - Cada forma normal depende das anteriores estarem sendo cumpridas.

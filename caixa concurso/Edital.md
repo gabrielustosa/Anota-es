@@ -34,7 +34,7 @@
 	- [ ] Scala; 
 	- [ ] R;
 	- [ ] Kotlin; 
-	- [ ] Objective-C; Flutter; Swift
+	- [x] Objective-C; Flutter; Swift
 	- [ ] Cobol;
 - [x] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
 	- [x] sistemas distribuídos e microsserviços;
@@ -126,7 +126,27 @@
 	- [ ] COBIT
 	- [ ] Governança;
 
-- [ ] Estatística 
+- [ ]  Conhecimentos e Comportamentos Digitais
+	- [ ] Mindset de crescimento, Paradigma da abundância.
+	- [ ] Intraempreendedorismo.
+	- [ ] Design Thinking, Design de Serviço. 
+	- [ ] Metodologias ágeis, Lean Manufacturing, SCRUM. 
+	- [ ] Resolução de problemas complexos, visão sistêmica e estratégica.  
+	- [ ] Ciência de dados. 
+	- [ ] Senso colaborativo e disposição para somar pontos de dista divergentes. 
+	- [ ] Pensamento computacional. 
+	- [ ] Análise de Negócios. 
+	- [ ] Liderança, autoliderança e liderança de equipes. 
+	- [ ] Autodesenvolvimento. 
+	- [ ] Experiência do consumidor (Customer experience). 
+	- [ ] Inteligência emocional.
+	- [ ] Desenvolvimento sustentável (Pacto global e Objetivos de Desenvolvimento Sustentável - ODS). 
+	- [ ] Objetivos-chaves para resultados (OKR). 
+	- [ ] Gestão do tempo e produtividade. 
+	- [ ] Técnicas e boas práticas para o trabalho à distância. 
+	- [ ] Aprender a aprender e Aprendizagem contínua (Life long learning).
+
+- [ ] Estatística [[Estatística|estudar]]
 	- [x] Representação tabular e gráfica. 
 	- [ ] Medidas de tendência central (média, mediana, moda, medidas de posição, mínimo e máximo) e de dispersão (amplitude, amplitude interquartil, variância, desvio padrão e coeficiente de variação).
 	- [x] Cálculo de probabilidade.  
@@ -135,3 +155,42 @@
 	- [ ] Correlação linear simples. 
 	- [x] Ciência de dados, People analytics. 
 	- [ ] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)
+
+- [ ] Português  [[Português|estudar]]
+	- [x] Compreensão e interpretação de textos. 
+	- [x] Argumentação e persuasão. 
+	- [x] Comunicação assertiva: linguagem simples, concisa e objetiva. 
+	- [x] Organização textual. 
+	- [x] Coesão e coerência;  
+	- [x] Ortografia oficial. 
+	- [x] Acentuação gráfica.
+	- [x] Emprego do sinal indicativo de crase. 
+	- [x] Sintaxe da oração e do período. 
+	- [x] Pontuação. 
+	- [ ] Concordância nominal e verbal. 
+	- [ ] Regência nominal e verbal. 
+	- [x] Significação das palavras. 
+	- [ ] Colocação do pronome átono. 
+	- [x] Redação oficial: escrita de textos formais e Manual de Redação da Presidência da República (disponível no sítio do Planalto, na internet). 
+	- [x] Novo Acordo Ortográfico.
+
+  - [ ] Matemática Financeira [[Matemática Financeira|estudar]] 
+	- [x] Conceitos gerais: valor do dinheiro no tempo, valor presente, valor futuro, juro, taxa de juro, prazo da operação. 
+	- [x] Juros Simples. 
+	- [x] Juros Compostos. 
+	- [ ] Séries Uniformes. 
+	- [ ] Equivalência de Capitais em fluxos regulares ou irregulares: VP, VF, prazos e taxas de retorno. 
+	- [ ] Sistemas de Amortização de qualquer tipo, incluindo os sistemas com amortizações constantes (SAC) e com prestações constantes (Francês ou PRICE).
+	- [ ] Descontos: racional composto e comercial simples. 
+	- [ ] Sequências numéricas: leis de formação expressas de forma geral (em função da posição do termo) ou de forma recursiva (em função de um ou mais termos anteriores); progressões aritméticas; progressões geométricas.
+
+- [ ] Comportamentos Éticos e Compliance [[Comportamentos Éticos e Compliance|estudar]]
+	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23  de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021. 
+	- [x] Conceitos e medidas de enfrentamento ao assédio moral e sexual.
+	- [ ] Atitudes éticas, respeito, valores e virtudes; noções de ética empresarial e profissional. A gestão da ética nas empresas públicas e privadas. Código de Ética, Conduta e integridade (disponível no sítio da CAIXA na internet).
+	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.  
+	- [ ] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
+	- [ ] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
+	- [ ] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações. 
+	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
+	- [ ] Boas práticas de governança corporativa
