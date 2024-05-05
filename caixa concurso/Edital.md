@@ -181,7 +181,7 @@
 	- [ ] Séries Uniformes. 
 	- [ ] Equivalência de Capitais em fluxos regulares ou irregulares: VP, VF, prazos e taxas de retorno. 
 	- [ ] Sistemas de Amortização de qualquer tipo, incluindo os sistemas com amortizações constantes (SAC) e com prestações constantes (Francês ou PRICE).
-	- [ ] Descontos: racional composto e comercial simples. 
+	- [x] Descontos: racional composto e comercial simples. 
 	- [ ] Sequências numéricas: leis de formação expressas de forma geral (em função da posição do termo) ou de forma recursiva (em função de um ou mais termos anteriores); progressões aritméticas; progressões geométricas.
 
 - [ ] Comportamentos Éticos e Compliance [[Comportamentos Éticos e Compliance|estudar]]
@@ -191,6 +191,6 @@
 	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.  
 	- [ ] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
 	- [ ] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
-	- [ ] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações. 
+	- [x] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações. 
 	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
 	- [ ] Boas práticas de governança corporativa

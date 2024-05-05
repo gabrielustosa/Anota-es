@@ -59,6 +59,8 @@ Esse gráfico monitora o progresso das tarefas (story points ou horas de projeto
 Avalia o status do trabalho em andamento, identificando visualmente ao longo do tempo o que foi feito, o que está em delivery, em review, em acompanhamento e esperando. Dentro de um diagrama de fluxo cumulativo, várias métricas podem ser acompanhadas.
 
 ![[ag-cfd.png]]
+#### Tempo Ideal
+O tempo ideal, ou “homem-hora”, é uma unidade de medida que estima o tempo que uma pessoa levaria para concluir uma tarefa sem interrupções. É uma maneira comum de estimar o esforço necessário para concluir itens em um backlog de produto.
 # Design Thinking 
 Framework usado para promover a inovação com uma abordagem centrada no ser humano, onde a empatia pelo usuário final é fundamental. Dentro do Design Thinking, passamos por diferentes fases: _Empatia_, _Definição_, _Ideação_, _Prototipagem_, _Teste_ e _Implementar_.
 ### Empatia
@@ -102,13 +104,20 @@ Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pod
 
 Podem ser criados multiplos Incrementos dentro de um Sprint. A soma dos Incremento é apresentada na Sprint Review, apoiando assim o empirismo. No entanto, um Incremento pode ser entregue aos stakeholders antes do fim do Sprint. A Sprint Review nunca deve ser considerada como uma porta para a entrega de valor.
 ##### Artefatos
-- Backlog do Produto -> Meta do Produto
-- Backlog da Sprint -> Meta da Sprint
+- Backlog do Produto -> Meta do Produto (Quem controla é o PO)
+- Backlog da Sprint -> Meta da Sprint (Quem controla são os desenvolvedores)
 - Incremento -> Definição de Pronto
 ##### Pilares
 - T: Transparência
 - I: Inspeção
 - A: Adaptação
+##### Princípios do SCRUM:
+1. Controle de processo empíricos
+2. Auto-organização
+3. Colaboração
+4. Priorização baseada em valor
+5. Time-boxing
+6. Desenvolvimento Iterativo
 #### Revisão do Scrum
 Sprint Review nada mais é que uma "demo" funcional do produto. Buscando validar as entregas da equipe e verificar se os critérios estabelecidos no planejamento foram executados. É o momento de coletar e inspecionar os feedbacks do que a equipe construiu. Em outras palavras, esse objetivo pode ser entendido como uma conversa entre a equipe e as partes interessadas sobre como melhorar o produto. As pautas da reunião são:
 
@@ -162,6 +171,38 @@ O Kanban depende de seis práticas fundamentais:
 ![[ag-kanban.png]]
 ### SAFe
 Conjunto de padrões organizacionais e de fluxo de trabalho para implementar práticas ágeis em escala empresarial. Ele foi formado por três conjuntos de conhecimento primários: o desenvolvimento ágil de software, o desenvolvimento enxuto de produtos e o pensamento sistêmico.
+#### Equipes Ágeis
+- Equipes de Agile Release Trains (ARTs): São grupos de equipes ágeis que trabalham em conjunto para entregar um conjunto de soluções de valor.
+- Scrum ou Kanban: As equipes dentro das ARTs geralmente usam práticas ágeis como Scrum ou Kanban para gerenciar o trabalho.
+#### Program Increment (PI):
+- O PI é a unidade de tempo no SAFe. Ele geralmente tem uma duração fixa, comumente de 8 a 12 semanas.
+- Durante um PI, várias iterações (Sprints) ocorrem, e as equipes trabalham juntas para entregar incrementos de valor ao produto.
+##### Benefícios
+- **Alinhamento das equipes e dos stakeholders**: O PI ajuda a alinhar as equipes e os stakeholders em torno de um objetivo comum.
+- **Planejamento e priorização eficazes**: O PI Planning ajuda as equipes a planejar e priorizar seu trabalho de forma eficaz.
+- **Entrega de valor incremental**: O PI ajuda as equipes a entregar valor incremental ao cliente a cada duas semanas.
+#### Release Planning:
+- A cada PI, ocorre um evento de Release Planning, onde as equipes se reúnem para planejar as próximas iterações e discutir os objetivos de negócios.
+- O objetivo é garantir que todos estejam alinhados com os objetivos estratégicos e as prioridades do negócio.
+#### Portfolio SAFe:
+- No nível mais alto, o Portfolio SAFe conecta a estratégia da organização aos programas e equipes ágeis.
+- Define a visão e a estratégia, além de priorizar e financiar as iniciativas de valor.
+#### Value Streams e ARTs:
+- Um Value Stream representa a série de etapas necessárias para entregar um produto ou serviço ao cliente.
+- ARTs são grupos de equipes que trabalham juntas em um Value Stream específico.
+#### Roles (Papéis):
+- Release Train Engineer (RTE): Facilita e coordena as atividades da ART.
+- Product Owner (PO): Representa os stakeholders e é responsável por priorizar o backlog.
+- Scrum Master: Facilita a equipe em práticas ágeis e remove impedimentos.
+- System Architect (SA): Ajuda a garantir a integridade técnica da solução.
+#### Cerimônias:
+- Além das cerimônias ágeis comuns, como Reuniões de Sprint, o SAFe introduz eventos específicos, como Inspect and Adapt (I&A) e PI Planning.
+#### Fases do PI:
+- PI Planning: Início de cada Program Increment, onde as equipes planejam e coordenam suas atividades.
+- Execução: As equipes realizam suas iterações durante o PI.
+- Inspect and Adapt (I&A): Evento ao final do PI para avaliar o progresso, identificar problemas e ajustar os planos.
+#### Lean-Agile Mindset:
+- O SAFe enfatiza a importância de uma mentalidade Lean-Agile, promovendo a colaboração, a melhoria contínua e a entrega de valor ao cliente.
 ### Nexus
 Exoesqueleto para escalar Scrum. Ele guia o coração da questão de escalar – continuamente identificando e removendo dependências criadas pelo aumento da complexidade. Ele é construído no framework do Scrum e valores existentes.
 # DevOps
@@ -216,19 +257,13 @@ Uma reunião entre os Product Owners das diferentes equipes para alinhar as prio
 ### Planejamento do Scrum
 O objetivo do planejamento do sprint é definir o que pode ser entregue no sprint e como esse trabalho vai ser alcançado. O planejamento do sprint é feito em colaboração com toda a equipe Scrum. Planos de sprint ruins podem atrapalhar a equipe, estabelecendo expectativas irreais. Por isso, é necessário fazer 5 perguntas. 
 
+Durante essa cerimônia, o Product Owner apresenta os itens do backlog priorizados, o time de desenvolvimento discute e estimula o esforço necessário para completar esses itens, e juntos decidem quais itens serão incluídos na Sprint.
+
 1. O que - O proprietário do produto decide o objetivo e quais itens do backlog contribuem para essa meta.
 2. O como - A equipe de desenvolvimento planeja o trabalho necessário para entregar.
 3. O quem - O proprietário do produto define a meta com base no valor que procura, para que a equipe de desenvolvimento entenda.
 4. As entradas - Ponto de partida, é relevante observar o backlog do produto.
 5. Os resultados - Descrição dos objetivos do sprint que será realizado.
-### PI Planning 
-período fixo de tempo, geralmente de 8 a 12 semanas, durante o qual um conjunto de equipes, conhecidas como Agile Release Train (ART), entrega ao cliente um valor incremental. O PI é dividido em cinco iterações (sprints), cada uma com duração de duas semanas.
-
-O PI Planning é um evento de planejamento que ocorre no início de cada PI. Durante o PI Planning, as equipes se reúnem para alinhar seus objetivos e planos para o PI.
-##### Benefícios
-- Alinhamento das equipes e dos stakeholders: O PI ajuda a alinhar as equipes e os stakeholders em torno de um objetivo comum.
-- Planejamento e priorização eficazes: O PI Planning ajuda as equipes a planejar e priorizar seu trabalho de forma eficaz.
-- Entrega de valor incremental: O PI ajuda as equipes a entregar valor incremental ao cliente a cada duas semanas.
 # Técnica para Estimativa de Escopo
 ### Planning Poker 
 O objetivo é obter uma estimativa mais precisa e consensual por meio da colaboração da equipe. 

@@ -1,5 +1,23 @@
 # Análise e Projeto Orientados a Objetos
-A perspectiva empregada na análise é de _objetos_ (coisas, conceitos ou entidades). Durante a Análise OO, a ênfase está em achar e descrever objetos (ou conceitos) no domínio do problema. Por exemplo, num sistema de informação para uma biblioteca, alguns dos conceitos são _Livro_, _Biblioteca_, _Usuário_. Tais objetos podem ter atributos e responsabilidades. Durante o projeto orientado a objeto, a ênfase está em achar objetos lógicos de software que poderão ser eventualmente implementados usando uma linguagem de programação OO. Tais objetos podem ter atributos e métodos. Durante a construção (programação OO), os objetos do projeto são implementados e testados
+A perspectiva empregada na análise é de _objetos_ (coisas, conceitos ou entidades). Durante a Análise OO, a ênfase está em achar e descrever objetos (ou conceitos) no domínio do problema. Por exemplo, num sistema de informação para uma biblioteca, alguns dos conceitos são _Livro_, _Biblioteca_, _Usuário_. Tais objetos podem ter atributos e responsabilidades. Durante o projeto orientado a objeto, a ênfase está em achar objetos lógicos de software que poderão ser eventualmente implementados usando uma linguagem de programação OO. Tais objetos podem ter atributos e métodos. Durante a construção (programação OO), os objetos do projeto são implementados e testados.
+
+O foco é entender o domínio do problema e modelar esse entendimento em termos de objetos. Esses objetos devem refletir as entidades reais do domínio e suas interações, bem como o desenvolvimento de um modelo orientado a objetos do domínio da aplicação. 
+
+Um projetista não começa pela identificação das diferentes funcionalidades dos sistemas. Uma motivação para essa abordagem é que mudanças na especificação dos requisitos tendem a afetar menos os objetos do que as funções.
+
+Processos de projeto orientado a objetos envolvem projetar as classes de objetos e os relacionamentos entre essas classes. Essas classes definem os objetos no sistema e suas interações. Quando o projeto é concebido como um programa em execução, os objetos são criados dinamicamente a partir dessas definições de classe.
+
+```ad-tip
+Como um todo, se preocupa com o que terá de ser realizado.
+
+**Análise**: Focada na identificação e domínio do problema ou negócio.
+**Projeto**: Criação de um modelo OO para satisfazer os requisitos.
+```
+
+São abordagens de análise orientada a objeto:
+
+1. RUP - [[Engenharia de Software#Processo Unificado|Processo Unificado]]
+2. OMT (Object Modeling Technique), técnica antecessora do UML.
 # Processo Unificado 
 Um conjunto de atividades executadas para transformar um conjunto de requisitos do cliente em um sistema de software. Promove o uso de melhores práticas, como desenvolvimento orientado a casos de uso, arquitetura baseada em componentes, controle de versões, e a integração contínua. 
 

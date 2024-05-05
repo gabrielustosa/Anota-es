@@ -15,7 +15,6 @@
 - Física em 12 lições
 - A história do universo para quem tem pressa
 - Uma breve história do tempo
-- O senhor das moscas
 - Amigo imaginário
 - O mito de sisifo 
 - A vida não é útil
@@ -23,3 +22,4 @@
 - Elogio da loucura
 - A utilidade do inútil
 - Henessy Patternson - Arquitetura de Computadores
+- Hands on machine learning
