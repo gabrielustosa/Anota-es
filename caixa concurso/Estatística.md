@@ -1,3 +1,5 @@
+# Tabela de Frequências Discreta
+![[est-freq.png]]
 # Probabilidade 
 #### Teorema da Soma
 Em um experimento aleatório de espaço amostral S, dados dois eventos A, B ⊂ S, temos que:
@@ -107,9 +109,50 @@ Aplicaremos na fórmula a probabilidade do resultado positivo ser realmente cân
 $$
 P(C|Po)=\frac{P(Po|C).P(C)}{\sum_{i=1} ^{2} P(Po|Ai).P(Ai)}=\frac{0,8.0,01}{P(Po|C).P(C)+P(Po|SC).P(SC)} = \frac{0,8.0,01}{0,8.0,01+0,09.0,99} = 0,082
 $$
+```ad-tip
+Esse somatório representa o evento complementar relacionado a condição, nesse caso P(Po), multiplicando todas as probabilidade condicionais com o evento da condicional de Po, nesse casso P(Po|C).P(C)+P(Po|SC).P(SC)
+```
+# Variáveis Aleatórias
+Pode ser entendida como uma varável quantitativa, cuja o resultado (valor) depende de fatores aleatórios. Cada valor está associado a um elemento do espaço amostral. 
 
-https://www.youtube.com/watch?v=eIwy6lyxS7Q&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=29
-https://www.youtube.com/watch?v=3NrjXOWkKLs&list=PLrOyM49ctTx8HWnxWRBtKrfcuf7ew_3nm&index=35&pp=iAQB
+Por exemplo:
+- _Número de coroas obtido no lançamento de 2 moedas;_
+- _Número de itens defeituosos em uma amostra retirada;_
+- _Intervalo de peso de uma amostra aleatória da população;_
+#### Discretas
+Quando o conjunto de resultados possíveis é finito ou enumerável. 
+
+Por exemplo:
+- _Número de filhos;_
+- _Alunos em uma escola;_
+##### Exercício
+_No lançamento de duas moedas, a quantidade de caras é uma variável aleatória discreta. Pois:_
+_X=0   CO, CO_
+_X=1  CA, CO ou CO, CA_
+_X=2  CA, CA_
+#### Contínuas
+Quando os valores são expressos como intervalo ou união de números reais. (limitados ou infinitos)
+
+Por exemplo:
+- _Peso, massa, altura;_
+- _Nível de açúcar no sangue;_
+##### Exercício
+_Em relação à cidade de Bauru, a altura da população é uma Variável Aleatória Contínua.
+Pois, existem vários valores em um intervalo com infinitos valores entre eles._
+# Função de Probabilidade
+A Função de Probabilidade é uma função que associa a cada valor da **V.A.** , a um número , que satisfaz as seguintes propriedades:
+$$
+0 \leq P(X = x_0) \leq 1
+$$
+$$
+\sum_{{x_i \in X}} P(X = x_i) = 1
+$$
+##### Exercício
+_Supomos que em um Call Center, a probabilidade de cada atendente estar disponível para fazer um atendimento é de 0,7. A empresa conta com 4 atendentes e quer que a probabilidade de uma ligação ser atendida seja superior a 99%. A empresa deve contratar mais atendentes?_
+_Como precisa ter no mínimo 1 atendente, é possível calcular a probabilidade não ter nenhum atendente e usar o evento complementar:
+0,3^4.1 = 0,0081
+1 - 0,0081 = 99,19
+Dessa forma, não é preciso contratar mais ninguém pois já passa 99% por cento._
 # Análise Combinatória
 #### Princípio Fundamental da Contagem
 O princípio fundamental da contagem (ou princípio multiplicativo) é utilizado para encontrar o número de possibilidades para um evento constituído de **k** etapas. Para isso, as etapas devem ser sucessivas e independentes.

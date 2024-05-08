@@ -4,30 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "cf632d7e6af259ff",
+        "id": "7cfb8a078ef7f9c4",
         "type": "tabs",
         "children": [
           {
-            "id": "aeeeb97ed94f28ae",
+            "id": "703cba8a9f42598b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09b75bac8bc32a37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "caixa concurso/Edital.md",
-                "mode": "source",
-                "source": false
+                "file": "imgs/estatistica/est-freq.png"
               }
             }
           }
@@ -60,8 +46,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cmMI",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -105,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
+                "file": "imgs/estatistica/est-freq.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
+                "file": "imgs/estatistica/est-freq.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "caixa concurso/Conhecimentos e Comportamentos Digitais.md"
+                "file": "imgs/estatistica/est-freq.png"
               }
             }
           },
@@ -176,35 +162,38 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "aeeeb97ed94f28ae",
+  "active": "2aab6586082883e9",
   "lastOpenFiles": [
-    "caixa concurso/Edital.md",
-    "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
-    "caixa concurso/Estatística.md",
-    "caixa concurso/Matemática Financeira.md",
     "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "caixa concurso/Estatística.md",
+    "caixa concurso/Edital.md",
+    "imgs/estatistica/est-freq.png",
+    "Pasted image 20240506135044.png",
+    "caixa concurso/Desenvolvimento Web Java.md",
+    "caixa concurso/Banco de Dados.md",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Organização e Arquitetura de Computadores.md",
+    "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
+    "caixa concurso/Matemática Financeira.md",
     "caixa concurso/Programação.md",
     "caixa concurso/Agilidade.md",
     "caixa concurso/Comportamentos Éticos e Compliance.md",
     "salvar/Livros.md",
     "salvar/Sites.md",
-    "caixa concurso/Desenvolvimento Web Java.md",
     "caixa concurso/Padrões de Projeto.md",
     "imgs/matemática financeira/matf-fluxo-dc.png",
     "imgs/matemática financeira",
     "imgs/matemática financeira/matf-fluxo-dc.png",
     "caixa concurso/Português.md",
     "caixa concurso/Data Warehouse.md",
-    "caixa concurso/Big Data.md",
     "imgs/testes/testes-tdd.png",
     "imgs/ética e compliance",
     "imgs/testes",
     "imgs/Sem título.md",
     "imgs/ética e compliance/ec-lav-din.png",
-    "caixa concurso/Banco de Dados.md",
     "caixa concurso/Testes.md",
     "caixa concurso/Portais Corporativos.md",
-    "caixa concurso/Arquitetura de Software.md",
     "cnu concurso/Edital.md",
     "imgs/portais corporativos/pc-portlet-container.png",
     "imgs/portais corporativos/pc-porlet.png",
@@ -213,12 +202,8 @@
     "caixa concurso/Sistemas Operacionais.md",
     "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "imgs/web java/web-java-pp-wt-cv.png",
-    "imgs/web java/web-java-pp-wt-vh.png",
-    "imgs/web java/web-java-pp-wt-dv.png",
     "cnu concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Organização e Arquitetura de Computadores.md",
     "imgs/programação",
-    "cnu concurso/Big Data.md",
     "imgs/banco de dados",
     "imgs/arquitetura de software",
     "imgs/aprendizado de maquina",

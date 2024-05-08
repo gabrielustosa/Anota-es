@@ -126,25 +126,25 @@
 	- [ ] COBIT
 	- [ ] Governança;
 
-- [ ]  Conhecimentos e Comportamentos Digitais
-	- [ ] Mindset de crescimento, Paradigma da abundância.
-	- [ ] Intraempreendedorismo.
-	- [ ] Design Thinking, Design de Serviço. 
-	- [ ] Metodologias ágeis, Lean Manufacturing, SCRUM. 
-	- [ ] Resolução de problemas complexos, visão sistêmica e estratégica.  
-	- [ ] Ciência de dados. 
-	- [ ] Senso colaborativo e disposição para somar pontos de dista divergentes. 
-	- [ ] Pensamento computacional. 
-	- [ ] Análise de Negócios. 
-	- [ ] Liderança, autoliderança e liderança de equipes. 
-	- [ ] Autodesenvolvimento. 
-	- [ ] Experiência do consumidor (Customer experience). 
-	- [ ] Inteligência emocional.
-	- [ ] Desenvolvimento sustentável (Pacto global e Objetivos de Desenvolvimento Sustentável - ODS). 
-	- [ ] Objetivos-chaves para resultados (OKR). 
-	- [ ] Gestão do tempo e produtividade. 
-	- [ ] Técnicas e boas práticas para o trabalho à distância. 
-	- [ ] Aprender a aprender e Aprendizagem contínua (Life long learning).
+- [x]  Conhecimentos e Comportamentos Digitais [[Conhecimentos e Comportamentos Digitais|estudar]]
+	- [x] Mindset de crescimento, Paradigma da abundância.
+	- [x] Intraempreendedorismo.
+	- [x] Design Thinking, Design de Serviço. 
+	- [x] Metodologias ágeis, Lean Manufacturing, SCRUM. 
+	- [x] Resolução de problemas complexos, visão sistêmica e estratégica.  
+	- [x] Ciência de dados. 
+	- [x] Senso colaborativo e disposição para somar pontos de dista divergentes. 
+	- [x] Pensamento computacional. 
+	- [x] Análise de Negócios. 
+	- [x] Liderança, autoliderança e liderança de equipes. 
+	- [x] Autodesenvolvimento. 
+	- [x] Experiência do consumidor (Customer experience). 
+	- [x] Inteligência emocional.
+	- [x] Desenvolvimento sustentável (Pacto global e Objetivos de Desenvolvimento Sustentável - ODS). 
+	- [x] Objetivos-chaves para resultados (OKR). 
+	- [x] Gestão do tempo e produtividade. 
+	- [x] Técnicas e boas práticas para o trabalho à distância. 
+	- [x] Aprender a aprender e Aprendizagem contínua (Life long learning).
 
 - [ ] Estatística [[Estatística|estudar]]
 	- [x] Representação tabular e gráfica. 
@@ -154,7 +154,7 @@
 	- [x] População e amostra.
 	- [ ] Correlação linear simples. 
 	- [x] Ciência de dados, People analytics. 
-	- [ ] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)
+	- [x] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)
 
 - [ ] Português  [[Português|estudar]]
 	- [x] Compreensão e interpretação de textos. 

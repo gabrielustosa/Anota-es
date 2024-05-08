@@ -42,7 +42,7 @@ O software não é implementado a partir de um instante no fim do projeto, o cic
 É um miniprojeto que resulta em uma versão do sistema liberada interna ou externamente. Essa versão oferece uma melhora incremental sobre a interação anterior. 
 ```
 #### Ciclo de Vida
-É decomposto ao longo do tempo em quatro fases sequenciais, cada uma concluída por um marco importante; cada fase é essencialmente um período de tempo entre dois marcos principais. Ao final de cada fase, é realizada uma avaliação para determinar se os objetivos da fase foram cumpridos. Uma avaliação satisfatória permite que o projeto passe para a próxima fase. As 4 quatro fases sequenciais são: **Concepção (Inception), Elaboração (Elaboration),  Construção (Construction) e Transição (Transition)**. Cada fase, é subdivida em iterações que passam por todos os cinco fluxos do trabalho do processo: **Requisitos, Análise, Implementação e Testes**.
+É decomposto ao longo do tempo em quatro fases sequenciais, cada uma concluída por um marco importante; cada fase é essencialmente um período de tempo entre dois marcos principais. Ao final de cada fase, é realizada uma avaliação para determinar se os objetivos da fase foram cumpridos. Uma avaliação satisfatória permite que o projeto passe para a próxima fase. As 4 quatro fases sequenciais são: **Concepção (Inception), Elaboração (Elaboration),  Construção (Construction) e Transição (Transition)**. 
 
 - Não se comporta como modelo de cascata, são estreitamente relacionadas ao negócio, e não a assuntos técnicos. 
 - Os fluxos de trabalho podem ser realizados a qualquer momento durante o ciclo de desenvolvimento.
@@ -51,7 +51,7 @@ O software não é implementado a partir de um instante no fim do projeto, o cic
 ![[engs-pu-ciclo.png]]
 
  ##### Concepção
-  Estabelecer um business case para o sistema. Você deve identificar todas as entidades externas (pessoas e sistemas) que vão interagir com o sistema e definir as interações. Então, você deve usar essas informações para avaliar a contribuição do sistema para o negócio. Se essa contribuição for pequena, então o projeto poderá ser cancelado depois dessa fase.
+ Estabelecer um business case para o sistema. Você deve identificar todas as entidades externas (pessoas e sistemas) que vão interagir com o sistema e definir as interações. Então, você deve usar essas informações para avaliar a contribuição do sistema para o negócio. Se essa contribuição for pequena, então o projeto poderá ser cancelado depois dessa fase.
  ##### Elaboração
  Desenvolver uma compreensão do problema dominante, estabelecer um framework da arquitetura para o sistema, desenvolver o plano do projeto e identificar os maiores riscos do projeto. No fim dessa fase, você deve ter um modelo de requisitos para o sistema, que pode ser um conjunto de casos de uso da UML, uma descrição da arquitetura ou um plano de desenvolvimento do software.
  ##### Construção
@@ -86,6 +86,39 @@ Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
  ## Disciplina
  Descreve as sequências das atividades e as iterações com que participa, sendo realizadas a qualquer momento do ciclo.
  ![[engs-pu-disc.png]]
+1. **Modelagem de Negócios**:
+    - A TI precisa entender o funcionamento do negócio, e o cliente deve compreender como a TI pode contribuir para melhor suportar os negócios.
+    - A comunicação entre engenheiros de software, desenvolvedores, clientes e usuários deve ser definida e aprimorada.
+    - A modelagem de negócios permite descrever como a visão da organização pode ser usada como base para descrever o processo, os papéis e responsabilidades no projeto.
+2. **Requisitos**:
+    - Explica como transformar as necessidades das partes interessadas em requisitos específicos que serão usados para criar o sistema.
+3. **Análise e Projeto (Design)**:
+    - Mais presente na fase de Elaboração, esta disciplina visa criar uma abstração do sistema.
+    - Define classes, pacotes e subsistemas com interfaces bem definidas.
+    - Descreve como cada objeto das classes irá colaborar para viabilizar os casos de uso do sistema.
+4. **Implementação**:
+    - Presente principalmente na fase de construção.
+    - Consiste na organização e criação do código, binários, executáveis, componentes e testes de unidade.
+    - Também descreve como reutilizar componentes.
+5. **Teste**:
+    - Mais importante ao fim da fase de construção e início da fase de transição.
+    - São feitos testes de integração para verificar se os requisitos foram corretamente implementados.
+    - O objetivo é garantir que os defeitos sejam tratados antes da implantação do software.
+6. **Implantação**:
+    - Envolve a entrega do software ao usuário final.
+    - Inclui atividades como criação de releases, embalagem, distribuição, instalação e suporte aos usuários.
+7. **Gerenciamento de Configuração e Mudança**:
+    - Trata do controle de versão e dependências de artefatos, como documentos e modelos.
+    - Gerencia as solicitações de mudanças para esses artefatos, classificando-as em vários estados, listando as causas raiz, a natureza (defeito ou melhoria), prioridade, etc.
+    - Pode utilizar sistemas de controle de versão e de gerenciamento de ciclo de vida (ALM – Application Life Cycle Management) para viabilizar e facilitar a execução da disciplina.
+8. **Ambiente**:
+    - Similar à abordagem dada à utilização de outros guias de boas práticas ou processos de desenvolvimento – a customização.
+    - O RUP pode ser personalizado para utilização em cada projeto.
+    - O RUP não é uma norma fixa; pode ser criteriosamente preparado para adequação em cada situação diferente encontrada no gerenciamento de processos.
+    - O sucesso do projeto depende da capacidade da pessoa que faz essa personalização. Em alguns casos, se o RUP for utilizado de forma errada, pode levar à percepção de que o método é muito pesado e custoso para ser utilizado, resultando em dificuldades no projeto.
+9. **Gerenciamento de Projeto**:
+    - Planeja o projeto em dois níveis de detalhamento.
+    - Descreve as iterações e os processos de acompanhamento e métricas dessas iterações .
 #### Casos de Usos (Cenários de Uso)
 Um caso de uso é uma sequência de ações, executada por atores que produzem um ou mais resultados de valor para outros atores. 
 

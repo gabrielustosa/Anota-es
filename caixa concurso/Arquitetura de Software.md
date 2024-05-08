@@ -179,7 +179,6 @@ Processo elementar que gera dados ou informações de controle que saem pela fro
 | EE   | 3 PF  | 4 PF  | 6 PF  |
 | SE   | 4 PF  | 5 PF  | 7 PF  |
 | CE   | 3 PF  | 4 PF  | 6 PF  |
-
 #### Nível de Detalhamento de Contagens
 A contagem de pontos de função pode ser realizada com diferentes níveis de detalhe: indicativa, estimada e detalhada. O nível de detalhamento a ser escolhido depende de alguns fatores como a finalidade da contagem, as informações disponíveis para subsidiar a contagem, a etapa do ciclo de vida do desenvolvimento, dentre outros.
 ##### Contagem Indicativa
@@ -232,12 +231,12 @@ A modernização de aplicação é uma estratégia mais abrangente e intensiva e
 
 Ao modernizar uma aplicação, alguns pontos importantes a serem considerados são:
 
-1. Reavaliação das necessidades e requisitos: Antes de iniciar a modernização, é essencial entender os objetivos de negócio e as necessidades dos usuários. Isso ajudará a determinar quais aspectos da aplicação precisam ser melhorados ou adicionados durante o processo de modernização.
-2. Adoção de práticas de desenvolvimento ágil: A modernização de aplicação muitas vezes envolve a adoção de metodologias ágeis de desenvolvimento de software. Isso permite ciclos de desenvolvimento mais curtos, feedback contínuo dos usuários e flexibilidade para realizar ajustes ao longo do processo.
-3. Otimização de código: Durante a modernização, é importante revisar e otimizar o código existente. Isso pode envolver a eliminação de código desnecessário, a melhoria do desempenho, a otimização do uso de recursos e a aplicação de boas práticas de codificação.
-4. Integração de novas tecnologias e recursos: A modernização de aplicação pode incluir a incorporação de tecnologias e recursos modernos. Isso pode envolver a adoção de arquitetura baseada em microsserviços, a utilização de serviços gerenciados da nuvem, a implementação de recursos de inteligência artificial ou aprendizado de máquina, entre outros.
-5. Melhoria da segurança: A modernização de aplicação pode ser uma oportunidade para reforçar a segurança dos aplicativos. Isso pode incluir a implementação de medidas de segurança adicionais, a correção de vulnerabilidades conhecidas e a adoção de boas práticas de segurança durante o desenvolvimento.
-6. Testes e garantia de qualidade: Durante o processo de modernização, é importante realizar testes rigorosos para garantir a funcionalidade correta da aplicação. Isso pode incluir testes de unidade, testes de integração, testes de desempenho e testes de segurança.
+1. **Reavaliação das necessidades e requisitos**: Antes de iniciar a modernização, é essencial entender os objetivos de negócio e as necessidades dos usuários. Isso ajudará a determinar quais aspectos da aplicação precisam ser melhorados ou adicionados durante o processo de modernização.
+2. **Adoção de práticas de desenvolvimento ágil**: A modernização de aplicação muitas vezes envolve a adoção de metodologias ágeis de desenvolvimento de software. Isso permite ciclos de desenvolvimento mais curtos, feedback contínuo dos usuários e flexibilidade para realizar ajustes ao longo do processo.
+3. **Otimização de código**: Durante a modernização, é importante revisar e otimizar o código existente. Isso pode envolver a eliminação de código desnecessário, a melhoria do desempenho, a otimização do uso de recursos e a aplicação de boas práticas de codificação.
+4. **Integração de novas tecnologias e recursos**: A modernização de aplicação pode incluir a incorporação de tecnologias e recursos modernos. Isso pode envolver a adoção de arquitetura baseada em microsserviços, a utilização de serviços gerenciados da nuvem, a implementação de recursos de inteligência artificial ou aprendizado de máquina, entre outros.
+5. **Melhoria da segurança**: A modernização de aplicação pode ser uma oportunidade para reforçar a segurança dos aplicativos. Isso pode incluir a implementação de medidas de segurança adicionais, a correção de vulnerabilidades conhecidas e a adoção de boas práticas de segurança durante o desenvolvimento.
+6. **Testes e garantia de qualidade**: Durante o processo de modernização, é importante realizar testes rigorosos para garantir a funcionalidade correta da aplicação. Isso pode incluir testes de unidade, testes de integração, testes de desempenho e testes de segurança.
 
 A modernização de aplicação pode ser um processo complexo e demorado, pois exige modificações significativas no código e na funcionalidade dos aplicativos existentes. É importante ter um planejamento adequado, considerar os recursos necessários e definir metas claras para a modernização.
 # Computação Serverless

@@ -998,7 +998,6 @@ Web services são serviços de aplicação que podem ser acessados usando os pro
 - Podem ser usados por outras aplicações HTTP e XML são a base para os serviços da web
 - O maior foco é na interoperabilidade
 - Geralmente são usadas para reutilização de componentes de aplicação ou conectar softwares já existentes.
-
 ### JAX-WS
 A **Java API para Serviços Web XML (JAX-WS)** é uma tecnologia para construir serviços web e clientes que se comunicam usando XML. O JAX-WS permite que os desenvolvedores escrevam serviços web orientados a mensagens, bem como serviços web orientados a Chamada de Procedimento Remoto (RPC).
 

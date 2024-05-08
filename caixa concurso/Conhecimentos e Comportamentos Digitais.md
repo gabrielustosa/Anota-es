@@ -20,7 +20,7 @@ Pessoas com um mindset de crescimento compreendem que o sucesso está diretament
 O feedback é visto como uma ferramenta valiosa para aqueles com um mindset de crescimento. Eles valorizam o feedback construtivo como uma oportunidade para aprender e crescer, em vez de encará-lo como crítica pessoal.
 ## Inspire-se nos Sucessos Alheios
 Pessoas com um mindset de crescimento se inspiram nos sucessos dos outros como uma fonte de motivação e aprendizado. Elas reconhecem que o sucesso de outras pessoas é uma prova de que o crescimento e o desenvolvimento são possíveis para todos.
-### Características e Benefícios
+## Características e Benefícios
 ### Colaboração
 No paradigma da abundância, a colaboração é uma característica-chave. As pessoas reconhecem que trabalhar em equipe e compartilhar recursos, conhecimentos e experiências pode levar a resultados melhores e mais satisfatórios para todos os envolvidos.
 ### Positividade
