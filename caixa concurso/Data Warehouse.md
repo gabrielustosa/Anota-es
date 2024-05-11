@@ -20,6 +20,15 @@ Passos para criação:
 5. **Construção do(s) Fato(s)**: construímos nessa etapa (após a construção das Dimensões) a(s) estrutura(s) da(s) Fato(s). Aqui é avaliado e definido a granularidade da informação que será armazenada em cada Fato.
 6. **Definição do processo geral de carga**: após concluirmos as etapas anteriores, precisamos criar o motor para que tudo seja carregado, atualizado, orquestrado e processado de forma automática e ordenada.
 7. **Criação dos metadados**: por fim, precisamos desenvolver toda a documentação dos metadados, que incluem o processo de construção e o dicionário de dados.
+
+```ad-summary
+##### Tipos de Dados
+- **Dados de destino**: são os dados que são armazenados no data warehouse ou data mart.
+- **Dados transacionais**: são os dados gerados pelas atividades de negócios, como vendas, compras e operações.
+- **Dados de análise**: são os dados que são usados para fins analíticos, como relatórios, inteligência de negócios e machine learning.
+- **Dados de staging**: são os dados intermediários entre o início e o fim do processo em big data. Eles são armazenados em um repositório separado, chamado de staging area, onde são submetidos a processos de limpeza, transformação e integração antes de serem carregados no data warehouse ou data mart.
+- **Dados de origem**: são os dados que são coletados a partir de diferentes fontes, como sistemas legados, sensores e mídias sociais.
+```
 ##### Arquitetura Controlada pela Fonte
 Para a coleta de dados, onde as fontes de dados transmitem novas informações, seja **continuamente** (quando ocorre o processamento da transação), **periodicamente** (à noite, por exemplo).
 ##### Arquitetura Controlada pelo Destino

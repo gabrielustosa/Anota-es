@@ -62,36 +62,43 @@ Diferentemente do processamento em lotes, o processamento em tempo real, os dado
 Como o processamento deve ocorrer rapidamente, com ausência de gargalos de latência I/O, realizam-se normalmente somente pequenos cálculos, como uma simples contagem. Além disso, uma estratégia muito adotada é manter esses dados em memória até que sejam processados, sendo persistidos em um banco somente após essa etapa.
 # Análise de Dados
 Está relacionada com identificação de padrões, modelagem dos dados, detecção de grupos, classificação de dados, que utilizam técnicas de estatísticas, matemáticas, de aprendizado de máquina e de mineração de dados.
+#### Análise
+**Análise Descritiva:** Compreende a descrição das características dos acontecimentos em tempo real, de maneira a visualizar e entender o comportamento dos dados, de modo a auxiliar na tomada de decisões.
+**Análise Preditiva:** Esse item tem como objetivo prever comportamentos futuros, bem como as tendências dos dados, através da análise de informações anteriores. Desse modo, os gestores podem tomar decisões baseadas nos cenários futuros previstos por essa análise.
+**Análise Prescritiva:** Essa análise descreve os possíveis efeitos e consequências de ações que possam ser tomadas. Assim, é possível que possa ser realizada a melhor escolha para determinado cenário.
+**Análise Diagnóstica:** Neste caso, a análise procura entender as relações de causa e efeito entre situações, de modo a compreender os resultados obtidos em decorrência das ações tomadas.
 #### Limpeza 
  ##### Dados Ausentes
 - Substituir o dado ausente com alguma constante, especificada pelo analista;
 - Substituir o dado ausente pela média ou moda do campo; 
 - Substituir o dado ausente com um valor gerado aleatoriamente a partir de uma distribuição observada; 
 - Substituir o dado ausente a partir de valores baseados em outras características do registro;
+- Imputação de novos dados;
  ##### Identificação de anomalias (outliers)
  São pontos de dados que divergem significativamente do resto dos dados, podendo atrapalhar no processo de análise.
  Soluções:
-- Método de Derivação Padrão: Mede a dispersão do dataset, criando pontos em certos limites, assim valores acima da média são considerados outliers.
-- Fator de Anomalias Locais (LOF): Compara os dados com a dispersão variável de seus vizinhos.
+- **Método de Derivação Padrão**: Mede a dispersão do dataset, criando pontos em certos limites, assim valores acima da média são considerados outliers.
+- **Fator de Anomalias Locais (LOF)**: Compara os dados com a dispersão variável de seus vizinhos.
+- **Método de Binning**: É um processo de suavização de dados, usado para minimizar os efeitos de pequenos erros de observação. Os valores dos dados originais são divididos em pequenos intervalos conhecidos como compartimentos e, em seguida, são substituídos por um valor geral calculado para esse compartimento. Pode-se substituir todos os dados em um segmento por seus valores médios ou limites.
  ##### Transformação de dados
- - Transformação linear: é o calculo feito a partir do atributo mínimo e máximo dos dados, atribuindo um novo campo normalizado onde o valor mínimo será 0 e o máximo 1. 
- - Transformação de dados numéricos para categóricos; 
- - Transformação de dados categóricos para numéricos; 
- - Agregação de dados, por meio da combinação de dados de diferentes conjuntos em uma única fonte, de forma coerente; 
- - Criação de novos atributos.
- - Deduplicação: redução de dados, que remove duplicatas de um conjunto de dados, mantendo apenas uma única instância de cada dado. 
- - Discretização: pode ser definida como sendo um método que visa agrupar valores contínuos de uma variável em intervalos ou categorias distintas, simplificando a análise e o entendimento dos dados.
+ - Transformação de dados numéricos para categóricos; Transformação de dados categóricos para numéricos; 
+ - **Agregação de Dados**: por meio da combinação de dados de diferentes conjuntos em uma única fonte, de forma coerente; 
+ - **Deduplicação**: redução de dados, que remove duplicatas de um conjunto de dados, mantendo apenas uma única instância de cada dado. 
+ - **Discretização**: pode ser definida como sendo um método que visa agrupar valores contínuos de uma variável em intervalos ou categorias distintas, simplificando a análise e o entendimento dos dados.
+ - **Normalização Numérica**: Técnica utilizada no tratamento de dados que visa transformar as variáveis em uma escala comum, de forma a torná-las comparáveis.
+ - **Transformação Linear**: é o calculo feito a partir do atributo mínimo e máximo dos dados, atribuindo um novo campo normalizado onde o valor mínimo será 0 e o máximo 1. 
  ##### Redução e sintetização dos dados
  Gera uma representação reduzida do conjunto de dados, porém mantendo os mesmos (ou próximo a isso) resultados da análise. Para isso, essa prática requer uma fase de seleção de atributos, identificando quais são irrelevantes para a análise e podem ser removidos da base.
- - Análise de Componentes Principais (Principal Component Analysis — PCA): detecta a correlação entre as variáveis. E caso seja detectado uma forte correlação entre elas, cria-se um conjunto menor de combinações lineares dessas variáveis, reduzindo assim a dimensionalidade dos dados.
- 
+ - **Análise de Componentes Principais (Principal Component Analysis — PCA)**: detecta a correlação entre as variáveis. E caso seja detectado uma forte correlação entre elas, cria-se um conjunto menor de combinações lineares dessas variáveis, reduzindo assim a dimensionalidade dos dados.
+ - **Amostragem Aleatória**: Método estatístico de seleção de uma amostra de uma população maior de uma maneira que cada membro da população tenha a mesma probabilidade de ser selecionado. É usada quando se deseja obter uma representação imparcial de uma população maior, sem viés de seleção. Em geral, cada unidade da população tem uma chance igual de ser selecionada para a amostra, o que ajuda a garantir resultados estatisticamente válidos e confiáveis.
+ - **Amostragem Estratificada**: Técnica de amostragem em que a população é dividida em subgrupos (estratos) que compartilham características semelhantes. Em seguida, uma amostra é selecionada aleatoriamente de cada estrato de acordo com uma proporção específica ou tamanho de amostra.  Essa técnica é útil quando a população tem heterogeneidade interna e quando é importante garantir que certos grupos sejam adequadamente representados na amostra.
 # Visualização de Dados
 É considerada uma das etapas finais do projeto de Big Data. Ela é realizada durante e após a etapa de análise de dados, por meio da análise exploratória e explanatória.
 
-1. Aquisição — Estágio em que os dados para análise são capturados. Processo realizado na etapa de coleta dos dados.
-2. Estruturação — Uma vez que os dados podem ser coletados de diversos formatos, esse estágio é importante para definir uma estrutura padrão para esses dados.
-3. Filtragem — Além da estruturação, deve-se aplicar o estágio de filtragem dos dados, para remover dados incorretos, incompletos ou que não são interessantes para a análise.
-4. Mineração — Pertencente ao estágio de análise de dados, esse estágio tem como objetivo a aplicação de técnicas para extrair informações dos dados.
-5. Representação — Refere-se às atividades iniciais da representação visual dos dados. O objetivo nesse estágio é gerar o modelo visual básico dos dados, como foco principal na análise exploratória dos dados.
-6. Refinamento — Esse estágio é essencial para aperfeiçoar a visualização dos dados analisados. É nesse momento que as técnicas gráficas são utilizadas para tornar a visualização mais eficiente.
-7. Interação — Além do refinamento, a interação também melhora a visualização dos dados, permitindo inserir funcionalidades que ofereçam uma melhor experiência ao leitor.
+1. **Aquisição** — Estágio em que os dados para análise são capturados. Processo realizado na etapa de coleta dos dados.
+2. **Estruturação** — Uma vez que os dados podem ser coletados de diversos formatos, esse estágio é importante para definir uma estrutura padrão para esses dados.
+3. **Filtragem** — Além da estruturação, deve-se aplicar o estágio de filtragem dos dados, para remover dados incorretos, incompletos ou que não são interessantes para a análise.
+4. **Mineração** — Pertencente ao estágio de análise de dados, esse estágio tem como objetivo a aplicação de técnicas para extrair informações dos dados.
+5. **Representação** — Refere-se às atividades iniciais da representação visual dos dados. O objetivo nesse estágio é gerar o modelo visual básico dos dados, como foco principal na análise exploratória dos dados.
+6. **Refinamento** — Esse estágio é essencial para aperfeiçoar a visualização dos dados analisados. É nesse momento que as técnicas gráficas são utilizadas para tornar a visualização mais eficiente.
+7. **Interação** — Além do refinamento, a interação também melhora a visualização dos dados, permitindo inserir funcionalidades que ofereçam uma melhor experiência ao leitor.

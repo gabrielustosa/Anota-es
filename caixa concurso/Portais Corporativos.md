@@ -1,4 +1,4 @@
-São pontos centrais que reúnem informações significativas para o negócio, que permitem gerenciar tais informações de uma forma simples e intuitiva.
+São pontos centrais que reúnem informações significativas para o negócio, que permitem gerenciar tais informações de uma forma simples e intuitiva. É uma página que oferece **um único ponto de acesso** a informações em uma instituição que pode ser **por meio da Intranet:** **único acesso, porém, várias fontes** ou **internet: portais web**. 
 
 ![[pc-view.png]]
 
@@ -51,7 +51,8 @@ O conteúdo gerado por um Portlet é conhecido como fragmento. Esses fragmentos 
 - Permite o compartilhamento de parâmetros;
 - Permite o endereçamento de recursos;
 - Permite o alinhamento com WSRP 2.0;
-- Oferece suporte ao AJAX
+- Oferece suporte ao AJAX;
+- Atendimento dos requerimentos de armazenamento de preferências do usuário;
 ```
 #### Container Portlet
 Responsável por controlar o ciclo de vida de um Portlet (`init`, `processAction`, `render` e `destroy `), fornecendo informações sobre seu ambiente, assim como controlando as requisições do usuário e coletando respostas.

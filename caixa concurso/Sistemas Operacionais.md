@@ -158,6 +158,8 @@ Responsável por tomar as decisões sobre quais processos devem ser executados, 
  A cada processo é designada uma prioridade, e o processo executável com a prioridade mais alta é autorizado a executar. Para evitar que processos de prioridade mais alta executem indefinidamente, o escalonador  talvez diminua a prioridade do processo que está sendo executado em cada tique do relógio
  ## Por Loteria
  Dar bilhetes de loteria aos processos para vários recursos do sistema, como o tempo da CPU. Sempre que uma decisão de escalonamento tiver de ser feita, um bilhete de loteria será escolhido ao acaso, e o processo com o bilhete fica com o recurso. Processos mais importantes podem receber bilhetes extras, para aumentar a chance de vencer
+ ## Garantido
+ Assegura a execução dos processos, dando a todos eles a mesma quantidade de tempo de execução utilizando a CPU. Se um processo utilizar menos tempo de execução do que poderia, sua prioridade de execução é aumentada. Por outro lado, se um processo utilizou mais tempo do que deveria, sua prioridade é diminuída.
 #### Impasses
 ##### DeadLock
  Quando 2 ou mais programas estão tentando acessar algo ao mesmo tempo resultando na bloqueamento dos 2 programas.
@@ -293,11 +295,11 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
   ## O algoritmo de substituição de páginas do relógio 
   O funcionamento do algoritmo do relógio é baseado em uma lista circular de páginas, organizadas como se fossem os números em um relógio. Um ponteiro aponta para a página mais antiga. Quando ocorre uma falta de página, a página indicada pelo ponteiro é inspecionada.
   ![[so-alg-relogio.png]]
-  ## Algoritmo de substituição de páginas usadas menos recentemente (LRU)
+  ## Algoritmo de substituição de páginas usadas menos recentemente (LRU)  - princípio da temporalidade
   A ideia por trás do LRU é que as páginas que foram menos utilizadas recentemente têm maior probabilidade de serem as próximas a serem substituídas. Um dos algoritmos mais eficazes em termos de desempenho para a substituição de páginas em sistemas operacionais. O funcionamento do LRU é baseado no histórico de referências às páginas. Quando ocorre uma falta de página, o algoritmo identifica a página que não foi usada há mais tempo e a substitui. É necessário que seja mantida uma lista encadeada de todas as páginas na memória, com a página mais recentemente usada na frente e a menos recentemente usada na parte de trás. A dificuldade é que a lista precisa ser atualizada a cada referência de memória
   - Excelente algoritmo, porém difícil de ser implementado de maneira exata.
   ## LFU (Least-Frequently-Used)
-  Seleciona a pagina menos referenciada (frame menos utilizado).
+  Seleciona a pagina menos referenciada (é mantido contador de referências para cada página).
   ## Algoritmo de envelhecimento (Aging)
   Substituição de páginas que simula o algoritmo LRU, no entanto, determina quais páginas devem ser substituídas com base em seu histórico de referências. No algoritmo de envelhecimento, cada página na memória é associada a um contador que é atualizado periodicamente. A cada intervalo de tempo, um bit de referência (R) é movido para a esquerda no contador. Uma vantagem do algoritmo de envelhecimento é sua capacidade de aproximar o comportamento do LRU sem a necessidade de manter uma lista encadeada de todas as páginas na memória.
   ## O algoritmo de substituição de páginas do conjunto de trabalho

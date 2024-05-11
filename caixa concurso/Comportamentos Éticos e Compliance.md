@@ -74,7 +74,7 @@ A Lei Geral de Proteção de Dados (LGPG), dispõe sobre o tratamento de dados p
 São os que revelam origem racial ou étnica, convicções religiosas ou filosóficas, opiniões políticas, filiação sindical, questões genéticas, biométricas e sobre a saúde ou a vida sexual de uma pessoa
 ```
 
-Seus objetivos principais são assegurar a:
+Seus fundamentos são assegurar a:
 - Liberdade;
 - Privacidade;
 - Livre desenvolvimento da personalidade;
@@ -82,7 +82,7 @@ Seus objetivos principais são assegurar a:
 
 ```ad-summary
 ##### Tratamento de dados
-Toda operação realizada com dados pessoais, como as que se referem a: 
+Toda operação realizada com dados pessoais de pessoas jurídicas ou físicas, como as que se referem a: 
 - Coleta, produção, recepção, classificação, utilização, acesso, reprodução, transimissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, ou controle da informação, modificação, comunicação, transferência, difusão ou extração.
 ```
 
@@ -108,7 +108,7 @@ As atividades de tratamento de dados pessoais devem seguir os seguintes princíp
 **Não discriminação**: Impossibilidade de realização do tratamento para fins discriminatórios ilícitos ou abusivos;
 **Responsabilização e prestação de contas**: Demonstração, pelo agente, da comprovação do cumprimento das normas;
 **Finalidade**: Realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular;
-**Adequação**: Compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto;
+**Adequação**: Compatibilidade do tratamento com as **finalidades** informadas ao titular, de acordo com o contexto;
 **Necessidade**: Limitação do tratamento ao mínimo necessário para realização de suas finalidades;
 **Livre acesso**: Garantia, aos titulares, de consulta facilitada e gratuita sobre a forma e a duração do tratamento, bem como a integridade dos seus dados;
 **Qualidade dos dados**: Garantia, aos titulares, de exatidão, clareza, relevância e atualização dos dados, de acordo com a necessidade e para o cumprimento da finalidade do seu tratamento;
@@ -126,6 +126,11 @@ As atividades de tratamento de dados pessoais devem seguir os seguintes princíp
 	- Segurança do Estado;
 	- Atividades de investigação e pressão de infrações penais;
 - Provenientes de fora do território nacional e que não sejam objeto de comunicação, uso compartilhado de dados com agentes de tratamento brasileiros ou objeto de transferência internacional de dados com outro país que não o de proveniência.
+```
+
+```ad-note
+duvidoso/enganoso/sem transparência: Anulação
+mudou de finalidade: Revogação
 ```
 #### Requisitos para realização do tratamento
 1. Mediante o fornecimento de **consentimento** pelo titular;
@@ -175,4 +180,77 @@ Dotada de autonomia técnica e decisória, com patrimônio próprio.
 - Zelar pelo proteção dos dados pessoais;
 - Fiscalizar e aplicar sanções em caso de descumprimento a legislação;
 - Deliberar, na esfera administrativa, em caráter  terminativo, sobre a interpretação da LGPD;
+```
+
+```ad-tip
+##### RALI DIREITO DESELVOLVIMENTO LIVRE DIREITOS
+**R**ESPEITO
+**A**UTODETERMINAÇÃO
+**L**IBERDADE
+**INVIOLABILIDADE**
+**DIREITO** INICIATIVO
+**DESENVOLVIMENTO** ECONÔMICO E TECNOLÓGICO
+**LIVRE** INICIATIVA
+**DIREITOS** HUMANOS
+```
+# Ética 
+Os princípios da ética são respeito, honestidade, compromisso, transparência e responsabilidade;
+
+```ad-info
+##### Violações cometidas
+**Por empregado da Caixa**: investigadas pela comissão de ética de caixa;
+**Por dirigente Caixa**: apuradas pela comissão de ética pública - CEP;
+```
+#### Glossário
+**Colaborador**: Prestador de serviço, fornecedor, parceiro, que presta algum serviço para a Caixa;
+**Conglomerado Caixa**: Empresas com participação direta ou subsidiárias Caixa;
+**Dirigente**: Ocupante de cargo estatutário, a saber: Presidente, Vice-Presidentes e Diretores da Caixa;
+**Empregado**: Trabalhador com contrato de trabalho e vínculo empregatício válido com a caixa;
+**Membros estatutários**: Yodo aquele que exerce, ainda que transitoriamente ou sem remuneração, por eleição, nomeação, designação ou qualquer outra forma de investidura ou vínculo, a saber: são os membros dos Órgãos Estatutários, tais como Diretoria Colegiada, Conselho de Administração, Conselho Fiscal e demais comitês de assessoramento.
+
+```ad-info
+**Conselho de administração**: Instância responsável pela aprovação de alterações no Código de Ética da Caixa;
+**Conselho diretor**: Instância responsável pela aprovação de alterações no Regimento Interno da Comissão da Ética da Caixa;
+```
+#### Comissão Ética
+Órgão autônomo, de caráter deliberativo, com a finalidade de orientar, aconselhar e atuar na gestão sobre a ética profissional dos dirigentes e empregados da CAIXA, no tratamento com as pessoas e com o patrimônio público, e ainda deliberar sobre condutas antiéticas e sobre transgressões das normas da empresa levadas ao seu conhecimento, de acordo com o Estatuto da Caixa.
+
+- É integrada por três membros titulares e três suplentes, escolhidos entre os empregados permanentes designados pelo presidente da caixa para cumprir mandato de 3 anos, permitida uma redução.
+- **Orientar e aconselhar** sobre a ética profissional dos dirigentes e empregados;
+- **Deliberar sobre denúncias** acerta de condutas antiéticas;
+- **Aplicar censura ética** aos empregados da CAIXA;
+- **Aplicar e assegurar a observância ao Código de Ética**, devendo: submeter à CEP propostas para aperfeiçoamento da gestão da ética; dirimir dúvidas a respeito da interpretação das normas; apurar, mediante denúncia ou de ofício, conduta em desacordo com as normas éticas pertinentes; e recomendar, acompanhar e avaliar o desenvolvimento de ações objetivando a disseminação, capacitação e treinamento sobre as normas de ética e disciplina.
+- **Mediar e conciliar situações** que envolvam questões éticas;
+- **Propor alterações no código de Ética**;
+- **Propor a organização e desenvolvimento de ações**, com vistas à formação da consciência ética;
+- **Recomendar a dispensa do cargo em comissão ou da função gratificada** à chefia imediatamente superior do empregado que recebeu censura ética.
+
+```ad-summary
+#### Ética profissional
+
+A ética profissional tem a ver com os as normas que formam o relacionamento entre seus colaboradores. Estas normas devem direcionar para que seus funcionários tenham ações baseadas em valores éticos e morais.
+
+A ética profissional também norteiam os princípios que direcionam a conduta no exercício de uma profissão como a ética médica, ética no setor público ou de qualquer empresa.
+
+Todas as profissões hoje regulamentadas tem seus códigos de ética, que são um conjunto de regras na qual o profissional deve respeitar, estando sujeito à fiscalização de seus conselhos, caso a desrespeitem.
+
+Apesar de existirem vários códigos de ética, elas na verdade são muito parecidas, pois se baseiam em princípios éticos universais como igualdade, liberdade, solidariedade,honestidade justiça,responsabilidade e respeito.
+
+Hoje o mundo atravessa um momento complicado em nível de comportamento humano e por causa disso,todos os profissionais que têm uma conduta ética acaba se destacando transmitindo uma maior credibilidade junto a seus colegas detrabalho ou clientes.
+```
+
+```ad-summary
+#### Ética empresarial
+
+A ética empresarial tem a ver com os as normas que formam o relacionamento entre seus colaboradores. Estas normas devem direcionar para que seus funcionários tenham ações baseadas em valores éticos e morais.
+
+A ética empresarial também norteiam os princípios que direcionam a conduta no exercício de uma profissão como a ética médica, ética no setor público ou de qualquer empresa.
+
+Todas as profissões hoje regulamentadas tem seus códigos de ética, que são um conjunto de regras na qual o profissional deve respeitar, estando sujeito à fiscalização de seus conselhos, caso a desrespeitem.
+
+Apesar de existirem vários códigos de ética, elas na verdade são muito parecidas, pois se baseiam em princípios éticos universais como igualdade, liberdade, solidariedade, honestidade, justiça, responsabilidade e respeito.
+
+Hoje o mundo atravessa um momento complicado em nível de comportamento humano e por causa disso, todos os profissionais que têm uma conduta ética acaba se destacando transmitindo uma maior credibilidade junto a seus colegas de trabalho ou clientes.
+
+Uma empresa ética se preocupa com o relacionamento de seus funcionários fazendo com que tenham também boas atitudes e valores positivos para que haja o máximo de cooperação entre eles gerando não só um ambiente melhor mas também um acréscimo na produtividade e lucro da empresa.
 ```

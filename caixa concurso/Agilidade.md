@@ -279,3 +279,24 @@ O objetivo é obter uma estimativa mais precisa e consensual por meio da colabor
 Story point é uma medida relativa de esforço, complexidade e risco. Ou seja, quando você for estimar algo leve em consideração essas três variáveis. Utilizada principalmente em técnicas como Planning Poker, é útil definir pontos de medida para estimativas precisas, evitando o efeito manada.
 ### T-Shirt Sizing
  Atribui um “tamanho de camiseta” (do PP ao XXG) que representa o esforço relativo para cada tarefa ou projeto. Dependendo de como você utiliza essa ferramenta, o T-shirt size pode representar o escopo, esforço, complexidade, horas de trabalho ou estimativa de tempo da tarefa, ou ainda todas essas opções.
+# DevSecOps
+DevSecOps significa pensar na segurança da aplicação e da infraestrutura desde o início. Também significa automatizar algumas barreiras de segurança para evitar que o fluxo de trabalho de DevOps fique lento. Selecionar as ferramentas corretas para integrar a segurança continuamente – como concordar em implementar um ambiente de desenvolvimento integrado (IDE) com funcionalidades de segurança – é um meio de atingir essas metas. No entanto, uma segurança eficaz em DevOps requer mais do que ferramentas novas: ela deve ser criada com base nas mudanças culturais geradas pelo DevOps e se integrar ao trabalho das equipes de segurança o quanto antes.
+
+DevSecOps é uma extensão da mudança cultural em direção ao DevOps, incorporando todos dentro da organização, incluindo partes interessadas nos negócios, segurança, arquitetos, proprietários de produtos e engenheiros de desenvolvimento e de operações.
+
+Além de promover a rastreabilidade, auditabilidade e visibilidade o DevSecOps trata de segurança integrada, e não da segurança que funciona no perímetro em torno de aplicativos e dados. 
+
+A segurança integrada, por outro lado, considera a segurança em todas as etapas do ciclo de vida do software. Isso inclui:
+- **Segurança de código**: A segurança é considerada desde o início do processo de desenvolvimento, e não apenas no final.
+- **Segurança de implantação**: Os aplicativos são implantados com segurança, usando práticas como a segmentação de rede e a criptografia.
+- **Segurança de dados**: Os dados são protegidos, usando práticas como a autenticação, a autorização e a criptografia.
+- **Segurança de operações**: Os aplicativos são operados com segurança, usando práticas como o monitoramento e a resposta a incidentes.
+### Shift left  
+"**Shift left**" é um mantra do DevSecOps: ele encoraja os engenheiros software a migrar segurança da direita (fim) para a esquerda (início) do processo de DevOps (entrega). Em um ambiente DevSecOps, a segurança é parte integrante do processo de desenvolvimento desde o início. Uma organização que usa DevSecOps traz seus arquitetos e engenheiros de segurança cibernética como parte da equipe de desenvolvimento. Seu trabalho é garantir que cada componente e cada item de configuração na pilha seja corrigido, configurado com segurança e documentado.
+
+"**Shift left**" permite que a equipe de DevSecOps identifique os riscos e exposições de segurança com antecedência e garante que essas ameaças à segurança sejam tratadas imediatamente. A equipe de desenvolvimento não está apenas pensando em criar o produto de maneira eficiente, mas também em implementar a segurança à medida que a desenvolve.
+
+```ad-tip
+##### Segurança Perimetral
+A segurança tradicional, muitas vezes chamada de segurança perimetral, concentra-se em proteger os sistemas e dados de ameaças externas. Isso pode ser feito usando firewalls, proxies, IPS/IDS e outras tecnologias.
+```

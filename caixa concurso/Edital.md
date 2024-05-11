@@ -187,7 +187,7 @@
 - [ ] Comportamentos Éticos e Compliance [[Comportamentos Éticos e Compliance|estudar]]
 	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23  de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021. 
 	- [x] Conceitos e medidas de enfrentamento ao assédio moral e sexual.
-	- [ ] Atitudes éticas, respeito, valores e virtudes; noções de ética empresarial e profissional. A gestão da ética nas empresas públicas e privadas. Código de Ética, Conduta e integridade (disponível no sítio da CAIXA na internet).
+	- [x] Atitudes éticas, respeito, valores e virtudes; noções de ética empresarial e profissional. A gestão da ética nas empresas públicas e privadas. Código de Ética, Conduta e integridade (disponível no sítio da CAIXA na internet).
 	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.  
 	- [ ] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
 	- [ ] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.

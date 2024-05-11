@@ -130,17 +130,30 @@ A Análise de Pontos de Função é uma técnica de medição das funcionalidade
 Os objetivos da análise de pontos de função são:
 - Medir a funcionalidade implementada no software, que o usuário solicita e recebe;
 - Medir a funcionalidade impactada pelo desenvolvimento, melhoria e manutenção de software, independentemente da tecnologia utilizada na implementação.
+- Estimular o custo ou esforço necessário para projetar, codificar e testar o software.
+- Prever o número de erros que vão ser encontrados durante o teste.
+- Prever o número de componentes e/ou o número de linhas de código projetados no sistema implementado.
 
 Ponto de Função (PF) é a unidade de medida que tem por objetivo tornara medição independente da tecnologia utilizada para a construção do software. Essa medida está diretamente relacionada aos requisitos de negócio que o software se destina a abordar, ou seja, busca medir o que o software faz e não como ele foi construído. Portanto, pode ser facilmente aplicada em uma ampla gama de ambientes de desenvolvimento e ao longo do ciclo de um projeto de desenvolvimento, desde a definição de requisitos até o uso operacional completo. A técnica fornece uma medida objetiva e comparativa que auxilia na avaliação, planejamento, gestão e controle da produção de software.
 #### Processos
+
+```ad-note
+##### Processo simplificado
+1. Reunir a documentação disponível;
+2. Determinar o escopo e a fronteira da contagem;
+3. Medir as funções de dados (ALI e AIE);
+4. Medir as funções de transação ( CE - SE - EE);
+5. Calcular o tamanho funcional ( Contagem de desenvolvimento; Aplicação; ou Melhoria);
+6. Documentar e reportar a contagem de pontos de função;
+```
 
 ![[arq-analpf.png]]
 
 1. **Obter documentação disponível do projeto**: A contagem de pontos de função se inicia com a análise da documentação disponível do projeto em questão, visando à identificação dos requisitos funcionais.
 2. **Propósito da Contagem**: Uma contagem deve prover uma resposta a um problema do negócio e é o problema do negócio que determina o propósito. O objetivo, nesta etapa, é tornar claro o que se pretende atingir com a contagem que será feita. Por exemplo: _“Qual o tamanho deste software a nível funcional? Quanto tempo para desenvolver? Qual o tamanho da equipe?..”_. Os tipos de propósito da contagem são:
-	- Projeto de Desenvolvimento: Este tipo de contagem mede a funcionalidade entregue ao usuário na primeira instalação do software, quando o projeto estiver completo.
-	- Projeto de Melhoria: Este tipo de contagem mede as modificações em uma aplicação já existente que adicione, altere ou exclua funções entregues ao usuário quando o projeto estiver completo.
-	- Aplicação: Este tipo de contagem está relacionado à aplicação instalada. Representa a baseline da contagem de pontos de função de uma aplicação, ou seja, é uma medida das funções atuais providas ao usuário.
+	- **Projeto de Desenvolvimento**: Este tipo de contagem mede a funcionalidade entregue ao usuário na primeira instalação do software, quando o projeto estiver completo.
+	- **Projeto de Melhoria**: Este tipo de contagem mede as modificações em uma aplicação já existente que adicione, altere ou exclua funções entregues ao usuário quando o projeto estiver completo.
+	- **Aplicação**: Este tipo de contagem está relacionado à aplicação instalada. Representa a baseline da contagem de pontos de função de uma aplicação, ou seja, é uma medida das funções atuais providas ao usuário.
 3. **Escopo da aplicação**: define o conjunto de requisitos funcionais de usuários para ser incluídos na contagem. 
 	- Define o (sub)conjunto do software que está sendo medido;
 	- É determinado pelo propósito para a realização da contagem de pontos de função;
@@ -159,6 +172,8 @@ Na prática, a contagem não tem uma ordem fixa para contagem dos tipos de funç
 ```
 #### Funções de dados
 As funções de dados representam a funcionalidade oferecida ao usuário para satisfazer requisitos de armazenamento de dados internos e externos. Uma função de dado pode ser um arquivo lógico interno (ALI) ou um arquivo de interface externo (AIE).
+
+![[arq-anlalpf-fa.png]]
 ##### Arquivo Lógico Interno (ALI)
 Grupo de dados ou informações de controle logicamente relacionados, identificável pelo usuário, mantido dentro da fronteira da aplicação. A intenção primária de um ALI é armazenar dados mantidos através de um ou mais processos elementares da aplicação sendo contada.
 ##### Arquivo de Interface Externa (AIE)
@@ -166,11 +181,18 @@ Grupo de dados logicamente relacionados ou informação de controle, reconhecido
 #### Funções Transacionais
 Uma função de transação é um processo elementar que oferece funcionalidade ao usuário para processar dados. Uma função de transação é uma entrada externa, saída externa, ou consulta externa.
 ##### Entrada Externa (EE)
-Processo elementar que processa dado (ou informações de controle) vindo de fora da fronteira da aplicação. A principal intenção de uma EE é manter um ou mais ALI e/ou alterar o comportamento do sistema.
+Processo elementar que processa dado (ou informações de controle) vindo de fora da fronteira da aplicação. A principal intenção de uma EE é manter um ou mais ALI e/ou alterar o comportamento do sistema. Representa o processamento de dados enviados pelo usuário.
 ##### Consulta Externa (CE)
 Processo elementar que envia dados ou informações de controle para fora da fronteira da aplicação. A principal intenção de uma CE é apresentar informação ao usuário por meio de uma simples recuperação de dados ou informações de controle de um ALI ou AIE. A lógica de processamento não deve conter fórmula matemática ou cálculo, criar dados derivados, manter um ou mais ALI e/ou alterar o comportamento do sistema
 ##### Saída Externa (SE)
 Processo elementar que gera dados ou informações de controle que saem pela fronteira da aplicação. A principal intenção de uma SE é apresentar dados ao usuário através de outra lógica de processamento que não apenas a recuperação de dados ou informações de controle. A lógica de processamento deve conter fórmula matemática ou cálculo, criar dados derivados, manter um ou mais ALI e/ou alterar o comportamento do sistema.
+
+```ad-tip
+**Entrada Externa**: pode ou não alterar o comportamento do sistema;
+**Consulta Externa**: não irá alterar o comportamento do sistema.
+**Saída Externa**: irá alterar o comportamento do sistema;
+```
+#### Tabela de Valores
 
 | Tipo | Baixa | Média | Alta  |
 | ---- | ----- | ----- | ----- |
