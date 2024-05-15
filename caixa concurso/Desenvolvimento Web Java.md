@@ -103,7 +103,7 @@ Na figura, o cliente envia uma requisição para a aplicação web que utiliza u
 
 ```ad-summary
 ##### Java Applets
-Oequenos programas escritos na linguagem de programação Java que podem ser incorporados em páginas da web. Eles são executados no navegador do usuário por meio de uma máquina virtual Java (JVM).Quando uma página da web contendo um applet Java é carregada, o código do applet é transferido para a máquina do usuário e executado pela JVM no navegador. Isso permite que os applets forneçam funcionalidades interativas, como jogos ou calculadoras, diretamente na página da web.
+Pequenos programas escritos na linguagem de programação Java que podem ser incorporados em páginas da web. Eles são executados no navegador do usuário por meio de uma máquina virtual Java (JVM). Quando uma página da web contendo um applet Java é carregada, o código do applet é transferido para a máquina do usuário e executado pela JVM no navegador. Isso permite que os applets forneçam funcionalidades interativas, como jogos ou calculadoras, diretamente na página da web.
 ```
 ### Java Message Service (JMS)
 A Java Message Service (JMS) é uma interface de programação de aplicativos (API) que fornece uma interface MOM (Message-Oriented Middleware) para clientes que desejam um processo assíncrono.
@@ -246,7 +246,7 @@ Essas são algumas diretivas, as quais são utilizadas para informações especi
 
 - `@include` - Utilizado para inserir os códigos de arquivos à página corrente;
 - `@page` - Responsável por trazer informações sobre a página JSP;
-- `@taglib` - Responsável por habilitar uma biblioteca de tags personalizada (item que será abordado em outro artigo com mais detalhes).
+- `@taglib` - Responsável por habilitar uma biblioteca de tags personalizada;
 
 ```jsp
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>

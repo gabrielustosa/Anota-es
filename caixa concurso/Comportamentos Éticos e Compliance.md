@@ -206,7 +206,7 @@ Os princípios da ética são respeito, honestidade, compromisso, transparência
 **Conglomerado Caixa**: Empresas com participação direta ou subsidiárias Caixa;
 **Dirigente**: Ocupante de cargo estatutário, a saber: Presidente, Vice-Presidentes e Diretores da Caixa;
 **Empregado**: Trabalhador com contrato de trabalho e vínculo empregatício válido com a caixa;
-**Membros estatutários**: Yodo aquele que exerce, ainda que transitoriamente ou sem remuneração, por eleição, nomeação, designação ou qualquer outra forma de investidura ou vínculo, a saber: são os membros dos Órgãos Estatutários, tais como Diretoria Colegiada, Conselho de Administração, Conselho Fiscal e demais comitês de assessoramento.
+**Membros estatutários**: Todo aquele que exerce, ainda que transitoriamente ou sem remuneração, por eleição, nomeação, designação ou qualquer outra forma de investidura ou vínculo, a saber: são os membros dos Órgãos Estatutários, tais como Diretoria Colegiada, Conselho de Administração, Conselho Fiscal e demais comitês de assessoramento.
 
 ```ad-info
 **Conselho de administração**: Instância responsável pela aprovação de alterações no Código de Ética da Caixa;
@@ -228,29 +228,29 @@ Os princípios da ética são respeito, honestidade, compromisso, transparência
 ```ad-summary
 #### Ética profissional
 
-A ética profissional tem a ver com os as normas que formam o relacionamento entre seus colaboradores. Estas normas devem direcionar para que seus funcionários tenham ações baseadas em valores éticos e morais.
+A ética profissional refere-se às normas que regem as relações entre os colaboradores dentro de um ambiente de trabalho. Essas normas são fundamentais para orientar as ações dos funcionários com base em valores éticos e morais.
 
-A ética profissional também norteiam os princípios que direcionam a conduta no exercício de uma profissão como a ética médica, ética no setor público ou de qualquer empresa.
+Além disso, a ética profissional abrange os princípios que guiam o comportamento no exercício de diferentes profissões, como a ética médica, a ética no setor público ou em qualquer empresa.
 
-Todas as profissões hoje regulamentadas tem seus códigos de ética, que são um conjunto de regras na qual o profissional deve respeitar, estando sujeito à fiscalização de seus conselhos, caso a desrespeitem.
+Todas as profissões regulamentadas atualmente possuem seus próprios códigos de ética, que consistem em um conjunto de regras que os profissionais devem obedecer, estando sujeitos à fiscalização por parte de seus conselhos em caso de violação.
 
-Apesar de existirem vários códigos de ética, elas na verdade são muito parecidas, pois se baseiam em princípios éticos universais como igualdade, liberdade, solidariedade,honestidade justiça,responsabilidade e respeito.
+Embora existam diversos códigos de ética, eles são, em essência, semelhantes, uma vez que se baseiam em princípios éticos universais, como igualdade, liberdade, solidariedade, honestidade, justiça, responsabilidade e respeito.
 
-Hoje o mundo atravessa um momento complicado em nível de comportamento humano e por causa disso,todos os profissionais que têm uma conduta ética acaba se destacando transmitindo uma maior credibilidade junto a seus colegas detrabalho ou clientes.
+Atualmente, o mundo enfrenta desafios significativos em relação ao comportamento humano, e é por isso que os profissionais que mantêm uma conduta ética se destacam, transmitindo maior credibilidade tanto aos colegas de trabalho quanto aos clientes.
 ```
 
 ```ad-summary
 #### Ética empresarial
 
-A ética empresarial tem a ver com os as normas que formam o relacionamento entre seus colaboradores. Estas normas devem direcionar para que seus funcionários tenham ações baseadas em valores éticos e morais.
+A ética empresarial refere-se às normas que regem as relações entre os colaboradores dentro de uma empresa. Essas normas são essenciais para orientar as ações dos funcionários com base em valores éticos e morais.
 
-A ética empresarial também norteiam os princípios que direcionam a conduta no exercício de uma profissão como a ética médica, ética no setor público ou de qualquer empresa.
+Além disso, a ética empresarial abrange os princípios que guiam o comportamento no exercício de diferentes profissões, como a ética médica, a ética no setor público ou em qualquer empresa.
 
-Todas as profissões hoje regulamentadas tem seus códigos de ética, que são um conjunto de regras na qual o profissional deve respeitar, estando sujeito à fiscalização de seus conselhos, caso a desrespeitem.
+Todas as profissões atualmente regulamentadas possuem seus próprios códigos de ética, que consistem em um conjunto de regras que os profissionais devem obedecer, estando sujeitos à fiscalização por parte de seus conselhos em caso de violação.
 
-Apesar de existirem vários códigos de ética, elas na verdade são muito parecidas, pois se baseiam em princípios éticos universais como igualdade, liberdade, solidariedade, honestidade, justiça, responsabilidade e respeito.
+Embora existam vários códigos de ética, eles são, na verdade, muito semelhantes, pois se baseiam em princípios éticos universais, como igualdade, liberdade, solidariedade, honestidade, justiça, responsabilidade e respeito.
 
-Hoje o mundo atravessa um momento complicado em nível de comportamento humano e por causa disso, todos os profissionais que têm uma conduta ética acaba se destacando transmitindo uma maior credibilidade junto a seus colegas de trabalho ou clientes.
+Atualmente, o mundo enfrenta desafios significativos em relação ao comportamento humano, e é por isso que todos os profissionais que mantêm uma conduta ética se destacam, transmitindo maior credibilidade tanto aos colegas de trabalho quanto aos clientes.
 
-Uma empresa ética se preocupa com o relacionamento de seus funcionários fazendo com que tenham também boas atitudes e valores positivos para que haja o máximo de cooperação entre eles gerando não só um ambiente melhor mas também um acréscimo na produtividade e lucro da empresa.
+Uma empresa ética se preocupa com o relacionamento entre seus funcionários, incentivando boas atitudes e valores positivos para promover a máxima cooperação entre eles. Isso não apenas cria um ambiente de trabalho melhor, mas também contribui para o aumento da produtividade e do lucro da empresa.
 ```

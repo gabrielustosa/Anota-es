@@ -174,15 +174,15 @@
 	- [x] Redação oficial: escrita de textos formais e Manual de Redação da Presidência da República (disponível no sítio do Planalto, na internet). 
 	- [x] Novo Acordo Ortográfico.
 
-  - [ ] Matemática Financeira [[Matemática Financeira|estudar]] 
+  - [x] Matemática Financeira [[Matemática Financeira|estudar]] 
 	- [x] Conceitos gerais: valor do dinheiro no tempo, valor presente, valor futuro, juro, taxa de juro, prazo da operação. 
 	- [x] Juros Simples. 
 	- [x] Juros Compostos. 
-	- [ ] Séries Uniformes. 
-	- [ ] Equivalência de Capitais em fluxos regulares ou irregulares: VP, VF, prazos e taxas de retorno. 
-	- [ ] Sistemas de Amortização de qualquer tipo, incluindo os sistemas com amortizações constantes (SAC) e com prestações constantes (Francês ou PRICE).
+	- [x] Séries Uniformes. 
+	- [x] Equivalência de Capitais em fluxos regulares ou irregulares: VP, VF, prazos e taxas de retorno. 
+	- [x] Sistemas de Amortização de qualquer tipo, incluindo os sistemas com amortizações constantes (SAC) e com prestações constantes (Francês ou PRICE).
 	- [x] Descontos: racional composto e comercial simples. 
-	- [ ] Sequências numéricas: leis de formação expressas de forma geral (em função da posição do termo) ou de forma recursiva (em função de um ou mais termos anteriores); progressões aritméticas; progressões geométricas.
+	- [x] Sequências numéricas: leis de formação expressas de forma geral (em função da posição do termo) ou de forma recursiva (em função de um ou mais termos anteriores); progressões aritméticas; progressões geométricas.
 
 - [ ] Comportamentos Éticos e Compliance [[Comportamentos Éticos e Compliance|estudar]]
 	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23  de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021. 
