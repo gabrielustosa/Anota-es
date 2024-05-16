@@ -153,6 +153,17 @@ _Como precisa ter no mínimo 1 atendente, é possível calcular a probabilidade 
 0,3^4.1 = 0,0081
 1 - 0,0081 = 99,19
 Dessa forma, não é preciso contratar mais ninguém pois já passa 99% por cento._
+# Medidas de Tendência Central
+#### Média Geométrica
+$$
+\sqrt[n]{x_1 \cdot x_2 \cdot x_3 \cdot ... \cdot x_n}
+$$
+#### Quartis
+Os **quartis** são valores que dividem um conjunto de dados em quatro partes iguais. Existem três quartis principais:
+
+- **Primeiro quartil (Q1)**: Divide os 25% menores dados do restante.
+- **Segundo quartil (Q2)** ou mediana: Divide os dados ao meio.
+- **Terceiro quartil (Q3)**: Divide os 75% menores dados dos 25% maiores.
 # Análise Combinatória
 #### Princípio Fundamental da Contagem
 O princípio fundamental da contagem (ou princípio multiplicativo) é utilizado para encontrar o número de possibilidades para um evento constituído de **k** etapas. Para isso, as etapas devem ser sucessivas e independentes.

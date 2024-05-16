@@ -66,6 +66,7 @@ Como no Java não é possível estender duas classes a interface é necessária 
 - Todas as variáveis definidas são final, não podendo ser alteradas.
 - Apenas métodos default ou estáticos poderão ser definidos com corpo.
 - Interfaces estendem e não implementam outras interfaces.
+- Interfaces não podem ser finais.
 #### Estruturas e Classes Padrão
 Tipos de criação de arrays. 
 
@@ -439,3 +440,433 @@ ax.legend() # Adicionando uma legenda
 ```
 
 ![[pg-matplot-ex-4.png]]
+# Cobol
+Linguagem orientada a negócios. 
+
+Código Cobol é divido em 4 seções:
+1. Divisão de identificação;
+2. Divisão de ambiente; 
+3. Divisão de data;
+4. Divisão de procedimentos;
+
+```ad-info
+Não existem variáveis locais, apenas globais.
+```
+#### Divisão de Identificação
+O único atributo obrigatório dessa divisão é o atributo ID.
+
+```cobol
+      IDENTIFICATION DIVISION.
+      PROGRAM-ID.    APRENDENDO.
+      AUTHOR.        GABRIEL.
+      DATE-WRITTEN.  22/05/2003.
+```
+
+#### Divisão de Ambiente
+As variáveis são declaradas em uma seção chamada `WORKING-STORAGE` dentro da **Divisão de data**. Toda variável precisa começar com um número representando seu nível, depois o nome, seguido por uma diretiva `PIC` descrevendo o tipo de dado que a variável irá conter.
+
+**A** é para variáveis de texto, **X** é para textos numéricos e **9** é para números;
+
+```cobol
+	01 MYNAME PIC xxxxxxxxxx. *> Uma string de 10 caracteres. 
+	01 MYNAME PIC X(10). *> Simplificação da linha de cima.
+	
+	01 AGE PIC 9(3). *> Um número de até 3 dígitos.
+	01 LAST_NAME PIC X(10). *> Uma sequência de até 10 caracteres.
+```
+##### Exemplos
+```cobol
+      IDENTIFICATION DIVISION.
+      PROGRAM-ID. HELLO.
+      DATA DIVISION.
+      WORKING-STORAGE SECTION.
+      01 THE-MESSAGE PIC X(20).
+	      PROCEDURE DIVISION.
+	      DISPLAY "INICIANDO PROGRAMA".
+	      MOVE "HELLO WORLD" TO THE-MESSAGE.
+	      DISPLAY THE-MESSAGE.
+	      STOP RUN.
+```
+
+```cobol
+      IDENTIFICATION DIVISION.
+      PROGRAM-ID. HELLOCOBOL.
+
+      PROCEDURE DIVISION.
+	      FIRST-PARA.
+		      DISPLAY 'THIS IS IN FIRST-PARA'.
+	      PERFORM THIRD-PARA THRU FOURTH-PARA. *>skip second-para and perform 3rd & 4th
+	      *> then after performing third and fourth,
+	      *> return here and continue the program until STOP RUN.
+
+      SECOND-PARA.
+	      DISPLAY 'THIS IS IN SECOND-PARA'.
+      STOP RUN.
+
+      THIRD-PARA.
+	      DISPLAY 'THIS IS IN THIRD-PARA'.
+
+      FOURTH-PARA.
+	      DISPLAY 'THIS IS IN FOURTH-PARA'.
+
+	  *> Isso produz o seguinte resultado:
+	  *> THIS IS IN FIRST-PARA
+      *> THIS IS IN THIRD-PARA
+      *> THIS IS IN FOURTH-PARA
+      *> THIS IS IN SECOND-PARA 
+```
+
+```cobol
+      IDENTIFICATION DIVISION.
+      PROGRAM-ID. LEARNING.
+      ENVIRONMENT DIVISION.
+      DATA DIVISION.
+      WORKING-STORAGE SECTION.
+      01 FULL-NAME PIC X(20).
+      01 FIRST-NAME PIC X(13) VALUE "BOB GIBBERISH".
+      01 LAST-NAME PIC X(5) VALUE "COBB".
+      PROCEDURE DIVISION.
+	      STRING FIRST-NAME DELIMITED BY SPACE
+	            " "
+	      LAST-NAME DELIMITED BY SIZE
+	           INTO FULL-NAME
+	      END-STRING.
+	      DISPLAY "THE FULL NAME IS: "FULL-NAME.
+      STOP RUN.
+
+      *output:
+      THE FULL NAME IS: BOB COBB
+```
+
+```ad-summary
+#### Tipos de comandos
+- `ACCEPT` - entrada de variáveis. 
+- `COMPUTE` - operação com varíaveis. `COMPUTE N3 = N1 +  N2`.
+- `IF` - operação condicional, necessita de END-IF.
+```
+# TypeScript
+Tipos básicos: `boolean`, `number`, `string`, `bigint`, `symbol`;
+
+```ad-info
+**let** palavra reservada para informar que a variável será acessivel somente dentro do escopo do local, não de forma global.
+```
+
+O TypeScript pode receber declaração de variáveis tanto da forma explicita como implícita, no qual adivinhará o tipo como `Duck Typing` no python.
+
+Variáveis já tipadas não podem receber um valor diferente do seu tipo.
+
+```typescript
+let u = true;  
+u = "string"; // Error: Type 'string' is not assignable to type 'boolean'.  
+Math.round(u); // Error: Argument of type 'boolean' is not assignable to parameter of type 'number'.
+```
+
+Criando tipo customizado:
+```typescript
+type CarYear = number  
+type CarType = string
+
+const carYear: CarYear = 2001  
+const carType: CarType = "Toyota"
+```
+
+É possível fazer casting: 
+```typescript
+let x: unknown = 'hello';  
+console.log((x as string).length);
+// ou
+let x: unknown = 'hello';  
+console.log((<string>x).length);
+```
+
+Criando variáveis genéricas:
+``` typescript
+type Wrapped<T> = { value: T };  
+  
+const wrappedValue: Wrapped<number> = { value: 10 };
+```
+#### Arrays
+```typescript
+const names: string[] = [];  
+names.push("Dylan"); // no error
+```
+
+```ad-info
+o atributo readonly pode ser adicionado em `const names: readonly string[] = ["Dylan"];`
+```
+#### Tuplas
+```typescript
+// definindo o formato da tupla
+let ourTuple: [number, boolean, string];  
+  
+// inicializando corretamente
+ourTuple = [5, false, 'Gabriel'];
+
+// tupla nomeada 
+const graph: [x: number, y: number] = [55.2, 41.3];
+```
+#### Objeto
+```typescript
+// objeto tipado
+const car: { type: string, model: string, year: number } = {  
+  type: "Toyota",  
+  model: "Corolla",  
+  year: 2009  
+};
+
+// objeto com propriedade opcional
+const car: { type: string, mileage?: number } = {
+  type: "Toyota"  
+};  
+car.mileage = 2000;
+```
+#### Função
+```typescript
+function multiply(a: number, b: number): number {  
+  return a * b;  
+}
+```
+##### Genérica
+```typescript
+function createPair<S, T>(v1: S, v2: T): [S, T] {  
+  return [v1, v2];  
+}  
+console.log(createPair<string, number>('hello', 42)); // ['hello', 42]
+
+function createLoggedPair<S extends string | number, T extends string | number>(v1: S, v2: T): [S, T] {  
+  console.log(`creating pair: v1='${v1}', v2='${v2}'`);  
+  return [v1, v2];  
+}
+```
+####  Classe
+```typescript
+class Person {  
+  // name é uma varíavel privada de Person
+  public constructor(private name: string) {}  
+  
+  public getName(): string {  
+    return this.name;  
+  }  
+}  
+  
+const person = new Person("Jane");  
+console.log(person.getName());
+```
+##### Abstrata
+```typescript
+abstract class Polygon {  
+  public abstract getArea(): number;  
+  
+  public toString(): string {  
+    return `Polygon[area=${this.getArea()}]`;  
+  }  
+}  
+  
+class Rectangle extends Polygon {  
+  public constructor(protected readonly width: number, protected readonly height: number) {  
+    super();  
+  }  
+  
+  public getArea(): number {  
+    return this.width * this.height;  
+  }  
+}
+```
+##### Genérica
+```typescript
+class NamedValue<T> {  
+  private _value: T | undefined;  
+  
+  constructor(private name: string) {}  
+  
+  public setValue(value: T) {  
+    this._value = value;  
+  }  
+  
+  public getValue(): T | undefined {  
+    return this._value;  
+  }  
+  
+  public toString(): string {  
+    return `${this.name}: ${this._value}`;  
+  }  
+}  
+  
+let value = new NamedValue<number>('myNumber');  
+value.setValue(10);  
+console.log(value.toString()); // myNumber: 10
+```
+# Kotlin
+Os tipos **numéricos** são: Byte, Short, Int, Long; **boleanos**: Boolean; Character; String.
+
+Da mesma forma que o python as variáveis podem ser tipadas explicitamente ou de forma implícita por `DuckTyping`
+```kotlin
+fun main(nome: String = "Gabriel") {
+  println("Hello World ${nome}")
+}
+
+var name = "John"
+val birthyear = 1975
+
+name = "Gabriel"
+println(name)          // pode ser alterada
+println(birthyear)     // não pode ser alterada
+
+val list = mutableListOf(1, 2, 3)
+for (l in list) {
+	println(l)
+}
+```
+
+```ad-tip
+#### Extendendo funções
+
+``` kotlin
+class Example {
+    fun printFunctionType() { println("Class method") }
+}
+
+fun Example.printFunctionType(i: Int) { println("Extension function #$i") }
+
+Example().printFunctionType(1) // Extension function #1
+```
+#### When
+Para ser usado no lugar de multiplos if-else.
+
+```kotlin
+val day = 4
+
+val result = when (day) {
+  1 -> "Monday"
+  2 -> "Tuesday"
+  3 -> "Wednesday"
+  4 -> "Thursday"
+  5 -> "Friday"
+  6 -> "Saturday"
+  7 -> "Sunday"
+  else -> "Invalid day."
+}
+
+println(result) // Thursday 
+
+```
+#### Array
+```kotlin
+val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")
+if ("Volvo" in cars) {
+  println("existe!")
+} else {
+  println("não foi encontrado!")
+}
+
+for (x in cars) {
+  println(x)
+}
+```
+#### Range
+```kotlin
+for (chars in 'a'..'x') {
+  println(chars)
+}
+
+for (nums in 5..15) {
+  println(nums)
+} 
+```
+#### Classe
+```kotlin
+class Car {
+  var brand = ""
+  var model = ""
+  var year = 0
+} 
+
+val c1 = Car()
+
+c1.brand = "Ford"
+c1.model = "Mustang"
+c1.year = 1969
+```
+##### Abstract
+```kotlin
+abstract class Polygon {
+    abstract fun draw()
+}
+
+class Rectangle : Polygon() {
+    override fun draw() {
+        // draw the rectangle
+    }
+}
+```
+##### Herança 
+```ad-info
+Por padrão, as classes, atributos e funções em Kotlin são finais - elas não podem ser herdadas. Para tornar uma classe herdável, marque-a com a palavra-chave open:
+```
+
+```ad-info
+Para sobrescrever métodos ou variáveis é obrigatório que o método que será sobrescito seja marcado com override. 
+```
+
+```kotlin
+open class Base(p: Int)
+
+class Derived(p: Int) : Base(p)
+```
+
+Exemplo mais complexo:
+
+```kotlin
+open class Rectangle {
+    open fun draw() { /* ... */ }
+}
+
+interface Polygon {
+    fun draw() { /* ... */ } // membros de uma interface são 'open' por padrão
+}
+
+class Square() : Rectangle(), Polygon {
+    // O compilador requer que draw() seja sobrescrito:
+    override fun draw() {
+        super<Rectangle>.draw() 
+        super<Polygon>.draw() 
+    }
+}
+```
+
+Propriedade customizada
+
+```kotlin
+class Rectangle(val width: Int, val height: Int) {
+    val area: Int 
+        get() = this.width * this.height
+    // ou
+	val area get() = this.width * this.height
+}
+```
+
+Setter customizado:
+
+```kotlin
+class Exemplo {
+	// ou 
+    var contador: Int = 0
+        set(value) {
+            if (value >= 0)
+                field = value
+        }
+}
+```
+#### Modificadores de visibilidade
+`Internal`: estará visível em todos os lugares do mesmo módulo.
+
+```ad-summary
+##### Módulos
+
+O modificador de visibilidade internal significa que o membro é visível dentro do mesmo módulo. Mais especificamente, um módulo é um conjunto de arquivos Kotlin compilados juntos, por exemplo:
+
+- Um módulo do IntelliJ IDEA.
+- Um projeto Maven.
+- Um conjunto de origens do Gradle (com a exceção de que o conjunto de origens de teste pode acessar as declarações internas do principal).
+- Um conjunto de arquivos compilados com uma invocação da tarefa <kotlinc> do Ant.
+```

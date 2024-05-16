@@ -9,6 +9,7 @@ A camada de persistência deveria ser responsável por persistir ou recuperar in
 #### Banco de Dados
 A camada do banco de dados deveria ser responsável por manter os dados salvos de forma física.
 # Arquitetura MVC
+O MVC é focado em aplicações interativas, sendo essa sua base arquitetural.
 #### Model
 É responsável por executar as regras de negócio
 - O modelo representa os dados e a lógica de negócios da aplicação.
@@ -22,6 +23,13 @@ Recebe as requisições dos usuários. Envia comandos para o modelo e visão alt
 #### View
 Interface de visualização e interação com o usuário ou cliente. 
 - A visão é passiva e não possui lógica de negócios.
+
+```ad-tip
+-> É mais fácil de modificar uma camada sem afetar as outras;
+-> Mais segurança na camada do servidor;
+-> Em geral, diminui performance;
+-> Maior esforço de desenvolvimento.
+```
 # Arquitetura Orientada a Serviços (SOA)
 Tipo de design de software que torna os componentes reutilizáveis usando interfaces de serviços com uma linguagem de comunicação comum em uma rede. A SOA é uma abordagem arquitetônica que se concentra na criação de serviços independentes e reutilizáveis, que representam diferentes funcionalidades de negócios.
 
@@ -43,6 +51,15 @@ Nas arquiteturas orientadas a serviços (SOA), os componentes de sistema são se
 **Utility Services** - Contemplando funcionalidades que não estejam diretamente relacionadas ao negócio (log, envio de e-mail, etc.).
 **Task Services** -  Utilizados na automação de processos de negócio. Tais estruturas costumam implementar a composição de serviços, com o consumo de Entity e/ou Utility Services.
 **Orchestrated Task Services** - Os quais incorporam lógica de orquestração e controlam o fluxo em composições de serviços que envolvam Entity, Utility e Task Services.
+#### Benefícios
+- **Flexibilidade:** A SOA facilita a integração de sistemas heterogêneos, tornando as aplicações mais adaptáveis a mudanças.
+- **Manutenibilidade:** Ao isolar funcionalidades em serviços, a manutenção e atualização do código se tornam mais fáceis.
+- **Escalabilidade:** A arquitetura permite o dimensionamento independente dos serviços para atender a demandas crescentes.
+- **Reuso de código:** Os serviços reutilizáveis reduzem a duplicação de código e otimizam o desenvolvimento.
+#### Desvantagens 
+- **Complexidade:** O design e implementação de uma SOA podem ser mais complexos do que abordagens monolíticas.
+- **Performance:** A comunicação entre serviços pode introduzir overhead e impactar a performance do sistema.
+- **Governança:** É necessário estabelecer um bom plano de governança para garantir a consistência, segurança e interoperabilidade dos serviços.
 # Arquitetura Monolítica
 Todos os componentes são construídos como uma única base de código e implantados como um único arquivo. Nesta variante da arquitetura monolítica, um único processo de aplicativo consiste em vários módulos. Cada um desses módulos pode funcionar de forma independente. Os módulos possuem interfaces e podem se comunicar entre si por meio dessas interfaces. O banco de dados subjacente é o mesmo e todos os módulos usam o mesmo banco de dados para todas as operações. Mesmo assim, todos os módulos precisam ser combinados para formar um único arquivo para implantação.
 # Arquitetura Microsserviços  
@@ -261,6 +278,14 @@ Ao modernizar uma aplicação, alguns pontos importantes a serem considerados s�
 6. **Testes e garantia de qualidade**: Durante o processo de modernização, é importante realizar testes rigorosos para garantir a funcionalidade correta da aplicação. Isso pode incluir testes de unidade, testes de integração, testes de desempenho e testes de segurança.
 
 A modernização de aplicação pode ser um processo complexo e demorado, pois exige modificações significativas no código e na funcionalidade dos aplicativos existentes. É importante ter um planejamento adequado, considerar os recursos necessários e definir metas claras para a modernização.
+
+```ad-summary
+#### Outros tipos de migração em núvem
+
+**Improve and move:** **o ambiente é modernizado durante a migração**, adicionando recursos de nuvem como balanceamento de carga e alta disponibilidade, aprimorando as cargas de trabalho em relação ao ambiente antigo.
+
+**Rip and Replace:** Nesse modelo você **prepara um “aplicativo” totalmente novo**, tornando-o nativo a nuvem, nesse projeto para reescrever seu aplicativo você conseguirá explorar o máximo potencial da nuvem e todos os seus recursos.
+```
 # Computação Serverless
 Serverless é um modelo de desenvolvimento e execução de aplicativos da cloud computing que permite aos desenvolvedores construir e executar códigos de aplicativo sem fornecer ou gerenciar servidores ou infraestrutura de backend. O provedor de cloud trata do resto, fornecendo a infraestrutura em cloud necessária para executar o código, e aumentando e diminuindo a capacidade da infraestrutura sob demanda, conforme necessário.
 

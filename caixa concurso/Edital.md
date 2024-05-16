@@ -22,7 +22,7 @@
 	- [ ] Microprofile, 
 	- [ ] C#; .NET; 
 	- [ ] AngularJS; Angular; 
-	- [ ] TypeScript 4.X; Javascript;
+	- [x] TypeScript 4.X; Javascript;
 	- [x] Python 3.9.X 
 		- [x] Pandas
 		- [x] NumPy
@@ -33,9 +33,9 @@
 		- [x] Scikit-learn
 	- [ ] Scala; 
 	- [ ] R;
-	- [ ] Kotlin; 
+	- [x] Kotlin; 
 	- [x] Objective-C; Flutter; Swift
-	- [ ] Cobol;
+	- [x] Cobol;
 - [x] Desenvolvimento de software para a Web:  [[caixa concurso/Desenvolvimento Web Java|estudar]]
 	- [x] sistemas distribuídos e microsserviços;
 	- [x] Arquitetura e padrões de projeto Java EE8; 
@@ -146,15 +146,11 @@
 	- [x] Técnicas e boas práticas para o trabalho à distância. 
 	- [x] Aprender a aprender e Aprendizagem contínua (Life long learning).
 
-- [ ] Estatística [[Estatística|estudar]]
-	- [x] Representação tabular e gráfica. 
-	- [ ] Medidas de tendência central (média, mediana, moda, medidas de posição, mínimo e máximo) e de dispersão (amplitude, amplitude interquartil, variância, desvio padrão e coeficiente de variação).
-	- [x] Cálculo de probabilidade.  
-	- [x] Teorema de Bayes e Probabilidade condicional. 
-	- [x] População e amostra.
-	- [ ] Correlação linear simples. 
-	- [x] Ciência de dados, People analytics. 
-	- [x] Modelos preditivos. (Inferência na regressão, análise de variância e covariância, critérios de significância)
+- [x] Estatística [[Estatística|estudar]]
+	- [x] Conceitos gerais: variável, tipos de variáveis, população, amostra, frequências: absoluta e relativa, frequências acumuladas, representações em gráficos e tabelas (linhas, colunas, setores e histogramas). 
+	- [x] Medidas de tendência central (em dados brutos ou agrupados em classes): média aritmética, média geométrica, média ponderada, moda e mediana. Medidas de Posição: quartis e percentis 
+	- [x] Medidas de dispersão (em dados brutos ou agrupados em classes): amplitude, variância, desvio padrão e coeficiente de variação. 
+	- [x] Probabilidade: experimento aleatório, espaço amostral, evento; espaços equiprováveis; probabilidade de Laplace; espaços não equiprováveis; teorema do produto; probabilidade condicional e independência; distribuição binomial.
 
 - [ ] Português  [[Português|estudar]]
 	- [x] Compreensão e interpretação de textos. 
@@ -185,12 +181,13 @@
 	- [x] Sequências numéricas: leis de formação expressas de forma geral (em função da posição do termo) ou de forma recursiva (em função de um ou mais termos anteriores); progressões aritméticas; progressões geométricas.
 
 - [ ] Comportamentos Éticos e Compliance [[Comportamentos Éticos e Compliance|estudar]]
-	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23  de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021. 
+	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23 de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021.
 	- [x] Conceitos e medidas de enfrentamento ao assédio moral e sexual.
 	- [x] Atitudes éticas, respeito, valores e virtudes; noções de ética empresarial e profissional. A gestão da ética nas empresas públicas e privadas. Código de Ética, Conduta e integridade (disponível no sítio da CAIXA na internet).
-	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.  
+	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.
 	- [ ] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
 	- [ ] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
-	- [x] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações. 
-	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
-	- [ ] Boas práticas de governança corporativa
+	- [x] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações.
+	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE 2022.
+	- [ ] Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
+	- [ ] Boas práticas de governança corporativa.

@@ -65,8 +65,8 @@ Está relacionada com identificação de padrões, modelagem dos dados, detecç�
 #### Análise
 **Análise Descritiva:** Compreende a descrição das características dos acontecimentos em tempo real, de maneira a visualizar e entender o comportamento dos dados, de modo a auxiliar na tomada de decisões.
 **Análise Preditiva:** Esse item tem como objetivo prever comportamentos futuros, bem como as tendências dos dados, através da análise de informações anteriores. Desse modo, os gestores podem tomar decisões baseadas nos cenários futuros previstos por essa análise.
-**Análise Prescritiva:** Essa análise descreve os possíveis efeitos e consequências de ações que possam ser tomadas. Assim, é possível que possa ser realizada a melhor escolha para determinado cenário.
-**Análise Diagnóstica:** Neste caso, a análise procura entender as relações de causa e efeito entre situações, de modo a compreender os resultados obtidos em decorrência das ações tomadas.
+**Análise Prescritiva:** Essa análise descreve os possíveis efeitos e consequências de ações que possam ser tomadas. Assim, é possível que possa ser realizada a melhor escolha para determinado cenário. (Efeito nas consequências)
+**Análise Diagnóstica:** Neste caso, a análise procura entender as relações de causa e efeito entre situações, de modo a compreender os resultados obtidos em decorrência das ações tomadas. (Relação causa efeito)
 #### Limpeza 
  ##### Dados Ausentes
 - Substituir o dado ausente com alguma constante, especificada pelo analista;
@@ -91,7 +91,7 @@ Está relacionada com identificação de padrões, modelagem dos dados, detecç�
  Gera uma representação reduzida do conjunto de dados, porém mantendo os mesmos (ou próximo a isso) resultados da análise. Para isso, essa prática requer uma fase de seleção de atributos, identificando quais são irrelevantes para a análise e podem ser removidos da base.
  - **Análise de Componentes Principais (Principal Component Analysis — PCA)**: detecta a correlação entre as variáveis. E caso seja detectado uma forte correlação entre elas, cria-se um conjunto menor de combinações lineares dessas variáveis, reduzindo assim a dimensionalidade dos dados.
  - **Amostragem Aleatória**: Método estatístico de seleção de uma amostra de uma população maior de uma maneira que cada membro da população tenha a mesma probabilidade de ser selecionado. É usada quando se deseja obter uma representação imparcial de uma população maior, sem viés de seleção. Em geral, cada unidade da população tem uma chance igual de ser selecionada para a amostra, o que ajuda a garantir resultados estatisticamente válidos e confiáveis.
- - **Amostragem Estratificada**: Técnica de amostragem em que a população é dividida em subgrupos (estratos) que compartilham características semelhantes. Em seguida, uma amostra é selecionada aleatoriamente de cada estrato de acordo com uma proporção específica ou tamanho de amostra.  Essa técnica é útil quando a população tem heterogeneidade interna e quando é importante garantir que certos grupos sejam adequadamente representados na amostra.
+ - **Amostragem Estratificada** (Subgrupos): Técnica de amostragem em que a população é dividida em subgrupos (estratos) que compartilham características semelhantes. Em seguida, uma amostra é selecionada aleatoriamente de cada estrato de acordo com uma proporção específica ou tamanho de amostra.  Essa técnica é útil quando a população tem heterogeneidade interna e quando é importante garantir que certos grupos sejam adequadamente representados na amostra.
 # Visualização de Dados
 É considerada uma das etapas finais do projeto de Big Data. Ela é realizada durante e após a etapa de análise de dados, por meio da análise exploratória e explanatória.
 

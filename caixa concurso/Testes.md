@@ -6,7 +6,6 @@ O Test Driven Development (**TDD**) é uma técnica de desenvolvimento de softwa
 
 TDD se baseia em ciclos _curtos e rápidos_ de desenvolvimento, onde o teste é escrito _antes_ do código de produção, direcionando assim o desenvolvimento da funcionalidade.
 # Teste de Regressão
-
 É realizado a qualquer momento no projeto do sistema por não ter necessariamente alguma posição na sequência de realização do teste. Consiste em reexecutar testes após alguma alteração no sistema verificando se tudo está funcionando corretamente.
 #### Características
 Implementar testes automáticos fazem a diferença por serem codificados por um programador apenas apertando um botão, todos os testes são executados automaticamente poupando tempo e trabalho para a realização do teste manual.

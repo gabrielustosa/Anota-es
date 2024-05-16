@@ -86,6 +86,14 @@ Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
  ## Disciplina
  Descreve as sequências das atividades e as iterações com que participa, sendo realizadas a qualquer momento do ciclo.
  ![[engs-pu-disc.png]]
+```ad-tip
+#### Disciplinas mais utilizada em cada fase
+**Concepção**: Requisitos, Modelagem de Negócios;
+**Elaboração**: Análise e Design, Requisitos;
+**Construção**: Implementação, Testes;
+**Transição**: Inplantação, Gerência de Configuração e Mudância;
+```
+
 1. **Modelagem de Negócios**:
     - A TI precisa entender o funcionamento do negócio, e o cliente deve compreender como a TI pode contribuir para melhor suportar os negócios.
     - A comunicação entre engenheiros de software, desenvolvedores, clientes e usuários deve ser definida e aprimorada.
@@ -93,7 +101,7 @@ Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
 2. **Requisitos**:
     - Explica como transformar as necessidades das partes interessadas em requisitos específicos que serão usados para criar o sistema.
 3. **Análise e Projeto (Design)**:
-    - Mais presente na fase de Elaboração, esta disciplina visa criar uma abstração do sistema.
+    - Visa criar uma abstração do sistema.
     - Define classes, pacotes e subsistemas com interfaces bem definidas.
     - Descreve como cada objeto das classes irá colaborar para viabilizar os casos de uso do sistema.
 4. **Implementação**:
@@ -112,10 +120,7 @@ Tarefa que o trabalhador executa afim de produzir ou modificar um artefato.
     - Gerencia as solicitações de mudanças para esses artefatos, classificando-as em vários estados, listando as causas raiz, a natureza (defeito ou melhoria), prioridade, etc.
     - Pode utilizar sistemas de controle de versão e de gerenciamento de ciclo de vida (ALM – Application Life Cycle Management) para viabilizar e facilitar a execução da disciplina.
 8. **Ambiente**:
-    - Similar à abordagem dada à utilização de outros guias de boas práticas ou processos de desenvolvimento – a customização.
-    - O RUP pode ser personalizado para utilização em cada projeto.
-    - O RUP não é uma norma fixa; pode ser criteriosamente preparado para adequação em cada situação diferente encontrada no gerenciamento de processos.
-    - O sucesso do projeto depende da capacidade da pessoa que faz essa personalização. Em alguns casos, se o RUP for utilizado de forma errada, pode levar à percepção de que o método é muito pesado e custoso para ser utilizado, resultando em dificuldades no projeto.
+    - Relacionado à disponibilização de ferramentas apropriadas de software para a equipe de desenvolvimento.
 9. **Gerenciamento de Projeto**:
     - Planeja o projeto em dois níveis de detalhamento.
     - Descreve as iterações e os processos de acompanhamento e métricas dessas iterações .
@@ -372,7 +377,7 @@ Podem incluir quatro atividades de alto nível:
 ##### Estudo de Viabilidade 
 Elas visam avaliar se o sistema é útil para a empresa.
  
-```ad-note
+```ad-summary
 #####  SMART
  O método SMART é um acrônimo que serve de guia para definir objetivos de maneira eficaz. 
 - **S** – Específico: O objetivo ou requisito deve ser claro e preciso.

@@ -24,7 +24,10 @@ de entra e saída e outros componentes.
  Lê a instrução que está em RI, decodifica e ativa sequencialmente os sinais de controle apropriados.
 #### ULA (Unidade Lógica e Aritmética)
 Realiza operações aritméticas e operações lógicas (AND, OR, NOT) com dados binários.
-###### Palavra representa um conjunto de Bytes. 
+
+```ad-info
+ Palavra representa um conjunto de Bytes. 
+```
 #### Registradores
 Pequenas porções de memória volátil e de alta velocidade que estão dentro da própria CPU que armazenando n bits.
 

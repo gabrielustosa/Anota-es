@@ -72,7 +72,7 @@ No design de esquema em estrela uma medida é uma coluna de tabela de fatos que 
 ```
 
  ## Modelo Floco de Neve
- Tem dimensões separadas em hierarquias, uma tabela para cada nível. A hierarquia é o resultado da decomposição de uma ou mais dimensões que possuem hierarquia entre seus membros, o u seja relacionamentos muitos para um entre os membros de uma dimensão, formando relacionamentos entre tabelas dimensões. Sua utilização preserva os meios de armazenamento, como ocorre em um modelo normalizado, desta forma, ele evita a redundância de valores textuais em uma tabela.
+ Tem dimensões separadas em hierarquias, uma tabela para cada nível. A hierarquia é o resultado da decomposição de uma ou mais dimensões que possuem hierarquia entre seus membros, ou seja relacionamentos muitos para um entre os membros de uma dimensão, formando relacionamentos entre tabelas dimensões. Sua utilização preserva os meios de armazenamento, como ocorre em um modelo normalizado, desta forma, ele evita a redundância de valores textuais em uma tabela.
  ![[dw-snow.png]]
 O Modelo Estrela e Modelo Floco de Neve, ambos possuem uma tabela central, denominada fato e disposta ao seu redor as tabelas dimensões. É possível notar uma grande semelhança entre ambos, porém no modelo Estrela não ocorre a normalização dos dados contidos nas tabelas dimensões ao contrário do que ocorre no modelo Floco de Neve, onde as tabelas fatos são normalizadas e possuem hierarquia entre suas tabelas.
 
