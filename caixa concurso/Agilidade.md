@@ -1,3 +1,16 @@
+# Princípios da Agilidade
+1. **Satisfazer o cliente por meio da entrega adiantada e contínua:** Entregar valor ao cliente de forma frequente e iterativa, adaptando-se ao feedback.
+2. **Acolher bem os pedidos das alterações dos requisitos:** Adaptar-se às mudanças nas necessidades do cliente, mesmo em estágios avançados do projeto.
+3. **Entrega do software em funcionamento, principalmente, em intervalos curtos:** Demonstrar funcionalidades funcionais com frequência, com prazos curtos e previsíveis.
+4. **Pessoal do negócio e do desenvolvimento trabalhando junto:** Colaboração contínua entre os times de negócio e desenvolvimento para garantir o alinhamento e a entrega de valor.
+5. **Indivíduos motivados:** Criar um ambiente que incentive a iniciativa, a responsabilidade e a criatividade da equipe.
+6. **Métodos eficientes e efetivo:** Buscar a otimização constante dos processos de desenvolvimento e entrega, eliminando o desperdício.
+7. **Software em funcionamento:** Priorizar a entrega de software funcional, que atenda às necessidades do cliente e gere valor.
+8. **Desenvolvimento sustentável:** Manter um ritmo de trabalho constante e sustentável, sem comprometer a qualidade ou a saúde da equipe.
+9. **Atenção contínua à excelência técnica e ao design:** Buscar a excelência em todas as etapas do desenvolvimento, desde o código até a interface do usuário.
+10. **Simplicidade:** Evitar a complexidade desnecessária, focando na entrega de soluções simples e eficazes.
+11. **Equipes auto organizadas:** Conceder autonomia às equipes para que se organizem e gerenciem seu trabalho de forma eficiente.
+12. **Ajustar o comportamento em intervalos regulares:** Refletir sobre o progresso e adaptar as abordagens conforme necessário, buscando a melhoria contínua.
 # Lean
 Sistema de produção que se originou no Sistema Toyota de Produção, um método desenvolvido no Japão na primeira metade do século XX. O Lean busca maximizar o valor para o cliente enquanto minimiza o desperdício. Em outras palavras, o objetivo do Lean é **reduzir o desperdício de custos, aumentar a qualidade do produto e a maximização do valor entregue ao cliente**. O lean prima pela otimização de recursos, evitando falhas e um maior foco no público. Consequentemente, aí sim potencializar os resultados, sendo consequência.
 
@@ -38,7 +51,7 @@ O objetivo do Lean UX é obter feedback dos usuários o mais cedo possível dura
 ### Lean UX na prática
 1. **Pressupostos** - Inicia-se realizando um **brainstorming das features**. 
 2. **Hipóteses** - Em seguida, **levanta-se algumas hipóteses** para a definição do MVP.
-3. **Protótipo/MVP** - A próxima etapa é **criar um protótipo** de baixa, média ou alta fidelidade do [MVP](https://www.supero.com.br/blog/mvp/) que foi definido anteriormente. 
+3. **Protótipo/MVP** - A próxima etapa é **criar um protótipo** de baixa, média ou alta fidelidade do MVP que foi definido anteriormente. 
 4. **Validação** - Nesse momento, ocorre a **validação interna e externa do produto**, guiada por testes de usabilidade do protótipo. Primeiro ocorre a validação interna, geralmente realizada com os stakeholders, e, depois, a validação externa, com os consumidores ou usuários do produto. 
 5. **Resultados** - **Avalia-se os dados coletados** e, caso ocorram falhas ou qualquer problema de uso, o time deve voltar para o passo do protótipo e, novamente, passar por todas as etapas seguintes, até chegar na realização de testes de usabilidade.
 # Valores do Desenvolvimento Ágil
@@ -63,18 +76,55 @@ Avalia o status do trabalho em andamento, identificando visualmente ao longo do 
 O tempo ideal, ou “homem-hora”, é uma unidade de medida que estima o tempo que uma pessoa levaria para concluir uma tarefa sem interrupções. É uma maneira comum de estimar o esforço necessário para concluir itens em um backlog de produto.
 # Design Thinking 
 Framework usado para promover a inovação com uma abordagem centrada no ser humano, onde a empatia pelo usuário final é fundamental. Dentro do Design Thinking, passamos por diferentes fases: _Empatia_, _Definição_, _Ideação_, _Prototipagem_, _Teste_ e _Implementar_.
-### Empatia
+
+```ad-info
+**Análise e síntese:** busca elaborar uma síntese para guiar o processo de criação da solução, organizando as informações e ideias com o intuito de obter padrões;
+```
+#### Fases
+1. **Imersão**: aproxima a equipe do problema.
+	- **Preliminar**: contato inicial e identificação do problema, identificação dos atores e usuários, pesquisa de insumos;
+	- **Profundidade**: exploração do contexto do problema, identificação prévia de oportunidades e criação de insumos para análise/síntese.
+1. **Análise e síntese:** compreensão do problema e a identificação das perspectivas de soluções. Ferramentas: Cartões de insight; Diagrama de Afinidade; Mapa Conceitual; Critérios Norteadores; Personas; Mapa de Empatia; Jornada do Usuário; Blueprint.
+2. **Ideação**: estimular ideias criativas e gerar soluções inovadoras – brainstorming.
+3. **Prototipação**: validar as melhores ideias encontradas.
+### Empatia (Imersão)
 A etapa da empatia é quando você pode conduzir uma pesquisa para entender quais são as necessidades das pessoas (consumidores, colaboradores, público, usuários…) envolvidas no problema, o que precisam, gostam e querem. O objetivo é reunir o máximo de observações, para que você possa realmente começar a ter empatia com o outro e vice versa.
+
+Suas ferramentas são:
+- Desk Research
+- Etimologia do Serviço
+- Ecologia do Serviço
+- Entrevistas de Profundidade
+- Observação do Serviço
+- Participação
 ### Definição
 Combine todas as suas pesquisas e observe onde existem os problemas dos seus usuários. Ao identificar as necessidades de seus usuários, comece a destacar as oportunidades de inovação.
+
+Suas ferramentas são:
+- Persona
+- Jornada do usuário
 ### Idealização
 É o momento de fazer o brainstorm de várias ideias que atendam às necessidades não atendidas do usuário identificadas na fase de definição. Dê a você e sua equipe total liberdade, nenhuma ideia é impossível, rebuscada e a quantidade substitui a qualidade.
+
+Suas ferramentas são:
+- Brainstorming;
+- Workshop de cocriação;
+- Cardápio de ideias;
+- Matriz de posicionamento.
 ### Prototipagem
 O objetivo desta fase é entender quais componentes de suas ideias funcionam ou não. Nesta fase, você começa a pensar no impacto x a viabilidade de suas ideias por meio de feedback sobre seus protótipos.
+
+Suas ferramentas são:
+- Encenação
+- Storyboard
+- Prototipagem Rápida
 ### Teste
 Retorne aos seus usuários e feedback para refletir se esta solução atende às necessidades dos usuários e melhorou como eles se sentem, pensam ou fazem suas tarefas.
 ### Implementar
 Por mais impactante que o design thinking possa ser para uma organização, ele só leva à **verdadeira inovação** se a visão for executada. O sucesso do design thinking está em sua capacidade de transformar um aspecto da vida do usuário final. Por isso, se lembre de certificar de que sua solução seja materializada.
+
+Suas ferramentas são:
+- Blueprint do serviço
 # Management 3.0
 Metodologia que prioriza a **valorização dos colaboradores**, forjando um ambiente propício para seu empoderamento e destacando o trabalho em equipe. Em vez de estruturas rígidas de controle (hierarquias), ele compreende as organizações como grandes redes nas quais os **principais elementos são as pessoas**. A chave, então, é **dar mais liberdade** para que os funcionários cultivem sua autonomia, cumprindo responsabilidades que condizem com sua expertise e adaptando os processos de acordo com suas preferências.
 
@@ -96,7 +146,7 @@ Uma empresa é vista como um organismo vivo, conhecido como monstra, no qual pod
 **Responder a mudanças** > _seguir um plano_
 ```
 ### Scrum
- Usados para orientar as atividades de desenvolvimento dentro deum processo que incorpora as seguintes atividades metodológicas: requisitos, análise, projeto, evolução e entrega. Em cada atividade metodológica, ocorrem tarefas realizadas em um período chamado de sprint. O trabalho realizado dentro de um sprint (o número de sprints necessários para cada atividade metodológica varia dependendo do tamanho e da complexidade do produto) é adaptado ao problema em questão e definido, e muitas vezes modicado em tempo real, pela equipe Scrum.
+ Usados para orientar as atividades de desenvolvimento dentro de um processo que incorpora as seguintes atividades metodológicas: requisitos, análise, projeto, evolução e entrega. Em cada atividade metodológica, ocorrem tarefas realizadas em um período chamado de sprint. O trabalho realizado dentro de um sprint (o número de sprints necessários para cada atividade metodológica varia dependendo do tamanho e da complexidade do produto) é adaptado ao problema em questão e definido, e muitas vezes modicado em tempo real, pela equipe Scrum. O planejamento da sprint é de fato um evento _time-boxed_, ou seja, um evento de duração limitada e previamente definida.
  
 ![[ag-scrum.png]]
 #### Estrutura
@@ -150,7 +200,7 @@ Se inicia com ouvir. A atividade de ouvir conduz à criação de um conjunto de 
 #### Projeto
 O projeto XP segue rigorosamente o princípio KISS (keep it simple, stupid!). Os cartões CRC (mecanismo eficaz para pensar o software em um contexto orientado a objetos) são o único artefato de projeto produzido como parte do processo XP como um mecanismo de pensar o software (numa abordagem OOP). Refatoração (modicar/otimizar o código sem alterar o comportamento externo do software) significa que o “projetar” é realizado continuamente enquanto o sistema estiver em elaboração.
 #### Codificação
-A primeira etapa é a implementação da metodologia TDD para desenvolver os testes de unidade que exercitarão cada uma das histórias a ser incluída na versão corrente. Um conceito-chave na atividade de codificação (e um dos mais discutidos aspectos da XP) é a programação em pares (dois programadores compartilham uma única máquina).
+A primeira etapa é a implementação da metodologia TDD para desenvolver os testes de unidade que exercitarão cada uma das histórias a ser incluída na versão corrente. Um conceito-chave na atividade de codificação (e um dos mais discutidos aspectos da XP) é a programação em pares (dois programadores compartilham uma única máquina), no qual trabalham em todas as áreas do sistema, de modo que não se desenvolvam ilhas de expertise.
 #### Testes
 Os testes de unidades criados devem ser implementados usando-se uma metodologia que os capacite a ser automatizados. Isso estimula uma estratégia de testes de regressão. Os testes de aceitação da XP, também denominados testes de cliente, são especificados pelo cliente e mantêm o foco nas características e na funcionalidade do sistema total que são visíveis e que podem ser revistas pelo cliente. Os testes de aceitação são obtidos de histórias de usuário implementadas como parte de uma versão do software.
 ### Kanban
@@ -174,34 +224,34 @@ Conjunto de padrões organizacionais e de fluxo de trabalho para implementar pr�
 #### Equipes Ágeis
 - Equipes de Agile Release Trains (ARTs): São grupos de equipes ágeis que trabalham em conjunto para entregar um conjunto de soluções de valor.
 - Scrum ou Kanban: As equipes dentro das ARTs geralmente usam práticas ágeis como Scrum ou Kanban para gerenciar o trabalho.
-#### Program Increment (PI):
+#### Program Increment (PI)
 - O PI é a unidade de tempo no SAFe. Ele geralmente tem uma duração fixa, comumente de 8 a 12 semanas.
 - Durante um PI, várias iterações (Sprints) ocorrem, e as equipes trabalham juntas para entregar incrementos de valor ao produto.
 ##### Benefícios
 - **Alinhamento das equipes e dos stakeholders**: O PI ajuda a alinhar as equipes e os stakeholders em torno de um objetivo comum.
 - **Planejamento e priorização eficazes**: O PI Planning ajuda as equipes a planejar e priorizar seu trabalho de forma eficaz.
 - **Entrega de valor incremental**: O PI ajuda as equipes a entregar valor incremental ao cliente a cada duas semanas.
-#### Release Planning:
+#### Release Planning
 - A cada PI, ocorre um evento de Release Planning, onde as equipes se reúnem para planejar as próximas iterações e discutir os objetivos de negócios.
 - O objetivo é garantir que todos estejam alinhados com os objetivos estratégicos e as prioridades do negócio.
-#### Portfolio SAFe:
+#### Portfolio SAFe
 - No nível mais alto, o Portfolio SAFe conecta a estratégia da organização aos programas e equipes ágeis.
 - Define a visão e a estratégia, além de priorizar e financiar as iniciativas de valor.
-#### Value Streams e ARTs:
+#### Value Streams e ARTs
 - Um Value Stream representa a série de etapas necessárias para entregar um produto ou serviço ao cliente.
 - ARTs são grupos de equipes que trabalham juntas em um Value Stream específico.
-#### Roles (Papéis):
+#### Roles (Papéis)
 - Release Train Engineer (RTE): Facilita e coordena as atividades da ART.
 - Product Owner (PO): Representa os stakeholders e é responsável por priorizar o backlog.
 - Scrum Master: Facilita a equipe em práticas ágeis e remove impedimentos.
 - System Architect (SA): Ajuda a garantir a integridade técnica da solução.
-#### Cerimônias:
+#### Cerimônias
 - Além das cerimônias ágeis comuns, como Reuniões de Sprint, o SAFe introduz eventos específicos, como Inspect and Adapt (I&A) e PI Planning.
-#### Fases do PI:
+#### Fases do PI
 - PI Planning: Início de cada Program Increment, onde as equipes planejam e coordenam suas atividades.
 - Execução: As equipes realizam suas iterações durante o PI.
 - Inspect and Adapt (I&A): Evento ao final do PI para avaliar o progresso, identificar problemas e ajustar os planos.
-#### Lean-Agile Mindset:
+#### Lean-Agile Mindset
 - O SAFe enfatiza a importância de uma mentalidade Lean-Agile, promovendo a colaboração, a melhoria contínua e a entrega de valor ao cliente.
 ### Nexus
 Exoesqueleto para escalar Scrum. Ele guia o coração da questão de escalar – continuamente identificando e removendo dependências criadas pelo aumento da complexidade. Ele é construído no framework do Scrum e valores existentes.
@@ -226,10 +276,19 @@ Os membros da equipe de operações que pertencem à equipe de desenvolvimento a
 Normalmente, uma história de usuário segue o seguinte formato:
 _"Como [tipo de usuário], eu quero [meta ou objetivo] para que eu [benefício ou resultado]."_
 
+```ad-info
+Quando uma história de usuário descreve uma funcionalidade maior e com menos detalhamento, ela é de fato chamada de **épico**. Epicos são usados para agrupar histórias de usuário relacionadas que, juntas, compõem um grande recurso ou área de funcionalidade no produto.
+```
+
 Além disso, o modelo 3 C's (**Card, Conversation e Confirmation**) é uma abordagem ágil para a elaboração de Histórias do Usuário.
 1. **Card** (Cartão): As histórias do usuário devem ser concisas e escritas em cartões, o que torna fácil de entender e visualizar
 2. **Conversation** (Conversação): As histórias do usuário devem promover a comunicação entre a equipe e os usuários, permitindo discussões e esclarecimentos de detalhes.
 3. **Confirmation** (Confirmação): As histórias do usuário devem ser confirmadas e validadas pelos usuários antes de serem implementadas, garantindo que as necessidades do cliente sejam atendidas.
+
+```ad-summary
+##### Definição de Pronto (DoR) e a Definição de Feito (DoD)
+DoR é aplicada antes do desenvolvimento do item, enquanto a DoD é aplicada após o desenvolvimento. A DoR é um conjunto de critérios para que um item de trabalho seja considerado pronto para ser desenvolvido, enquanto a DoD é um conjunto de critérios para que um item de trabalho seja considerado pronto para ser entregue ao cliente ou usuário final.
+```
 # Backlog do Produto
 Backlog do produto é uma lista que contém os requisitos necessários para a construção de um produto de alto valor. Ou seja, trata-se de uma lista de entregas do projeto organizada pelo Product Owner em ordem de prioridade. O backlog de produto serve para definir o ciclo de vida de um produto. Ele mostra suas fases, o que precisa ser feito para alcançar determinado resultado e como e para quando fazer.
 
@@ -266,7 +325,7 @@ Durante essa cerimônia, o Product Owner apresenta os itens do backlog priorizad
 5. Os resultados - Descrição dos objetivos do sprint que será realizado.
 # Técnica para Estimativa de Escopo
 ### Planning Poker 
-O objetivo é obter uma estimativa mais precisa e consensual por meio da colaboração da equipe. 
+Técnica para realizar estimativas de esforço de tarefas por meio do consenso entre o time. O objetivo é obter uma estimativa mais precisa e consensual por meio da colaboração da equipe. 
 
 1. **Preparação**: Antes da reunião de estimativa, o Product Owner prepara uma lista de histórias de usuário ou itens do backlog que precisam ser estimados.
 2. **Reunião de Estimativa**: Durante a reunião de estimativa (que geralmente ocorre durante o Sprint Planning), a equipe se reúne e um moderador (geralmente o Scrum Master) apresenta um item do backlog por vez para ser estimado.
@@ -276,7 +335,9 @@ O objetivo é obter uma estimativa mais precisa e consensual por meio da colabor
 6. **Revelação**: Ao mesmo tempo, todos os membros da equipe viram suas cartas. Se houver discrepâncias significativas nas estimativas, a equipe discute as razões por trás das diferentes opiniões e, se necessário, a estimativa é refinada e o processo de votação é repetido.
 7. **Consenso**: O processo continua até que a equipe alcance um consenso sobre a estimativa. Isso geralmente ocorre quando a maioria dos membros da equipe seleciona a mesma carta de estimativa.
 ### Story Points
-Story point é uma medida relativa de esforço, complexidade e risco. Ou seja, quando você for estimar algo leve em consideração essas três variáveis. Utilizada principalmente em técnicas como Planning Poker, é útil definir pontos de medida para estimativas precisas, evitando o efeito manada.
+Story point é uma medida relativa de esforço, complexidade e risco. Ou seja, quando você for estimar algo leve em consideração essas três variáveis. Utilizada principalmente em técnicas como Planning Poker, é útil definir pontos de medida para estimativas precisas, evitando o efeito manada. Para fazer essa estimativa, a equipe de desenvolvimento realiza uma comparação com outras histórias já estimadas.
+
+Caso não haja ainda nada estimado no Product Backlog, a equipe localiza a história de usuário com o menor esforço para desenvolvimento e o utiliza como base de comparação. Uma das melhores formas de estimar Story Points é por meio de uma técnica chamada Planning Poker.
 ### T-Shirt Sizing
  Atribui um “tamanho de camiseta” (do PP ao XXG) que representa o esforço relativo para cada tarefa ou projeto. Dependendo de como você utiliza essa ferramenta, o T-shirt size pode representar o escopo, esforço, complexidade, horas de trabalho ou estimativa de tempo da tarefa, ou ainda todas essas opções.
 # DevSecOps

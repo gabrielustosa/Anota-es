@@ -13,7 +13,7 @@ Um SGBD deve conter:
 ### Metadados 
 São informações sobre o próprio banco de dados e seus elementos como: esquema do banco, dicionário de dados (informações sobre os tipos de dados armazenados em cada tabela), estatísticas de desempenho, privilégios e permissões, logs e registros. 
 ### Dump 
-O 1 de banco de dados é o processo de criação de um arquivo que contém todas as informações presentes em um banco de dados em um determinado momento. Esse arquivo é uma espécie de “snapshot” do banco de dados, capturando todas as tabelas, registros, relacionamentos e configurações existentes naquele momento. Podendo ser importado de volta para o banco de dados posteriormente, se necessário.
+O dump de banco de dados é o processo de criação de um arquivo que contém todas as informações presentes em um banco de dados em um determinado momento. Esse arquivo é uma espécie de “snapshot” do banco de dados, capturando todas as tabelas, registros, relacionamentos e configurações existentes naquele momento. Podendo ser importado de volta para o banco de dados posteriormente, se necessário.
 ### Backup
 Processo essencial que envolve a cópia dos dados do banco de dados em um determinado momento para um local seguro, como um disco rígido externo, armazenamento em nuvem ou outro dispositivo de armazenamento. O objetivo principal do backup é proteger os dados contra perda, corrupção ou dano, permitindo a recuperação dos dados em caso de falha do sistema, erro humano, desastre natural ou ataque cibernético.
 ### Categorias de Restrições de Integridade

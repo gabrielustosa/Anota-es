@@ -15,3 +15,37 @@
 4.  Não deve ser empregada entre palavras repetidas: `cara a cara, ponto a ponto, dia a dia.`
 5. Nunca ocorre crase antes de verbos: `comecei a estudar ontem.`
 6. É proibida a crase antes de artigo indefinido e preposição (exceção de até).
+# Concordância 
+O verbo **haver**, quando possui sentido de existir, é **impessoal**, devendo usar havia no lugar de haviam.
+Quando o verbo fazer possui sentido de **tempo decorrido**, **não** varia: "**faz** dois anos que ele não vem", **e não** "**fazem** dois anos que ele não vem". O mesmo vale para a locução verbal: "**deve** **fazer** dois anos...", e não "**devem** **fazer** dois anos..."
+
+```ad-tip
+Quando há expressões partitivas, a concordância pode ficar no singular ou plural.
+
+Expressões partitivas:
+- A maioria de
+- Grande parte de
+- Boa parte de
+- A maior parte de
+- Uma porção de
+- Parte de
+- Metade de
+```
+
+"quando **dois ou mais adjuntos** ("de casas" e "de lojas comerciais") **modificam** **um único núcleo** ("destruição"), o **verbo** fica no **singular** concordando com o núcleo único. **Mas**, se houver **determinante** (artigo, por exemplo) após a conjunção, o verbo fica no **plural**, pois aí o sujeito passa a ser **composto**".
+
+```ad-summary
+#### Particula Apassivadora
+V.T.D, V.T.D.I e pode ser colocado na voz ativa
+
+"**faZEM-SE** doces, **porque** "doces **são feitos**";
+"**aluGAM**-**SE** salas comercias", **porque** "salas comerciais **são alugadas**".
+
+#### Índice de indeterminação do sujeito
+V.T.I, V.I, V.L não pode ser colocado na voz ativa
+```
+
+```ad-tip
+Há plural em VTD + se.
+Não há plural em VTI + se + prep.
+```

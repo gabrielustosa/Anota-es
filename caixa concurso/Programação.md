@@ -13,7 +13,7 @@
 #### Ordem de execução de variáveis
 - Atributos/Blocos estáticos (Tem ordem de prioridade máxima, executa-se do pai até o último filho antes dos outros passos)
 - Atributos de instância (Atributos com o mesmo nome na classe pai e filho são sobrescritos agindo como nova variável em cada classe)
-- Blocos de instância/anônimo 
+- Blocos anônimos 
 - Construtor (Construtor vazio da classe pai é chamado mesmo sem a chamada super)
 
 Para cada item, verificar a classe pai e depois a classe filha.
@@ -869,4 +869,49 @@ O modificador de visibilidade internal significa que o membro é visível dentro
 - Um projeto Maven.
 - Um conjunto de origens do Gradle (com a exceção de que o conjunto de origens de teste pode acessar as declarações internas do principal).
 - Um conjunto de arquivos compilados com uma invocação da tarefa <kotlinc> do Ant.
+```
+# Angular
+# AngularJS
+AngularJS estende o HTML com `ng-directives`. 
+- A `directiva ng-app` define uma aplicação AngularJS. 
+- A `directiva ng-model` vincula o valor dos controles HTML (`input`, `select`, `textarea`) aos dados da aplicação. 
+- A `directiva ng-bind` vincula os dados da aplicação à visualização HTML.
+
+```html
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <body>
+    <div ng-app=""> <!-- diz ao AngularJS que o elemento <div> é o "proprietário" -->
+      <p>Name: <input ng-model="name"></p> <!-- vincula o valor do campo de entrada à variável name da aplicação. -->
+      <p ng-bind="name"></p> <!-- vincula o innerHTML do elemento <p> à variável name da aplicação. -->
+      <p>{{name}}</p> <!-- varíavel name disponível vinculada ao campo input --> 
+    </div>
+    <div ng-init="person={firstName: 'Gabriel', age: 11};year=2024"></div> <!-- iniciando variáveis -->
+    <p>{{person}} {{year}}</p>
+    <div ng-init="names=['gabriel', 'pedro']"></div>
+    <ul>
+	    <li ng-repeat="x in names">
+		    {{x}}
+	    </li>
+    </ul>
+  </body>
+</html>
+```
+
+Utilizando controller para controlar ambiente.
+
+```html
+<div ng-app="myApp" ng-controller="myCtrl">
+	First Name: <input type="text" ng-model="firstName"><br>
+	Last Name: <input type="text" ng-model="lastName"><br>
+	<br>
+	Full Name: {{firstName + " " + lastName}}
+</div>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope) {
+	    $scope.firstName = "John";
+	    $scope.lastName = "Doe";
+	});
+</script>
 ```

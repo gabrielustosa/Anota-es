@@ -20,8 +20,8 @@
 	- [x] Padrões de Projeto; [[caixa concurso/Padrões de Projeto|estudar]]
 	- [x] Linguagens Java SE; JEE;
 	- [ ] Microprofile, 
-	- [ ] C#; .NET; 
-	- [ ] AngularJS; Angular; 
+	- [x] C#; .NET; 
+	- [x] AngularJS; Angular; 
 	- [x] TypeScript 4.X; Javascript;
 	- [x] Python 3.9.X 
 		- [x] Pandas
@@ -121,10 +121,10 @@
 	- [x] CMMI/MPS-BR: Conceitos básicos e objetivos;
 	- [x] Disciplinas e formas de representação; 
 	- [x] Níveis de capacidade e maturidade.
-- [ ] Gestão e governança de TI
-	- [ ] ITIL v.4; 
-	- [ ] COBIT
-	- [ ] Governança;
+- [x] Gestão e governança de TI
+	- [x] ITIL v.4; 
+	- [x] COBIT
+	- [x] Governança;
 
 - [x]  Conhecimentos e Comportamentos Digitais [[Conhecimentos e Comportamentos Digitais|estudar]]
 	- [x] Mindset de crescimento, Paradigma da abundância.
@@ -163,7 +163,7 @@
 	- [x] Emprego do sinal indicativo de crase. 
 	- [x] Sintaxe da oração e do período. 
 	- [x] Pontuação. 
-	- [ ] Concordância nominal e verbal. 
+	- [x] Concordância nominal e verbal. 
 	- [ ] Regência nominal e verbal. 
 	- [x] Significação das palavras. 
 	- [ ] Colocação do pronome átono. 

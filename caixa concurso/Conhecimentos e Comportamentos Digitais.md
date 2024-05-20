@@ -63,22 +63,9 @@ A implementação prática do intraempreendedorismo requer o fornecimento de rec
 Reconhecer e recompensar o esforço e os resultados dos intraempreendedores é essencial para manter sua motivação e engajamento. Isso pode ser feito por meio de programas de reconhecimento que destacam as contribuições dos funcionários, bem como recompensas tangíveis, como bônus, promoções ou participação nos lucros.
 ### Autonomia e Empoderamento
 Dar aos intraempreendedores autonomia para tomar decisões e conduzir seus projetos é essencial para o sucesso do intraempreendedorismo. Isso significa permitir que os funcionários experimentem, cometam erros e aprendam com suas experiências, sem medo de punição ou crítica.
-# Design Thinking
-Design Thinking é uma abordagem centrada no ser humano para a resolução de problemas e desenvolvimento de soluções inovadoras. Originalmente aplicado no campo do design de produtos, o Design Thinking tem sido amplamente adotado em diversas áreas, incluindo negócios, tecnologia, saúde, educação e governo, como uma metodologia para criar e melhorar produtos, serviços e processos. Essa abordagem é baseada na ideia de que as melhores soluções surgem quando se compreende profundamente as necessidades, desejos e experiências dos usuários finais. O Design Thinking emprega uma série de etapas iterativas e colaborativas para abordar problemas complexos de forma criativa e eficaz.
-## Fases do Design Thinking
-### Empatia
-A fase de empatia é o ponto de partida do Design Thinking, onde o foco está na compreensão profunda dos usuários finais e de seus contextos. Durante esta fase, os designers procuram se colocar no lugar dos usuários, buscando entender suas necessidades, desejos, motivações e frustrações.
-### Definição
-Na fase de definição, os designers sintetizam as informações coletadas durante a fase de empatia para definir claramente o problema a ser resolvido. Isso envolve identificar os principais desafios e oportunidades, estabelecendo metas claras e definindo critérios para o sucesso do projeto.
-### Ideação
-Na fase de ideação, os designers geram uma ampla gama de ideias e soluções possíveis para resolver o problema identificado. O objetivo é explorar o máximo possível de alternativas criativas, sem julgamento ou restrições, incentivando a geração de ideias divergentes. Sessões de brainstorming, técnicas de visualização criativa e jogos de design são comumente utilizados para estimular a criatividade e a colaboração nesta fase.
-### Prototipagem
-Na fase de prototipagem, os designers criam versões tangíveis e de baixo custo das soluções propostas para testar e iterar rapidamente. Os protótipos podem variar em complexidade, desde esboços simples até modelos interativos e simuladores funcionais, dependendo das necessidades do projeto. O objetivo é obter feedback dos usuários o mais cedo possível, permitindo que os designers refinem e aprimorem suas ideias antes de investir tempo e recursos significativos na implementação final.
-### Teste
-Na fase de teste, os designers apresentam os protótipos aos usuários finais para avaliar sua eficácia, usabilidade e aceitação. O feedback dos usuários é coletado de forma sistemática por meio de observações, entrevistas e questionários, e usado para iterar nos protótipos e refiná-los ainda mais.
 # Design de Serviço
 O Design de Serviço é uma abordagem que se concentra na criação e melhoria de serviços que são eficazes, eficientes, inovadores e centrados no usuário. Ele se baseia nos princípios do design thinking, mas é especificamente aplicado ao contexto de serviços, em vez de produtos tangíveis. O objetivo do Design de Serviço é projetar experiências significativas para os usuários, ao mesmo tempo em que garante que os processos internos das organizações sejam otimizados para oferecer esses serviços de forma consistente e sustentável.
-## Os quatro estágios do Design de Serviço por Birgit Mager e Jacob Buuman
+## Os quatro estágios do Design de Serviço
 ### Entendimento
 O estágio de Entendimento é o ponto de partida do Design de Serviço. Durante esta fase, os designers procuram compreender profundamente os usuários finais, seus contextos, necessidades e expectativas. Isso envolve a realização de pesquisas extensivas, como entrevistas, observações e análises de dados, para obter insights valiosos sobre os usuários e suas interações com o serviço.
 ### Criação
@@ -105,26 +92,6 @@ O Design de Serviço promove a colaboração interdisciplinar entre diferentes �
 Ao adotar uma abordagem orientada para o usuário e enfatizar a experimentação e a prototipagem rápida, o Design de Serviço estimula a geração de novas ideias e soluções criativas.
 ### Adaptação e Aperfeiçoamento Contínuos
 Por meio de técnicas como testes de usuário, análise de jornada do cliente e monitoramento de métricas de desempenho, o Design de Serviço permite identificar áreas de melhoria e oportunidades de inovação. Isso resulta em serviços mais ágeis e flexíveis, capazes de se ajustar rapidamente às necessidades em evolução dos usuários e às mudanças no mercado.
-# Senso Colaborativo
-O termo "senso colaborativo" refere-se à capacidade de colaborar efetivamente com outras pessoas em um ambiente de trabalho ou em qualquer contexto onde a colaboração seja necessária para alcançar objetivos comuns. Envolve a disposição e habilidade para trabalhar em equipe, compartilhar ideias, conhecimentos e recursos, e coordenar esforços para alcançar resultados positivos.
-### Inovação Ampliada
-A diversidade de pensamento traz uma ampla gama de perspectivas, experiências e conhecimentos para a mesa. Essa variedade de pontos de vista pode levar a uma geração mais criativa e original de ideias, soluções e produtos.
-### Tomada de Decisões Melhorada
-A diversidade de pensamento ajuda a evitar o viés cognitivo e o pensamento de grupo, que podem limitar a qualidade das decisões. Ao considerar uma variedade de perspectivas, os líderes e equipes podem tomar decisões mais informadas, abrangentes e objetivas.
-### Resiliência Organizacional
-A diversidade de pensamento fortalece a resiliência organizacional ao permitir que as empresas se adaptem melhor a mudanças e desafios. Ao enfrentar obstáculos ou crises, a presença de uma variedade de perspectivas permite que as organizações identifiquem e avaliem alternativas de forma mais rápida e eficaz.
-## Como se Desenvolve o Senso Colaborativo?
-### Escuta Ativa
-A escuta ativa é uma habilidade fundamental para o senso colaborativo, pois envolve ouvir ativamente o que os outros têm a dizer, mostrando interesse genuíno em compreender suas ideias e perspectivas.
-### Empatia
-A empatia é a capacidade de entender e compartilhar os sentimentos e perspectivas dos outros. No contexto do senso colaborativo, a empatia é essencial para construir relacionamentos positivos e promover uma cultura de apoio e compreensão mútua.
-### Comunicação Clara e Assertiva
-Uma comunicação clara e assertiva é fundamental para evitar mal-entendidos e garantir que as mensagens sejam transmitidas de forma eficaz. No contexto do senso colaborativo, a comunicação clara promove a transparência, a confiança e a colaboração entre os membros da equipe.
-### Ferramentas Colaborativas
-As ferramentas colaborativas são recursos e tecnologias que facilitam a comunicação e a colaboração entre os membros da equipe, independentemente da localização geográfica. Exemplos de ferramentas colaborativas incluem plataformas de compartilhamento de arquivos, aplicativos de mensagens instantâneas, videoconferência e software de colaboração em tempo real.
-## E quando Ocorrem Divergências?
-### Métodos de Resolução de Conflitos
-Conflitos podem surgir devido a diferenças de opinião, objetivos, valores ou estilos de trabalho entre os membros da equipe. Para lidar com conflitos de maneira construtiva, é importante utilizar métodos eficazes de resolução de conflitos, como a comunicação aberta e honesta.
 # Resolução de Problemas Complexos
 Resoluções de problemas complexos referem-se ao processo de identificar, analisar e encontrar soluções para problemas que são intrinsecamente complicados devido à sua natureza multifacetada, interconectada e muitas vezes ambígua. Esses problemas podem surgir em uma variedade de contextos, como negócios, ciência, engenharia, saúde, política e sociedade.
 ## Visão Sistêmica
@@ -174,11 +141,11 @@ Pensamento computacional é uma habilidade fundamental que envolve a formulaçã
 ### Decomposição
 Decomposição envolve a habilidade de quebrar um problema complexo em partes menores e mais gerenciáveis. Ao decompor um problema, os indivíduos podem abordar cada parte separadamente, facilitando a compreensão e a resolução do problema como um todo.
 ### Reconhecimento de Padrões
-O reconhecimento de padrões refere-se à capacidade de identificar regularidades ou padrões em dados, processos ou problemas. Identificar padrões pode simplificar problemas complexos, permitindo a aplicação de soluções conhecidas ou a criação de novas abordagens.
+Capacidade de identificar regularidades ou padrões em dados, processos ou problemas. Identificar padrões pode simplificar problemas complexos, permitindo a aplicação de soluções conhecidas ou a criação de novas abordagens.
 ### Abstração
 Abstração envolve a capacidade de filtrar informações irrelevantes e se concentrar apenas nos aspectos essenciais de um problema. Simplificar detalhes desnecessários e identificar conceitos-chave ajuda a resolver problemas de forma mais eficiente.
-### Design de Algoritmos
-O design de algoritmos refere-se à criação de sequências ordenadas de instruções ou passos que descrevem uma solução para um problema. 
+### Algoritmos
+Refere-se à criação de sequências ordenadas de instruções ou passos que descrevem uma solução para um problema. 
 ## Importância do Pensamento Computacional
 O pensamento computacional é uma habilidade fundamental e altamente relevante em um mundo cada vez mais digital e tecnologicamente orientado. O pensamento computacional fornece uma estrutura sistemática e eficaz para abordar problemas complexos em uma variedade de contextos. Ele ajuda os indivíduos a decompor problemas em partes menores, reconhecer padrões, abstrair informações irrelevantes e projetar algoritmos para encontrar soluções eficientes.
 # Análise de Negócios
@@ -200,7 +167,7 @@ Envolvem verificar se as soluções propostas atendem aos requisitos do negócio
 - Conhecimento técnico;
 - Habilidade de gerenciamento de projetos;
 - Capacidade de negociação;
-# Liderança/ Autoliderança/
+# Liderança/Autoliderança
 ## Conceito Liderança
 Liderança é a capacidade de influenciar e inspirar outros indivíduos ou grupos para alcançar objetivos comuns. Envolve a habilidade de guiar, motivar, direcionar e coordenar esforços em direção a uma visão ou meta compartilhada. A liderança não está necessariamente ligada a uma posição hierárquica específica; ela pode ser exercida por qualquer pessoa que seja capaz de influenciar e inspirar os outros, independentemente de seu título ou cargo.
 ## Características da Liderança
@@ -290,8 +257,17 @@ Isso pode envolver a implementação de novas tecnologias, ajustes nos processos
 ### Tecnologia na Experiência do Consumidor
 A tecnologia desempenha um papel cada vez mais importante na experiência do consumidor, transformando a maneira como as empresas interagem, se relacionam e atendem às necessidades dos clientes.
 # Inteligência Emocional
-## Conceito
 A inteligência emocional é a capacidade de reconhecer, compreender e gerenciar suas próprias emoções, bem como as emoções dos outros. Envolve a habilidade de perceber e interpretar emoções de forma precisa, usar essas emoções para orientar o pensamento e o comportamento, e regular as emoções de maneira construtiva.
+## Facetas da Inteligência Emocional
+1. **Percepção, avaliação e expressão das emoções**: Identificar e expressar emoções em si e nos outros.
+2. **Emoção como facilitadora do pensamento**: Usar emoções para melhorar o raciocínio e a tomada de decisões.
+3. **Compreensão e análise das emoções**: Entender emoções complexas, suas causas e transições.
+4. **Gerenciamento reflexivo das emoções**: Regular e refletir sobre emoções para promover crescimento emocional e intelectual.
+## Capacidades fundamentais
+1. **Autoconsciência**: Habilidade para reconhecer suas próprias forças e limitações pessoais.
+2. **Autogerenciamento**: Habilidade em se ajustar às situações de mudança e superar dificuldades.
+3. **Consciência social**: Habilidade de reconhecer e diagnosticar as necessidades e aspirações dos clientes.
+4. **Habilidade social**: Habilidade para desfazer conflitos e gerar consenso.
 ## Princípios da Inteligência Emocional
 ### Autoconhecimento Emocional
 Envolve estar ciente de seus sentimentos, entender o que os desencadeia e como eles afetam seu pensamento e comportamento. O autoconhecimento emocional permite que as pessoas identifiquem suas forças e fraquezas emocionais, reconheçam padrões de comportamento e tomem decisões mais conscientes e alinhadas com seus valores e objetivos.
@@ -331,24 +307,49 @@ O Pacto Global é uma iniciativa lançada em 2000 pelo então Secretário-Geral 
 10. As empresas devem combater a corrupção em todas as suas formas, incluindo extorsão e suborno.
 ## Objetivos de Desenvolvimento Sustentável (ODS)
 Os Objetivos de Desenvolvimento Sustentável (ODS) são uma iniciativa global adotada pela Assembleia Geral das Nações Unidas em setembro de 2015. Eles compõem uma agenda abrangente composta por 17 objetivos e 169 metas que visam enfrentar os principais desafios globais até 2030, abordando questões relacionadas à pobreza, fome, saúde, educação, igualdade de gênero, água limpa e saneamento, energia acessível e limpa, trabalho decente e crescimento econômico, redução das desigualdades, cidades sustentáveis, consumo e produção responsáveis, mudança climática, proteção dos ecossistemas terrestres e aquáticos, paz e justiça.
-# Conceito
-Os Objetivos-chave para Resultados (OKR), do inglês "Objectives and Key Results", são um sistema de gestão de metas e resultados que tem como objetivo definir e acompanhar os objetivos e resultados-chave de uma organização, equipe ou indivíduo. Desenvolvido pela Intel e popularizado pelo Google, o OKR é amplamente utilizado por empresas de tecnologia e outras organizações ao redor do mundo.
-## Os OKRs são compostos por dois elementos principais:
+# Objetivos-chaves para resultados (OKR)
+Os Objetivos-chave para Resultados (OKR), do inglês "Objectives and Key Results", são declarações claras e inspiradoras que definem a direção estratégica da organização. Nessa, metodologia, é recomendado definir poucos objetivos principais para manter o foco, clareza e simplicidade, sendo que seus resultados serão agressivos, mas realistas, mensuráveis e atingíveis, bem como relevantes e determinados.
+## Os OKRs são compostos por dois elementos principais
 ### Objetivos (Objectives)
 Os objetivos são declarações claras e aspiracionais que descrevem o que uma organização, equipe ou indivíduo deseja alcançar em um determinado período de tempo. Eles devem ser desafiadores, inspiradores e alinhados com a visão e missão da organização. Os objetivos devem responder à pergunta "O que queremos alcançar?" e geralmente são definidos em termos de resultados mensuráveis.
 ### Resultados-chave (Key Results)
 Os resultados-chave são indicadores específicos e mensuráveis que quantificam o progresso em direção aos objetivos. Eles definem os resultados tangíveis que precisam ser alcançados para atingir os objetivos. Os resultados-chave devem responder à pergunta "Como saberemos se alcançamos nossos objetivos?" e geralmente são quantitativos, mensuráveis e verificáveis.
-## Os benefícios dos OKRs:
+
+Para cada objetivo, recomenda-se que sejam estabelecidos de **2 a 5 key results**, que devem ser:
+- Quantitativos
+- Baseados em critérios de sucesso que mostram progressos
+- Baseados em métricas ou milestones (“etapas”/”marcos” a cumprir)
+## Principais características
+### Ciclos Curtos
+Os OKRs são normalmente definidos em ciclos trimestrais, o que permite uma maior agilidade e capacidade de adaptação às mudanças do ambiente empresarial. Diferentemente de planejamentos anuais ou de longo prazo, os ciclos curtos permitem revisões e ajustes frequentes.  
+### Vinculação a Bonificações
+Enquanto alguns sistemas de gestão de objetivos vinculam diretamente o alcance de metas a bonificações e recompensas, a metodologia OKR não necessariamente recomenda essa prática. A ideia é que os OKRs incentivem a inovação e a definição de metas ambiciosas, e a vinculação direta a recompensas financeiras pode desencorajar a tomada de riscos e o estabelecimento de objetivos desafiadores.  
+### Ascensão Profissional
+Embora o alcance de OKRs possa impactar positivamente a carreira de um profissional, eles são mais focados em alinhar as atividades diárias com a estratégia da organização e promover a melhoria contínua, em vez de serem usados como critério único para a ascensão profissional.
+### Bottom-up e Top-down
+Os OKRs são "acordados" entre gestor e colaborador. Inclusive, o método prioriza que os OKRs sejam definidos de forma predominantemente **bottom-up** ("de baixo, para cima"), ou seja, o próprio colaborador que vai trabalhar naquele OKR participa da elaboração de suas metas. Isso faz com que o colaborador fique mais engajado com o método e motivado em atingir os objetivos.
+## Os benefícios dos OKRs
 1. **Foco:** Os OKRs ajudam a direcionar o foco e os esforços para as metas mais importantes.
 2. **Alinhamento:** Eles garantem que todos na organização estejam alinhados em direção aos mesmos objetivos estratégicos.
 3. **Transparência:** Os OKRs promovem a transparência ao tornar os objetivos e resultados-chave visíveis para toda a organização.
 4. **Responsabilidade:** Eles ajudam a responsabilizar as equipes e indivíduos pelos resultados que buscam alcançar.
-## Desafios ao implementar os OKRs:
+## Desafios ao implementar os OKRs
 1. **Definição de Objetivos Relevantes:** Um dos desafios iniciais ao implementar OKRs é garantir que os objetivos definidos sejam relevantes e alinhados com a estratégia geral da organização.
 2. **Estabelecimento de Resultados-chave Mensuráveis:** Definir resultados-chave claros e mensuráveis pode ser um desafio. Os resultados-chave devem ser específicos o suficiente para serem facilmente compreendidos e medidos, mas também relevantes o suficiente para impulsionar o progresso em direção aos objetivos.
 3. **Alinhamento Organizacional:** Garantir o alinhamento dos OKRs em toda a organização pode ser um desafio
+## Resultados esperados
+1. **Baseline**: É a linha de base que representa a situação atual ou ponto de partida em relação a um determinado indicador ou métrica. É uma referência que permite avaliar o progresso ao longo do tempo.
+2. **Milestone**: São marcos ou metas intermediárias que indicam o progresso em direção ao objetivo final. São pontos de verificação importantes que ajudam a monitorar o avanço do projeto ou iniciativa.
+3. **Métricas**: São indicadores quantitativos que medem o desempenho e o progresso em relação aos objetivos. Métricas positivas são aquelas que indicam sucesso ou avanço na direção desejada. Métricas negativas são aquelas que indicam desvios ou resultados indesejados.
+4. **Threshold**: É um limite ou critério estabelecido para determinar se um resultado é considerado alcançado ou não. É um valor definido que deve ser atingido ou superado para que o objetivo seja considerado cumprido.
 # Aprender a aprender e Aprendizagem contínua (Life Long Learning)
 "Life-long learning" é um termo em inglês que se traduz para "aprendizado ao longo da vida" em português. Refere-se ao conceito de que a aprendizagem não se limita à infância, adolescência ou educação formal, mas é um processo contínuo que ocorre ao longo de toda a vida de uma pessoa. O "life-long learning" reconhece a importância de adquirir novos conhecimentos, habilidades e competências ao longo do tempo, mesmo depois de concluída a educação formal. Isso pode incluir a participação em cursos, workshops, treinamentos, seminários, leituras, experiências práticas e outras atividades que promovam o desenvolvimento pessoal e profissional.
+
+```ad-summary
+#### Ensino blended 
+  
+O ensino blended ou híbrido é um programa de educação baseado na aprendizagem síncrona e assíncrona, ou seja, os momentos em que você aprende ao mesmo tempo em que alguém está ensinando - uma aula online, por exemplo - e aqueles períodos em que você absorve conteúdo de maneira independente, no seu tempo e do seu jeito - como ler um livro.
+```
 ## Componentes cruciais Life Long Learning
 ### Curiosidade e Motivação Intrínseca
 O Life-long learning começa com uma atitude de curiosidade e uma motivação intrínseca para aprender. Manter a mente aberta e o desejo de explorar novos conhecimentos e habilidades é fundamental para o sucesso nesse processo.
