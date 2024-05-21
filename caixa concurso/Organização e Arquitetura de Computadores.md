@@ -15,6 +15,21 @@ cpu(Registradores)  --> cache(Cache) -->  ram(Memória RAM) -->  IO("Dispositivo
 
 * Cache (ou S-RAM) são memórias de acesso rápido gerenciadas pelo hardware do processador (L1, L2, ...) L1 mais próxima da CPU, capacidade menor, invisíveis para programas e o sistema operacional.
 * RAM (ou D-RAM) é uma memória de acesso aleatório para armazenar dados de processos ativos do sistema operacional.
+#### Memória Cache
+O objetivo da cache é armazenar dados e instruções que o processador provavelmente precisará em breve, baseando-se no princípio de localidade, que observa que programas tendem a acessar os mesmos dados ou instruções repetidamente em um curto período de tempo.
+
+- O principal impacto da memória cache no desempenho do processador é a redução do retardo (latência).
+#### Memória Flash
+Tipo de memória não volátil usada para armazenamento e transferência de dados. Utiliza células de memória que podem ser eletricamente apagadas e reprogramadas.
+##### Tipos 
+- NAND: Alta capacidade e custo-benefício, usado em SSDs, cartões de memória.
+- NOR: Acesso rápido e aleatório, usado em firmware.
+- RAM: NÃO VOLÁTIL, de modo que, mesmo que o sistema perca a energia, a memória flash se lembrará do que foi gravado nela.
+- FLASH ROM:  Similar a EEPROM, Apaga mais rapidamente, **NÍVEL BLOCO (Rápido).**
+
+```ad-info
+A memória Flash deve ser apagada antes que seja sobrescrita, e isso deve ser feito em blocos (em memórias Flash de alta densidade, chamadas NAND Flash) em vez de bytes ou palavras individuais. Isso significa que, quando dados precisam ser gravados em uma memória Flash, todo um bloco deve ser montado, seja como um bloco de dados novos, seja mesclando os dados a serem gravados e o resto do conteúdo do bloco.
+```
 # CPU
 #### UC (Unidade de Controle)
 Responsável pelo controle de operações da CPU, ela busca e decodifica instruções armazenadas na memória, controlando o fluxo de dados
@@ -57,6 +72,10 @@ Vias de comunicação que facilita a transferência de dados entre diferentes co
 ```mermaid
 flowchart LR
 op[Recebe a operação] --> an["Análisa o operando"] ---> de["Destino do operando I/O"] ---> p[Recebe próxima instrução]
+```
+
+```ad-tip
+**Paridade:** Método de verificação de erro que adiciona um bit adicional a um conjunto de bits para garantir que o número total de bits de valor "1" seja par ou ímpar, ajudando na detecção de erros de transmissão.
 ```
 #### Armazenamento 
 O armazenamento das instruções é inicialmente na memória RAM e depois é repassado para os registrados no processo de análise das instruções conforme necessário.

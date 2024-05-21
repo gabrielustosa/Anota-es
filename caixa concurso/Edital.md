@@ -82,10 +82,10 @@
 	- [x] tratamento de débito técnicos e incidentes; 
 	- [x] Arquitetura e Qualidade ágeis;
 	- [x] DevSecOps.
-- [ ] Organização e arquitetura de computadores [[caixa concurso/Organização e Arquitetura de Computadores|estudar]]
+- [x] Organização e arquitetura de computadores [[caixa concurso/Organização e Arquitetura de Computadores|estudar]]
 	- [x] Arquitetura básica de um computador
 	- [x] CPU e hierarquia de memória
-	- [ ] Armazenamento e representação de dados: base binária e complemento a dois, ponto flutuante e caracteres
+	- [x] Armazenamento e representação de dados: base binária e complemento a dois, ponto flutuante e caracteres
 	- [x] Armazenamento e representação de instruções; 
 	- [x] Modos de endereçamento;
 	- [x] Conjunto típico de instruções de uma CPU; 
@@ -184,9 +184,9 @@
 	- [x] Prevenção à lavagem de dinheiro: Lei nº 9.613/98 e suas alterações; Circular nº 3.978, de 23 de janeiro de 2020 e Carta Circular nº 4.001, de 29 de janeiro de 2020 e suas alterações, Resolução CVM 50/2021.
 	- [x] Conceitos e medidas de enfrentamento ao assédio moral e sexual.
 	- [x] Atitudes éticas, respeito, valores e virtudes; noções de ética empresarial e profissional. A gestão da ética nas empresas públicas e privadas. Código de Ética, Conduta e integridade (disponível no sítio da CAIXA na internet).
-	- [ ] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.
-	- [ ] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
-	- [ ] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
+	- [x] Segurança da informação: fundamentos, conceitos e mecanismos de segurança; Segurança cibernética: Resolução CMN nº 4893, de 26 de fevereiro de 2021.
+	- [x] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
+	- [x] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
 	- [x] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações.
 	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE 2022.
 	- [ ] Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).

@@ -254,3 +254,115 @@ Atualmente, o mundo enfrenta desafios significativos em relação ao comportamen
 
 Uma empresa ética se preocupa com o relacionamento entre seus funcionários, incentivando boas atitudes e valores positivos para promover a máxima cooperação entre eles. Isso não apenas cria um ambiente de trabalho melhor, mas também contribui para o aumento da produtividade e do lucro da empresa.
 ```
+# Segurança da Informação
+#### Fundamentos da Segurança da Informação
+1. **Confidencialidade**
+    - Garantir que a informação seja acessível apenas por pessoas autorizadas.
+    - Utiliza criptografia e controles de acesso.
+2. **Integridade**
+    - Assegurar que a informação não seja alterada indevidamente.
+    - Utiliza mecanismos como checksums e assinaturas digitais.
+3. **Disponibilidade**
+    - Garantir que a informação e os recursos estejam disponíveis quando necessários.
+    - Emprega redundância e backups.
+4. **Autenticidade**
+    - Verificar a identidade das pessoas que acessam a informação.
+    - Utiliza métodos como senhas, tokens e biometria.
+5. **Não-repúdio**
+    - Garantir que uma transação ou comunicação não possa ser negada posteriormente.
+    - Utiliza assinaturas digitais e logs de auditoria.
+#### Conceitos Importantes
+1. **Ameaças**
+    - Qualquer potencial causa de um incidente indesejado, que pode resultar em dano à organização ou aos sistemas de informação.
+    - Exemplos: malware, ataques de phishing, hackers.
+2. **Vulnerabilidades**
+    - Fraquezas ou falhas em um sistema que podem ser exploradas por ameaças.
+    - Exemplos: software desatualizado, configurações incorretas.
+3. **Riscos**
+    - A probabilidade de uma ameaça explorar uma vulnerabilidade, causando um impacto negativo.
+    - Gerenciamento de risco envolve identificar, avaliar e tratar riscos.
+4. **Políticas de Segurança**
+    - Diretrizes e procedimentos definidos para proteger os ativos de informação.
+    - Inclui políticas de senha, uso aceitável, resposta a incidentes.
+#### Mecanismos de Segurança
+1. **Criptografia**
+    - Protege a confidencialidade e integridade dos dados através da codificação.
+    - Algoritmos comuns: AES, RSA.
+2. **Controle de Acesso**
+    - Restringe o acesso a informações e recursos apenas a usuários autorizados.
+    - Métodos: listas de controle de acesso (ACLs), autenticação multifatorial (MFA).
+3. **Firewalls**
+    - Filtram o tráfego de rede para bloquear acessos não autorizados.
+    - Podem ser baseados em hardware ou software.
+4. **Sistemas de Detecção e Prevenção de Intrusões (IDS/IPS)**
+    - Monitoram a rede e sistemas para atividades suspeitas e tomam ações preventivas.
+    - IDS detecta, enquanto IPS detecta e bloqueia.
+5. **Antivírus e Antimalware**
+    - Detectam e removem softwares maliciosos.
+    - Devem ser atualizados regularmente para proteger contra novas ameaças.
+6. **Backups**
+    - Cópias de segurança dos dados para recuperação em caso de perda ou corrupção.
+    - Estratégias: backups completos, incrementais e diferenciais.
+7. **Educação e Conscientização**
+    - Treinamento contínuo dos funcionários sobre práticas seguras e políticas de segurança.
+    - Inclui campanhas de conscientização sobre phishing e engenharia social.
+
+### CMN nº 4893
+A política deve contemplar objetivos claros de segurança cibernética, procedimentos e controles para reduzir vulnerabilidades, controles específicos para garantir a segurança das informações sensíveis, e registro e análise de incidentes.
+
+```ad-info
+**Relatório Anual**: Elaboração de um relatório anual sobre a implementação do plano de ação e resposta a incidentes, abordando a efetividade das ações, resumo dos resultados, incidentes relevantes e resultados dos testes de continuidade de negócios.
+```
+
+```ad-info
+**Contratação no Exterior**: Requisitos adicionais para a contratação de serviços no exterior, como a existência de convênio para troca de informações entre o Banco Central do Brasil e as autoridades supervisoras dos países onde os serviços serão prestados.
+```
+# Artigo 37 Constituição
+Art. 37. A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência.
+### Legalidade
+Ninguém será obrigado a fazer ou deixar de fazer alguma coisa senão em virtude da lei.
+### Impessoalidade
+Dever de imparcialidade na defesa do interesse público, impedindo discriminações e privilégios indevidamente dispensados a particulares no exercício da função.
+### Moralidade
+Está ligado ao exercício do administrador na sua função, sobretudo, no dever de identificar o honesto do desonesto e não desprezar o elemento da conduta.
+### Publicidade
+Obriga a administração pública a dar publicidade de seus atos administrativos para possibilitar o controle de terceiros.
+Livre acesso dos indivíduos a informações de seu interesse e transparência na atuação administrativa.
+### Eficiência
+Exige que a atividade administrativa seja exercida com presteza, perfeição e rendimento funcional.
+
+```ad-abstract
+- Os cargos, empregos e funções públicas são acessíveis aos brasileiros que preencham os requisitos estabelecidos em lei, assim como aos estrangeiros, na forma da lei;
+- A investidura em cargo ou emprego público depende de aprovação prévia em concurso público de provas ou de provas e títulos, salvo as exceções previstas nesta Constituição e na lei;
+- O prazo de validade do concurso público será de até dois anos, prorrogável uma vez, por igual período;
+- Durante o prazo improrrogável previsto no edital de convocação, aquele aprovado em concurso público será convocado com prioridade sobre novos concursos para assumir cargo ou emprego, na carreira;
+- As funções de confiança, exercidas exclusivamente por servidores ocupantes de cargo efetivo, e os cargos em comissão, a serem preenchidos por servidores de carreira, destinam-se apenas às atribuições de direção, chefia e assessoramento;
+- É garantido ao servidor público civil o direito à livre associação sindical;
+- O direito de greve será exercido nos termos e nos limites definidos em lei específica;
+- A lei reservará percentual dos cargos e empregos públicos para as pessoas portadoras de deficiência;
+- A lei estabelecerá casos de contratação por tempo determinado para atender a necessidade temporária de excepcional interesse público;
+- A remuneração dos servidores públicos somente poderá ser fixada ou alterada por lei específica;
+- É vedada a acumulação remunerada de cargos públicos, exceto, quando houver compatibilidade de horários:
+    - a) A de dois cargos de professor;
+    - b) A de um cargo de professor com outro técnico ou científico;
+    - c) A de dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas.
+```
+# Sigilo Bancário
+#### Não é considerado quebra de sigilo
+- Troca de informações para fins cadastrais;
+- Fornecer informações de emitentes de cheques sem provisão de fundos e devedores inadimplentes;
+- Comunicação de prática de atos ilícitos; 
+- Revelação de informação sigilosa com consentimento;
+- Fornecer dados financeiros e de pagamentos, a gestoras de bancos de dados, para formação de histórico; 
+#### Quebra de sigilo
+- Para apuração de ocorrência de terrorismo e lavagem de dinheiro;
+- Tráfico, Contrabando, Extorsão;
+- Crimes contra o sistema financeiro;
+#### Bacen e CVM
+- Poderão firmar convênios com órgãos públicos fiscalizadores e outros bancos centrais e entidades fiscalizadoras de outros países;
+- Dependem de prévia autorização do **Poder Judiciário** a prestação de informações destinada a apurar responsabilidade de servidor público praticada durante exercício da função;
+- Fornecerão ao Poder Legislativo as informações necessárias aos exercícios de suas competências;
+
+```ad-info
+A quebra de sigilia fora das situações previstas, é crime com pena de reclusão de um a quatro anos e multa.
+```

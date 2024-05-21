@@ -157,6 +157,16 @@ Podem ser criados multiplos Incrementos dentro de um Sprint. A soma dos Incremen
 - Backlog do Produto -> Meta do Produto (Quem controla é o PO)
 - Backlog da Sprint -> Meta da Sprint (Quem controla são os desenvolvedores)
 - Incremento -> Definição de Pronto
+
+```ad-summary
+##### Incremento
+O incremento é o resultado tangível e potencialmente entregável do trabalho realizado durante uma sprint. Ele inclui todas as funcionalidades e melhorias desenvolvidas durante a sprint, mas não é uma lista de características em si.
+```
+
+```ad-summary
+#### Spike Solution
+Os **Spike solutions** são experimentos realizados para entender como resolver um problema ou entender melhor os requisitos técnicos necessários.
+```
 ##### Pilares
 - T: Transparência
 - I: Inspeção
@@ -265,9 +275,9 @@ Os produtos de software são divididos e desenvolvidos em múltiplos sprints, co
 #### Teste contínuo
 Ferramentas de teste automatizadas são utilizadas para ajudar os membros da equipe a testar múltiplos incrementos de código ao mesmo tempo para garantir que não há defeitos antes da integração.
 #### Integração contínua
-Os elementos de código com a nova funcionalidade são adicionados ao código existente e ao ambiente de execução (runtime) e, então, examinados para garantir que não há erros após a entrega.
+Os elementos de código com a nova funcionalidade são adicionados ao código existente e ao ambiente de execução (runtime) e, então, examinados para garantir que não há erros após a entrega. Geralmente cada membro faz isso pelo menos diariamente, levando a múltiplas integrações por dia. Isso permite que o software esteja em um estado constante de avanço, mantendo sua funcionalidade ininterrupta.
 #### Entrega contínua
-Nesta etapa, o código integrado é entregue (instalado) ao ambiente de produção, que pode incluir múltiplos locais em nível global, que, por sua vez, precisam ser preparados para receber a nova funcionalidade. 
+Nesta etapa, o código integrado é entregue (instalado) ao ambiente de produção, que pode incluir múltiplos locais em nível global, que, por sua vez, precisam ser preparados para receber a nova funcionalidade, gerando o arquivo de build e publicando de forma automática
 #### Monitoramento contínuo
 Os membros da equipe de operações que pertencem à equipe de desenvolvimento ajudam a melhorar a qualidade do software, monitorando o seu desempenho no ambiente de produção e buscando proativamente possíveis problemas antes que os usuários os identifiquem.
 # História do Usuário
@@ -278,6 +288,10 @@ _"Como [tipo de usuário], eu quero [meta ou objetivo] para que eu [benefício o
 
 ```ad-info
 Quando uma história de usuário descreve uma funcionalidade maior e com menos detalhamento, ela é de fato chamada de **épico**. Epicos são usados para agrupar histórias de usuário relacionadas que, juntas, compõem um grande recurso ou área de funcionalidade no produto.
+```
+
+```ad-warning
+Saga > Épico > História de usuário
 ```
 
 Além disso, o modelo 3 C's (**Card, Conversation e Confirmation**) é uma abordagem ágil para a elaboração de Histórias do Usuário.
