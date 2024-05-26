@@ -66,9 +66,41 @@ Todos os componentes são construídos como uma única base de código e implant
 Os microsserviços são uma arquitetura e uma abordagem para escrever programas de software. Com eles, as aplicações são desmembradas em componentes mínimos e independentes. Diferentemente da abordagem tradicional monolítica em que toda a aplicação é criada como um único bloco, os microsserviços são componentes separados que trabalham juntos para realizar as mesmas tarefas. Cada um dos componentes ou processos é um microsserviço. Essa abordagem de desenvolvimento de software valoriza a granularidade, a leveza e a capacidade de compartilhar processos semelhantes entre várias aplicações.
 # Micro Front End
 Micro Frontends é uma abordagem arquitetural que se concentra em decompor um aplicativo frontend em partes menores e mais gerenciáveis. Ela se inspira no conceito de microsserviços no desenvolvimento backend e o aplica ao frontend.
+# Arquitetura de solução
+Foca na estruturação e definição de sistemas de software específicos dentro de um contexto mais amplo. Define os componentes do sistema, suas interações e como eles se integram à infraestrutura e outros sistemas. Considera aspectos como funcionalidade, escalabilidade, segurança e desempenho.
+
+- Arquitetura de software: É uma disciplina mais abrangente que lida com todos os aspectos do design e desenvolvimento de software.
+- Inclui desde a definição de requisitos até a implementação e testes do software.
+- Abrange conceitos como padrões de design, metodologias de desenvolvimento e ferramentas de software
 # Métricas e Estimativas de Software
 As métricas de software são medidas que não se baseiam em leis quantitativas da matemática ou da física. Na maioria das vezes, elas são indiretas, abertas ao debate. Estas fornecem uma indicação em tempo real da eficácia dos seus processos de software (análise, projeto e testes) e da qualidade geral do software sendo criado.
-#### Medidas, métricas e indicadores
+### Técnicas de Estimativas
+#### Técnicas baseadas em experiências
+ Usam conhecimento adquirido em projetos anteriores de um mesmo domínio
+#### Modelagem algorítmica de custos
+É feito um modelo matemático esforço é calculado com base em estimativas de atributos do software, tamanho, processo, etc.
+##### COCOMO II 
+Modelo de estimativa de custos, baseado no COCOMO Considera abordagens mais modernas de desenvolvimento de software.
+#### Projeto Preliminar
+Usado quando os requisitos foram feitos, mas o projeto ainda não foi iniciado, o objetivo é fornecer uma estimativa aproximada de custo baixo (mesmo que imprecisa). A estimativa é feita em pontos de função e convertida para linhas de código.
+#### Modelo de Reuso
+Usado para calcular o esforço de integração de componentes reusáveis. Geralmente usado em conjunto com o modelo pós arquitetura
+
+Impactado por três fatores principais
+- SU: custos de compreender o código
+- AA: custos de avaliação e tomada de decisão
+- AFF: adaptação do código para reuso
+#### Estimativa análoga (Similaridade)
+A estimativa análoga baseia-se no princípio de que projetos similares terão custos similares. Portanto, ao comparar o projeto atual com projetos passados que foram semelhantes em tamanho e complexidade, é possível fornecer uma estimativa de custo aproximada.
+#### Bottom-up (Agregação das estimativas)
+A técnica bottom-up envolve a agregação das estimativas dos componentes individuais de nível mais baixo da Estrutura Analítica do Projeto (EAP) para obter a estimativa do projeto como um todo. Cada componente é detalhado e estimado separadamente, e essas estimativas são então somadas para obter uma estimativa total. Essa abordagem é mais precisa e detalhada, pois leva em consideração as características específicas de cada parte do projeto.
+#### Paramétrica  (Modelos estatísticos)
+Nesta técnica, a estimativa é feita com base em relações estatísticas entre os dados históricos e os parâmetros do projeto. Ela utiliza modelos matemáticos para calcular a duração ou o custo com base em variáveis como tamanho, complexidade, etc.
+#### Três Pontos (Otimista, mais provável, pessimista)
+Esta técnica envolve a estimativa de três valores para cada atividade: otimista, mais provável e pessimista. A estimativa final é calculada usando uma média ponderada desses três valores, o que leva em consideração incertezas e riscos associados à atividade.
+#### Monte Carlo (Simulação)
+Esta técnica utiliza simulações estatísticas para prever os resultados possíveis de um projeto com base em várias variáveis ​​e incertezas. Ela gera uma série de simulações para avaliar o impacto de diferentes cenários e incertezas no projeto.
+### Medidas, métricas e indicadores
 Embora os termos medida, medição e métricas sejam frequentemente usados indistintamente, é importante notar as diferenças sutis entre eles. Quando um único dado é coletado (por exemplo, o número de erros descobertos em um componente de software), foi estabelecida uma medida. A medição ocorre como resultado da coleta de um ou mais pontos de dados (por exemplo, um conjunto de revisões de componente e testes de unidade são investigados para coletar medidas do número de erros para cada um). Uma métrica de software relaciona as medidas individuais de alguma maneira (por exemplo, o número médio de erros encontrados por revisão ou o número médio de erros encontrados por teste de unidade).
 
 Um engenheiro de software coleta medidas e desenvolve métricas para obter indicadores. Um indicador é uma métrica ou combinação de métricas que fornecem informações sobre o processo de software, em um projeto de software ou no próprio produto.

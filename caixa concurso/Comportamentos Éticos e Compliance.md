@@ -1,9 +1,9 @@
 # Prevenção a Lavagem de Dinheiro
-Ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes, direta ou indiretamente, de infração penal.
+Ocultar ou dissimular a natureza, origem, localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes, direta ou indiretamente, de infração penal. Não admite culposa.
 
 ![[ec-lav-din.png]]
 ##### Reclusão
-3 a 10 anos, podendo ser reduzida caso seja feita delação premiada e aumentada caso haja envolvimento de organizações criminosas,  de forma reiterada (depois de punido, fez novamente) ou utilização de ativos virtuais. Além disso, há ainda a inabilitação temporária por 10 anos para cargos como administrador de pessoas jurídicas. 
+3 a 10 anos, podendo ser reduzida caso seja feita delação premiada e aumentada em 2/3 caso haja envolvimento de organizações criminosas, de forma reiterada (depois de punido, fez novamente) ou utilização de ativos virtuais. Além disso, há ainda a inabilitação temporária por 10 anos para cargos como administrador de pessoas jurídicas. 
 ##### Multa
 Variável, não superior ao dobro da operação;
 Não superior ao dobro do lucro real obtido, ou que seria obtido;
@@ -67,7 +67,12 @@ Regulamentação no que tange lavagem de dinheiro no setor de mercado de valores
 - Recolher evidências/provas; 
 - DECOI, DEPES, SUMAC
 # LGPD
-A Lei Geral de Proteção de Dados (LGPG), dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais. 
+A Lei Geral de Proteção de Dados (LGPG), dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais.
+
+```ad-info
+#### Dados pessoais
+Informação relacionada a pessoa natural identificada ou identificável;
+```
 
 ```ad-info
 ##### Dados sensíveis
@@ -75,15 +80,23 @@ São os que revelam origem racial ou étnica, convicções religiosas ou filosó
 ```
 
 Seus fundamentos são assegurar a:
-- Liberdade;
-- Privacidade;
-- Livre desenvolvimento da personalidade;
-- Autodeterminação informativa;
+1. O respeito à privacidade
+2. A autodeterminação informativa
+3. A liberdade de expressão, informação, de comunicação e opinião
+4. A inviolabilidade da intimidade, da honra e da imagem
+5. O desenvolvimento econômico e tecnológico e a inovação
+6. A livre iniciativa, a livre concorrência e a defesa do consumidor
+7. Os direitos humanos, o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania pelas pessoas naturais
 
 ```ad-summary
 ##### Tratamento de dados
 Toda operação realizada com dados pessoais de pessoas jurídicas ou físicas, como as que se referem a: 
 - Coleta, produção, recepção, classificação, utilização, acesso, reprodução, transimissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação, ou controle da informação, modificação, comunicação, transferência, difusão ou extração.
+
+LGPD se aplica no tratamento apenas se:
+- tratamento no Brasil;
+- fim voltado para o Brasil; 
+- coleta no Brasil. 
 ```
 
 ```ad-warning
@@ -140,6 +153,10 @@ mudou de finalidade: Revogação
 5. Quando necessário para a execução de contrato;
 6. Para o exercício regular de direitos em processo judicial, administrativo ou arbitral;
 7. Para a proteção da vida ou da incolumidade física do titular ou de terceiro;
+
+```ad-seealso
+**PSEUDONIMIZAÇÃO:** tratamento por meio do qual um dado perde a possibilidade de associação, direta ou indireta, a um indivíduo, senão pelo **USO DE INFORMAÇÃO ADICIONAL** mantida separadamente pelo controlador em ambiente controlado e seguro.
+```
 
 ```ad-tip
 ##### Controlador x Operador
@@ -201,6 +218,12 @@ Os princípios da ética são respeito, honestidade, compromisso, transparência
 **Por empregado da Caixa**: investigadas pela comissão de ética de caixa;
 **Por dirigente Caixa**: apuradas pela comissão de ética pública - CEP;
 ```
+#### Valores
+- Respeito;
+- Honestidade;
+- Compromisso;
+- Transparência;
+- Responsabilidade;
 #### Glossário
 **Colaborador**: Prestador de serviço, fornecedor, parceiro, que presta algum serviço para a Caixa;
 **Conglomerado Caixa**: Empresas com participação direta ou subsidiárias Caixa;
@@ -346,6 +369,7 @@ Exige que a atividade administrativa seja exercida com presteza, perfeição e r
     - a) A de dois cargos de professor;
     - b) A de um cargo de professor com outro técnico ou científico;
     - c) A de dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas.
+    - d) sociedades de economia mista;
 ```
 # Sigilo Bancário
 #### Não é considerado quebra de sigilo
@@ -358,11 +382,157 @@ Exige que a atividade administrativa seja exercida com presteza, perfeição e r
 - Para apuração de ocorrência de terrorismo e lavagem de dinheiro;
 - Tráfico, Contrabando, Extorsão;
 - Crimes contra o sistema financeiro;
+
+```ad-info
+POLÍCIA -> NÃO. É necessária autorização judicial.
+MP -> NÃO. É necessária autorização judicial (exceção com o fim de proteger o patrimônio público)
+TCU -> NÃO.  É necessária autorização judicial.
+Receita Federal -> SIM. 
+CPI - SIM.
+```
+
+```ad-tip
+Dependem de prévia autorização do Poder Judiciário a prestação de informações e o fornecimento de documentos sigilosos solicitados por comissão de inquérito administrativo destinada a apurar responsabilidade de servidor público por infração praticada no exercício de suas atribuições, ou que tenha relação com as atribuições do cargo em que se encontre investido.
+```
 #### Bacen e CVM
 - Poderão firmar convênios com órgãos públicos fiscalizadores e outros bancos centrais e entidades fiscalizadoras de outros países;
 - Dependem de prévia autorização do **Poder Judiciário** a prestação de informações destinada a apurar responsabilidade de servidor público praticada durante exercício da função;
 - Fornecerão ao Poder Legislativo as informações necessárias aos exercícios de suas competências;
 
+```ad-tldr
+São consideradas instituições financeiras, para os efeitos desta Lei Complementar:
+
+- os bancos de qualquer espécie;
+- distribuidoras de valores mobiliários;
+- corretoras de câmbio e de valores mobiliários;
+- sociedades de crédito, financiamento e investimentos;
+- sociedades de crédito imobiliário;
+- administradoras de cartões de crédito;
+- sociedades de arrendamento mercantil;
+- administradoras de mercado de balcão organizado;
+- cooperativas de crédito;
+- associações de poupança e empréstimo;
+- bolsas de valores e de mercadorias e futuros;
+- entidades de liquidação e compensação;
+- outras sociedades que, em razão da natureza de suas operações, assim venham a ser consideradas pelo Conselho Monetário Nacional.
+```
+
 ```ad-info
-A quebra de sigilia fora das situações previstas, é crime com pena de reclusão de um a quatro anos e multa.
+A quebra de sigilia fora das situações previstas, é crime com pena de reclusão de 1 a 4 anos e multa.
+```
+# Legislação Anticorrupção
+As sanções da lei anticorrupção podem ser aplicadas tanto em processos administrativos quanto judiciais. Elas podem ser aplicadas isoladamente ou em conjunto e não eximem os dirigentes da empresa de suas responsabilidades. A empresa é responsabilizada de forma objetiva, ou seja, independentemente de culpa.
+
+```ad-info
+A competência para a instauração e o julgamento do processo administrativo de apuração de responsabilidade da pessoa jurídica **poderá ser delegada, vedada a subdelegação.**
+```
+
+A instauração e o julgamento do processo administrativo para apuração da responsabilidade de pessoa jurídica cabem à autoridade máxima de cada órgão ou entidade dos Poderes Executivo, Legislativo e Judiciário;
+
+```ad-info
+#### CGU
+**competência concorrente** com a autoridade máxima do órgão ou entidade **para instaurar processos** administrativos de responsabilização de pessoas jurídicas ou para **avocar os processos instaurados**, para exame de sua regularidade ou para corrigir-lhes o andamento.
+```
+
+Aplica-se o disposto nesta Lei às sociedades empresárias e às sociedades simples, personificadas ou não, independentemente da forma de organização ou modelo societário adotado, bem como a quaisquer fundações, associações de entidades ou pessoas, ou sociedades estrangeiras, que tenham sede, filial ou representação no território brasileiro, constituídas de fato ou de direito, ainda que temporariamente
+
+- **Pessoa jurídica**: serão responsabilizadas **objetivamente.**
+- **Dirigentes ou administradores**: responsabilidade **subjetiva** – somente serão responsabilizados por atos ilícitos na medida da sua culpabilidade.
+
+```ad-important
+Nas hipóteses de fusão e incorporação, a **responsabilidade da sucessora será restrita à obrigação de pagamento de multa e reparação integral do dano causado, até o limite do patrimônio transferido,** não lhe sendo aplicáveis as demais sanções previstas nesta Lei decorrentes de atos e fatos ocorridos antes da data da fusão ou incorporação, exceto no caso de simulação ou evidente intuito de fraude, devidamente comprovados.
+```
+
+```ad-tip
+#### Prazos
+**180 dias** - Conclusão do Processo; **poderá ser prorrogado**
+**30 dias** - Defesa;
+**3 anos** - Impedido de celebrar novo Acordo de Leniência;
+**5 anos** - Prescrever infrações;
+**1 a 5 anos** - Proibição de receber incentivos, etc;
+```
+#### Par (Processo Administrativo de Responsabilização)
+Investigação preliminar, de caráter sigiloso e não punitivo;
+Competência da autoridade máxima da entidade do qual foi praticado a ato lesivo; 
+Comissão composta por dois ou mais servidores estáveis;
+Indiciará e intimará a pessoa jurídica no prazo de 30 dias;
+
+```ad-summary
+#### Acordo de leniência
+Acordo de natureza administrativa entre infratores confessos e entes estatais.
+
+O acordo de leniência buscará, nos termos da lei:
+- o incremento da capacidade investigativa da administração pública;
+- a potencialização da capacidade estatal de recuperação de ativos; e
+- o fomento da cultura de integridade **no setor privado.**
+
+É necessário:
+- PJ seja a 1ª a manifestar o interesse em cooperar para a apuração do ato ilícito.
+- PJ cesse completamente seu envolvimento na infração investigada a partir da data da propositura do acordo.
+- PJ admita sua participação no ilícito e coopere plena e permanentemente com as investigações e o processo administrativo comparecendo sob suas expensas sempre que solicitada a todos os atos processuais até seu encerramento.
+
+Pontos importantes:
+- Em caso de descumprimento do acordo não poderá realizar outro no prazo de 3 anos.
+- Pode reduzir em até 2/3 o valor da multa;
+- O acordo de leniência **interrompe** o prazo prescricional;
+- Não exime da reparação integral do dano causado;
+- Isenta da publicação extraordinária da decisão condenatória e da proibição de receber incentivos, subsídios, outros no prazo de 1 a 5 anos.
+- Isenção da proibição de receber incentivos, subsídios, subvenções, doações ou empréstimos de órgãos ou entidades públicos e de instituições financeiras públicas ou controladas pelo Poder Público;
+```
+
+```ad-info
+A multa pode ser de 0,1% a 20% do faturamento bruto da empresa no último exercício anterior à instauração do processo administrativo.
+
+No entanto, a multa nunca poderá ser inferior à vantagem auferida pela empresa com a prática do ato de corrupção, quando for possível estimar essa vantagem.
+
+- **Publicação extraordinária da decisão condenatória**
+
+Se não for possível verificar o faturamento bruto da empresa, a multa será de R$ 6.000,00 a R$ 60.000.000,00.
+
+Para dosar as sanções:
+- I – a gravidade da infração;
+- II – a vantagem auferida ou pretendida pelo infrator;
+- III – a consumação ou não da infração;
+- IV – o grau de lesão ou perigo de lesão;
+- V – o efeito negativo produzido pela infração;
+- VI – a situação econômica do infrator;
+- VII – a cooperação da pessoa jurídica para a apuração das infrações;
+- VIII – a existência de mecanismos e procedimentos internos de integridade, auditoria e incentivo à denúncia de irregularidades e a aplicação efetiva de códigos de ética e de conduta no âmbito da pessoa jurídica;
+- IX – o valor dos contratos mantidos pela pessoa jurídica com o órgão ou entidade pública lesados; e
+
+**Civilmente:**
+- Dissolução compulsória (em caso de reeincidência ou PJ criada com finalidade fraudulenta)
+- Interdição ou suspensão temporária de exercício.
+- Perda dos bens auferidos ilegalmente.
+- Proibição de receber subsídio ou recursos público de 1 à 5 anos.
+
+**Quais são os componentes atenuantes ou agravantes:**
+- Situação financeira do infrator.
+- Valores dos contratos mantidos com a instituição lesada.
+- Cooperação para com o processo de apuração.
+- Gravidade da infração.
+- Dano causado.
+- Dentre outros.
+```
+# PRASC
+### Objetivos
+- Atender à Resolução do Conselho Monetário Nacional (CMN) nº 4.945, de 15 de setembro de 2021.
+- Fortalecer a CAIXA como Banco Social.
+- Fortalecer a Governança, Rentabilidade e Eficiência.
+- Alinhar-se ao posicionamento corporativo de "Sustentabilidade" para maximizar a geração de valor à sociedade e ao meio ambiente, assegurando equilíbrio econômico, social e ambiental
+#### Acesso a Serviços Financeiros e a Oportunidades de Desenvolvimento Socioeconômico
+A CAIXA implementa ações para promover o acesso a serviços financeiros e oportunidades de desenvolvimento socioeconômico, alinhando-se aos objetivos de sustentabilidade
+#### Monitoramento e Avaliação de Efetividade da PRSAC
+Avaliação contínua da aderência e efetividade da PRSAC para possibilitar revisões e correções tempestivas de deficiências
+#### Gerenciamento do Risco Social, Ambiental e Climático
+- Identificação, mensuração, avaliação, monitoramento, reporte, controle e mitigação dos riscos sociais, ambientais e climáticos, alinhados à legislação vigente e às boas práticas de mercado
+#### Incentivo ao Voluntariado
+- Programas e ações para estimular a preservação do meio ambiente e a neutralização de gases de efeito estufa
+#### Promoção da Acessibilidade
+A PRSAC destaca a importância da promoção da acessibilidade em todos os aspectos dos negócios e operações da CAIXA, garantindo o acesso universal e equitativo aos serviços financeiros
+#### Gerenciamento de Risco
+A avaliação e o gerenciamento do risco social, ambiental e climático garantem o alinhamento à legislação vigente, à estratégia corporativa, e às boas práticas de mercado, sendo vedado no relacionamento com partes interessadas que não estão alinhas com às exigências do PRASC.
+
+```ad-info
+revisada, no mínimo, a cada 3 anos.
 ```

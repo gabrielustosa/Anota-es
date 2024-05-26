@@ -47,17 +47,42 @@ A ITIL v4 apresenta uma visão baseada em uma **cadeia de valor do serviço**, q
 ```ad-info
 Lançado em 2019, o ITIL 4 atualiza o framework para a era digital, introduzindo o Sistema de Valor de Serviço do ITIL (SVS) e os Quatro Dimensões do Gerenciamento de Serviços, refletindo uma abordagem mais holística e flexível para a gestão de serviços de TI.
 ```
-### Atividades da central de serviço
-1. **Engajar**:
-    - **Interação com usuários e clientes**: A Central de Serviços é o ponto de contato principal para os usuários finais e clientes, lidando com solicitações, consultas, reclamações e incidentes.
-    - **Gestão de comunicações**: A Central de Serviços facilita a comunicação entre a organização de TI e seus usuários, garantindo que informações sobre interrupções de serviços, manutenção e atualizações sejam devidamente comunicadas.
-2. **Projetar e Transicionar:
-    - **Participação em testes**: A Central de Serviços pode participar dos testes de novos serviços ou atualizações, garantindo que eles atendam às necessidades dos usuários finais antes de serem implementados.
-    - **Preparação para mudanças**: A Central de Serviços ajuda a preparar a organização para mudanças, treinando os usuários finais e ajustando processos internos para suportar novos serviços.
-3. **Obter/Construir:
-    - **Requisições de serviço**: A Central de Serviços gerencia requisições de novos serviços ou alterações, garantindo que sejam atendidas de acordo com os acordos de nível de serviço (SLAs).
-    - **Apoio a aquisições**: Em algumas organizações, a Central de Serviços pode se envolver no processo de aquisição de novos recursos e ferramentas necessários para suportar os serviços.
-4. **Entregar e Melhoria Continua**:
-    - **Suporte a incidentes**: A Central de Serviços é responsável por registrar, classificar, priorizar e resolver incidentes, assegurando que interrupções nos serviços sejam minimizadas.
-    - **Execução de tarefas de rotina**: Inclui tarefas como redefinição de senhas, provisionamento de acesso, e suporte técnico diário.
-    - **Monitoramento contínuo**: A Central de Serviços monitoriza os serviços em tempo real, identificando e respondendo rapidamente a quaisquer problemas ou incidentes.
+
+### Atividades de valor do serviço
+1. **Planejar** – visa garantir uma compreensão compartilhada da visão, status atual e a direção da melhoria para todas as quatro dimensões, produtos e serviços da organização;
+2. **Melhorar** – a melhoria garante o aperfeiçoamento contínuo de produtos, serviços e práticas da organização, bem como das quatro dimensões do gerenciamento de serviços;
+3. **Engajar** – a atividade de engajamento esclarece as necessidades das partes interessadas através da transparência e boas relações com todos os envolvidos;
+4. **Desenho e Transição** – o desenho e a transição garantem que produtos e serviços atendam às expectativas de qualidade, custos e tempo de mercado das partes interessadas;
+5. **Obter/Construir** – o propósito de obter/construir valor é garantir que os componentes do serviço estão disponíveis quando e onde eles são necessitados;
+6. **Entrega e Suporte** – tem como propósito a garantia de que serviços serão entregues e amparados de acordo com as especificações acordadas e as expectativas das partes interessadas.
+### Quatro Dimensões 
+Para garantir uma abordagem holística, ou seja, uma abordagem global ao gerenciamento de serviços, a ITIL 4 traz quatro dimensões do gerenciamento de serviço.
+#### Organizações e Pessoas
+A primeira dimensão do ITIL V4 aborda as Organizações e Pessoas. Para garantir a efetividade de uma organização, não basta apenas um sistema de autoridade. É essencial desenvolver uma cultura organizacional sólida que apoie os objetivos da empresa, juntamente com um alto nível de capacidade e competência dos colaboradores.
+#### Informação e Tecnologia
+A segunda dimensão é a Informação e Tecnologia. Aplicada ao Sistema de Valor de Serviço (SVS), essa dimensão inclui o conhecimento necessário para a gestão de serviços, bem como as tecnologias requeridas. Ela também abrange as relações entre os diferentes componentes do SVS.
+#### Parceiros e Fornecedores
+A terceira dimensão trata de Parceiros e Fornecedores. Toda organização e serviço dependem, em algum nível, de serviços fornecidos por outras organizações. Esta dimensão engloba as relações da organização com outras entidades envolvidas no design, desenvolvimento, implantação, entrega, suporte e/ou melhoria contínua dos serviços.
+#### Fluxos de Valor e Processos
+A quarta e última dimensão do ITIL V4 abrange os Fluxos de Valor e Processos. Esta dimensão é aplicável tanto ao SVS como a produtos e serviços específicos, definindo atividades, fluxos de trabalho, controles e procedimentos necessários para alcançar os objetivos organizacionais.
+### Gerenciamento Geral
+Melhoria continua, G. Segurança da Informação, G. Conhecimento, Medição e Relatório, G. Mudança, G. Relacionamento, G. Riscos, G. Financeiro de Serviço, G. Estratégia
+#### Gerenciamento de Portfólio
+O objetivo aqui é garantir que a organização possui o conjunto correto de programas, projetos, produtos e serviços para executar sua estratégia, segundo seus recursos.
+#### Gerenciamento de Projetos
+O Gerenciamento de Projetos visa garantir que todos os projetos da organização sejam entregues com sucesso.
+### Gerenciamento de Serviços
+G. Disponibilidade, Análise de Negócio, G. de Desempenho e Capacidade, G. Incidentes, Habilitação de Mudança...
+
+```ad-summary
+#### Service Design (Desenho de Serviços)
+Essa prática desenha produtos e serviços adequados a seus propósitos e usos.
+
+Isso inclui planejamento e organização de pessoas, parceiros e fornecedores, informação, comunicação, tecnologia e práticas.
+#### Central de Serviços (Service desk)
+Responsável por fornecer um ponto central de contato para os usuários finais reportarem problemas, solicitações de serviços e incidentes relacionados aos serviços de TI. Como parte de suas responsabilidades, ela atua como suporte de primeiro nível, fornecendo um canal para que os usuários relatem problemas e solicitam assistência.
+```
+
+```ad-info
+**Disponibilidade** significa a habilidade de um serviço de TI ou outro item de configuração (IC) performar sua função quando necessário.
+```

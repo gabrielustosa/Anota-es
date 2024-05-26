@@ -1,3 +1,7 @@
+```ad-summary
+Teste de caixa preta: Teste de aceitação, teste de sistema, teste de integração.
+Teste de caixa branca: Teste de unidade, teste de integração detalhado.
+```
 # TDD
 O Test Driven Development (**TDD**) é uma técnica de desenvolvimento de software que enfatiza a escrita de testes automatizados _antes_ da implementação do código de produção. O processo é iterativo e envolve três fases principais: **Red**, **Green** e **Refactor**. No estágio **Red**, escreve-se um teste que falha, pois a funcionalidade ainda não foi implementada. Em **Green**, escreve-se o código necessário para fazer o teste passar. E em **Refactor**, refatora-se o código para melhorar sua qualidade sem alterar seu comportamento.
 

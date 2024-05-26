@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "98738a3233306a05",
+        "id": "799add074ebb6c96",
         "type": "tabs",
         "children": [
           {
-            "id": "adf30acf01427cd3",
+            "id": "5bf5c47249ba8753",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "caixa concurso/Edital.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "01510efff5ec8d38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "caixa concurso/Comportamentos Éticos e Compliance.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DevSecOps",
+                "query": "TODO",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "caixa concurso/Comportamentos Éticos e Compliance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "caixa concurso/Comportamentos Éticos e Compliance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "caixa concurso/Comportamentos Éticos e Compliance.md"
-              }
+              "state": {}
             }
           },
           {
@@ -177,34 +156,35 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "01510efff5ec8d38",
+  "active": "5bf5c47249ba8753",
   "lastOpenFiles": [
-    "caixa concurso/Edital.md",
+    "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "caixa concurso/Comportamentos Éticos e Compliance.md",
     "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
+    "caixa concurso/Português.md",
     "caixa concurso/Organização e Arquitetura de Computadores.md",
+    "caixa concurso/Sistemas Operacionais.md",
+    "caixa concurso/Testes.md",
+    "caixa concurso/Data Warehouse.md",
+    "caixa concurso/Programação.md",
+    "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Banco de Dados.md",
+    "caixa concurso/Desenvolvimento Web Java.md",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "caixa concurso/Agilidade.md",
+    "caixa concurso/Edital.md",
+    "caixa concurso/Governança.md",
+    "caixa concurso/Portais Corporativos.md",
+    "cnu concurso/Aprendizado de Máquina.md",
+    "caixa concurso/Estatística.md",
+    "caixa concurso/Matemática Financeira.md",
+    "caixa concurso/Padrões de Projeto.md",
     "Pasted image 20240520144030.png",
     "Pasted image 20240520144033.png",
-    "caixa concurso/Agilidade.md",
-    "caixa concurso/Governança.md",
     "imgs/conhecimentos comportamentais",
     "imgs/Sem título.md",
     "imgs/conhecimentos comportamentais/ods.png",
-    "caixa concurso/Arquitetura de Software.md",
-    "caixa concurso/Engenharia de Software.md",
-    "caixa concurso/Testes.md",
-    "caixa concurso/Programação.md",
-    "caixa concurso/Estrutura de Dados e Algoritmos.md",
-    "caixa concurso/Banco de Dados.md",
-    "caixa concurso/Português.md",
-    "caixa concurso/Portais Corporativos.md",
-    "caixa concurso/Big Data.md",
-    "caixa concurso/Data Warehouse.md",
-    "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Sistemas Operacionais.md",
-    "caixa concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Matemática Financeira.md",
-    "caixa concurso/Estatística.md",
     "salvar/Sites.md",
     "salvar/Livros.md",
     "imgs/arquitetura de software/arq-anlalpf-fa.png",

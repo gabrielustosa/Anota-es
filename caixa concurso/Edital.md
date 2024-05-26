@@ -90,11 +90,11 @@
 	- [x] Modos de endereçamento;
 	- [x] Conjunto típico de instruções de uma CPU; 
 	- [x] Subsistema de entrada/saída e dispositivos de armazenamento secundário. 
-- [ ] Sistemas Operacionais: [[caixa concurso/Sistemas Operacionais|estudar]]
+- [x] Sistemas Operacionais: [[caixa concurso/Sistemas Operacionais|estudar]]
 	- [x] Funções e estrutura de um sistema operacional;
 	- [x] Processos: conceitos básicos, comunicação, sincronização e escalonamento;
 	- [x] Gerência de memória: partições fixas e variáveis, realocação, memória virtual, swapping, sistemas de arquivos; 
-	- [ ] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
+	- [x] Windows 10 (32-64 bits) e ambiente Linux (SUSE SLES 15 SP2) e IBM z/OS.
 - [x] Arquiteturas de software [[Arquitetura de Software|estudar]]
 	- [x] arquitetura em camadas;
 	- [x] arquitetura MVC;
@@ -152,7 +152,7 @@
 	- [x] Medidas de dispersão (em dados brutos ou agrupados em classes): amplitude, variância, desvio padrão e coeficiente de variação. 
 	- [x] Probabilidade: experimento aleatório, espaço amostral, evento; espaços equiprováveis; probabilidade de Laplace; espaços não equiprováveis; teorema do produto; probabilidade condicional e independência; distribuição binomial.
 
-- [ ] Português  [[Português|estudar]]
+- [x] Português  [[Português|estudar]]
 	- [x] Compreensão e interpretação de textos. 
 	- [x] Argumentação e persuasão. 
 	- [x] Comunicação assertiva: linguagem simples, concisa e objetiva. 
@@ -164,9 +164,9 @@
 	- [x] Sintaxe da oração e do período. 
 	- [x] Pontuação. 
 	- [x] Concordância nominal e verbal. 
-	- [ ] Regência nominal e verbal. 
+	- [x] Regência nominal e verbal. 
 	- [x] Significação das palavras. 
-	- [ ] Colocação do pronome átono. 
+	- [x] Colocação do pronome átono. 
 	- [x] Redação oficial: escrita de textos formais e Manual de Redação da Presidência da República (disponível no sítio do Planalto, na internet). 
 	- [x] Novo Acordo Ortográfico.
 
@@ -188,6 +188,6 @@
 	- [x] Artigo 37 da Constituição Federal (Princípios constitucionais da Administração Pública: Princípios da legalidade, impessoalidade, moralidade, publicidade e eficiência).
 	- [x] Sigilo Bancário: Lei Complementar nº 105/2001 e suas alterações.
 	- [x] Lei Geral de Proteção de Dados (LGPD): Lei nº 13.709, de 14 de agosto de 2018 e suas alterações.
-	- [ ] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE 2022.
-	- [ ] Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
+	- [x] Legislação anticorrupção: Lei nº 12.846/2013 e DECRETO Nº 11.129, DE 11 DE JULHO DE 2022.
+	- [x] Política de Responsabilidade Social, Ambiental e Climática – PRASC CAIXA (disponível no sítio da CAIXA na internet).
 	- [ ] Boas práticas de governança corporativa.

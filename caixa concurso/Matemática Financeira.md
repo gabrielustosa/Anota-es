@@ -101,10 +101,18 @@ $$
 $$
 P(t) = am . [1+(n-t+1).i]
 $$
-Jt = Juros do tempo da amortização.
 ### SAF (Tabela Price)
 Similar ao SAC no entanto as prestações (amortização + juros) serão iguais e constates.
 
 $$
 P = \frac{VP.i.(1+i)^n}{(1+i)^n-1}
 $$
+
+O valor futuro aplica a fórmula:
+$$
+VF=\frac{P.(1+i)^n-1}{i}
+$$
+
+```ad-tip
+armotização = ^t-1 em cima
+```

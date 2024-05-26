@@ -263,7 +263,7 @@ A memória virtual pode ser implementada dividindo o espaço do endereço virtua
  Técnica de endereçamento de memória que utiliza o conceito de memória virtual, em que o espaço de endereçamento virtual é dividido em pequenos blocos iguais conhecidos como páginas virtuais.
  - Quando uma página não é encontrada ocorre um Page Interrupt, no qual a MMU realiza um desvio para a CPU, resultando em uma Page Fault, que é buscada utilizado o algoritmo de busca responsável.
  ##### Quadros
- As  páginas em memória virtual  correspondentes na memória física são chamadas de quadros de página, ou página física. As páginas e os quadros de página são geralmente do mesmo tamanho fixo.
+ As páginas em memória virtual correspondentes na memória física são chamadas de quadros de página, ou página física. Quando uma página de memória virtual é carregada na memória física, ela é colocada em um quadro disponível. As páginas e os quadros de página são geralmente do mesmo tamanho fixo.
  ##### Tabela de Páginas
  Registra em que bloco de memória cada página está carregada. As tabelas de páginas são mantidas pelo S.O. Se uma página é acessada mas não está na memória, o **S.O.** consulta a tabela de blocos livres, aloca a página no bloco selecionado e atualiza a tabela de páginas. Em uma implementação simples, o mapeamento de endereços virtuais em endereços físicos pode ser resumido como a seguir: o endereço virtual é dividido em um número de página virtual (bits mais significativos) e um deslocamento (bits menos significativos). 
  * Um **bit sujo** ou **bit** **modificado** é um bit associado a um bloco de memória de computador e indica se o bloco de memória correspondente foi modificado ou não.

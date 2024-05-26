@@ -1,6 +1,4 @@
 # Java
-#TODO https://www.devmedia.com.br/entendendo-anotacoes-em-java/26772
-#TODO https://www.youtube.com/watch?v=7udU24-VK0w
 #### Overload e Override
 - Overload: Escrever vários métodos com o mesmo nome mas com parâmetros diferentes.  
 - Override: Escrever o mesmo método, com os mesmos parâmetros. Ou seja, é uma anulação de um método herdado, para fazer o seu especifico.
@@ -871,6 +869,76 @@ O modificador de visibilidade internal significa que o membro é visível dentro
 - Um conjunto de arquivos compilados com uma invocação da tarefa <kotlinc> do Ant.
 ```
 # Angular
+Tudo é definido dentro do `<app-root>`
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-meu-componente',
+  templateUrl: './meu-componente.component.html',
+  styleUrls: ['./meu-componente.component.css']
+})
+export class MeuComponenteComponent {
+  // Lógica e dados do componente
+  titulo: string = 'Olá, Angular!';
+}
+```
+
+Para utilizar o componente é preciso declara-lo no módulo `NgModule`:
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { MeuComponenteComponent } from './meu-componente/meu-componente.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MeuComponenteComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+```typescript
+<button (click)="navigateToAbout()">Ir para a página Sobre</button>
+
+export class HomeComponent {
+  constructor(private router: Router) {}
+
+  navigateToAbout() {
+    this.router.navigate(['/about']);
+  }
+}
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about/:id', component: AboutComponent }
+];
+```
+#### Vinculações 
+- **[(ngModel)]**:
+    - **Tipo**: Vinculação bidirecional.
+    - **Propósito**: Sincroniza valores entre controles de formulário e propriedades do componente.
+    - **Uso**: Atualiza o valor do controle de formulário e a propriedade do componente simultaneamente.
+- **[src]**:
+    - **Tipo**: Vinculação de propriedade.
+    - **Propósito**: Define dinamicamente o valor do atributo `src` de um elemento `<img>`.
+    - **Uso**: Atualiza a URL da imagem conforme os dados do componente.
+#### For
+```typescript
+<app-housing-location
+  *ngFor="let housingLocation of housingLocationList"
+  [housingLocation]="housingLocation">
+</app-housing-location>
+```
 # AngularJS
 AngularJS estende o HTML com `ng-directives`. 
 - A `directiva ng-app` define uma aplicação AngularJS. 

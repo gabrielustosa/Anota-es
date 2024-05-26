@@ -1,5 +1,33 @@
 # Tabela de Frequências Discreta
+### Frequência Absoluta
+É o número de vezes que um determinado valor ou categoria aparece em um conjunto de dados.
+- **Exemplo:** Se você tem uma lista de frutas: maçã, banana, maçã, laranja, maçã, a frequência absoluta da maçã é 3, porque ela aparece três vezes.
+### Frequência Relativa
+É a frequência absoluta de um valor dividida pelo total de valores, expressando a proporção ou a porcentagem do total.
+- **Exemplo:** Continuando com o exemplo das frutas (total de 5 frutas), a frequência relativa da maçã seria 3 (frequência absoluta) dividido por 5 (total de frutas), que é 0,6 ou 60%.
+### Frequência Acumulada
+É a soma das frequências absolutas de todos os valores até um determinado ponto. Mostra o total acumulado conforme você avança nos dados.
+- **Exemplo:** Se tivermos uma lista de números de 1 a 5 e queremos a frequência acumulada:
+    - O número 1 aparece 1 vez (frequência acumulada = 1)
+    - O número 2 aparece 1 vez (frequência acumulada = 1 + 1 = 2)
+    - O número 3 aparece 1 vez (frequência acumulada = 2 + 1 = 3)
+    - O número 4 aparece 1 vez (frequência acumulada = 3 + 1 = 4)
+    - O número 5 aparece 1 vez (frequência acumulada = 4 + 1 = 5)
+
 ![[est-freq.png]]
+# Tabelas
+### Linhas
+Mostrar a tendência de dados ao longo do tempo.
+- **Exemplo:** Um gráfico de linha pode mostrar como a temperatura muda durante uma semana.
+### Colunas
+Comparar quantidades diferentes lado a lado.
+- **Exemplo:** Um gráfico de colunas pode mostrar a quantidade de livros vendidos por mês.
+### Setores (ou Gráfico de Pizza)
+Mostrar partes de um todo.
+- **Exemplo:** Um gráfico de setores pode mostrar a porcentagem de tipos de frutas vendidas em uma loja.
+### Histogramas
+Mostrar a distribuição de dados em intervalos, frequência dos dados.
+- **Exemplo:** Um histograma pode mostrar quantas pessoas têm alturas em diferentes intervalos (como 150-160 cm, 160-170 cm, etc.).
 # Probabilidade 
 #### Teorema da Soma
 Em um experimento aleatório de espaço amostral S, dados dois eventos A, B ⊂ S, temos que:
@@ -164,6 +192,24 @@ Os **quartis** são valores que dividem um conjunto de dados em quatro partes ig
 - **Primeiro quartil (Q1)**: Divide os 25% menores dados do restante.
 - **Segundo quartil (Q2)** ou mediana: Divide os dados ao meio.
 - **Terceiro quartil (Q3)**: Divide os 75% menores dados dos 25% maiores.
+# Medidas de dispersão
+#### Desvio Médio
+Pega a média e calcula em cada valor a diferença da média e divide pelo total.
+$$
+ DM = \frac{\sum_{i=1}^{N} Fi|x_i - \bar{x}|}{n}
+$$
+#### Variância
+A soma das diferenças das médias elevado ao quadrado. (Populacional, denominador = n; amostral = n - 1)
+$$
+V^2 = \frac{\sum_{i=1}^{N} Fi{|x_i - \bar{x}|}^2}{n}
+$$
+$$
+DP = \sqrt{V}
+$$
+#### Coeficiente de Variação
+$$
+CV = \frac{V}{\bar{x}}
+$$
 # Análise Combinatória
 #### Princípio Fundamental da Contagem
 O princípio fundamental da contagem (ou princípio multiplicativo) é utilizado para encontrar o número de possibilidades para um evento constituído de **k** etapas. Para isso, as etapas devem ser sucessivas e independentes.

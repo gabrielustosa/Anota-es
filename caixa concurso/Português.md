@@ -15,6 +15,12 @@
 4.  Não deve ser empregada entre palavras repetidas: `cara a cara, ponto a ponto, dia a dia.`
 5. Nunca ocorre crase antes de verbos: `comecei a estudar ontem.`
 6. É proibida a crase antes de artigo indefinido e preposição (exceção de até).
+### Crases facultativas
+Diante de **nomes próprios femininos**;
+Julia, Cláudia, Gertrudes, etc.
+Diante de **pronome possessivo feminino**;
+Sua, minha, etc.
+Diante da **palavra até**
 # Concordância 
 O verbo **haver**, quando possui sentido de existir, é **impessoal**, devendo usar havia no lugar de haviam.
 Quando o verbo fazer possui sentido de **tempo decorrido**, **não** varia: "**faz** dois anos que ele não vem", **e não** "**fazem** dois anos que ele não vem". O mesmo vale para a locução verbal: "**deve** **fazer** dois anos...", e não "**devem** **fazer** dois anos..."
@@ -49,3 +55,29 @@ V.T.I, V.I, V.L não pode ser colocado na voz ativa
 Há plural em VTD + se.
 Não há plural em VTI + se + prep.
 ```
+# Pronome obliquo átono 
+Eles são me, te, se, o, a, lhe, nos, vos;
+
+Ele pode assumir três posições:
+### Ênclise 
+Quando o pronome átono aparece após o verbo:
+Ex.: Ajudei-o naquela tarefa difícil.
+### Próclise
+Quando o pronome átono aparece antes do verbo:
+Ex.: Ele se manteve calmo.
+### Mesóclise
+Quando o pronome átono aprece no meio do verbo:
+Ex.: Dar-te-ia a minha vida.
+### Proibições
+1. Iniciar oração com pronome oblíquo átono.
+	-  Exemplo: Me empresta um lápis? (Empresta-me)
+2. Colocá-los após futuros.
+	- Exemplo: Emprestarei-te um lápis. (Emprestar-te-ei)
+3. Colocá-los após particípio (ado ou ido).
+	- Exemplo: Tinha emprestado-lhe um lápis. (Lhe emprestado)
+### Regras gerais
+1. Palavras invariáveis antes do verbo, próclise.
+	- Quem o ajudou? Não me viu? Para me enviar as mercadorias.
+	- **Caso especial**: Antes de infinitivo estará sempre certo.
+		- Para enviar-me as mercadorias.
+2. **FRASE** (não pode fica logo  após a virgula, a não ser que se trate de termo intercalado)

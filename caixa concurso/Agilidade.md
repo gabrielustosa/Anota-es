@@ -40,20 +40,25 @@ O objetivo do Lean UX é obter feedback dos usuários o mais cedo possível dura
 5. **Remoção de resíduos** - Eliminação de qualquer problema que não contribui para o objetivo final.
 6. **Pequenos lotes** - Criar apenas o design necessário para avançar, evitando ineficiências. 
 7. **Descoberta contínua**- Engajamento contínuo do cliente durante o projeto e desenvolvimento para entender o uso do produto.
-8. **GOOB: a nova centralidade do usuário** - Colocar o usuário no centro do negócio para maximizar aprendizado e melhorias.
-9. **Compreensão compartilhada** - Equipe compreende coletivamente o processo, produto e cliente para eficiência no trabalho.
-10. **Antipadrão: rockstars, gurus e ninjas** - Mentalidade de equipes multifuncionais em vez de especialistas.
-11. **Externalizar o trabalho** - Compartilhar ideias para inspirar novas e criar um fluxo de informações contínuo.
-12. **Fazer em vez de só analisar** - Criar uma primeira versão de uma ideia para obter respostas valiosas dos clientes.
-13. **Aprender antes de crescer** - Validar ideias antes de escalá-las para reduzir riscos e poupar recursos. 
-14. **Permissão para falhar** - Experimentação é incentivada, pois falhas frequentes levam ao aumento de habilidades. 
-15. **Sair do negócio de entregas** - Documentos não resolvem problemas dos clientes; foco na qualidade do produto e reação do mercado.
+8. **Compreensão compartilhada** - Equipe compreende coletivamente o processo, produto e cliente para eficiência no trabalho.
+9. **Antipadrão: rockstars, gurus e ninjas** - Mentalidade de equipes multifuncionais em vez de especialistas.
+10. **Externalizar o trabalho** - Compartilhar ideias para inspirar novas e criar um fluxo de informações contínuo.
+11. **Fazer em vez de só analisar** - Criar uma primeira versão de uma ideia para obter respostas valiosas dos clientes.
+12. **Aprender antes de crescer** - Validar ideias antes de escalá-las para reduzir riscos e poupar recursos. 
+13. **Permissão para falhar** - Experimentação é incentivada, pois falhas frequentes levam ao aumento de habilidades. 
+14. **Sair do negócio de entregas** - Documentos não resolvem problemas dos clientes; foco na qualidade do produto e reação do mercado.
 ### Lean UX na prática
 1. **Pressupostos** - Inicia-se realizando um **brainstorming das features**. 
 2. **Hipóteses** - Em seguida, **levanta-se algumas hipóteses** para a definição do MVP.
 3. **Protótipo/MVP** - A próxima etapa é **criar um protótipo** de baixa, média ou alta fidelidade do MVP que foi definido anteriormente. 
 4. **Validação** - Nesse momento, ocorre a **validação interna e externa do produto**, guiada por testes de usabilidade do protótipo. Primeiro ocorre a validação interna, geralmente realizada com os stakeholders, e, depois, a validação externa, com os consumidores ou usuários do produto. 
 5. **Resultados** - **Avalia-se os dados coletados** e, caso ocorram falhas ou qualquer problema de uso, o time deve voltar para o passo do protótipo e, novamente, passar por todas as etapas seguintes, até chegar na realização de testes de usabilidade.
+
+```ad-summary
+##### GOOB (acrônimo para “Getting Out Of The Building” ou Saia do prédio)
+
+Esse princípio diz basicamente que você deve sair do seu escritório e ir para a rua testar as ideias. Você deve ir até o usuário, até onde ele executa a tarefa que você quer resolver. Esse princípio é importante porque você deve testar todas suas hipóteses com a realidade, as respostas estão no mercado.
+```
 # Valores do Desenvolvimento Ágil
 ## Ágil em Escala 
 Pode ser entendido como algo que foi aumentado, como um conjunto de times que utilizando a metodologia ágil para realizar a entrega de tarefas ou produtos. Para implementação é necessário: **Mudanças na estrutura organizacional e nos papéis desempenhados pelos profissionais**, **Cadência nas entregas**, **Foco no cliente**, **Remoção de Barreiras e Dependências**, **Sincronização total**, **Pensamento Lean** e **Profissionais Capacitados**.
@@ -116,7 +121,7 @@ O objetivo desta fase é entender quais componentes de suas ideias funcionam ou 
 
 Suas ferramentas são:
 - Encenação
-- Storyboard
+- Storyboard/Storytelling
 - Prototipagem Rápida
 ### Teste
 Retorne aos seus usuários e feedback para refletir se esta solução atende às necessidades dos usuários e melhorou como eles se sentem, pensam ou fazem suas tarefas.
@@ -197,6 +202,10 @@ Daily Scrum é, basicamente, uma reunião diária, que deve durar até 15 minuto
 1. O que você fez ontem?
 2. O que você fará hoje?
 3. Existe/Existiu algum impedimento no seu caminho?
+
+```ad-tip
+Planning -> Daily -> Review -> Retrospective
+```
 ### XP (eXtreme Programming)
 A Extreme Programming (Programação Extrema) envolve um conjunto de regras e práticas constantes no contexto de quatro atividades metodológicas: planejamento, projeto, codificação e testes.
 
@@ -205,6 +214,11 @@ A Extreme Programming (Programação Extrema) envolve um conjunto de regras e pr
 - Simplicidade do projeto.
 
 ![[ag-xp.png]]
+
+```ad-summary
+#### Planning Game (Planejando o jogo)
+Entre o cliente e os técnicos são estimuladas reuniões usando quadros brancos, com o objetivo de captar e definir as "user stories" (estórias, que são textos claros ou diagramas com notação UML com as especificações de regras de negócios inerentes ao sistema) e também para poder estimar o tempo ideal das interações, o projeto como um todo, elaborar estratégias e tentar prever as contingências para projeto.
+```
 #### Planejamento
 Se inicia com ouvir. A atividade de ouvir conduz à criação de um conjunto de histórias do usuário. Cada história de usuário é escrita pelo cliente e colocada em uma ficha. O cliente atribui um valor à história baseando-se no valor de negócio global do recurso ou da função. Os membros da equipe XP avaliam, então, cada história e atribuem um custo, medido em semanas de desenvolvimento. A equipe XP ordena as histórias que serão desenvolvidas em uma de três formas: (1) todas as histórias serão implementadas imediatamente (em um prazo de poucas semanas); (2) as histórias de maior valor serão deslocadas para cima no cronograma e implementadas primeiro; ou (3) as histórias de maior risco serão deslocadas para cima no cronograma e implementadas primeiro.
 #### Projeto

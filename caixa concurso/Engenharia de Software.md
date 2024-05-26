@@ -483,12 +483,11 @@ A maturidade determina o nível qualidade.
 Em suma, O CMMI é um framework para medir maturidade dos processos de TI. Este procura nortear a organização no sentido de implementar a melhoria contínua do processo de software, e o faz através de um modelo que contempla duas representações, divididas em níveis, priorizando de forma lógica as ações a serem realizadas. Quanto maior o nível, maior a maturidade da organização, o que pode se traduzir em maior qualidade do produto final, com maior previsibilidade em cronogramas e orçamentos.
 
 Essas duas representações possíveis são:
-##### Representação Por Estágios
+##### Representação Por Estágios (Abrangente)
 Disponibiliza uma sequência pré-determinada para melhoria baseada em estágios que não deve ser desconsiderada, pois cada estágio serve de base para o próximo. É caracterizado por Níveis de Maturidade (_Maturity Levels_)
-##### Representação Continua  
+##### Representação Continua  (Incremental)
 Possibilita a organização utilizar a ordem de melhoria que melhor atender os objetivos de negócio da empresa. É caracterizado por Níveis de Capacidade (_Capability Levels_)
 #### Maturidade
-
 Os níveis de maturidade do CMMI na representação contínua são os seguintes:
 
 - Nível 0 - Incompleto: Os processos não estão implementados ou não alcançam os objetivos da área de processo.

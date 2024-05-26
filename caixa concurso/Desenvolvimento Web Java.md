@@ -1077,5 +1077,3 @@ Além das demais anotações relacionadas aos verbos HTTP como `@GET`, `@POST`, 
 # Quarkus
 É um framework para desenvolvimento de aplicações cloud native. foi desenvolvido com o objetivo de ser portado dentro de
 contêineres (a infraestrutura imutável).
-
-#TODO Beging Quarkus - Livro
