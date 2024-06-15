@@ -23,3 +23,4 @@
 - A utilidade do inútil
 - Henessy Patternson - Arquitetura de Computadores
 - Hands on machine learning
+- Maziero sistemas operacionais

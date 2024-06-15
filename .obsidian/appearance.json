@@ -1,7 +1,7 @@
 {
-  "accentColor": "#7e42f5",
-  "cssTheme": "Dark Moss",
-  "theme": "obsidian",
+  "accentColor": "#42c8f5",
+  "cssTheme": "",
+  "theme": "moonstone",
   "enabledCssSnippets": [
     "checkbox",
     "center-images",
