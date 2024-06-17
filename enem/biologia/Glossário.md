@@ -203,10 +203,10 @@ Os **carotenoides** também são importantes para muitos animais. Por exemplo, a
 ### Proteínas
 As **proteínas** são **polímeros** em que os **monômeros** são **aminoácidos**.  Elas desempenham uma variedade de funções vitais nos organismos vivos, incluindo a estruturação das células, o **transporte de moléculas**, a **catalisação** de reações bioquímicas, e a regulação de processos biológicos. Cada **proteína** possui uma estrutura única que determina sua função específica. A estrutura das **proteínas** é organizada em quatro níveis:
 
-1. primário (sequência de aminoácidos)
-2. secundário (dobras e hélices)
-3. terciário (dobras tridimensionais complexas)
-4. quaternário (associações de múltiplas cadeias polipeptídicas).
+1. _primário_ (sequência de **aminoácidos**)
+2. _secundário_ (dobras e hélices)
+3. _terciário_ (dobras tridimensionais complexas)
+4. _quaternário_ (associações de múltiplas **cadeias polipeptídicas**).
 
 ```ad-summary
 ##### Aminoácido
@@ -286,7 +286,7 @@ A **atividade enzimática** aumenta com a temperatura até um certo ponto, porqu
 ```ad-info
 A desnaturação pelo calor é irreversível. 
 ```
-###### pH (Potencial Hidrogeniônico)
+###### pH 
 - Cada **enzima** tem um **pH** ótimo onde sua atividade é máxima. Fora dessa faixa, a **enzima** não funciona adequadamente.
 - A maioria das **enzimas celulares** funciona melhor em **pH** próximo a 7 (neutro). No entanto, algumas enzimas têm **pH** ótimos diferentes:
     - **Pepsina:** Funciona melhor em **pH** ácido (cerca de 2), no estômago.
@@ -328,6 +328,17 @@ Certas **substâncias** químicas podem inibir a atividade das **enzimas**. A in
 Muitos **antibióticos** funcionam inibindo irreversivelmente as **enzimas** das **bactérias**. Por exemplo:
 
 - **Penicilina:** Inibe a **enzima transpeptidase**, essencial para a formação da **parede celular** das **bactérias**. Sem a **parede celular**, as **bactérias** não conseguem se reproduzir. Nossas **células** não usam essa **enzima**, então a **penicilina** não inibe nossas **enzimas**, embora possa causar reações alérgicas em algumas pessoas.
+```
+#### Tipos de proteinas
+##### Colágeno
+A **proteína** mais abundante de nosso corpo (cerca de _30%_ de nosso _conteúdo proteico_). As longas **moléculas** dessa **proteína**, das quais são conhecidos cerca de dezoito tipos diferentes, estão reunidas _três a três_, enroladas em uma _tripla-hélice_, a estrutura básica das **fibras colágenas**. Essas _fibras_ são muito resistentes à _tração_, distendendo-se pouco quando _tensionadas_. Sua presença na **derme**, por exemplo, confere _resistência_ à **pele**, evitando que ela sofra _lesões_ ao ser _esticada_.
+
+```ad-info
+Há pouco tempo, descobriu-se uma relação curiosa envolvendo o **colágeno**, a **vitamina C** e o **escorbuto**, doença que assolou as tripulações dos navios na época das grandes navegações, entre os séculos XV e XVI. Um dos _sintomas_ do **escorbuto** é um _enfraquecimento generalizado_, marcado por _sangramento_ nas _gengivas_ e demais _mucosas_, com frequente _perda de dentes_. 
+
+Hoje se sabe que essa doença é provocada pela deficiência de **vitamina C**, que faz diminuir a produção de **colágeno**, acarretando a perda de _fibras_ nos **tecidos conjuntivos**, que se tornam enfraquecidos.
+
+Isso explica os sintomas do **escorbuto**, que causa a _degeneração_ dos **tecidos conjuntivos** que sustentam os **vasos sanguíneos**, e _descolamento dos dentes_, causado pela _degeneração_ das **fibras colágenas** que os ancoram aos _alvéolos dentários_. 
 ```
 ### Vitamina 
 **Substâncias orgânicas** que o organismo precisa em pequenas quantidades, mas não pode produzir. Elas são essenciais para o bom funcionamento do corpo. Muitas **vitaminas** atuam como **cofatores** em **reações enzimáticas**. Sem essas **vitaminas**, a quantidade de **enzimas** ativas (**holoenzimas**) diminui, prejudicando o **metabolismo celular**.

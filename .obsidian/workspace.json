@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9ccbc9d6bf19f3a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "enem/biologia/Glossário.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -166,20 +178,22 @@
   },
   "active": "a09e35e2255b084d",
   "lastOpenFiles": [
-    "imgs/enem/biologia/bio-tecidos-epitelio.png",
+    "imgs/enem/biologia/bio-tecidos-musculares-fibra-muscular.png",
+    "imgs/enem/biologia/bio-tecidos-musculares-esqueletico.png",
+    "imgs/enem/biologia/bio-tecidos-musculares.png",
+    "imgs/enem/biologia/bio-utilização-nutrientes.png",
     "enem/biologia/Histologia.md",
-    "imgs/enem/biologia/bio-tecidos-epitelio-pelo.png",
-    "imgs/enem/biologia/bio-tecidos-camadas-epiderme.png",
-    "imgs/enem/biologia/snapedit_1718410393227.png",
-    "imgs/enem/biologia/bio-tecidos-epitelio-melanocito.png",
-    "imgs/enem/biologia/bio-tecidos-pele.png",
-    "imgs/enem/biologia/bio-tecidos-origem-glandulas.png",
-    "imgs/enem/biologia/bio-tecidos-glandula-exocrino.png",
-    "imgs/enem/biologia/snapedit_1718401884736.png",
-    "imgs/enem/biologia/bio-tecidos-glandulas-exo-tipos.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineo-coagulação.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineo-plaquetas.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineo-hemoglobina.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineo-producao-hemacia.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineo-celulas-tronco-hema.png",
+    "imgs/enem/biologia/bio-tecidos-sanguineos-medula-vermelha.png",
+    "salvar/Sites.md",
+    "imgs/enem/biologia/bio-tecidos-sanguineo.png",
+    "enem/biologia/Glossário.md",
     "enem/biologia/Conceitos Básicos.md",
     "enem/biologia/Bioquímica.md",
-    "enem/biologia/Glossário.md",
     "enem/biologia/Citologia.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
     "cnu concurso/Aprendizado de Máquina.md",
@@ -193,7 +207,6 @@
     "imgs/enem",
     "caixa concurso/Programação.md",
     "enem/biologia",
-    "salvar/Sites.md",
     "enem",
     "caixa concurso/Estatística.md",
     "caixa concurso/Comportamentos Éticos e Compliance.md",
