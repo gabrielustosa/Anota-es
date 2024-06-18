@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c3fb70116ee226fc",
+        "id": "4458b9d587e1eb5d",
         "type": "tabs",
         "children": [
           {
-            "id": "a09e35e2255b084d",
+            "id": "c48ef077321814ea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "enem/biologia/Histologia.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ccbc9d6bf19f3a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "enem/biologia/Glossário.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -60,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Água",
+                "query": "path:\"imgs/\" ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "enem/biologia/Histologia.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "enem/biologia/Histologia.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "enem/biologia/Histologia.md"
-              }
+              "state": {}
             }
           },
           {
@@ -176,24 +156,23 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a09e35e2255b084d",
+  "active": "2aab6586082883e9",
   "lastOpenFiles": [
-    "imgs/enem/biologia/bio-tecidos-musculares-fibra-muscular.png",
-    "imgs/enem/biologia/bio-tecidos-musculares-esqueletico.png",
-    "imgs/enem/biologia/bio-tecidos-musculares.png",
-    "imgs/enem/biologia/bio-utilização-nutrientes.png",
     "enem/biologia/Histologia.md",
-    "imgs/enem/biologia/bio-tecidos-sanguineo-coagulação.png",
-    "imgs/enem/biologia/bio-tecidos-sanguineo-plaquetas.png",
-    "imgs/enem/biologia/bio-tecidos-sanguineo-hemoglobina.png",
-    "imgs/enem/biologia/bio-tecidos-sanguineo-producao-hemacia.png",
-    "imgs/enem/biologia/bio-tecidos-sanguineo-celulas-tronco-hema.png",
-    "imgs/enem/biologia/bio-tecidos-sanguineos-medula-vermelha.png",
-    "salvar/Sites.md",
-    "imgs/enem/biologia/bio-tecidos-sanguineo.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-estimulo-nervoso.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-impulso-nervoso.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-neurofibras.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-gliocitos.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-substancia-cinzenta.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-fisiolog.png",
+    "imgs/enem/biologia/bio-tecidos-nervosos-class-neuronios.png",
+    "Pasted image 20240617190247.png",
+    "imgs/enem/biologia/bio-tecidos-musculares-coração.png",
+    "imgs/enem/biologia/bio-tecidos-musculares-contração-energia.png",
     "enem/biologia/Glossário.md",
-    "enem/biologia/Conceitos Básicos.md",
     "enem/biologia/Bioquímica.md",
+    "salvar/Sites.md",
+    "enem/biologia/Conceitos Básicos.md",
     "enem/biologia/Citologia.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
     "cnu concurso/Aprendizado de Máquina.md",

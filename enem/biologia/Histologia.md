@@ -48,7 +48,7 @@ No caso das **glândulas exócrinas**, a parte mais profunda do _cordão de cél
 
 No caso das **glândulas endócrinas**, a parte mais profunda do _cordão celular_ se isola, perdendo comunicação com o exterior e, portanto, não há formação de **ducto**. As **secreções** das **glândulas endócrinas** são eliminadas diretamente para o interior de **vasos sanguíneos** localizados na própria **glândula** ou em torno dela.
 
-![[Pasted image 20240614190300.png]]
+![[bio-tecidos-origem-glandulas.png]]
 ```
 ##### Glândulas exócrinas
 **Glândulas exócrinas** são aquelas que eliminam suas **secreções** para _fora_ do corpo ou para _cavidades internas_ de **órgãos**, através de um **ducto**. 
@@ -143,7 +143,7 @@ as **bactérias** que constituem a _flora normal_ de nossa **pele** estão adapt
 ##### Regulação da temperatura corporal
 A **pele** desempenha importante papel na manutenção de nossa _temperatura corporal_. Quando a temperatura do corpo sobe, _impulsos nervosos_ provocam a _dilatação_ dos **vasos sanguíneos dérmicos**, fazendo com que uma maior quantidade de **sangue** passe a _circular_ na **pele**. Com isso, aumenta a **irradiação** de calor para o _meio_ e o corpo _esfria_. Em dias frios, os **vasos sanguíneos** da **pele** se contraem, fazendo com que menos **sangue** _circule_ na superfície do corpo. Desse modo, reduz-se a _perda_ de calor.
 ##### Função sensorial
-A **pele** está repleta de **terminações nervosas** capazes de captar _estímulos mecânicos_, _térmicos_ ou _dolorosos_. Essas _terminações_ são genericamente chamadas de **receptores cutâneos**. Os **folículos** dos **pelos**, por exemplo, são envolvidos por **fibras nervosas** que captam as _forças mecânicas_ aplicadas sobre o **pelo**.
+A **pele** está repleta de **terminações nervosas** capazes de captar _estímulos mecânicos_, _térmicos_ ou _dolorosos_. Essas _terminações_ são genericamente chamadas de **receptores cutâneos**. Os **folículos** dos **pelos**, por exemplo, são envolvidos por **neurofibras** que captam as _forças mecânicas_ aplicadas sobre o **pelo**.
 
 ```ad-info
 Perto dos **pelos** localizam-se também os chamados **terminais de Ruffini**, **terminações nervosas** _ramificadas_ especializadas na _percepção de calor_.
@@ -621,6 +621,13 @@ Os **músculos** são _constituídos_ por **tecido muscular**, que se caracteriz
 ```ad-important
 Nos **músculos**, há também **tecido conjuntivo**, no qual estão situados **vasos sanguíneos** que atuam na _nutrição_ e na _oxigenação_ das **células musculares**.
 ```
+
+```ad-summary
+##### Tônus Muscular
+Em condições normais, há sempre algumas **fibras** de um **músculo esquelético** sendo _estimuladas_ a se **contrair**. Quando essas **fibras** se _relaxam_, outras se **contraem** em seu lugar, de modo que todo **músculo** apresenta um _estado_ de **tensão muscular sustentado**, conhecido como **tônus muscular**. O **tônus** é responsável pela _firmeza_ dos **músculos** e é importante na _manutenção_ da postura do corpo.
+
+O **tônus muscular** depende da **inervação** por **neurônios motores** e, além de manter os **músculos** preparados para a **contração**, é _essencial_ para a manutenção da _atividade vital_ das **células musculares**. Pessoas com _lesões_ da **medula espinhal**, ou portadoras de certas _doenças neurológicas_, em que há _falta_ de **estimulação nervosa dos músculos**, podem _perder_ o **tônus** e sofrer _degeneração_ do **tecido muscular**, com consequente _atrofia_ da **musculatura**.
+```
 ### Tecido muscular estriado esquelético
 Constitui a maior parte da **musculatura** dos **vertebrados**, formando o que se chama popularmente de “_carne_”. O termo _esquelético_ se refere ao fato de esse tipo de **musculatura** estar _preso_ aos **ossos**. Já o termo _estriado_ deve-se ao fato de suas **fibras** constituintes apresentarem _estrias_ (_faixas_) _transversais_, regularmente dispostas ao longo de seu _comprimento_.
 
@@ -672,4 +679,274 @@ Certo número dessas **moléculas** _agrega-se_ formando os **filamentos de mios
 
 ```ad-note
 A **contração muscular** ocorre quando os **filamentos de actina** _deslizam_ sobre os **filamentos de miosina**. Nesse processo, as “_cabeças_” dos filamentos de **miosina** prendem-se aos **filamentos de actina** que estão ao seu redor e _dobram-se_ em direção ao _centro_ do **miômero**, _encurtando-o_.
+```
+### Contração muscular
+A **contração** de uma **fibra esquelética** é _desencadeada_ pela **terminação nervosa** presente no **endomísio** de cada **fibra muscular**. O **estímulo nervoso** se propaga para o _interior_ da **fibra muscular estriada** através dos **túbulos T** e atinge o **retículo sarcoplasmático**, provocando a liberação de **íons** de Ca²⁺ armazenados no _interior_ de suas **bolsas**. Os **íons** de Ca²⁺ espalham-se pelo **citosol** e entram em contato direto com as **miofibrilas**, provocando sua **contração**.
+
+Em presença dos **íons** de Ca²⁺, **moléculas de ATP** _reagem_ com as "_cabeças_" das **moléculas de miosina**, transferindo-lhes sua **energia**. Com isso, as _extremidades dilatadas_ de **miosina** ligam-se às **moléculas de actina** adjacentes e dobram-se com _força_ e _rapidez_, fazendo os **filamentos de actina** deslocarem-se cerca de 10 nm (nanômetros) sobre elas, em direção ao _centro_ do **miômero**. 
+
+```ad-tip
+Seria como se "_dentes_" de um **filamento de miosina** se introduzissem em "_encaixes_" dos **filamentos de actina** adjacentes, movendo-os. Imediatamente, outras "_cabeças_" de **miosina** do filamento se ligam às **fibras de actina**, dobrando-se e deslocando-se mais 10 nm. Tudo se passa como se cada "_cabeça_" de **miosina** "_andasse_" ao longo do filamento de **actina** adjacente a ela, puxando-o em direção ao _centro_ do **miômero**. 
+```
+
+O resultado final é a **contração do músculo**. Ao cessar a **estimulação nervosa**, _cessa_ a saída de **íons** de Ca²⁺ das **bolsas** do **retículo sarcoplasmático** e os **íons** livres no **citosol** são _rebombeados_ para o _interior_ das **bolsas membranosas**. 
+
+```ad-info
+Na _ausência_ de **íons** de Ca²⁺, a **miosina** separa-se da **actina** e os **miômeros** distendem-se, provocando o _relaxamento_ da **fibra muscular**.
+```
+#### Energia para a contração
+A fonte direta de **energia** para a **contração muscular** são **moléculas de ATP**, produzidas nas **mitocôndrias** durante a **respiração aeróbia** ou, em caso de _ausência_ de **gás oxigênio**, pela **fermentação láctica**. O estoque de **ATP** disponível na **célula muscular** é suficiente para _manter_ a **contração** por apenas 0,5 segundo. Por isso, os **músculos** dispõem de um _reservatório extra_ de **energia**, na forma de **fosfato de creatina**, **substância** _altamente energética_, presente nas **fibras musculares** em uma **concentração** 10 vezes maior que a de **ATP**.
+
+À medida que o _estoque_ de **ATP** vai sendo utilizado, a **célula muscular** transfere _fosfatos energéticos_ das **moléculas** de **fosfato de creatina** para **moléculas de ADP**, gerando **ATP**. Quando _cessa_ a atividade da **fibra muscular**, **grupos fosfatos** de novas **moléculas de ATP** geradas na **respiração celular** são _transferidos_ para **moléculas** de **creatina**, repondo o _estoque_ de **fosfato de creatina**. 
+
+![[bio-tecidos-musculares-contração-energia.png]]
+
+```ad-note
+ Na imagem a atuação do **cálcio**, do **ATP** e da **fosfato de creatina** na **contração muscular**. Para que ocorra a **contração**, é necessária a presença de **íons** de Ca²⁺ e de **moléculas de ATP** _livres_ no **citosol** da **fibra muscular**. Os **íons** de Ca²⁺ são _liberados_ por **bolsas** do **retículo sarcoplasmático**. O **ATP** consumido _reconstitui-se_ pela ação do **fosfato de creatina**; portanto a **energia** para a **contração muscular** provém _diretamente_ do **ATP** e _indiretamente_ do **fosfato de creatina**. 
+```
+
+```ad-note
+As **células musculares esqueléticas** também podem _armazenar_ grande quantidade de **glicogênio**. Esse **glicogênio** é um _reservatório_ de **energia** de médio prazo para as **células**, pois pode ser transformado em **moléculas de glicose**, utilizadas na **respiração celular** para gerar **ATP**.
+```
+
+Durante um exercício físico _muito intenso_, a quantidade de **gás oxigênio** que chega aos **músculos** pode _não ser suficiente_ para _suprir_ as _necessidades respiratórias_ das **fibras musculares**. Nesse caso, após se _esgotarem_ as _reservas_ de **gás oxigênio** ligado à **mioglobina**, as **fibras musculares** passam a produzir **ATP** por meio da **fermentação láctica**. Esse processo, embora produza _bem menos_ **energia** que a **respiração aeróbia**, garante a **produção de ATP** na situação de _emergência_. 
+
+```ad-warning
+Uma consequência dessa **fermentação**, no entanto, é a produção de **ácido láctico**, cujo _acúmulo_ nos **músculos** causa _dor_ e _intoxicação_ das **fibras musculares**. 
+
+O **ácido láctico** produzido nos **músculos** é _transportado_ pelo **sangue** até o **fígado** e os **rins**, nos quais é _reconvertido_ em **glicose** por meio da **gliconeogênese**.
+```
+### Tecido Muscular Estriado Cardíaco
+Encontrado apenas no **coração**. Apesar de serem chamadas de **fibras musculares**, as _unidades_ que compõem esse **tecido** são **células** dotadas de um único **núcleo** e não **sincícios multinucleados**, como as **fibras estriadas esqueléticas**.
+
+```ad-info
+ As **fibras musculares cardíacas** assemelham-se às **fibras esqueléticas** por apresentarem _estrias transversais_, devidas ao padrão de organização dos **filamentos de actina** e **miosina** em seu **citoplasma**.
+```
+
+Os **filamentos de actina** e **miosina**, porém, não estão _agrupados em feixes_ formando **miofibrilas**, como ocorre na **musculatura esquelética**. As **células musculares estriadas cardíacas** também são _envolvidas_ por um _fino envoltório_ de **filamentos de proteína**, o **endomísio**, mas não há **perimísio** nem **epimísio** na **musculatura do coração**.
+
+```ad-note
+**Células musculares cardíacas** têm _ramificações_ que se _conectam_ umas às outras. A _conexão_ entre elas ocorre em regiões denominadas _discos intercalares_, em que há várias _junções_ nas **membranas celulares**. Devido a essas _junções_, um _estímulo_ suficientemente forte em uma região do **coração** se _espalha rapidamente_ por todas as **células musculares estriadas cardíacas**, levando todo o **órgão** a se **contrair**.
+
+Nesse aspecto, também, a **fibra estriada cardíaca** difere da **fibra estriada esquelética**, pois esta só se **contrai** depois de receber um _estímulo_ direto a partir de uma **terminação nervosa** em contato com ela.
+```
+
+A **musculatura cardíaca** tem _contração involuntária_, ou seja, contrai-se _independentemente_ de nossa vontade. O número de **contrações do coração**, por unidade de tempo, é denominado _frequência cardíaca_ e varia de acordo com diversos fatores, dentre eles o _grau de atividade física_, as _condições de saúde_ e as situações de _estresse físico_ e _emocional_ em que nos encontramos. 
+
+```ad-info
+Em média, a _frequência cardíaca_ oscila em torno de 70 a 80 batimentos por minuto. Durante o _sono_, o **coração** pode bater entre 35 e 50 vezes por minuto. Já durante um exercício físico _intenso_, a _frequência cardíaca_ pode ultrapassar 180 batimentos por minuto. Nesse caso, o aumento da _frequência cardíaca_ leva o **sangue** a circular _mais rapidamente_ pelo corpo e, com isso, todos os **órgãos**, e também os **músculos**, recebem mais **nutrientes** e **gás oxigênio**, o que permite o aumento da **atividade metabólica**.
+```
+
+A _frequência cardíaca_ é definida por um grupo de **células musculares cardíacas** modificadas, localizadas perto da junção entre o **átrio direito** e a **veia** que nele desemboca, a **veia cava superior.** A cada segundo, aproximadamente, esse grupo de **células**, conhecido como _marca-passo cardíaco_, ou _nó sinoatrial_, gera um _sinal elétrico_ que se propaga pela **musculatura cardíaca**, provocando a **contração do coração**.
+
+![[bio-tecidos-musculares-coração.png]]
+
+```ad-note
+Representação esquemática de **coração** humano em corte, mostrando os **nós sinoatrial** e **atrioventricular** e as **fibras de Purkinje** (em _amarelo_) que conduzem os _impulsos elétricos_ à **musculatura ventricular**. 
+```
+### Tecido muscular não estriado (tecido muscular liso)
+O **tecido muscular não estriado**, também conhecido como **tecido muscular liso**, está presente em **órgãos viscerais** como o **estômago**, o **intestino** e o **útero**, além de _ductos_ de diversas **glândulas** e nas _paredes_ dos **vasos sanguíneos**, tanto das **artérias** e **veias**. 
+
+```ad-info
+Formado por **células uninucleadas**, _alongadas_ e com as _extremidades_ **fusiformes**.
+```
+
+As **células musculares não estriadas** não apresentam a _estriação transversal_ característica das **células musculares estriadas esqueléticas** e **cardíacas**, pois os **filamentos de actina** e **miosina** não se organizam em um padrão regular, embora estejam _orientados_ de acordo com o _eixo_ maior da **célula**.
+
+```ad-important
+O movimento dos **músculos lisos**, assim como do **músculo cardíaco**, é _involuntário_: na maioria dos casos, esses **músculos** não estão sujeitos ao controle consciente. Você pode decidir quando levantar suas mãos, mas _não controla conscientemente_ os movimentos de seu **estômago** ou de seus **intestinos**.
+```
+
+As **células musculares não estriadas** geralmente _estão agrupadas_. Cada **célula** é _envolta_ por um **endomísio**, constituído por **glicosaminoglicanos**, **glicoproteínas**, **fibras colágenas** e **fibras elásticas**. 
+
+```ad-warning
+**Células musculares não estriadas** não apresentam sistema de **túbulos T** nem **retículo endoplasmático** bem desenvolvido. Sua **contração** é mais _lenta_ que a da **fibra esquelética**, mas **fibras musculares lisas** podem se manter **contraídas** por um período de tempo _bem maior_.
+```
+## Tecido nervoso
+forma os diversos componentes do **sistema nervoso**, que, nos **vertebrados**, é composto pelo **encéfalo**, pela **medula espinal**, pelos **nervos** e pelos **gânglios nervosos**. 
+
+O **sistema nervoso central** (_SNC_), responsável pelo _processamento_ e _integração_ de informações, é composto pelo **encéfalo** e a **medula espinal**. O **sistema nervoso periférico** (_SNP_), responsável pela _condução_ de informações entre **órgãos receptores de estímulos**, o _SNC_ e **órgãos efetuadores** (**músculos**, **glândulas**)
+
+```ad-note
+O **encéfalo** humano tem cerca de 1,4 kg nas pessoas adultas e preenche totalmente a **caixa craniana**. Ele está ligado à **medula espinal**, um _cordão cilíndrico_, que percorre o meio de nossas costas, alojado no _interior_ do canal formado pelas _perfurações_ das **vértebras da coluna vertebral**. Tanto do **encéfalo** quanto da **medula** partem os **nervos**, _fios esbranquiçados_ e _finos_ que se _ramificam_ e atingem _todas_ as regiões do corpo.
+
+```
+### Células do tecido nervoso
+#### Neurônios
+**Células** especializadas na _condução_ de **impulsos nervosos**. Eles apresentam uma parte mais _volumosa_, o **corpo celular** do **neurônio**, onde se _concentram_ o **citoplasma** e o **núcleo celular**. Do **corpo celular**, partem inúmeros **prolongamentos citoplasmáticos** _finos_ e as **neurofibras**. 
+
+```ad-info
+Em geral, a respeito desses **prolongamentos**, o **axônio**, é muito mais _longo_ que os demais, os **dendritos**. Estes _conduzem_ **impulsos nervosos** em direção ao **corpo celular**, enquanto o **axônio** os conduz em _sentido inverso_ (para fora do **corpo celular**).
+```
+##### Classificação morfológica dos neurônios
+De acordo com o _número_ e o _arranjo_ de suas **neurofibras**, os **neurônios** podem ser classificados em três _tipos_ básicos:
+	_a)_ **Neurônios multipolares** - Possuem _muitos_ **prolongamentos celulares**, vários **dendritos** e um **axônio**. Sendo os _mais comuns_, presentes no **encéfalo** e na **medula espinal**;
+	_b)_ **Neurônios bipolares** - Possuem apenas _dois_ **prolongamentos**, ou seja, um **axônio** e outro **prolongamento** que pode se _ramificar_ em **dendritos**. Estes, são os principais responsáveis pela _transmissão_ das **informações sensoriais** (**olfato**, **visão**, **audição** e **equilíbrio**) ao **sistema nervoso central**;
+	_c)_ **Neurônios unipolares** **(pseudounipolar)** - Possuem apenas _um_ **prolongamento**, o **axônio**. Estes, estão _presentes_ em certos **gânglios nervosos** e _levam_ informações de **sensores da pele** ao **sistema nervoso central**;
+
+![[bio-tecidos-nervosos-class-neuronios.png]]
+##### Classificação fisiológica dos neurônios
+Quanto à sua função geral, os **neurônios** podem ser classificados em **sensitivos**, **motores** e **associativos**. 
+	_a)_ **Neurônios sensitivos** - são os que _conduzem_ **impulsos nervosos** de **órgãos dos sentidos** e de **células sensoriais** para o **sistema nervoso central**;
+	_b)_ **Neurônios motores** - são os que _conduzem_ **impulsos** do **sistema nervoso central** para os **órgãos** que _efetuam_ a _resposta_, geralmente **músculos** ou **glândulas**.
+	_c)_ **Neurônios associativos** - localizam-se no **encéfalo** e na **medula espinal** e fazem a _conexão_ entre diversos tipos de **neurônios**.
+
+```ad-important
+Além de _estimular_ os **neurônios motores** responsáveis pela ação, o **neurônio associativo** também _estimula_ **neurônios** que conduzem **impulsos** ao **encéfalo**, permitindo-nos tomar _consciência_ do ocorrido.
+```
+
+Um nervo pode conter:
+	_a)_ Apenas **neurofibras** de **neurônios sensitivos**, sendo chamado de **nervo sensitivo**;
+	_b)_ Apenas **neurofibras** de **neurônios motores**, sendo chamado de **nervo motor**; 
+	_c)_ **Neurofibras** tanto de **neurônios sensitivos** como de **neurônios motores**, sendo chamado de **nervo misto**. 
+
+```ad-info
+As **neurofibras sensitivas** _conduzem_ **impulsos** das diversas partes do corpo para o **sistema nervoso central** e **neurofibras motoras** _conduzem_ **impulsos nervosos** em _sentido inverso_.
+```
+
+```ad-note
+Em certas respostas _rápidas_, denominadas _ações reflexas_, como as que ocorrem quando tocamos sem querer um objeto _muito quente_, o **neurônio sensitivo** responde ao _calor_, transmitindo **impulsos nervosos** a um **neurônio associativo** localizado na **medula espinal**; este _retransmite_ a _informação_ ao **neurônio motor**, que _estimula_ os **músculos** do braço a _reagir_, afastando rapidamente a mão do objeto quente. 
+```
+
+![[bio-tecidos-nervosos-fisiolog.png]]
+
+```ad-note
+A imagem representa _respostas reflexas_ podem envolver três tipos de **neurônio**: **sensitivo**, **associativo** e **motor**. Note que o **neurônio sensitivo** é do tipo **unipolar**, enquanto os **neurônios associativo** e **motor** são **multipolares**. As setas _vermelhas_ indicam o sentido de _transmissão_ do **impulso nervoso**. 
+```
+##### Localização dos neurônios no sistema nervoso
+A _maioria_ dos **corpos celulares** dos **neurônios** localiza-se no **encéfalo** e na **medula espinal**. Os poucos **corpos celulares** de **neurônios** presentes _fora_ do **sistema nervoso** central ficam _agrupados_ em pontos específicos de certos **nervos**, formando os **gânglios nervosos**. 
+
+As **neurofibras** estão geralmente _agrupadas_ em **feixes**. Quando esses **feixes** estão no _interior_ do **sistema nervoso central**, são chamados de **tratos nervosos**. Fora do **encéfalo** e da **medula espinal**, os **feixes de neurofibras**, envolvidos por **tecido conjuntivo fibroso**, constituem os **nervos**, que atingem _todas_ as partes do corpo e são _responsáveis_ por sua _comunicação_ com o **sistema nervoso central**.
+##### Substância cinzenta e substância branca
+Observando um _corte_ de **encéfalo** humano a olho nu, pode-se perceber nitidamente uma **camada externa** de _cor acinzentada_, e uma região mais _interna esbranquiçada_. Na _camada acinzentada_ mais _externa_, concentram-se os **corpos celulares** dos **neurônios encefálicos** e certos tipos de **gliócitos**, formando a chamada **substância cinzenta**. 
+![[bio-tecidos-nervosos-substancia-cinzenta.png]]
+
+A _porção interna_ do **encéfalo**, de _cor esbranquiçada_ e, por isso denominada **substância branca**, é constituída principalmente por **neurofibras** _revestidas_ por **envoltórios mielínicos** de **gliócitos**. 
+
+```ad-info
+Na **medula espinal**, as disposições da **substância cinzenta** e da **substância branca** _invertem-se_: a **substância cinzenta** se situa _internamente_ à **medula** e a **substância branca** se situa _externamente_.
+```
+#### Gliócitos (Células gliais)
+São componentes do **tecido nervoso** cuja função é _envolver_, _proteger_ e _nutrir_ os **neurônios**. Existem dois grupos principais de **células** da _glia_, classificados de acordo com a _origem_: 
+	_a)_  **macróglias** - originam-se da _placa neural_ do **embrião**, _paralelamente_ aos **neurônios**, e constituem a _maioria_ dos **gliócitos**; elas são de três tipos principais:
+		_a)_ **astrócitos**;
+		_b)_ **oligodendrócitos**;
+		_c)_ **células da neurilema** (ou **células de schwann**);
+	_b)_ **micróglias** - são **células** bem _menores_ e originam-se do **tecido hematopoiético**.
+
+```ad-tip
+O termo _glia_, em grego, significa _cola_, em alusão ao fato de essas **células** darem _sustentação física_ ao **sistema nervoso**, mantendo os **neurônios** unidos. 
+```
+
+![[bio-tecidos-nervosos-gliocitos.png]]
+##### Astrócitos
+São os **gliócitos** de _maior tamanho_ e apresentam _grande número_ de **prolongamentos citoplasmáticos**. Alguns desses **prolongamentos** ligam-se a **neurônios**, enquanto outros ligam-se a **capilares sanguíneos** por meio de uma _porção terminal expandida_, denominada **pé vascular**. Além de estabelecer essa _ponte nutritiva_ entre o **sangue** e os **neurônios**, os **astrócitos** dão _sustentação física_ ao **tecido nervoso** e participam da _recuperação de lesões_. 
+
+```ad-info
+Na eventual morte de **neurônios**, os espaços que eles ocupavam _são preenchidos_ por um **tecido** de _cicatrização_ resultante da multiplicação de **astrócitos**.
+```
+##### Oligodendrócitos
+**Células** _menores_ que os **astrócitos**, dotadas de _menor quantidade_ de **prolongamentos celulares**. Certos **prolongamentos** especiais dos **oligodendrócitos** enrolam-se sobre **neurofibras** do **sistema nervoso central**, envolvendo-as com _camadas concêntricas_ de **membrana plasmática**. Esse _envoltório membranoso_ constitui o **estrato mielínico** que _protege_ o **neurônio** e o _ajuda_ a desempenhar suas funções.
+##### Células de Schwann
+**Gliócitos** presentes no **sistema nervoso periférico**, onde desempenham _papel semelhante_ ao dos **oligodendrócitos** no **sistema nervoso central**. 
+##### Micróglias
+**Micróglias** são **células** pequenas, com _poucos_ **prolongamentos** e geralmente _muito ramificadas_, cuja função é **fagocitar** _detritos_ e _restos_ **celulares** presentes no **tecido nervoso**. 
+
+```ad-tip
+Estas, podem ser consideradas um tipo _especializado_ de **macrófago**.
+```
+#### Neurofibras mielinizadas e não mielinizadas
+As **neurofibras**, dependendo de sua função, podem ou não apresentar _revestimento_ **mielínico**. Caso possuam, elas são chamadas de **neurofibras mielinizadas** e, caso não **neurofibras não mielinizadas**. 
+
+```ad-summary
+##### Estrato mielínico
+O **estrato mielínico**,  é um conjunto de _camadas concêntricas_ de **membrana de células gliais** que envolve grande parte das **neurofibras** de nosso corpo. No **sistema nervoso central**, os **estratos mielínicos** se originam dos **oligodendrócitos**; no **sistema nervoso periférico**, eles são produzidos pelas **células de Schwann**.
+
+Este atua como um _isolante_ e _evita_ que o **impulso** se propague entre **neurofibras** adjacentes, além de contribuir para _aumentar_ a _velocidade_ de _propagação_ dos **impulsos nervosos** pelo **neurônio**.
+```
+
+Ao longo de seu _comprimento_, uma **neurofibra mielinizada** apresenta interrupções no **estrato mielínico**, os **nós neurofibrosos** que correspondem aos _pontos de separação_ entre **células gliais** vizinhas que formam o **estrato mielínico**.
+
+![[bio-tecidos-nervosos-neurofibras.png]]
+
+Nas **neurofibras não mielinizadas**, o **impulso** propaga-se _continuamente_ ao longo da **membrana do neurônio**. Nas **neurofibras mielinizadas**, de maior calibre e _isoladas_ pela **bainha de mielina**, a propagação dos **impulsos nervosos** é muito _mais rápida_ que nas **fibras não mielinizadas** e tem característica _saltatória_, passando de um nó **neurofibroso** para o seguinte, devido à presença da **bainha de mielina**. 
+
+```ad-info
+Cada **neurofibra**, **mielinizada** ou não, juntamente com os **gliócitos** que a envolvem, é revestida por um _delicado envoltório_ de **tecido conjuntivo**, denominado **endoneuro**. Esses _envoltórios_ de **tecido conjuntivo** contêm, além de f**ilamentos de proteína**, **vasos sanguíneos**, que _alimentam_ e _oxigenam_ as **neurofibras**.
+```
+
+```ad-summary
+##### Esclerose múltipla
+Ocorre _degeneração gradual_ do **estrato mielínico**, com _perda progressiva_ da **coordenação nervosa**. As causas da **esclerose múltipla** ainda não são totalmente conhecidas, mas acredita-se que seja uma **doença autoimune**, isto é, em que as **defesas corporais** se voltam contra o próprio **organismo**, no caso, _atacando_ e _destruindo_ o **estrato mielínico** das **neurofibras**. 
+```
+### Impulso nervoso
+Em um **neurônio** em _repouso_, isto é, que _não foi estimulado_, a superfície interna da **membrana plasmática** se mantém eletricamente _menos positiva_ que a _externa_, o que equivale a dizer que o _interior_ da **célula** é **eletricamente negativo** em relação ao _exterior_ da célula. 
+
+```ad-info
+No **neurônio** em _repouso_, a **diferença de potencial elétrico** entre as _duas faces_ da **membrana plasmática** é da ordem de 70 mV (milivolts), sendo chamada de _potencial de repouso_.
+```
+
+Quando o **neurônio** é devidamente _estimulado_, ocorre uma onda de _alterações elétricas_ que percorre a **membrana do neurônio**, quase sempre em um _único sentido_: dos **dendritos** para o **axônio**. A _alteração elétrica_, chamada **despolarização**, consiste em uma _inversão_ brusca da situação das **cargas elétricas** em uma _pequena área_ da **membrana plasmática**. Nesse local, a superfície interna da **membrana** torna-se momentaneamente mais positiva que a _externa_, com a **diferença de potencial** passando dos -70 mV da situação de _repouso_ para +40 mV. 
+
+```ad-info
+Essa _inversão de potencial_ dura apenas cerca de 0,0015 segundos naquele local, e a situação de _repouso_ é rapidamente restabelecida, fenômeno conhecido como **repolarização**. 
+
+No entanto, a área que se **despolarizou** estimula a área seguinte a se **despolarizar** e o fenômeno _se repete_, propagando-se até as _extremidades_ do **axônio** como um **impulso nervoso**.
+```
+
+As _alterações elétricas_ na **membrana plasmática** do **neurônio** durante o **impulso nervoso** ocorrem devido a mudanças temporárias em sua _permeabilidade_ aos **íons de sódio** (Na+) e aos **íons de potássio** (K+). Nos **neurônios**, como em qualquer **célula**, o **citoplasma** e o **ambiente extracelular** apresentam _diferença_ de _concentração_ de **íons** Na+ e K+. Essa diferença é mantida pelo **bombeamento ativo de íons** pela **membrana plasmática**, em que os **íons** Na+ são _forçados_ a _sair_ da **célula** e os íons K+ são _forçados_ a nela _entrar_.
+
+```ad-important
+É esse **transporte ativo** de **íons** que faz com que a _superfície interna_ da **membrana plasmática** se mantenha menos _positiva_ em relação à _superfície externa_, ou seja, é ele que mantém o **potencial** de _repouso_.
+```
+
+Um _estímulo_ adequado (um _toque_, a presença de uma **substância** etc.) é capaz de causar uma alteração momentânea na _permeabilidade_ em uma _pequena área_ da **membrana plasmática**. Com isso, os **canais proteicos** na **membrana**, na área estimulada, abrem-se e permitem a rápida entrada, na **célula**, de _grande quantidade_ de **íons** Na+. Essa entrada brusca de **íons Na**+ faz com que, durante alguns instantes, a face interna da **membrana**, no local, se torne mais _positiva_ que a _face externa_.
+
+![[bio-tecidos-nervosos-impulso-nervoso.png]]
+#### Propagação do impulso nervoso
+A **despolarização** de uma área da **membrana** causa _alteração_ de _permeabilidade_ na área vizinha à sua frente, gerando nela um novo _potencial de ação_. Ou seja, enquanto uma área **despolarizada** da **membrana** está se **repolarizando**, outra imediatamente à sua frente está se **despolarizando**. Desse modo, o _potencial de ação_ propaga-se como uma _onda elétrica_ ao longo do **neurônio**.
+
+O **impulso nervoso** é a propagação do _potencial de ação_ ao longo do **neurônio**, esse **impulso** ocorre, de modo geral, em um _único sentido_ em uma **neurofibra**. 
+
+![[bio-tecidos-nervosos-estimulo-nervoso.png]]
+
+
+```ad-info
+Nos **dendritos**, propaga-se das _extremidades_ **dendríticas** para o **corpo celular**; no **axônio**, propaga-se de sua _junção_ com o **corpo celular** para a _extremidade_ **axônica**. 
+```
+
+Os _estímulos_ são captados pelos **dendritos** ou pelo próprio _corpo celular_ (algumas vezes até mesmo pelo **axônio**), gerando um **impulso nervoso** que percorre todo o **axônio** até chegar às suas _extremidades_. 
+
+```ad-info
+Os cientistas calcularam que a _velocidade de propagação_ do **impulso nervoso** em certos **neurônios mielinizados** pode atingir até 200 m/s (aproximadamente 720 km/h).
+```
+#### Sinapses nervosas
+O **sistema nervoso** humano é formado por uma complexa _rede_ de **neurônios** _interligados_. A _estrutura_ altamente elaborada dessa _rede nervosa_ garante a _comunicação_ eficiente entre todas as partes do corpo e o **sistema nervoso central**.
+
+```ad-note
+Ao atingir a _extremidade_ de um **axônio**, o **impulso nervoso** deve ser _transmitido_ a outra **célula**, em geral, a outro **neurônio**. A região de proximidade entre a _extremidade_ de um **axônio** e a **célula** vizinha, por onde se dá a _transmissão_ do **impulso nervoso**, é chamada **sinapse nervosa**.
+```
+
+Em nosso **sistema nervoso central**, um único **neurônio** faz entre 1.000 e 10.000 **sinapses** com mais de 1.000 outros **neurônios**. As **sinapses nervosas** geralmente ocorrem entre o **axônio** de um **neurônio** e o **dendrito** de outro, mas também podem haver **sinapses** entre um **axônio** e um **corpo celular**, entre dois **axônios**, ou entre um **axônio** e uma **célula muscular**, nesse caso chamada **sinapse neuromuscular**.
+##### Sinapse elétrica
+**Sinapses elétricas** entre **neurônios** são _raras_; nos **vertebrados**, elas ocorrem em regiões do **sistema nervoso central** relacionadas com a produção de _movimentos rápidos_ e _repetitivos_. 
+
+**Sinapses elétricas** ocorrem também entre **células da musculatura não estriada** e entre **células da musculatura cardíaca**. Nesses casos, o **impulso elétrico** recebido por uma **célula muscular** pode se _propagar rapidamente_ para as demais **células musculares**, ocasionando a **contração do músculo**. 
+
+```ad-note
+No **coração**, por exemplo, o _estímulo_ gerado no **nó sinoatrial** é transmitido rapidamente de uma **célula** para outra através de **sinapses elétricas**, permitindo a _contração sincrônica_ do **órgão** no _batimento cardíaco_.
+```
+##### Sinapse química
+O tipo mais comum de **sinapse nervosa**, a **sinapse química**, caracteriza-se pela _ausência_ de _contato físico_ entre os **neurônios** nos locais de passagem do _estímulo nervoso_. Um espaço estreito, com cerca de 10 nm a 50 nm, denominado _espaço sináptico_, separa a **extremidade axônica** de um **neurônio** e a superfície da **célula** com que ele faz **sinapse**.
+
+As **extremidades axônicas** são _dilatadas_ e seu **citoplasma** apresenta **bolsas** (_vesículas_) **membranosas** repletas de **substâncias** denominadas **neurotransmissores**. Quando o **impulso nervoso** chega a essa região, algumas das **bolsas** se fundem à **membrana plasmática**, liberando os **neurotransmissores** no _espaço sináptico_.
+
+Os **neurotransmissores** liberados no _espaço sináptico_ por **exocitose** ligam-se a **proteínas** _receptoras_ da **membrana** da **célula** _pós-sináptica_. Se esta for outro **neurônio**, poderá ser originado um novo **impulso nervoso**, que se propagará até a **sinapse** seguinte. 
+
+```ad-info
+Os **neurotransmissores** liberados pelo neurônio são rapidamente destruídos por _enzimas_, o que evita que eles continuem a estimular a **célula** _pós-sináptica_ além do necessário.
+```
+
+```ad-note
+Os cientistas já identificaram mais de dez **substâncias** que atuam como **neurotransmissores**; dentre elas, destacam-se a _acetilcolina_, a _adrenalina_ (ou _epinefrina_), a _noradrenalina_ (ou _norepinefrina_), a _dopamina_ e a _serotonina_.
 ```
