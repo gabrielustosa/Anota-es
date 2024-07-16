@@ -36,3 +36,4 @@
 - [Datasets Gratuitos](https://www.kaggle.com/datasets/)
 - [Computação Empírica](https://dl.acm.org/doi/10.1145/360018.360022)
 - [Ideia CS2 HLTV](https://github.com/TeoCalvo/TeoCalvo/blob/main/docs/tcc_teo_calvo_unesp_2017.pdf)
+- https://docs.google.com/spreadsheets/d/1LhLPYJhk3uJKPhsWg_vrmgP5voxs20ZM8YydCUWvMrE/edit?gid=414880467#gid=414880467

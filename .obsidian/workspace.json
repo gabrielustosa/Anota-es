@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "4458b9d587e1eb5d",
+        "id": "8914934427fb9150",
         "type": "tabs",
         "children": [
           {
-            "id": "c48ef077321814ea",
+            "id": "464415ccf1650f76",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "enem/química/Substâncias.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"imgs/\" ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "enem/química/Substâncias.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "enem/química/Substâncias.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "enem/química/Substâncias.md"
+              }
             }
           },
           {
@@ -156,31 +164,39 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2aab6586082883e9",
+  "active": "464415ccf1650f76",
   "lastOpenFiles": [
-    "enem/biologia/Histologia.md",
-    "imgs/enem/biologia/bio-tecidos-nervosos-estimulo-nervoso.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-impulso-nervoso.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-neurofibras.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-gliocitos.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-substancia-cinzenta.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-fisiolog.png",
-    "imgs/enem/biologia/bio-tecidos-nervosos-class-neuronios.png",
-    "Pasted image 20240617190247.png",
-    "imgs/enem/biologia/bio-tecidos-musculares-coração.png",
-    "imgs/enem/biologia/bio-tecidos-musculares-contração-energia.png",
-    "enem/biologia/Glossário.md",
-    "enem/biologia/Bioquímica.md",
-    "salvar/Sites.md",
-    "enem/biologia/Conceitos Básicos.md",
+    "imgs/enem/química/quim-substancia-eletricidade.png",
+    "imgs/enem/química/quim-alotropia-carvao.png",
+    "imgs/enem/química/quim-alotropia.png",
+    "enem/química/Substâncias.md",
+    "enem/química/Átomos.md",
+    "enem/química/Conceitos básicos.md",
     "enem/biologia/Citologia.md",
+    "imgs/enem/química/quim-forças-intesidades.png",
+    "imgs/enem/química/quim-forças-dipolo-induzido.png",
+    "imgs/enem/química/quim-forças-hidrogenio-agua.png",
+    "imgs/enem/química/quim-forças-ligações-hidrogenio.png",
+    "imgs/enem/química/quim-forças-dipolo.png",
+    "Sem título.md",
+    "imgs/enem/química/quim-forças-intermeoleculares.png",
+    "imgs/enem/química/quim-polaridade-solubilidade.png",
+    "enem/biologia/Bioquímica.md",
+    "enem/química/Elementos químicos.md",
+    "Sem título 1.md",
+    "enem/biologia/Glossário.md",
+    "imgs/enem/química",
+    "salvar/Sites.md",
+    "enem/química",
+    "enem/biologia/Reprodução e ciclo de vida.md",
+    "enem/biologia/Histologia.md",
+    "enem/biologia/Conceitos Básicos.md",
     "cnu concurso/Estrutura de Dados e Algoritmos.md",
     "cnu concurso/Aprendizado de Máquina.md",
     "caixa concurso/Português.md",
     "caixa concurso/Desenvolvimento Web Java.md",
     "caixa concurso/Sistemas Operacionais.md",
     "caixa concurso/Arquitetura de Software.md",
-    "Sem título.md",
     "salvar/Livros.md",
     "imgs/enem/biologia",
     "imgs/enem",
@@ -191,18 +207,10 @@
     "caixa concurso/Comportamentos Éticos e Compliance.md",
     "caixa concurso/Matemática Financeira.md",
     "caixa concurso/Padrões de Projeto.md",
-    "caixa concurso/Big Data.md",
-    "caixa concurso/Data Warehouse.md",
-    "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
-    "caixa concurso/Edital.md",
-    "caixa concurso/Agilidade.md",
-    "caixa concurso/Estrutura de Dados e Algoritmos.md",
     "imgs/conhecimentos comportamentais",
     "imgs/matemática financeira",
     "imgs/ética e compliance",
     "imgs/testes",
-    "imgs/portais corporativos",
-    "imgs/programação",
     "Sem título.canvas"
   ]
 }

@@ -39,18 +39,6 @@ A **parede celular das bactérias** permite classificá-las em dois grandes grup
 ```ad-info
 **Bactérias Gram-positivas** são mais vulneráveis à **penicilina**, pois esse **antibiótico** interfere na produção de **peptidioglicano**. Por outro lado, as **Gram-negativas** são mais resistentes à **penicilina** devido à sua **membrana lipoproteica**, que impede a absorção do **antibiótico**
 ```
-### Átomo
-Toda **matéria**, **orgânica** ou **inorgânica**, é composta por pequenas partículas chamadas **átomos**. Existem 109 tipos de **átomos** conhecidos, dos quais 89 são naturais e 20 são produzidos em laboratório. Cada tipo de **átomo** é um **elemento químico**.
-
-Segundo o **modelo atômico** atual, todos os **átomos** possuem um núcleo denso cercado por **elétrons**. O núcleo, que contém a maior parte da massa do **átomo**, é formado por **prótons** e **nêutrons**. **Prótons** têm carga positiva (+1), enquanto **nêutrons** são neutros. **Elétrons** têm carga negativa (-1) e massa muito menor que **prótons** e **nêutrons**, contribuindo pouco para a massa total do átomo.
-
-Um **átomo** é eletricamente neutro, com o mesmo número de **prótons** e **elétrons**, neutralizando as cargas. Cada **elemento químico** é identificado pelo número de **prótons** no núcleo, chamado número **atômico**. Por exemplo, o hidrogênio (H) tem um **próton** e **número atômico** 1, enquanto o carbono (C) tem seis **prótons** e **número atômico** 6.
-
-![[bio-atomo-resumo.png]]
-
-```ad-info
-Os **átomos** de um **elemento químico** podem formar uma ou mais ligações com outros **átomos**. O número de ligações que um **átomo** pode formar é chamado de **valência química**. Por exemplo, o hidrogênio (H) pode formar apenas uma ligação, sendo **monovalente**. O oxigênio (O) pode formar duas ligações, sendo **bivalente**. O enxofre (S) também é **bivalente**, enquanto o nitrogênio (N) e o fósforo (P) são **trivalentes**. O carbono (C) pode formar quatro ligações, sendo **tetravalente**.
-```
 ### Molécula
 Nas **moléculas**, os **átomos** se unem por **ligações covalentes**, compartilhando pares de **elétrons**. Por exemplo, na **molécula** de água (H2O), dois **átomos** de hidrogênio (H) estão ligados a um **átomo** de oxigênio (O) por **ligações covalentes**.
 ### Composto Iônico

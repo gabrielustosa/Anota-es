@@ -57,3 +57,7 @@ mark,
 .cm-s-obsidian .cm-highlight + span.cm-formatting-highlight {
   background-image: none;
 }
+
+div.mermaid {
+    text-align: center;
+}
