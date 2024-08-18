@@ -146,7 +146,7 @@
 	- [x] Técnicas e boas práticas para o trabalho à distância. 
 	- [x] Aprender a aprender e Aprendizagem contínua (Life long learning).
 
-- [x] Estatística [[Estatística|estudar]]
+- [x] Estatística [[caixa concurso/Estatística|estudar]]
 	- [x] Conceitos gerais: variável, tipos de variáveis, população, amostra, frequências: absoluta e relativa, frequências acumuladas, representações em gráficos e tabelas (linhas, colunas, setores e histogramas). 
 	- [x] Medidas de tendência central (em dados brutos ou agrupados em classes): média aritmética, média geométrica, média ponderada, moda e mediana. Medidas de Posição: quartis e percentis 
 	- [x] Medidas de dispersão (em dados brutos ou agrupados em classes): amplitude, variância, desvio padrão e coeficiente de variação. 

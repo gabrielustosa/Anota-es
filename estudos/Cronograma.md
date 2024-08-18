@@ -1,0 +1,491 @@
+### SEGURANÇA DA INFORMAÇÃO 
+- [ ]  Gestão de Identidades e Acesso:
+  - [ ] Autenticação e Autorização
+  - [ ] Single Sign-On (SSO)
+  - [ ] Security Assertion Markup Language (SAML)
+  - [ ] OAuth2 e OpenId Connect
+- [ ]  Privacidade e segurança por padrão
+- [ ]  Principais tipos de ataques e vulnerabilidades
+- [ ]  Controles e testes de segurança para aplicações Web e Web Services
+- [ ]  Múltiplos Fatores de Autenticação (MFA)
+- [ ]  Soluções para Segurança da Informação:
+  - [ ] Firewall
+  - [ ] Intrusion Detection System (IDS)
+  - [ ] Intrusion Prevention System (IPS)
+  - [ ] Security Information and Event Management (SIEM)
+  - [ ] Proxy
+  - [ ] Identity Access Management (IAM)
+  - [ ] Privileged Access Management (PAM)
+  - [ ] Antivírus
+  - [ ] Antispam
+- [ ]  Frameworks de segurança da informação e segurança cibernética:
+  - [ ] MITRE ATT&CK
+  - [ ] CIS Controls
+  - [ ] NIST CyberSecurity Framework (NIST CSF)
+- [ ] Tratamento de Incidentes Cibernéticos
+- [ ]  Assinatura e certificação digital, criptografia e proteção de dados em trânsito e em repouso
+- [ ]  Segurança em nuvens e de contêineres
+### ENGENHARIA DE SOFTWARE 
+- [ ]  Arquitetura de sistemas web:
+  - [ ] Protocolo HTTP
+  - [ ] HTTP/2
+  - [ ] gRPC
+  - [ ] WebSockets
+  - [ ] TLS
+  - [ ] Servidores proxy
+  - [ ] Cache
+  - [ ] DNS
+  - [ ] Balanceamento de carga
+  - [ ] Tolerância a falhas
+  - [ ] Escalabilidade em sistemas web
+- [ ]  Princípios e práticas de DevOps e DevSecOps
+  - [ ] Integração e entrega contínuas (CI/CD)
+- [ ]  Técnicas de desenvolvimento seguro
+- [ ]  Testes de software:
+  - [ ] Testes unitários
+  - [ ] Testes de Integração
+  - [ ] TDD
+  - [ ] BDD
+- [ ]  Arquiteturas em camadas
+  - [ ] Baseada em serviços
+  - [ ] Microsserviços (orquestração de serviços e API gateway)
+  - [ ] Orientação a eventos
+  - [ ] Cliente-servidor
+  - [ ] Serverless
+- [ ]  Práticas de UX e UI design
+- [ ]  Programação assíncrona
+- [ ]  RESTful e GraphQL
+- [ ] Web services
+- [ ] Padrões:
+  - [ ] GoF
+  - [ ] GRASP
+- [ ] Git
+- [ ]  Python e Java
+- [ ] Transações distribuídas
+- [ ] Distributed Ledger Technology (DLT)
+### INFRAESTRUTURA EM TI 
+- [ ]  Conceitos de infraestrutura como código e automação de infraestrutura de TI
+- [ ] Docker, Kubernetes:
+  - [ ] Boas práticas para infraestrutura e orquestração de containers
+- [ ]  Serviços de Rede Microsoft Windows Server:
+  - [ ] DNS
+  - [ ] DHCP
+  - [ ] Radius
+  - [ ] Autenticação
+  - [ ] Certificados
+  - [ ] Active Directory (AD)
+- [ ]  Monitoração, observabilidade e análise de sistemas em produção:
+  - [ ] Ferramentas de monitoramento e logging, como:
+    - [ ] Nagios
+    - [ ] Prometheus
+    - [ ] Grafana
+    - [ ] Elasticsearch
+    - [ ] Kibana
+    - [ ] Application Performance Monitoring (APM)
+- [ ]  Protocolos da camada de aplicação:
+  - [ ] Simple Mail Transfer Protocol (SMTP)
+  - [ ] Hypertext Transfer Protocol (HTTP)
+  - [ ] Hypertext Transfer Protocol (HTTPS)
+  - [ ] SSL/TLS
+  - [ ] Lightweight Directory Access Protocol (LDAP)
+  - [ ] Network File System (NFS)
+  - [ ] Server Message Block (SMB)
+- [ ] Tolerância a falhas e continuidade de operação
+- [ ]  Implantação e administração de serviços de nuvem (IaaS, PaaS e SaaS)
+- [ ]  Administração e gerenciamento de ambientes de virtualização
+- [ ]  Administração e operação de sistemas operacionais Microsoft Windows Server e Linux
+- [ ] Conceitos de LAN, WAN e SDN
+- [ ] 1 Conceitos e ferramentas de orquestração e automação de infraestrutura:
+  - [ ] Puppet
+  - [ ] Ansible
+### BANCOS DE DADOS
+- [ ]  SGBDs SQL e NOSQL
+- [ ] Modelagens de dados:
+  - [ ] Relacional
+  - [ ] Multidimensional
+  - [ ] NOSQL
+- [ ]  SQL (Procedural Language / Structured Query Language)
+- [ ]  Arquitetura de Inteligência de Negócio:
+  - [ ] DataWarehouse
+  - [ ] DataMart
+  - [ ] DataLake
+  - [ ] DataMesh
+### CONCEITOS DE SISTEMAS DE COMPUTAÇÃO
+- [ ] Organização de computadores:
+  - [ ] Tipos e representações de dados numéricos
+  - [ ] Aritmética binária e hexadecimal
+  - [ ] Álgebra booleana
+  - [ ] Codificação de caracteres
+  - [ ] Componentes da CPU
+- [ ]  Sistemas Operacionais (SO):
+  - [ ] Gerenciamento do processador – Conceito e estados de processo
+  - [ ] Chamadas ao SO
+  - [ ] I/O bound, CPU bound
+  - [ ] Comunicação entre processos
+  - [ ] Threads
+  - [ ] Escalonamento
+  - [ ] Primitivas de sincronização
+  - [ ] Deadlocks
+  - [ ] Segurança e proteção
+  - [ ] Conteinerização
+  - [ ] Virtualização
+  - [ ] Gerenciamento de memória
+  - [ ] Gerenciamento de I/O
+- [ ]  Redes:
+  - [ ] Modelo TCP/IP
+  - [ ] Protocolos de aplicação DNS, HTTP, HTTPS e WebSocket
+  - [ ] Protocolos de transporte TCP e UDP
+  - [ ] Protocolo IP (endereçamento, IPV4, IPV6)
+  - [ ] Protocolos de segurança SSL e TLS
+  - [ ] Redes locais virtuais (VLANS)
+  - [ ] VPN
+- [ ]  Computação distribuída:
+  - [ ] Conceitos básicos
+  - [ ] Clusters
+  - [ ] Balanceamento de carga e tolerância a falhas
+- [ ]  Lógica:
+  - [ ] Lógica proposicional
+  - [ ] Lógica de predicados
+  - [ ] Álgebra booleana
+  - [ ] Lógica fuzzy
+  - [ ] Métodos de prova
+- [ ]  Algoritmos e estrutura de dados:
+  - [ ] Complexidade de algoritmos
+  - [ ] Listas, pilhas, filas e suas variações
+  - [ ] Vetores e matrizes
+  - [ ] Estruturas em árvores
+  - [ ] Árvores balanceadas
+  - [ ] Métodos de ordenação
+  - [ ] Métodos de divisão e conquista
+  - [ ] Pesquisa e hashing
+- [ ]  Teoria dos Grafos:
+  - [ ] Conceitos básicos
+  - [ ] Tipos especiais
+  - [ ] Representação
+  - [ ] Caminhos e circuitos
+  - [ ] Árvores e florestas
+  - [ ] Busca em largura
+  - [ ] Busca em profundidade
+  - [ ] Algoritmos de caminho mínimo
+  - [ ] Coloração de grafos
+  - [ ] Algoritmos de árvore geradora mínima
+  - [ ] Outros algoritmos
+### DADOS E ARMAZENAMENTO
+- [ ]  Conceitos fundamentais de dados:
+  - [ ] o que são dados
+  - [ ] processos geradores de dados
+  - [ ] tipos e classes de dados
+  - [ ] formatos de arquivos de dados comuns (txt, csv, xlsx, xml, json e parquet)
+- [ ]  Introdução a Bases de Dados:
+  - [ ] o que são bases de dados
+  - [ ] tipos de bases de dados
+  - [ ] metadados
+  - [ ] tidy data
+- [ ]  Introdução ao armazenamento de dados:
+  - [ ] armazenamento de arquivos
+  - [ ] principais estruturas de armazenamento de dados analíticos (data warehouse, data mart, data lake, data lakehouse, vector stores)
+  - [ ] diferenças conceituais e casos de uso
+  - [ ] armazenamento na nuvem
+- [ ]  Sistemas Gerenciadores de Base de Dados (SGBD):
+  - [ ] definição de SGBD
+  - [ ] principais funções
+  - [ ] principais tipos de SGBDs (SQL e NoSQL) e suas diferenças
+  - [ ] transações e índices
+- [ ]  Modelo de dados:
+  - [ ] modelo de entidade-relacionamento (ER)
+  - [ ] modelo relacional: tabelas, esquemas, chaves, consultas
+  - [ ] dados estruturados, semiestruturados e não estruturados
+  - [ ] modelo chave-valor
+  - [ ] modelo colunar
+  - [ ] modelo orientado a documentos
+  - [ ] modelo orientado a grafos
+- [ ]  Ingestão e armazenamento de dados:
+  - [ ] definição de ingestão em lote (batch) e em tempo real (stream)
+- [ ]  Big Data:
+  - [ ] conceito de big data
+  - [ ] conceitos gerais sobre técnicas e ferramentas para lidar com grandes volumes de dados (Spark, Hadoop, HDFS e MapReduce)
+### QUALIDADE E PREPARAÇÃO DE DADOS
+- [ ]  Metadados:
+  - [ ] importância para avaliação da qualidade de dados
+  - [ ] linhagem de dados
+- [ ]  Coleta de dados:
+  - [ ] fontes comuns de dados (internas e externas)
+  - [ ] interface de programação de aplicação (API)
+  - [ ] técnicas de web scraping
+- [ ]  Problemas comuns de qualidade de dados:
+  - [ ] valores ausentes
+  - [ ] duplicatas
+  - [ ] outliers
+  - [ ] desbalanceamento
+  - [ ] erros de imputação
+- [ ]  Preparação de dados:
+  - [ ] técnicas de tratamento e limpeza de dados
+  - [ ] técnicas de detecção de vieses
+  - [ ] data profiling
+- [ ]  Pré-processamento de dados:
+  - [ ] técnicas de normalização e padronização
+  - [ ] discretização
+  - [ ] metodologias de codificação de variáveis categóricas (encoding)
+- [ ]  Feature engineering:
+  - [ ] processos para enriquecimento de dados, com criação e seleção de features relevantes
+  - [ ] transformações matemáticas e estatísticas comuns em variáveis
+- [ ]  Divisão de dados:
+  - [ ] técnicas de amostragem
+  - [ ] divisão entre treinamento, validação e teste
+  - [ ] abordagens para cross-validation
+### MODELAGEM
+- [ ]  Pipeline de treinamento de modelos e suas etapas
+- [ ]  Otimização de hiperparâmetros:
+  - [ ] grid search
+  - [ ] random search
+  - [ ] algoritmos de otimização avançados
+  - [ ] automl
+  - [ ] autotuning
+  - [ ] autofeature engineering
+- [ ]  Métricas para avaliação e seleção de modelos:
+  - [ ] métricas para regressão (MSE; RMSE; MAE; R²; R² ajustado)
+  - [ ] métricas para classificação (accuracy, precision, recall, F1-score e ROC-AUC)
+  - [ ] análise de matriz de confusão
+  - [ ] trade-off entre viés e variância
+  - [ ] detecção de overfitting e underfitting
+- [ ]  Técnicas de regularização:
+  - [ ] lasso
+  - [ ] ridge
+  - [ ] elastic net
+  - [ ] dropout
+  - [ ] early stopping
+  - [ ] batch normalization
+- [ ] Dados desbalanceados:
+  - [ ] técnicas para lidar com dados desbalanceados
+  - [ ] oversampling
+  - [ ] undersampling
+  - [ ] dados sintéticos
+  - [ ] ajuste de pesos
+- [ ] Validação de Modelos:
+  - [ ] K-fold cross-validation
+  - [ ] leave-one-out cross-validation
+  - [ ] bootstrap
+- [ ]  Modelagem de IA centrada em dados (data-centric)
+- [ ] Interpretabilidade de modelos:
+  - [ ] feature importance
+  - [ ] valores de Shapley (SHAP) e LIME
+- [ ]  Implantação de modelos em produção:
+  - [ ] exportação de modelos (pickle, PMML e ONNX)
+  - [ ] modelos como serviço (APIs; microsserviços)
+  - [ ] integração com sistemas existentes
+  - [ ] APIs e serviços web
+  - [ ] conceitos de MLOps
+  - [ ] implantação local (on premise) e na nuvem
+- [ ] Monitoramento de modelos:
+  - [ ] monitoramento de desempenho
+  - [ ] data drift
+  - [ ] concept drift
+  - [ ] detecção de drifts
+  - [ ] retreino e atualização de modelos
+### CLASSES DE MODELOS
+- [ ] Redução de dimensionalidade:
+  - [ ] Principal Component Analysis (PCA)
+  - [ ] LDA
+  - [ ] ICA
+  - [ ] T-SNE
+  - [ ] uso de autoencoders
+- [ ]  Técnicas de clusterização:
+  - [ ] K-Means
+  - [ ] agrupamento hierárquico
+  - [ ] Gaussian Mixture Models
+  - [ ] DBSCAN
+- [ ]  Técnicas de classificação:
+  - [ ] Regressão logística
+  - [ ] K-Nearest Neighbors (KNN)
+  - [ ] Suport Vector Machines (SVM)
+  - [ ] Decision Trees (CART)
+  - [ ] classificadores Naive-Bayes (Binomial-Beta, Poisson-Gama, Normal-Normal)
+  - [ ] Florestas Aleatórias (Random Forest)
+- [ ]  Introdução à regressão:
+  - [ ] regressão linear simples e múltipla
+  - [ ] hipóteses clássicas
+  - [ ] método dos mínimos quadrados
+  - [ ] diagnóstico e avaliação de modelos de regressão (F-test, coeficiente de determinação, análise de resíduos e demais)
+  - [ ] testes de significância
+  - [ ] intervalos de confiança
+  - [ ] análise ANOVA
+  - [ ] modelos não lineares (log-log, lin-log, log-lin e inverso)
+- [ ] Ensembling de modelos:
+  - [ ] Bagging
+  - [ ] boosting (AdaBoost, Gradient Boosting, XGBoost, LightGBM e CatBoost)
+  - [ ] stacking
+- [ ] Sistemas de recomendação:
+  - [ ] Filtragem colaborativa (baseadas em usuários ou itens)
+  - [ ] filtragem baseada em conteúdo
+  - [ ] sistemas híbridos
+  - [ ] problemas comuns (cold start, escalabilidade, data sparsity)
+- [ ] Modelos de séries temporais:
+  - [ ] definição
+  - [ ] componentes (tendência, sazonalidade, ciclos e ruído)
+  - [ ] autocorrelação e autocorrelação parcial
+  - [ ] conceito e testes de estacionaridade
+  - [ ] cointegração
+  - [ ] modelos AR, ARMA e ARIMA
+  - [ ] modelos de suavização exponencial
+  - [ ] modelos de decomposição
+  - [ ] modelos de regressão com variáveis temporais (ARIMAX)
+- [ ] Tópicos em regressão:
+  - [ ] modelos de dados em painel
+  - [ ] GLM
+  - [ ] regressão espacial
+  - [ ] regressão quantílica
+  - [ ] regressão de Poisson
+  - [ ] modelos VAR
+  - [ ] ECM e GARCH
+- [ ]  Introdução a modelos causais:
+  - [ ] fundamentos de causalidade estatística
+  - [ ] experimentos e quase-experimentos
+  - [ ] desenho de descontinuidade de regressão
+  - [ ] modelos de variáveis instrumentais
+  - [ ] diferenças em diferenças
+  - [ ] modelos de equações estruturais (SEM)
+  - [ ] métodos de pareamento
+- [ ] Redes neurais:
+  - [ ] Introdução a Redes Neurais Artificiais (arquitetura, funções de ativação, treinamento, forward pass, backpropagation, loss functions, algoritmos de otimização, épocas, batch size e demais)
+  - [ ] embeddings
+  - [ ] redes profundas (deep learning)
+  - [ ] Redes Neurais Convolucionais (CNNs) e Recorrentes (RNNs)
+  - [ ] LSTM
+  - [ ] GRU
+  - [ ] GAN
+  - [ ] modelos multimodais
+- [ ] Modelos de aprendizado por reforço:
+  - [ ] Q-Learning
+  - [ ] Deep Q-Networks (DQN)
+  - [ ] Policy Gradient Methods
+  - [ ] multi-armed bandit
+- [ ]  Visão Computacional:
+  - [ ] técnicas de pré-processamento de imagem
+  - [ ] OCR
+  - [ ] segmentação e extração de características de imagens
+  - [ ] detecção
+  - [ ] segmentação e reconhecimento de objetos
+  - [ ] classificação de imagens
+- [ ] 1Modelos multi-modais:
+  - [ ] principais aplicações
+- [ ] 1Quantificação de incertezas em modelos preditivos:
+  - [ ] Programação Probabilística
+  - [ ] Amostragem de Gibbs
+  - [ ] Inferência Variacional
+  - [ ] Hamiltonian Monte Carlo
+  - [ ] Modelos de Markov Ocultos
+  - [ ] Aprendizado Profundo Probabilístico
+  - [ ] Conformal Prediction
+### PROCESSAMENTO DE LINGUAGEM NATURAL (NLP)
+- [ ] Técnicas de pré-processamento de texto:
+  - [ ] limpeza
+  - [ ] normalização
+  - [ ] remoção de stop words
+  - [ ] stemming
+  - [ ] lematização e demais
+- [ ]  Representação de texto:
+  - [ ] N-grams
+  - [ ] CBoW
+  - [ ] FTD-IDF
+  - [ ] word embeddings (Word2Vec, GloVe e demais)
+  - [ ] document embeddings (Doc2Vec, BERT, ELMo e demais)
+- [ ]  Modelagem de tópicos:
+  - [ ] latent dirichlet allocation (LDA)
+  - [ ] non-negative matrix factorization (NMF)
+- [ ]  Modelos de linguagem:
+  - [ ] modelos de linguagem tradicionais
+  - [ ] redes neurais recorrentes
+  - [ ] redes neurais convolucionais
+  - [ ] transformers
+- [ ]  Tarefas básicas em NLP:
+  - [ ] classificação de texto
+  - [ ] análise de sentimento
+  - [ ] extração de informação (NER; REL)
+  - [ ] similaridade textual
+  - [ ] sumarização de texto
+  - [ ] rotulação de partes do discurso (POS-tagging)
+  - [ ] tradução automática
+- [ ]  Aplicações relacionadas a modelos de NLP:
+  - [ ] geração de texto
+  - [ ] question answering e diálogo conversacional
+  - [ ] retrieval augmented generation (RAG)
+  - [ ] chatbots
+  - [ ] extração estruturada de informações
+  - [ ] agentes de IA (IA agents)
+### PROGRAMAÇÃO E FERRAMENTAS
+- [ ]  Linguagem de programação Python:
+  - [ ] sintaxe básica
+  - [ ] operadores
+  - [ ] variáveis
+  - [ ] estruturas de dados (dataframes, listas, matrizes, dicionários e conjuntos)
+  - [ ] estruturas de controle de fluxo
+  - [ ] funções
+  - [ ] escopo
+  - [ ] método
+  - [ ] paralelização de rotinas
+  - [ ] serialização e desserialização
+- [ ]  Bibliotecas Python:
+  - [ ] Pandas (manipulação; limpeza; transformação e pré-processamento de dado)
+  - [ ] NumPy (operações de arrays)
+  - [ ] Matplotlib e Seaborn (visualização de dados)
+  - [ ] TensorFlow
+  - [ ] Keras e PyTorch (redes neurais)
+  - [ ] Scikit-learn e XGBoost (aprendizado de máquina)
+  - [ ] NLTK e spaCy (processamento de linguagem natural)
+  - [ ] huggingface (LLM)
+  - [ ] PySpark (Big data)
+  - [ ] Beautiful Soup (web scraping)
+  - [ ] Streamlit (data apps)
+- [ ]  Linguagem SQL (Structured Query Language):
+  - [ ] conceitos introdutórios
+  - [ ] comandos básicos para consultas (inserção, atualização e exclusão de dados) e para análise de dados (como funções de agregação, filtros, joins, subconsultas e demais)
+- [ ]  Gestão de Código:
+  - [ ] qualidade de código
+  - [ ] testes automatizados
+  - [ ] versionamento (Git)
+- [ ] Ambientes de programação:
+  - [ ] Jupyterhub e Jupyter Notebooks
+  - [ ] linha de comando (navegação em diretórios, manipulação de arquivos e dados)
+  - [ ] gerenciamento de processos
+  - [ ] configuração de ambientes e variáveis de ambiente
+  - [ ] gerenciamento de pacotes Python (pip)
+  - [ ] ambientes virtuais Python
+- [ ]  Microsoft Power BI:
+  - [ ] conexão e importação de dados
+  - [ ] modelagem de dados
+  - [ ] criação de medidas e colunas calculadas
+  - [ ] visualizações e gráficos
+  - [ ] interações entre visualizações
+  - [ ] criação de relatórios e painéis
+### VISUALIZAÇÃO; STORYTELLING E COMUNICAÇÃO CORPORATIVA
+- [ ]  Principais tipos de visualizações e gráficos:
+  - [ ] tabela
+  - [ ] gráfico de barras
+  - [ ] linhas
+  - [ ] pizza
+  - [ ] dispersão
+  - [ ] histograma
+  - [ ] área
+  - [ ] boxplot
+  - [ ] bolhas
+  - [ ] radar
+  - [ ] mapas cartográficos
+  - [ ] mapa de calor
+- [ ]  Visualização de dados:
+  - [ ] princípios de design de gráficos efetivos
+  - [ ] principais conceitos de codificação visual
+  - [ ] interatividade
+  - [ ] acessibilidade em gráficos
+- [ ]  Dashboards:
+  - [ ] técnicas para construção de interfaces e layout
+  - [ ] abordagens para escolha de designs
+  - [ ] organização de elementos visuais e gráficos
+  - [ ] seleção de gráficos e visualizações
+  - [ ] interatividades e drill-downs
+  - [ ] acessibilidade
+- [ ]  Storytelling com dados:
+  - [ ] construção de narrativas visuais e contextualizações
+  - [ ] componentes de um storytelling efetivo
+- [ ]  Reportes executivos:
+  - [ ] princípios de comunicação corporativa
+  - [ ] interpretação e apresentação de dados de resultados de análises e de insights

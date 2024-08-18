@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8914934427fb9150",
+        "id": "0f6ae55e76a615e6",
         "type": "tabs",
         "children": [
           {
-            "id": "464415ccf1650f76",
+            "id": "dce8523f3529e93c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "enem/química/Substâncias.md",
+                "file": "salvar/Sites.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "enem/química/Substâncias.md",
+                "file": "salvar/Sites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "enem/química/Substâncias.md",
+                "file": "salvar/Sites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "enem/química/Substâncias.md"
+                "file": "salvar/Sites.md"
               }
             }
           },
@@ -161,56 +161,58 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "464415ccf1650f76",
+  "active": "dce8523f3529e93c",
   "lastOpenFiles": [
+    "salvar/Sites.md",
+    "caixa concurso/Estatística.md",
+    "Fisica.md",
+    "caixa concurso/Testes.md",
+    "caixa concurso/Sistemas Operacionais.md",
+    "caixa concurso/Programação.md",
+    "caixa concurso/Portais Corporativos.md",
+    "caixa concurso/Padrões de Projeto.md",
+    "caixa concurso/Organização e Arquitetura de Computadores.md",
+    "caixa concurso/Matemática Financeira.md",
+    "caixa concurso/Governança.md",
+    "caixa concurso/Estrutura de Dados e Algoritmos.md",
+    "caixa concurso/Engenharia de Software.md",
+    "caixa concurso/Desenvolvimento Web Java.md",
+    "caixa concurso/Data Warehouse.md",
+    "caixa concurso/Conhecimentos e Comportamentos Digitais.md",
+    "caixa concurso/Comportamentos Éticos e Compliance.md",
+    "caixa concurso/Big Data.md",
+    "caixa concurso/Banco de Dados.md",
+    "caixa concurso/Arquitetura de Software.md",
+    "caixa concurso/Agilidade.md",
+    "enem/química/Átomos.md",
+    "enem/química/Substâncias.md",
+    "enem/química/Conceitos básicos.md",
+    "estudos/Estatística.md",
+    "estudos/Cronograma.md",
+    "Sem título",
+    "estudos",
     "imgs/enem/química/quim-substancia-eletricidade.png",
     "imgs/enem/química/quim-alotropia-carvao.png",
     "imgs/enem/química/quim-alotropia.png",
-    "enem/química/Substâncias.md",
-    "enem/química/Átomos.md",
-    "enem/química/Conceitos básicos.md",
-    "enem/biologia/Citologia.md",
     "imgs/enem/química/quim-forças-intesidades.png",
     "imgs/enem/química/quim-forças-dipolo-induzido.png",
     "imgs/enem/química/quim-forças-hidrogenio-agua.png",
     "imgs/enem/química/quim-forças-ligações-hidrogenio.png",
     "imgs/enem/química/quim-forças-dipolo.png",
-    "Sem título.md",
     "imgs/enem/química/quim-forças-intermeoleculares.png",
     "imgs/enem/química/quim-polaridade-solubilidade.png",
-    "enem/biologia/Bioquímica.md",
-    "enem/química/Elementos químicos.md",
-    "Sem título 1.md",
-    "enem/biologia/Glossário.md",
     "imgs/enem/química",
-    "salvar/Sites.md",
     "enem/química",
-    "enem/biologia/Reprodução e ciclo de vida.md",
-    "enem/biologia/Histologia.md",
-    "enem/biologia/Conceitos Básicos.md",
-    "cnu concurso/Estrutura de Dados e Algoritmos.md",
-    "cnu concurso/Aprendizado de Máquina.md",
-    "caixa concurso/Português.md",
-    "caixa concurso/Desenvolvimento Web Java.md",
-    "caixa concurso/Sistemas Operacionais.md",
-    "caixa concurso/Arquitetura de Software.md",
-    "salvar/Livros.md",
     "imgs/enem/biologia",
     "imgs/enem",
-    "caixa concurso/Programação.md",
     "enem/biologia",
     "enem",
-    "caixa concurso/Estatística.md",
-    "caixa concurso/Comportamentos Éticos e Compliance.md",
-    "caixa concurso/Matemática Financeira.md",
-    "caixa concurso/Padrões de Projeto.md",
     "imgs/conhecimentos comportamentais",
     "imgs/matemática financeira",
-    "imgs/ética e compliance",
-    "imgs/testes",
     "Sem título.canvas"
   ]
 }
